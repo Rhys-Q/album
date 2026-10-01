@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-01",
+  "files": [
+    {
+      "file": "ESP32-133C02-screen-peripheral-V1.0.pdf",
+      "source_url": "https://v4.cecdn.yun300.cn/100001_1909185148/Schematic%20for%20ESP32-133C02.pdf",
+      "retrieved_date": "2026-10-01",
+      "version": "13.3E6 V1.0; created 2024-05-08; updated 2024-07-17",
+      "pages": 1,
+      "bytes": 693327,
+      "sha256": "1636e6a39bbb7fbb7ea6e346c11e2b564c7143e27ca34a581e4f0bbaf55dbcbf",
+      "review": "屏幕外围单页电路，不含整板主控/SD/输入稳压；已检查电源、传感器、FPC及模式绑带",
+      "applicability": "按用户接受的GDEP133C02设计基线使用；实际到货版本匹配与电气验证未完成",
+      "rights": "厂家公开下载；未发现独立再分发许可，保留版权，仅作项目技术审阅；公开再发布前核对权利条件"
+    },
+    {
+      "file": "EN-ESP32-133C02-Rev2.0.pdf",
+      "source_url": "https://v4.cecdn.yun300.cn/100001_1909185148/EN-ESP32-133C02.pdf",
+      "retrieved_date": "2026-10-01",
+      "version": "Revision 2.0; 2026-03-12",
+      "pages": 23,
+      "bytes": 3927310,
+      "sha256": "480418b4a5475e7b60daff9310ff5e9c77aec069466458a7f322ff5dcd5e339a",
+      "review": "已审阅全篇；重点 GPIO、双片选与使用须知",
+      "applicability": "按用户接受的GDEP133C02设计基线使用；实际到货版本匹配与电气验证未完成",
+      "rights": "厂家公开下载；未发现独立再分发许可，保留版权，仅作项目技术审阅；公开再发布前核对权利条件"
+    },
+    {
+      "file": "TPS22913-SLVSB49F.pdf",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps22913.pdf",
+      "retrieved_date": "2026-10-01",
+      "version": "SLVSB49F; revised January 2015",
+      "pages": 37,
+      "bytes": 1093963,
+      "sha256": "e4a052bec3b3c2fee243b3a9182a8711efc31b331b0bb325f8b36cd15d958c7f",
+      "review": "已审阅输入范围、控制极性、2A等级、输出放电与封装；尚未完成热/瞬态/漏电选型计算",
+      "applicability": "按用户接受的GDEP133C02设计基线使用；实际到货版本匹配与电气验证未完成",
+      "rights": "厂家公开下载；未发现独立再分发许可，保留版权，仅作项目技术审阅；公开再发布前核对权利条件"
+    },
+    {
+      "file": "TCN75A-DS21935C.pdf",
+      "source_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/21935c.pdf",
+      "retrieved_date": "2026-10-01",
+      "version": "DS21935C; 2006",
+      "pages": 32,
+      "bytes": 1070644,
+      "sha256": "785c3ec5af26952c95b07953b481231d0b2bc0f93138e6c928b2867343ed6026",
+      "review": "已审阅电源、接口、地址脚、封装及功耗；未验证面板温度命令",
+      "applicability": "按用户接受的GDEP133C02设计基线使用；实际到货版本匹配与电气验证未完成",
+      "rights": "厂家公开下载；未发现独立再分发许可，保留版权，仅作项目技术审阅；公开再发布前核对权利条件"
+    },
+    {
+      "file": "../../../docs/raw/GDEP133C02.pdf",
+      "source_url": null,
+      "retrieved_date": null,
+      "provided_by": "user",
+      "sha256": "8dc98251254777c2bfa6046e393a840e0d373077009aa6869ee23efe13a20490",
+      "bytes": 4698054,
+      "review": "见 docs/design/pcb.md 2.4",
+      "rights": "用户提供；下载来源与使用条件待确认",
+      "applicability": "按用户接受的GDEP133C02设计基线使用；实际到货版本匹配与电气验证未完成"
+    },
+    {
+      "file": "../../../docs/raw/GDEP133C02-ESP32 code example.zip",
+      "source_url": null,
+      "retrieved_date": null,
+      "provided_by": "user",
+      "sha256": "a683485a58c6159f7788ab4339c91d902bce8f21089203a9d877a5669afb1f96",
+      "bytes": 50039243,
+      "review": "见 docs/design/pcb.md 2.4",
+      "rights": "用户提供；下载来源与使用条件待确认",
+      "applicability": "按用户接受的GDEP133C02设计基线使用；实际到货版本匹配与电气验证未完成"
+    },
+    {
+      "file": "../../../docs/raw/GDEP133C02 (1).pdf",
+      "source_url": "https://www.good-display.cn/product/503.html",
+      "provided_by": "user",
+      "retrieved_date": null,
+      "review_date": "2026-10-01",
+      "version": "Revision1.0; 2024/05/30",
+      "bytes": 4698054,
+      "sha256": "8dc98251254777c2bfa6046e393a840e0d373077009aa6869ee23efe13a20490",
+      "review": "与原GDEP133C02.pdf逐字节及SHA-256相同",
+      "applicability": "用户接受的设计基线；到货与电气验收未完成",
+      "rights": "用户从商家提供的厂家页面下载；未确认独立使用/再分发许可",
+      "pages": 29
+    },
+    {
+      "file": "../../../docs/raw/GDEP133C02-ESP32程序示例.zip",
+      "source_url": "https://www.good-display.cn/product/503.html",
+      "provided_by": "user",
+      "retrieved_date": null,
+      "review_date": "2026-10-01",
+      "version": "inner directory 2026420",
+      "bytes": 49300551,
+      "sha256": "9043a809f9d6c5a8080b854b91121541cea12a1f1b768a1e908b86ea47c46214",
+      "review": "统一工程路径后1432个文件内容与英文ZIP相同；未执行代码",
+      "applicability": "用户接受的设计基线；到货与电气验收未完成",
+      "rights": "用户从商家提供的厂家页面下载；未确认独立使用/再分发许可"
+    },
+    {
+      "file": "../../../docs/raw/ESP32-133C02 驱动开发板说明书.pdf",
+      "source_url": "https://www.good-display.cn/product/503.html",
+      "provided_by": "user",
+      "retrieved_date": null,
+      "review_date": "2026-10-01",
+      "version": "V1.1; 2025/6/5",
+      "bytes": 3464153,
+      "sha256": "9d90281f21b14ccc420b3ed92ed03b4d790b34f6e5999615893b18ee92f1df4a",
+      "review": "已审全篇并对比英文Rev2.0；GPIO一致，软件操作章节/日期/页数不同；IDF版本混杂",
+      "applicability": "用户接受的设计基线；到货与电气验收未完成",
+      "rights": "用户从商家提供的厂家页面下载；未确认独立使用/再分发许可",
+      "pages": 20
+    }
+  ],
+  "aliases": [
+    {
+      "url": "https://v4.cecdn.yun300.cn/100001_1909185148/Schematic%20for%20ESP32-133C02-IL.pdf",
+      "same_as": "ESP32-133C02-screen-peripheral-V1.0.pdf",
+      "sha256": "1636e6a39bbb7fbb7ea6e346c11e2b564c7143e27ca34a581e4f0bbaf55dbcbf",
+      "note": "两份下载字节一致；IL 文件名不能证明另一版本电路"
+    }
+  ],
+  "design_decision": {
+    "date": "2026-10-01",
+    "accepted_by": "user",
+    "status": "资料与设计决策已闭环，可进入最小驱动原型阶段",
+    "hardware_validation": "未完成",
+    "baseline": {
+      "mode": "Standard SPI; BS0/BS1=H to switched VDD; D/C#=GND",
+      "drvn2": "Pin40 no external branch; Pin41 via R16 0ohm to Pin56",
+      "vcom": "use panel internal VCOM and existing initialization",
+      "normal_shutdown": "refresh complete -> POF -> wait BUSY completion -> deep sleep -> power-safe interface -> external power off",
+      "refresh": "manual only; Quad optional"
+    },
+    "remaining_acceptance": "到货版本/FPC/连接器、完整采购参数、电路审核、构建、显示、全轨关断/异常掉电及功耗；无厂家异常掉电保证"
+  },
+  "online_references": [
+    {
+      "source_url": "https://files.waveshare.com/wiki/13.3inch%20e-Paper%20HAT%2B/13.3inch_e-Paper_HAT%2B.pdf",
+      "review_date": "2026-10-01",
+      "archived": false,
+      "review": "p1同类60Pin外围图：DRVN2无外部支路、VNCP_3P5V/VBB_3P5V经0Ω连接；作为工程交叉印证，不是GDEP133C02批次保证"
+    },
+    {
+      "source_url": "https://github.com/philippwaller/esphome-epaper-spectra6-133",
+      "review_date": "2026-10-01",
+      "archived": false,
+      "review": "README中GDEP133C02支持与深睡后断电选项；要求验证负载开关关断，仅作实现参考"
+    }
+  ]
+}

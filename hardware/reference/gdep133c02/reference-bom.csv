@@ -1,0 +1,40 @@
+reference_designators,reference_value_or_mpn,function,remaining_selection_work,source
+U5,TPS22913BYZVT,输入负载开关,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+U4,TCN75AVOA713,外置温度传感器,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+Q1 Q4,DMN3065LW-7,N-MOS,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+Q8,DMP3068L-7,P-MOS,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+Q3,MMBT3906,PNP,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+Q6,MMBT3904,NPN,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+Q7,PJA3433,TFT_VCOM P-MOS,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+D1 D2,MBR230S1F-7,正/负压支路二极管,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+D3 D5 D6,BAT54S,双二极管电荷泵,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+D4,B0530W,TFT_VCOM 二极管,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+L1 L2 L3,15uH,功率电感,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+L4,BLM18PG221SH1D,逻辑域磁珠,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+L5,CBG160808U000T,AVDD磁珠,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+FPC1,FPC-05FB-60PH20,60Pin连接器,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+H1,PZ254V-11-12P,参考MCU控制接口,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+U1 U2 U3,200mΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R1,2kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R2 R3 R13,1MΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R4 R5 R6 R9 R14 R15 R16 R24 R25 R26 R27 R28 R29 R31 R32 R33 R34,0Ω,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R7,4.3kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R8,110kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R10 R19,2.2Ω,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R11 R30,100kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R12,1.5kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R17,400kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R18,16kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R20 R21,4.7kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R22,10kΩ,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+R23,NC/DNP,电阻/电流采样；U1/U2/U3是电阻而非IC,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C1 C2 C3 C4 C5 C6,33uF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C7 C13 C15 C20,10uF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C8 C12 C14 C16 C19 C21 C29 C30,4.7uF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C9 C10 C11 C17 C23 C24,470nF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C18,220nF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C22 C25,1uF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C26,47nF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C27 C33,100nF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C28,2.2uF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
+C31 C32,100uF,电容,缺耐压/公差/功率/封装等完整采购参数；不得直接作为生产BOM,ESP32-133C02-screen-peripheral-V1.0.pdf p1
