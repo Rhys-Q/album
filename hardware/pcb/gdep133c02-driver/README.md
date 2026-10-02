@@ -12,6 +12,8 @@
 
 电源专项：[电源页原理详解](docs/power-circuit-explained.md)，逐项解释70个元器件、六个功能区、开关周期电流路径、反馈计算及设计理由。
 
+接口与面板专项：[Interface 原理详解](docs/interface-circuit-explained.md)覆盖43个对象及缓冲／使能／默认状态；[Panel 原理详解](docs/panel-circuit-explained.md)覆盖41个器件、温度接口、六组电容及FPC全部60脚。
+
 ## 工程和检查
 
 打开 `gdep133c02-driver.kicad_pro`；顶层原理图包含power/panel/interface三页。项目库与可取得的3D模型随工程保存。100×80mm四层板、1.6mm厚；四个Ø3.2mm NPTH安装孔，板框相对位置(5,5)、(95,5)、(5,75)、(95,75)mm。

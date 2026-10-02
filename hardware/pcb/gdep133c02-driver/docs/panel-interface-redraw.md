@@ -8,6 +8,8 @@
 - [Interface 页 PDF](../reports/panel-interface-redraw/interface.pdf)／[高清图](../reports/panel-interface-redraw/interface.png)。
 - [完整工程原理图 PDF](../reports/schematic.pdf)。
 
+逐个器件的工作原理与设计理由见[Interface详解](interface-circuit-explained.md)及[Panel详解](panel-circuit-explained.md)。
+
 ## Panel 页怎么读
 
 | 功能区 | 主要器件与路径 | 可以直接看清的关系 |

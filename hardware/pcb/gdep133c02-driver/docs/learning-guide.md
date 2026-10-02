@@ -19,6 +19,8 @@
 
 还没有完成：整机电池/SD/USB设计、ESP32 固件、生产下单和装配、接屏显示、全轨波形、温升、安全掉电实测。连接器实物方向、电容有效容量及采样电阻功率仍有待验收项，见[工程说明](../README.md)。
 
+深入阅读三张原理图：[电源页详解](power-circuit-explained.md)、[Interface详解](interface-circuit-explained.md)、[Panel详解](panel-circuit-explained.md)，均按当前器件逐项解释；Panel另附60针连接器完整对照表。
+
 ## 2. 第一课：打开工程，理解文件（约30分钟）
 
 在 KiCad 中打开工程根目录的 `gdep133c02-driver.kicad_pro`。通过工程管理器进入原理图和 PCB 编辑器，保留整套项目文件；项目设置和库引用也是设计的一部分。[KiCad 10 官方入门](https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html)介绍了这一流程。
