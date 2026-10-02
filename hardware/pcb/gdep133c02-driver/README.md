@@ -4,6 +4,8 @@
 
 2026-10-02，电源页已重画为六个功能区的导线式原理图，器件连接与PCB保持一致，重新执行ERC/DRC通过。本次新页的GUI打开复查因工具访问被拒绝而待完成；上面的实际打开记录为2026-10-01版本。查看[电源页PDF](reports/power-redraw/power.pdf)及[阅读说明](docs/power-redraw.md)。
 
+2026-10-03，重新核对当前三页原理图与PCB：154个实体元器件的数值、封装和完整UUID路径一致，411个引脚网络一致；ERC 0，当前保存铜层的DRC 0／未连接0／一致性问题0。无需因图形重绘修改布局布线。本轮GUI访问仍被拒绝，自动重新铺铜检查异常退出，详见[同步核对记录](docs/pcb-sync-check-2026-10-03.md)。
+
 范围：外接 ESP32-S3 开发板、稳压3.3V限流台式电源，只做最小屏幕驱动硬件；不含固件、电池、SD、USB和整机结构。
 
 2026-10-02，Panel 与 Interface 页也已重画为导线式功能电路，完整网表和器件属性保持一致，最终 ERC/DRC 通过。查看 [Panel PDF](reports/panel-interface-redraw/panel.pdf)、[Interface PDF](reports/panel-interface-redraw/interface.pdf)及[阅读说明](docs/panel-interface-redraw.md)。当前新页的 GUI 打开复查仍因工具拒绝访问而待完成。

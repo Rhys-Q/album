@@ -1,5 +1,7 @@
 # 实际打开验证
 
+2026-10-03补充：再次获取KiCad应用，工具仍返回`Computer Use was not approved to use KiCad`；本轮未执行GUI F8、实际打开或GUI重新铺铜。当前文件的CLI网表与PCB直接对比一致，保存铜层的CLI DRC通过；详见`../docs/pcb-sync-check-2026-10-03.md`。
+
 2026-10-02补充：power、panel、interface三页均已重画，最终ERC/DRC及完整网表对比通过。Panel/Interface本轮尝试访问KiCad，工具返回`Computer Use was not approved to use KiCad`，尚未对当前重画版本重复GUI打开验证。PDF导出和检视不能替代该项。以下为2026-10-01的历史记录。
 
 2026-10-01，KiCad 10.0.6，使用已授权的电脑控制工具。
