@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-01",
+  "kicad_version": "10.0.6",
+  "source_sha256": {
+    "gdep133c02-driver.kicad_sch": "836f8ca5ea6e39f0d41c9b1fcf2aa69fcccf92c8fe291b155f5f654ae658433d",
+    "gdep133c02-driver.kicad_pro": "a52bab69da80df49631665062e634d67088f7de23da873d9c2e7c0966a1c1828",
+    "power.kicad_sch": "d615d5c8c3cee7ca9526eebac850e4cc6440ff8cbfef47db3c9132ade8748bb1",
+    "panel.kicad_sch": "9dfd21c46881b041e59ef90967e0af2c13128585918702264c65c2abbb30d739",
+    "interface.kicad_sch": "bfae862b8e778dacb09cb3e1f20bf805c49178b9feb01996a840b151d8e775ab",
+    "gdep133c02-driver.kicad_dru": "0b6301cbabf5e998590617a47060083c8ccb09e53576f275c2c0e23e3b76d9bc",
+    "gdep133c02-driver.kicad_pcb": "4f5e9da7cfc4f586e853b47cc588c48d8a05c47790f1866050fb8550947ca69c"
+  }
+}

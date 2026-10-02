@@ -1,5 +1,7 @@
 # 实际打开验证
 
+2026-10-02补充：power、panel、interface三页均已重画，最终ERC/DRC及完整网表对比通过。Panel/Interface本轮尝试访问KiCad，工具返回`Computer Use was not approved to use KiCad`，尚未对当前重画版本重复GUI打开验证。PDF导出和检视不能替代该项。以下为2026-10-01的历史记录。
+
 2026-10-01，KiCad 10.0.6，使用已授权的电脑控制工具。
 
 - 从工程管理器实际打开顶层原理图，三张分层页可见。编辑器提示文件自动修复；确认后保存，ERC和导出网表重新检查通过。

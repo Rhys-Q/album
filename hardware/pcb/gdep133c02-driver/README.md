@@ -2,7 +2,15 @@
 
 2026-10-01，KiCad **10.0.6**。本轮已修复 CAD 连接与设计规则问题，原理图、PCB 均已实际打开验证。实物和关键功率参数尚未验收，当前制造文件用于审阅，尚未生产放行。
 
+2026-10-02，电源页已重画为六个功能区的导线式原理图，器件连接与PCB保持一致，重新执行ERC/DRC通过。本次新页的GUI打开复查因工具访问被拒绝而待完成；上面的实际打开记录为2026-10-01版本。查看[电源页PDF](reports/power-redraw/power.pdf)及[阅读说明](docs/power-redraw.md)。
+
 范围：外接 ESP32-S3 开发板、稳压3.3V限流台式电源，只做最小屏幕驱动硬件；不含固件、电池、SD、USB和整机结构。
+
+2026-10-02，Panel 与 Interface 页也已重画为导线式功能电路，完整网表和器件属性保持一致，最终 ERC/DRC 通过。查看 [Panel PDF](reports/panel-interface-redraw/panel.pdf)、[Interface PDF](reports/panel-interface-redraw/interface.pdf)及[阅读说明](docs/panel-interface-redraw.md)。当前新页的 GUI 打开复查仍因工具拒绝访问而待完成。
+
+学习本工程：[从原理图到 PCB 的实操教程](docs/learning-guide.md)，包含电源与接口讲解、七课练习和自测答案。
+
+电源专项：[电源页原理详解](docs/power-circuit-explained.md)，逐项解释70个元器件、六个功能区、开关周期电流路径、反馈计算及设计理由。
 
 ## 工程和检查
 

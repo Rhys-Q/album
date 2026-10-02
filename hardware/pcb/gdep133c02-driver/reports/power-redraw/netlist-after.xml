@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/rhys/tw/26/09/album/hardware/pcb/gdep133c02-driver/gdep133c02-driver.kicad_sch</source>
-    <date>2026-10-02T22:18:22</date>
+    <date>2026-10-02T17:43:11</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -42,10 +42,10 @@
     </sheet>
     <sheet number="3" name="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/">
       <title_block>
-        <title>Panel - wired functional circuits</title>
+        <title>Panel and temperature</title>
         <company/>
-        <rev>0.2-CAD-REVIEW</rev>
-        <date>2026-10-02</date>
+        <rev>0.1-DRAFT</rev>
+        <date/>
         <source>panel.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -60,10 +60,10 @@
     </sheet>
     <sheet number="4" name="/Host isolation and test points/" tstamps="/8a9a5ea2-3852-5e2d-a700-bacf0be3dc4d/">
       <title_block>
-        <title>Interface - wired functional circuits</title>
+        <title>Host isolation and test points</title>
         <company/>
-        <rev>0.2-CAD-REVIEW</rev>
-        <date>2026-10-02</date>
+        <rev>0.1-DRAFT</rev>
+        <date/>
         <source>interface.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -2717,66 +2717,66 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="9"/>
-            <pin num="10"/>
-            <pin num="19"/>
-            <pin num="12"/>
-            <pin num="18"/>
-            <pin num="13"/>
-            <pin num="14"/>
-            <pin num="16"/>
-            <pin num="17"/>
-            <pin num="59"/>
-            <pin num="60"/>
-            <pin num="41"/>
-            <pin num="56"/>
             <pin num="1"/>
-            <pin num="36"/>
             <pin num="2"/>
             <pin num="3"/>
             <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
             <pin num="7"/>
-            <pin num="33"/>
-            <pin num="34"/>
-            <pin num="37"/>
-            <pin num="38"/>
-            <pin num="39"/>
             <pin num="8"/>
-            <pin num="26"/>
-            <pin num="35"/>
+            <pin num="9"/>
+            <pin num="10"/>
             <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
             <pin num="15"/>
-            <pin num="40"/>
-            <pin num="57"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
             <pin num="20"/>
             <pin num="21"/>
             <pin num="22"/>
             <pin num="23"/>
             <pin num="24"/>
             <pin num="25"/>
+            <pin num="26"/>
             <pin num="27"/>
             <pin num="28"/>
             <pin num="29"/>
             <pin num="30"/>
             <pin num="31"/>
             <pin num="32"/>
-            <pin num="58"/>
-            <pin num="54"/>
-            <pin num="55"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
             <pin num="42"/>
-            <pin num="45"/>
             <pin num="43"/>
-            <pin num="46"/>
             <pin num="44"/>
+            <pin num="45"/>
+            <pin num="46"/>
             <pin num="47"/>
             <pin num="48"/>
-            <pin num="53"/>
             <pin num="49"/>
-            <pin num="52"/>
             <pin num="50"/>
             <pin num="51"/>
+            <pin num="52"/>
+            <pin num="53"/>
+            <pin num="54"/>
+            <pin num="55"/>
+            <pin num="56"/>
+            <pin num="57"/>
+            <pin num="58"/>
+            <pin num="59"/>
+            <pin num="60"/>
           </pins>
         </unit>
       </units>
@@ -2801,8 +2801,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -2827,8 +2827,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -2853,8 +2853,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -2879,8 +2879,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -3037,14 +3037,14 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
             <pin num="5"/>
             <pin num="6"/>
-            <pin num="8"/>
             <pin num="7"/>
-            <pin num="4"/>
-            <pin num="3"/>
+            <pin num="8"/>
           </pins>
         </unit>
       </units>
@@ -3121,22 +3121,22 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
-            <pin num="4"/>
-            <pin num="6"/>
-            <pin num="8"/>
-            <pin num="10"/>
-            <pin num="12"/>
-            <pin num="14"/>
-            <pin num="16"/>
             <pin num="1"/>
+            <pin num="2"/>
             <pin num="3"/>
+            <pin num="4"/>
             <pin num="5"/>
+            <pin num="6"/>
             <pin num="7"/>
+            <pin num="8"/>
             <pin num="9"/>
+            <pin num="10"/>
             <pin num="11"/>
+            <pin num="12"/>
             <pin num="13"/>
+            <pin num="14"/>
             <pin num="15"/>
+            <pin num="16"/>
           </pins>
         </unit>
       </units>
@@ -3162,8 +3162,8 @@
         <unit name="A">
           <pins>
             <pin num="1"/>
-            <pin num="3"/>
             <pin num="2"/>
+            <pin num="3"/>
           </pins>
         </unit>
       </units>
@@ -3189,8 +3189,8 @@
         <unit name="A">
           <pins>
             <pin num="1"/>
-            <pin num="3"/>
             <pin num="2"/>
+            <pin num="3"/>
           </pins>
         </unit>
       </units>
@@ -3215,8 +3215,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -3241,8 +3241,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -3449,8 +3449,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -3475,8 +3475,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
             <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -4176,25 +4176,25 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
-            <pin num="4"/>
-            <pin num="6"/>
-            <pin num="8"/>
-            <pin num="11"/>
-            <pin num="13"/>
-            <pin num="15"/>
-            <pin num="17"/>
             <pin num="1"/>
             <pin num="19"/>
-            <pin num="20"/>
             <pin num="10"/>
+            <pin num="20"/>
+            <pin num="2"/>
             <pin num="18"/>
+            <pin num="4"/>
             <pin num="16"/>
+            <pin num="6"/>
             <pin num="14"/>
+            <pin num="8"/>
             <pin num="12"/>
+            <pin num="11"/>
             <pin num="9"/>
+            <pin num="13"/>
             <pin num="7"/>
+            <pin num="15"/>
             <pin num="5"/>
+            <pin num="17"/>
             <pin num="3"/>
           </pins>
         </unit>
@@ -4221,25 +4221,25 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="2"/>
-            <pin num="4"/>
-            <pin num="6"/>
-            <pin num="8"/>
-            <pin num="11"/>
-            <pin num="13"/>
-            <pin num="15"/>
-            <pin num="17"/>
             <pin num="1"/>
             <pin num="19"/>
-            <pin num="20"/>
             <pin num="10"/>
+            <pin num="20"/>
+            <pin num="2"/>
             <pin num="18"/>
+            <pin num="4"/>
             <pin num="16"/>
+            <pin num="6"/>
             <pin num="14"/>
+            <pin num="8"/>
             <pin num="12"/>
+            <pin num="11"/>
             <pin num="9"/>
+            <pin num="13"/>
             <pin num="7"/>
+            <pin num="15"/>
             <pin num="5"/>
+            <pin num="17"/>
             <pin num="3"/>
           </pins>
         </unit>
@@ -4256,8 +4256,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C10">
@@ -4269,8 +4269,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C103">
@@ -4282,8 +4282,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C104">
@@ -4295,8 +4295,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C105">
@@ -4308,8 +4308,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C106">
@@ -4321,8 +4321,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C107">
@@ -4334,8 +4334,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C108">
@@ -4347,8 +4347,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C109">
@@ -4360,8 +4360,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C11">
@@ -4373,8 +4373,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C110">
@@ -4386,8 +4386,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C111">
@@ -4399,8 +4399,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C112">
@@ -4412,8 +4412,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C113">
@@ -4425,8 +4425,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C114">
@@ -4438,8 +4438,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C115">
@@ -4451,8 +4451,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C116">
@@ -4464,8 +4464,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C117">
@@ -4477,8 +4477,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C118">
@@ -4490,8 +4490,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C119">
@@ -4503,8 +4503,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C12">
@@ -4529,8 +4529,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C13">
@@ -4633,8 +4633,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C20">
@@ -4737,8 +4737,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C28">
@@ -4776,8 +4776,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C30">
@@ -4841,8 +4841,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C35">
@@ -4854,8 +4854,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C4">
@@ -4867,8 +4867,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C5">
@@ -4880,8 +4880,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C6">
@@ -4893,8 +4893,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C7">
@@ -4906,8 +4906,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C8">
@@ -4919,8 +4919,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_C9">
@@ -4932,8 +4932,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_D1">
@@ -5050,16 +5050,16 @@
         <pin num="21" name="TSDA" type="passive"/>
         <pin num="22" name="BS0" type="input"/>
         <pin num="23" name="BS1" type="input"/>
-        <pin num="24" name="RES_N" type="input"/>
+        <pin num="24" name="RES#" type="input"/>
         <pin num="25" name="BUSY_N" type="output"/>
-        <pin num="26" name="GND" type="input"/>
-        <pin num="27" name="CS_M_N" type="input"/>
-        <pin num="28" name="SCLK" type="input"/>
+        <pin num="26" name="D/C#" type="input"/>
+        <pin num="27" name="CSB_M" type="input"/>
+        <pin num="28" name="SCL" type="input"/>
         <pin num="29" name="SI0" type="passive"/>
         <pin num="30" name="SI1" type="passive"/>
         <pin num="31" name="SI2" type="input"/>
         <pin num="32" name="SI3" type="input"/>
-        <pin num="33" name="DRVP" type="output"/>
+        <pin num="33" name="DRVP_Gate" type="output"/>
         <pin num="34" name="FBP" type="input"/>
         <pin num="35" name="GND" type="passive"/>
         <pin num="36" name="VCOMBD_S" type="output"/>
@@ -5071,20 +5071,20 @@
         <pin num="42" name="VSPH" type="passive"/>
         <pin num="43" name="VSPL" type="passive"/>
         <pin num="44" name="VSPL2" type="passive"/>
-        <pin num="45" name="VSPH" type="passive"/>
-        <pin num="46" name="VSPL" type="passive"/>
-        <pin num="47" name="VSPL2" type="passive"/>
+        <pin num="45" name="VSPHI" type="passive"/>
+        <pin num="46" name="VSPLI" type="passive"/>
+        <pin num="47" name="VSPL2I" type="passive"/>
         <pin num="48" name="VSNH" type="passive"/>
         <pin num="49" name="VSNL" type="passive"/>
         <pin num="50" name="VSNL2" type="passive"/>
-        <pin num="51" name="VSNL2" type="passive"/>
-        <pin num="52" name="VSNL" type="passive"/>
-        <pin num="53" name="VSNH" type="passive"/>
+        <pin num="51" name="VSNL2I" type="passive"/>
+        <pin num="52" name="VSNLI" type="passive"/>
+        <pin num="53" name="VSNHI" type="passive"/>
         <pin num="54" name="FPL_VCOM" type="output"/>
         <pin num="55" name="TFT_VCOM" type="output"/>
         <pin num="56" name="VBB_3P5V" type="passive"/>
         <pin num="57" name="NC" type="no_connect"/>
-        <pin num="58" name="CS_S_N" type="input"/>
+        <pin num="58" name="CSB_S" type="input"/>
         <pin num="59" name="VGH" type="passive"/>
         <pin num="60" name="VGL" type="passive"/>
       </pins>
@@ -5111,22 +5111,22 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="SCLK" type="passive"/>
-        <pin num="2" name="GND" type="passive"/>
-        <pin num="3" name="MOSI" type="passive"/>
-        <pin num="4" name="GND" type="passive"/>
-        <pin num="5" name="MISO" type="passive"/>
-        <pin num="6" name="GND" type="passive"/>
-        <pin num="7" name="CS_M_N" type="passive"/>
-        <pin num="8" name="GND" type="passive"/>
-        <pin num="9" name="CS_S_N" type="passive"/>
-        <pin num="10" name="GND" type="passive"/>
-        <pin num="11" name="RES_N" type="passive"/>
-        <pin num="12" name="GND" type="passive"/>
-        <pin num="13" name="BUSY_N" type="passive"/>
-        <pin num="14" name="GND" type="passive"/>
-        <pin num="15" name="EPD_PWR_EN" type="passive"/>
-        <pin num="16" name="3V3" type="power_out"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="15" type="passive"/>
+        <pin num="16" name="16" type="power_out"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_L1">
@@ -5321,8 +5321,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R10">
@@ -5477,8 +5477,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R21">
@@ -5490,8 +5490,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R22">
@@ -5503,8 +5503,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R23">
@@ -5516,8 +5516,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R24">
@@ -5529,8 +5529,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R25">
@@ -5542,8 +5542,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R26">
@@ -5685,8 +5685,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R36">
@@ -5698,8 +5698,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R37">
@@ -5711,8 +5711,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R38">
@@ -5724,8 +5724,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R39">
@@ -5737,8 +5737,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R4">
@@ -5763,8 +5763,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R41">
@@ -5776,8 +5776,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R42">
@@ -5789,8 +5789,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R43">
@@ -5802,8 +5802,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R44">
@@ -5815,8 +5815,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R45">
@@ -5828,8 +5828,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R46">
@@ -5841,8 +5841,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R47">
@@ -5854,8 +5854,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R48">
@@ -5867,8 +5867,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Driver" part="P_R5">
@@ -6275,7 +6275,7 @@
       <pins>
         <pin num="1" name="SDA" type="bidirectional"/>
         <pin num="2" name="SCL" type="input"/>
-        <pin num="3" name="ALERT_N" type="open_collector"/>
+        <pin num="3" name="ALERT" type="open_collector"/>
         <pin num="4" name="GND" type="power_in"/>
         <pin num="5" name="A2" type="input"/>
         <pin num="6" name="A1" type="input"/>
@@ -6310,23 +6310,23 @@
       </fields>
       <pins>
         <pin num="1" name="1OE_N" type="input"/>
-        <pin num="2" name="1A1" type="input"/>
+        <pin num="2" name="A1" type="input"/>
         <pin num="3" name="Y8" type="tri_state"/>
-        <pin num="4" name="1A2" type="input"/>
+        <pin num="4" name="A2" type="input"/>
         <pin num="5" name="Y7" type="tri_state"/>
-        <pin num="6" name="1A3" type="input"/>
+        <pin num="6" name="A3" type="input"/>
         <pin num="7" name="Y6" type="tri_state"/>
-        <pin num="8" name="1A4" type="input"/>
-        <pin num="9" name="2Y1" type="tri_state"/>
+        <pin num="8" name="A4" type="input"/>
+        <pin num="9" name="Y5" type="tri_state"/>
         <pin num="10" name="GND" type="power_in"/>
-        <pin num="11" name="2A1" type="input"/>
-        <pin num="12" name="1Y4" type="tri_state"/>
-        <pin num="13" name="2A2" type="input"/>
-        <pin num="14" name="1Y3" type="tri_state"/>
-        <pin num="15" name="2A3" type="input"/>
-        <pin num="16" name="1Y2" type="tri_state"/>
-        <pin num="17" name="2A4" type="input"/>
-        <pin num="18" name="1Y1" type="tri_state"/>
+        <pin num="11" name="A5" type="input"/>
+        <pin num="12" name="Y4" type="tri_state"/>
+        <pin num="13" name="A6" type="input"/>
+        <pin num="14" name="Y3" type="tri_state"/>
+        <pin num="15" name="A7" type="input"/>
+        <pin num="16" name="Y2" type="tri_state"/>
+        <pin num="17" name="A8" type="input"/>
+        <pin num="18" name="Y1" type="tri_state"/>
         <pin num="19" name="2OE_N" type="input"/>
         <pin num="20" name="VCC" type="power_in"/>
       </pins>
@@ -6342,23 +6342,23 @@
       </fields>
       <pins>
         <pin num="1" name="1OE_N" type="input"/>
-        <pin num="2" name="1A1" type="input"/>
+        <pin num="2" name="A1" type="input"/>
         <pin num="3" name="Y8" type="tri_state"/>
-        <pin num="4" name="1A2" type="input"/>
+        <pin num="4" name="A2" type="input"/>
         <pin num="5" name="Y7" type="tri_state"/>
-        <pin num="6" name="1A3" type="input"/>
+        <pin num="6" name="A3" type="input"/>
         <pin num="7" name="Y6" type="tri_state"/>
-        <pin num="8" name="1A4" type="input"/>
+        <pin num="8" name="A4" type="input"/>
         <pin num="9" name="Y5" type="tri_state"/>
         <pin num="10" name="GND" type="power_in"/>
-        <pin num="11" name="2A1" type="input"/>
+        <pin num="11" name="A5" type="input"/>
         <pin num="12" name="Y4" type="tri_state"/>
-        <pin num="13" name="2A2" type="input"/>
+        <pin num="13" name="A6" type="input"/>
         <pin num="14" name="Y3" type="tri_state"/>
-        <pin num="15" name="2A3" type="input"/>
-        <pin num="16" name="1Y2" type="tri_state"/>
-        <pin num="17" name="2A4" type="input"/>
-        <pin num="18" name="1Y1" type="tri_state"/>
+        <pin num="15" name="A7" type="input"/>
+        <pin num="16" name="Y2" type="tri_state"/>
+        <pin num="17" name="A8" type="input"/>
+        <pin num="18" name="Y1" type="tri_state"/>
         <pin num="19" name="2OE_N" type="input"/>
         <pin num="20" name="VCC" type="power_in"/>
       </pins>
@@ -6371,9 +6371,9 @@
   </libraries>
   <nets>
     <net code="1" name="ALERT_N" class="Default">
-      <node ref="R22" pin="1" pintype="passive"/>
-      <node ref="R23" pin="1" pintype="passive"/>
-      <node ref="U4" pin="3" pinfunction="ALERT_N_3" pintype="open_collector"/>
+      <node ref="R22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="ALERT_3" pintype="open_collector"/>
     </net>
     <net code="2" name="AVDD" class="PanelPower">
       <node ref="C12" pin="1" pintype="passive"/>
@@ -6410,73 +6410,73 @@
     </net>
     <net code="7" name="BS0" class="Default">
       <node ref="FPC1" pin="22" pinfunction="BS0_22" pintype="input"/>
-      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="8" name="BS1" class="Default">
       <node ref="FPC1" pin="23" pinfunction="BS1_23" pintype="input"/>
-      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R25" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="9" name="BUF_CS_M_N" class="Default">
-      <node ref="R41" pin="1" pintype="passive"/>
-      <node ref="U6" pin="14" pinfunction="1Y3_14" pintype="tri_state"/>
+      <node ref="R41" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="14" pinfunction="Y3_14" pintype="tri_state"/>
     </net>
     <net code="10" name="BUF_CS_S_N" class="Default">
-      <node ref="R42" pin="1" pintype="passive"/>
-      <node ref="U6" pin="12" pinfunction="1Y4_12" pintype="tri_state"/>
+      <node ref="R42" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="Y4_12" pintype="tri_state"/>
     </net>
     <net code="11" name="BUF_MOSI" class="Default">
-      <node ref="R40" pin="1" pintype="passive"/>
-      <node ref="U6" pin="16" pinfunction="1Y2_16" pintype="tri_state"/>
+      <node ref="R40" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="16" pinfunction="Y2_16" pintype="tri_state"/>
     </net>
     <net code="12" name="BUF_RES_N" class="Default">
-      <node ref="R43" pin="1" pintype="passive"/>
-      <node ref="U6" pin="9" pinfunction="2Y1_9" pintype="tri_state"/>
+      <node ref="R43" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="9" pinfunction="Y5_9" pintype="tri_state"/>
     </net>
     <net code="13" name="BUF_SCLK" class="Default">
-      <node ref="R39" pin="1" pintype="passive"/>
-      <node ref="U6" pin="18" pinfunction="1Y1_18" pintype="tri_state"/>
+      <node ref="R39" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="18" pinfunction="Y1_18" pintype="tri_state"/>
     </net>
     <net code="14" name="BUSY_N" class="Default">
       <node ref="FPC1" pin="25" pinfunction="BUSY_N_25" pintype="output"/>
-      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U7" pin="2" pinfunction="1A1_2" pintype="input"/>
+      <node ref="U7" pin="2" pinfunction="A1_2" pintype="input"/>
     </net>
     <net code="15" name="CS_M_N" class="Default">
-      <node ref="FPC1" pin="27" pinfunction="CS_M_N_27" pintype="input"/>
-      <node ref="R41" pin="2" pintype="passive"/>
-      <node ref="R46" pin="1" pintype="passive"/>
+      <node ref="FPC1" pin="27" pinfunction="CSB_M_27" pintype="input"/>
+      <node ref="R41" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R46" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="16" name="CS_S_N" class="Default">
-      <node ref="FPC1" pin="58" pinfunction="CS_S_N_58" pintype="input"/>
-      <node ref="R42" pin="2" pintype="passive"/>
-      <node ref="R47" pin="1" pintype="passive"/>
+      <node ref="FPC1" pin="58" pinfunction="CSB_S_58" pintype="input"/>
+      <node ref="R42" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R47" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="17" name="DRVN" class="Default">
       <node ref="FPC1" pin="37" pinfunction="DRVN_37" pintype="output"/>
       <node ref="Q6" pin="1" pinfunction="B_1" pintype="passive"/>
     </net>
     <net code="18" name="DRVP" class="Default">
-      <node ref="FPC1" pin="33" pinfunction="DRVP_33" pintype="output"/>
+      <node ref="FPC1" pin="33" pinfunction="DRVP_Gate_33" pintype="output"/>
       <node ref="Q4" pin="1" pinfunction="G_1" pintype="passive"/>
     </net>
     <net code="19" name="EPD_3V3" class="InputPower">
-      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C27" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C33" pin="1" pintype="passive"/>
-      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="C34" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="L4" pin="2" pintype="passive"/>
-      <node ref="R20" pin="2" pintype="passive"/>
-      <node ref="R21" pin="2" pintype="passive"/>
-      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R33" pin="1" pintype="passive"/>
       <node ref="R34" pin="1" pintype="passive"/>
-      <node ref="R37" pin="2" pintype="passive"/>
+      <node ref="R37" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U4" pin="8" pinfunction="VDD_8" pintype="power_in"/>
       <node ref="U6" pin="20" pinfunction="VCC_20" pintype="power_in"/>
     </net>
     <net code="20" name="EPD_PWR_EN" class="Default">
-      <node ref="J2" pin="15" pinfunction="EPD_PWR_EN_15" pintype="passive"/>
+      <node ref="J2" pin="15" pinfunction="15_15" pintype="passive"/>
       <node ref="Q10" pin="1" pinfunction="G_1" pintype="passive"/>
       <node ref="Q9" pin="1" pinfunction="G_1" pintype="passive"/>
       <node ref="R29" pin="1" pintype="passive"/>
@@ -6498,7 +6498,7 @@
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
     <net code="24" name="FPL_VCOM" class="Default">
-      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="54" pinfunction="FPL_VCOM_54" pintype="output"/>
     </net>
     <net code="25" name="GATE_N" class="Default">
@@ -6525,67 +6525,67 @@
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
     <net code="30" name="GND" class="Ground">
-      <node ref="C1" pin="2" pintype="passive"/>
-      <node ref="C10" pin="2" pintype="passive"/>
-      <node ref="C103" pin="2" pintype="passive"/>
-      <node ref="C104" pin="2" pintype="passive"/>
-      <node ref="C105" pin="2" pintype="passive"/>
-      <node ref="C106" pin="2" pintype="passive"/>
-      <node ref="C107" pin="2" pintype="passive"/>
-      <node ref="C108" pin="2" pintype="passive"/>
-      <node ref="C109" pin="2" pintype="passive"/>
-      <node ref="C11" pin="2" pintype="passive"/>
-      <node ref="C110" pin="2" pintype="passive"/>
-      <node ref="C111" pin="2" pintype="passive"/>
-      <node ref="C112" pin="2" pintype="passive"/>
-      <node ref="C113" pin="2" pintype="passive"/>
-      <node ref="C114" pin="2" pintype="passive"/>
-      <node ref="C115" pin="2" pintype="passive"/>
-      <node ref="C116" pin="2" pintype="passive"/>
-      <node ref="C117" pin="2" pintype="passive"/>
-      <node ref="C118" pin="2" pintype="passive"/>
-      <node ref="C119" pin="2" pintype="passive"/>
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C108" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C109" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C110" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C111" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C112" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C113" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C114" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C115" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C116" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C117" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C118" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C119" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C12" pin="2" pintype="passive"/>
-      <node ref="C120" pin="2" pintype="passive"/>
+      <node ref="C120" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C13" pin="2" pintype="passive"/>
       <node ref="C14" pin="2" pintype="passive"/>
       <node ref="C15" pin="2" pintype="passive"/>
       <node ref="C16" pin="2" pintype="passive"/>
       <node ref="C18" pin="2" pintype="passive"/>
       <node ref="C19" pin="2" pintype="passive"/>
-      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C20" pin="2" pintype="passive"/>
       <node ref="C21" pin="2" pintype="passive"/>
       <node ref="C22" pin="2" pintype="passive"/>
       <node ref="C25" pin="2" pintype="passive"/>
       <node ref="C26" pin="2" pintype="passive"/>
-      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C28" pin="2" pintype="passive"/>
       <node ref="C29" pin="2" pintype="passive"/>
-      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="C31" pin="2" pintype="passive"/>
       <node ref="C32" pin="2" pintype="passive"/>
       <node ref="C33" pin="2" pintype="passive"/>
-      <node ref="C34" pin="2" pintype="passive"/>
-      <node ref="C35" pin="2" pintype="passive"/>
-      <node ref="C4" pin="2" pintype="passive"/>
-      <node ref="C5" pin="2" pintype="passive"/>
-      <node ref="C6" pin="2" pintype="passive"/>
-      <node ref="C7" pin="2" pintype="passive"/>
-      <node ref="C8" pin="2" pintype="passive"/>
-      <node ref="C9" pin="2" pintype="passive"/>
-      <node ref="FPC1" pin="26" pinfunction="GND_26" pintype="input"/>
+      <node ref="C34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="FPC1" pin="26" pinfunction="D/C#_26" pintype="input"/>
       <node ref="FPC1" pin="35" pinfunction="GND_35" pintype="passive"/>
       <node ref="FPC1" pin="8" pinfunction="GND_8" pintype="passive"/>
       <node ref="J1" pin="2" pinfunction="GND_2" pintype="power_out"/>
-      <node ref="J2" pin="10" pinfunction="GND_10" pintype="passive"/>
-      <node ref="J2" pin="12" pinfunction="GND_12" pintype="passive"/>
-      <node ref="J2" pin="14" pinfunction="GND_14" pintype="passive"/>
-      <node ref="J2" pin="2" pinfunction="GND_2" pintype="passive"/>
-      <node ref="J2" pin="4" pinfunction="GND_4" pintype="passive"/>
-      <node ref="J2" pin="6" pinfunction="GND_6" pintype="passive"/>
-      <node ref="J2" pin="8" pinfunction="GND_8" pintype="passive"/>
+      <node ref="J2" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="J2" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="J2" pin="14" pinfunction="14_14" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="8_8" pintype="passive"/>
       <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="Q10" pin="2" pinfunction="S_2" pintype="passive"/>
@@ -6593,13 +6593,13 @@
       <node ref="Q9" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
-      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R30" pin="2" pintype="passive"/>
-      <node ref="R35" pin="2" pintype="passive"/>
-      <node ref="R36" pin="2" pintype="passive"/>
-      <node ref="R44" pin="2" pintype="passive"/>
-      <node ref="R45" pin="2" pintype="passive"/>
-      <node ref="R48" pin="2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R36" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R44" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R45" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R48" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="TP16" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP17" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -6617,50 +6617,50 @@
       <node ref="U4" pin="7" pinfunction="A0_7" pintype="input"/>
       <node ref="U5" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
       <node ref="U6" pin="10" pinfunction="GND_10" pintype="power_in"/>
-      <node ref="U6" pin="13" pinfunction="2A2_13" pintype="input"/>
-      <node ref="U6" pin="15" pinfunction="2A3_15" pintype="input"/>
-      <node ref="U6" pin="17" pinfunction="2A4_17" pintype="input"/>
+      <node ref="U6" pin="13" pinfunction="A6_13" pintype="input"/>
+      <node ref="U6" pin="15" pinfunction="A7_15" pintype="input"/>
+      <node ref="U6" pin="17" pinfunction="A8_17" pintype="input"/>
       <node ref="U7" pin="10" pinfunction="GND_10" pintype="power_in"/>
-      <node ref="U7" pin="11" pinfunction="2A1_11" pintype="input"/>
-      <node ref="U7" pin="13" pinfunction="2A2_13" pintype="input"/>
-      <node ref="U7" pin="15" pinfunction="2A3_15" pintype="input"/>
-      <node ref="U7" pin="17" pinfunction="2A4_17" pintype="input"/>
-      <node ref="U7" pin="6" pinfunction="1A3_6" pintype="input"/>
-      <node ref="U7" pin="8" pinfunction="1A4_8" pintype="input"/>
+      <node ref="U7" pin="11" pinfunction="A5_11" pintype="input"/>
+      <node ref="U7" pin="13" pinfunction="A6_13" pintype="input"/>
+      <node ref="U7" pin="15" pinfunction="A7_15" pintype="input"/>
+      <node ref="U7" pin="17" pinfunction="A8_17" pintype="input"/>
+      <node ref="U7" pin="6" pinfunction="A3_6" pintype="input"/>
+      <node ref="U7" pin="8" pinfunction="A4_8" pintype="input"/>
     </net>
     <net code="31" name="HOST_3V3" class="Default">
-      <node ref="C35" pin="1" pintype="passive"/>
-      <node ref="J2" pin="16" pinfunction="3V3_16" pintype="power_out"/>
-      <node ref="R38" pin="2" pintype="passive"/>
+      <node ref="C35" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="16" pinfunction="16_16" pintype="power_out"/>
+      <node ref="R38" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U7" pin="20" pinfunction="VCC_20" pintype="power_in"/>
     </net>
     <net code="32" name="HOST_BUSY_N" class="Default">
-      <node ref="J2" pin="13" pinfunction="BUSY_N_13" pintype="passive"/>
-      <node ref="U7" pin="18" pinfunction="1Y1_18" pintype="tri_state"/>
+      <node ref="J2" pin="13" pinfunction="13_13" pintype="passive"/>
+      <node ref="U7" pin="18" pinfunction="Y1_18" pintype="tri_state"/>
     </net>
     <net code="33" name="HOST_CS_M_N" class="Default">
-      <node ref="J2" pin="7" pinfunction="CS_M_N_7" pintype="passive"/>
-      <node ref="U6" pin="6" pinfunction="1A3_6" pintype="input"/>
+      <node ref="J2" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="U6" pin="6" pinfunction="A3_6" pintype="input"/>
     </net>
     <net code="34" name="HOST_CS_S_N" class="Default">
-      <node ref="J2" pin="9" pinfunction="CS_S_N_9" pintype="passive"/>
-      <node ref="U6" pin="8" pinfunction="1A4_8" pintype="input"/>
+      <node ref="J2" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="A4_8" pintype="input"/>
     </net>
     <net code="35" name="HOST_MISO" class="Default">
-      <node ref="J2" pin="5" pinfunction="MISO_5" pintype="passive"/>
-      <node ref="U7" pin="16" pinfunction="1Y2_16" pintype="tri_state"/>
+      <node ref="J2" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="U7" pin="16" pinfunction="Y2_16" pintype="tri_state"/>
     </net>
     <net code="36" name="HOST_MOSI" class="Default">
-      <node ref="J2" pin="3" pinfunction="MOSI_3" pintype="passive"/>
-      <node ref="U6" pin="4" pinfunction="1A2_4" pintype="input"/>
+      <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="A2_4" pintype="input"/>
     </net>
     <net code="37" name="HOST_RES_N" class="Default">
-      <node ref="J2" pin="11" pinfunction="RES_N_11" pintype="passive"/>
-      <node ref="U6" pin="11" pinfunction="2A1_11" pintype="input"/>
+      <node ref="J2" pin="11" pinfunction="11_11" pintype="passive"/>
+      <node ref="U6" pin="11" pinfunction="A5_11" pintype="input"/>
     </net>
     <net code="38" name="HOST_SCLK" class="Default">
-      <node ref="J2" pin="1" pinfunction="SCLK_1" pintype="passive"/>
-      <node ref="U6" pin="2" pinfunction="1A1_2" pintype="input"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="A1_2" pintype="input"/>
     </net>
     <net code="39" name="LX" class="PanelPower">
       <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
@@ -6671,13 +6671,13 @@
     </net>
     <net code="40" name="OE_HOST_N" class="Default">
       <node ref="Q10" pin="3" pinfunction="D_3" pintype="passive"/>
-      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="R38" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U7" pin="1" pinfunction="1OE_N_1" pintype="input"/>
       <node ref="U7" pin="19" pinfunction="2OE_N_19" pintype="input"/>
     </net>
     <net code="41" name="OE_PANEL_N" class="Default">
       <node ref="Q9" pin="3" pinfunction="D_3" pintype="passive"/>
-      <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="R37" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U6" pin="1" pinfunction="1OE_N_1" pintype="input"/>
       <node ref="U6" pin="19" pinfunction="2OE_N_19" pintype="input"/>
     </net>
@@ -6736,15 +6736,15 @@
       <node ref="U1" pin="1" pintype="passive"/>
     </net>
     <net code="54" name="RES_N" class="Default">
-      <node ref="FPC1" pin="24" pinfunction="RES_N_24" pintype="input"/>
-      <node ref="R43" pin="2" pintype="passive"/>
-      <node ref="R48" pin="1" pintype="passive"/>
+      <node ref="FPC1" pin="24" pinfunction="RES#_24" pintype="input"/>
+      <node ref="R43" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R48" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="55" name="SCLK" class="Default">
-      <node ref="FPC1" pin="28" pinfunction="SCLK_28" pintype="input"/>
-      <node ref="R39" pin="2" pintype="passive"/>
-      <node ref="R44" pin="1" pintype="passive"/>
+      <node ref="FPC1" pin="28" pinfunction="SCL_28" pintype="input"/>
+      <node ref="R39" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R44" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="56" name="SENSE_N" class="PanelPower">
       <node ref="Q8" pin="2" pinfunction="S_2" pintype="passive"/>
@@ -6758,20 +6758,20 @@
     </net>
     <net code="58" name="SI0" class="Default">
       <node ref="FPC1" pin="29" pinfunction="SI0_29" pintype="passive"/>
-      <node ref="R40" pin="2" pintype="passive"/>
-      <node ref="R45" pin="1" pintype="passive"/>
+      <node ref="R40" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R45" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="59" name="SI1" class="Default">
       <node ref="FPC1" pin="30" pinfunction="SI1_30" pintype="passive"/>
-      <node ref="U7" pin="4" pinfunction="1A2_4" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="A2_4" pintype="input"/>
     </net>
     <net code="60" name="SI2" class="Default">
       <node ref="FPC1" pin="31" pinfunction="SI2_31" pintype="input"/>
-      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="R35" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="61" name="SI3" class="Default">
       <node ref="FPC1" pin="32" pinfunction="SI3_32" pintype="input"/>
-      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="R36" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="62" name="SOURCE_VGP" class="Default">
       <node ref="Q4" pin="2" pinfunction="S_2" pintype="passive"/>
@@ -6801,18 +6801,18 @@
       <node ref="Q7" pin="3" pinfunction="D_3" pintype="passive"/>
     </net>
     <net code="68" name="TFT_VCOM" class="Default">
-      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="55" pinfunction="TFT_VCOM_55" pintype="output"/>
       <node ref="TP11" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="69" name="TSCL" class="Default">
       <node ref="FPC1" pin="20" pinfunction="TSCL_20" pintype="passive"/>
-      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U4" pin="2" pinfunction="SCL_2" pintype="input"/>
     </net>
     <net code="70" name="TSDA" class="Default">
       <node ref="FPC1" pin="21" pinfunction="TSDA_21" pintype="passive"/>
-      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U4" pin="1" pinfunction="SDA_1" pintype="bidirectional"/>
     </net>
     <net code="71" name="VBB_3P5V" class="PanelPower">
@@ -6823,31 +6823,31 @@
       <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="72" name="VCC" class="Default">
-      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="12" pinfunction="VCC_12" pintype="passive"/>
       <node ref="FPC1" pin="18" pinfunction="VCC1_18" pintype="passive"/>
       <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="73" name="VCOMBD_M" class="Default">
-      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="1" pinfunction="VCOMBD_M_1" pintype="passive"/>
     </net>
     <net code="74" name="VCOMBD_S" class="Default">
-      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="36" pinfunction="VCOMBD_S_36" pintype="output"/>
     </net>
     <net code="75" name="VDD" class="PanelPower">
       <node ref="FPC1" pin="10" pinfunction="VDD_10" pintype="passive"/>
-      <node ref="R24" pin="2" pintype="passive"/>
-      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
     </net>
     <net code="76" name="VDDIO" class="PanelPower">
       <node ref="FPC1" pin="19" pinfunction="VDDIO_19" pintype="passive"/>
-      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R34" pin="2" pintype="passive"/>
-      <node ref="R46" pin="2" pintype="passive"/>
-      <node ref="R47" pin="2" pintype="passive"/>
+      <node ref="R46" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R47" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="77" name="VDDN" class="PanelPower">
       <node ref="C15" pin="1" pintype="passive"/>
@@ -6901,52 +6901,52 @@
       <node ref="TP10" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="85" name="VSNH" class="Default">
-      <node ref="C112" pin="1" pintype="passive"/>
-      <node ref="C113" pin="1" pintype="passive"/>
-      <node ref="C114" pin="1" pintype="passive"/>
-      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C112" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C113" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C114" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="48" pinfunction="VSNH_48" pintype="passive"/>
-      <node ref="FPC1" pin="53" pinfunction="VSNH_53" pintype="passive"/>
+      <node ref="FPC1" pin="53" pinfunction="VSNHI_53" pintype="passive"/>
     </net>
     <net code="86" name="VSNL" class="Default">
-      <node ref="C115" pin="1" pintype="passive"/>
-      <node ref="C116" pin="1" pintype="passive"/>
-      <node ref="C117" pin="1" pintype="passive"/>
-      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C115" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C116" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C117" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="49" pinfunction="VSNL_49" pintype="passive"/>
-      <node ref="FPC1" pin="52" pinfunction="VSNL_52" pintype="passive"/>
+      <node ref="FPC1" pin="52" pinfunction="VSNLI_52" pintype="passive"/>
     </net>
     <net code="87" name="VSNL2" class="Default">
-      <node ref="C118" pin="1" pintype="passive"/>
-      <node ref="C119" pin="1" pintype="passive"/>
-      <node ref="C120" pin="1" pintype="passive"/>
-      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C118" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C119" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C120" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="50" pinfunction="VSNL2_50" pintype="passive"/>
-      <node ref="FPC1" pin="51" pinfunction="VSNL2_51" pintype="passive"/>
+      <node ref="FPC1" pin="51" pinfunction="VSNL2I_51" pintype="passive"/>
     </net>
     <net code="88" name="VSPH" class="Default">
-      <node ref="C1" pin="1" pintype="passive"/>
-      <node ref="C103" pin="1" pintype="passive"/>
-      <node ref="C104" pin="1" pintype="passive"/>
-      <node ref="C105" pin="1" pintype="passive"/>
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C105" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="42" pinfunction="VSPH_42" pintype="passive"/>
-      <node ref="FPC1" pin="45" pinfunction="VSPH_45" pintype="passive"/>
+      <node ref="FPC1" pin="45" pinfunction="VSPHI_45" pintype="passive"/>
     </net>
     <net code="89" name="VSPL" class="Default">
-      <node ref="C106" pin="1" pintype="passive"/>
-      <node ref="C107" pin="1" pintype="passive"/>
-      <node ref="C108" pin="1" pintype="passive"/>
-      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C108" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="43" pinfunction="VSPL_43" pintype="passive"/>
-      <node ref="FPC1" pin="46" pinfunction="VSPL_46" pintype="passive"/>
+      <node ref="FPC1" pin="46" pinfunction="VSPLI_46" pintype="passive"/>
     </net>
     <net code="90" name="VSPL2" class="Default">
-      <node ref="C109" pin="1" pintype="passive"/>
-      <node ref="C110" pin="1" pintype="passive"/>
-      <node ref="C111" pin="1" pintype="passive"/>
-      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C109" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C110" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C111" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="FPC1" pin="44" pinfunction="VSPL2_44" pintype="passive"/>
-      <node ref="FPC1" pin="47" pinfunction="VSPL2_47" pintype="passive"/>
+      <node ref="FPC1" pin="47" pinfunction="VSPL2I_47" pintype="passive"/>
     </net>
     <net code="91" name="unconnected-(FPC1-DRVN2-Pad40)" class="Default">
       <node ref="FPC1" pin="40" pinfunction="DRVN2_40" pintype="output+no_connect"/>

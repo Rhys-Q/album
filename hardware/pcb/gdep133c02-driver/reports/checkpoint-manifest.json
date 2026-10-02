@@ -1,7 +1,6 @@
 {
-  "kind": "DRC-CLEAN CAD REVIEW CHECKPOINT - HARDWARE ACCEPTANCE NOT COMPLETE",
-  "date": "2026-10-01",
-  "kicad_version": "10.0.6",
+  "date": "2026-10-02",
+  "scope": "Power/panel/interface wired schematic redraw and circuit learning documents; no PCB changes",
   "release_allowed": false,
   "files": [
     {
@@ -10,169 +9,9 @@
       "sha256": "174bcc2cf7f9634fd7bc48205b7490694a405a44734e0e4046fd0236d08e234d"
     },
     {
-      "file": ".history/.git/HEAD",
-      "bytes": 23,
-      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
-    },
-    {
-      "file": ".history/.git/config",
-      "bytes": 137,
-      "sha256": "dbc59dfd1198cb34a4dffa1675048fa0f822440952a0c058e098f22d0f7ea8aa"
-    },
-    {
-      "file": ".history/.git/description",
-      "bytes": 73,
-      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
-    },
-    {
-      "file": ".history/.git/hooks/README.sample",
-      "bytes": 177,
-      "sha256": "7319d7f1803fda2b3416143e426b9ec4c3c3c817c75188b2b82cb3e68ff293ab"
-    },
-    {
-      "file": ".history/.git/index",
-      "bytes": 505,
-      "sha256": "1391cca98b18ff03371807a857ca0d5301b9d3e95210f4ab49c8a23604d432bd"
-    },
-    {
-      "file": ".history/.git/info/exclude",
-      "bytes": 113,
-      "sha256": "fdb7dc7be17051c3c5067cdf2b8fdf2ca3a8daf2b5e91f34c6ce1ff3a94c5f6a"
-    },
-    {
-      "file": ".history/.git/logs/HEAD",
-      "bytes": 588,
-      "sha256": "b16204933b18b76b5cfe667984d9652cc55170428feebc10e287320927ea58fe"
-    },
-    {
-      "file": ".history/.git/logs/refs/heads/master",
-      "bytes": 588,
-      "sha256": "b16204933b18b76b5cfe667984d9652cc55170428feebc10e287320927ea58fe"
-    },
-    {
-      "file": ".history/.git/objects/05/d829086e3c548c8f0b3eb85b80c64579bc4264",
-      "bytes": 26598,
-      "sha256": "ca5813c5f06749d2afe9c967429bd168f8db6731db172d7d49e0fb0c90725822"
-    },
-    {
-      "file": ".history/.git/objects/10/74eb4f06bc8637bd7859c28c02b74d2ab05b5d",
-      "bytes": 709,
-      "sha256": "90027997044132b3c951b5839b7ac398465799758b1ea31748ca0a75cff2069c"
-    },
-    {
-      "file": ".history/.git/objects/15/b8477f8913938489af2538d66bc2ec3cd9dd50",
-      "bytes": 124,
-      "sha256": "1e41489c203cd699e16403416a09cfa0c2e3b27209e640b7e13e5d7db828683b"
-    },
-    {
-      "file": ".history/.git/objects/25/bbe25b7c5d0d38e7f8966aa0044d648e68cc45",
-      "bytes": 125,
-      "sha256": "898446e161564e10f52591fc0a6d8aabcc2331092a543923382b6f1af0ed3993"
-    },
-    {
-      "file": ".history/.git/objects/43/ffa13ac8028a9157a303e97b051cc2c72349b1",
-      "bytes": 474950,
-      "sha256": "b1f0d5c514b9cd79a957cdfd3257ff30d81ac8048bdce9cd7d13b31c7a151c19"
-    },
-    {
-      "file": ".history/.git/objects/54/4d669bc7f3b9fc1894db676dd850cc9d428ce4",
-      "bytes": 22834,
-      "sha256": "d10b5d09d2ba77280e1cbf38109f53c2808b4b968cee12d94cce630efa188785"
-    },
-    {
-      "file": ".history/.git/objects/96/462ea8dea5991fe3584b040d021a3e4310fc30",
-      "bytes": 195,
-      "sha256": "708f9a43fa6f68a2a942754fdc289e1209866ea103df7a99440b47a3744598c0"
-    },
-    {
-      "file": ".history/.git/objects/c9/d37198af610ff6eb2797eb59d02554bd89b22c",
-      "bytes": 156,
-      "sha256": "59f04032fd930662131d7a1adf0a7b0616405bc8947e92cc7d37a74cf822f583"
-    },
-    {
-      "file": ".history/.git/objects/e5/9d6a80f5ccfc8ce97ba36b3aad0d2bad6517b3",
-      "bytes": 164,
-      "sha256": "554cc48cb9df53e37a37af1187e30c3ac3b0a3c494b72adc043d45cf98e83ec0"
-    },
-    {
-      "file": ".history/.git/objects/ef/ecb90dc7ab0ce9fd86f4c3196074dba5ae5375",
-      "bytes": 154,
-      "sha256": "bbc4a60258808d8603451233c21a478547aaff9d4e55b644f08603c90d49ce17"
-    },
-    {
-      "file": ".history/.git/objects/f9/3ff3e27c874f05b310dc510594725531917212",
-      "bytes": 32572,
-      "sha256": "4a77ba3da61d27e4c113dea8ed99cd7dc0cb26a31c26459e36a13eae5ba6bf16"
-    },
-    {
-      "file": ".history/.git/refs/heads/master",
-      "bytes": 41,
-      "sha256": "396025efb180255a6bb44026fe9845e5b3e7ef1fba77eaef7edf46d6a2ae26b1"
-    },
-    {
-      "file": ".history/.git/refs/tags/Last_Save_pcb",
-      "bytes": 41,
-      "sha256": "396025efb180255a6bb44026fe9845e5b3e7ef1fba77eaef7edf46d6a2ae26b1"
-    },
-    {
-      "file": ".history/.git/refs/tags/Last_Save_sch",
-      "bytes": 41,
-      "sha256": "9c1cecdd0299a30638b87990c7f1e808d9259751bacb39343142981d1efd952e"
-    },
-    {
-      "file": ".history/.git/refs/tags/Save_pcb_1",
-      "bytes": 41,
-      "sha256": "396025efb180255a6bb44026fe9845e5b3e7ef1fba77eaef7edf46d6a2ae26b1"
-    },
-    {
-      "file": ".history/.git/refs/tags/Save_sch_1",
-      "bytes": 41,
-      "sha256": "9c1cecdd0299a30638b87990c7f1e808d9259751bacb39343142981d1efd952e"
-    },
-    {
-      "file": ".history/.git/refs/tags/Save_sch_2",
-      "bytes": 41,
-      "sha256": "9c1cecdd0299a30638b87990c7f1e808d9259751bacb39343142981d1efd952e"
-    },
-    {
-      "file": ".history/.gitignore",
-      "bytes": 87,
-      "sha256": "1e18182125437ce3d2ec460b357a9ea06f059d795052de04a9a9f1044b8e20ba"
-    },
-    {
-      "file": ".history/README.txt",
-      "bytes": 554,
-      "sha256": "79c41e25e7633a1deff5e5a7456573c64f0061d508b7e0e5753d985456fe29e7"
-    },
-    {
-      "file": ".history/gdep133c02-driver.kicad_pcb",
-      "bytes": 1778800,
-      "sha256": "e203a4fe66fecc74f4f522b13295ea04dfc34b2bf815ad4fb17c897391a712fa"
-    },
-    {
-      "file": ".history/gdep133c02-driver.kicad_sch",
-      "bytes": 2550,
-      "sha256": "836f8ca5ea6e39f0d41c9b1fcf2aa69fcccf92c8fe291b155f5f654ae658433d"
-    },
-    {
-      "file": ".history/interface.kicad_sch",
-      "bytes": 217161,
-      "sha256": "bfae862b8e778dacb09cb3e1f20bf805c49178b9feb01996a840b151d8e775ab"
-    },
-    {
-      "file": ".history/panel.kicad_sch",
-      "bytes": 246070,
-      "sha256": "9dfd21c46881b041e59ef90967e0af2c13128585918702264c65c2abbb30d739"
-    },
-    {
-      "file": ".history/power.kicad_sch",
-      "bytes": 338914,
-      "sha256": "d615d5c8c3cee7ca9526eebac850e4cc6440ff8cbfef47db3c9132ade8748bb1"
-    },
-    {
       "file": "README.md",
-      "bytes": 3626,
-      "sha256": "217857667fc7d395e48c55d55d9f0f89ea7d230010536e1f30529f2f045c2367"
+      "bytes": 4688,
+      "sha256": "7b06f34cbdfc604a653e78ec5241f459de8319e4ae8e351d3127f86729819d39"
     },
     {
       "file": "design-data.json",
@@ -203,6 +42,26 @@
       "file": "docs/interface-power-state.md",
       "bytes": 1881,
       "sha256": "f60c5405277212407f49f880f2204816a93d8129f4646b17f811908a4245fadd"
+    },
+    {
+      "file": "docs/learning-guide.md",
+      "bytes": 15487,
+      "sha256": "4d43d8825c7fc03a5186fca68a2b47d6ac2e09a2b1576ba6f39a7274d8a00322"
+    },
+    {
+      "file": "docs/panel-interface-redraw.md",
+      "bytes": 5839,
+      "sha256": "5f1b99fb74e84988cf7bcc396da763c06f8f12216b006072f687e641578c82b7"
+    },
+    {
+      "file": "docs/power-circuit-explained.md",
+      "bytes": 48539,
+      "sha256": "1873998b32c9001c1b50487d7c27de8d1e0ae04a6a44e3fe0e182901903de92b"
+    },
+    {
+      "file": "docs/power-redraw.md",
+      "bytes": 3632,
+      "sha256": "065c562169f21de5c7fc12d4b55f23907d7ae35f6ec5a121f99d59a890dd4968"
     },
     {
       "file": "docs/sources/coilcraft-mss1246.pdf",
@@ -240,6 +99,11 @@
       "sha256": "4f5e9da7cfc4f586e853b47cc588c48d8a05c47790f1866050fb8550947ca69c"
     },
     {
+      "file": "gdep133c02-driver.kicad_prl",
+      "bytes": 2693,
+      "sha256": "617deabbae3e6c0f1f72e124a19b6f475e7b400b1e2c64da54941b48ea1fb6fc"
+    },
+    {
       "file": "gdep133c02-driver.kicad_pro",
       "bytes": 20436,
       "sha256": "a52bab69da80df49631665062e634d67088f7de23da873d9c2e7c0966a1c1828"
@@ -251,13 +115,13 @@
     },
     {
       "file": "interface.kicad_sch",
-      "bytes": 217161,
-      "sha256": "bfae862b8e778dacb09cb3e1f20bf805c49178b9feb01996a840b151d8e775ab"
+      "bytes": 174358,
+      "sha256": "f01fc3849bf50990e17ebaace45e118c79bc696c4325d69c5c5dd37aaae26f86"
     },
     {
       "file": "lib/Driver.kicad_sym",
-      "bytes": 152244,
-      "sha256": "5a900f5b163fa7f530add4e4864c03710d3a2bdaaac03fc01bc0502f6a97d074"
+      "bytes": 238361,
+      "sha256": "d92f70b15cc9e014ae783e1888035afba96555f912a63748d5fe6d23699b982b"
     },
     {
       "file": "lib/Driver.pretty/Capacitor_SMD__C_0603_1608Metric.kicad_mod",
@@ -431,13 +295,13 @@
     },
     {
       "file": "panel.kicad_sch",
-      "bytes": 246070,
-      "sha256": "9dfd21c46881b041e59ef90967e0af2c13128585918702264c65c2abbb30d739"
+      "bytes": 185222,
+      "sha256": "654a0725cd2081c76ba03d633789a7ad32a607b1784c6e1d4fd753669221c444"
     },
     {
       "file": "power.kicad_sch",
-      "bytes": 338914,
-      "sha256": "d615d5c8c3cee7ca9526eebac850e4cc6440ff8cbfef47db3c9132ade8748bb1"
+      "bytes": 261271,
+      "sha256": "ae50863eb80416dfdaf7b73124bdf49edaa77b76a13798605edff0ce815e56f4"
     },
     {
       "file": "releases/cad-review-2026-10-01/README.md",
@@ -458,6 +322,11 @@
       "file": "releases/cad-review-2026-10-01/gdep133c02-driver-drill.rpt",
       "bytes": 797,
       "sha256": "547f19905910ca0d19bd4d5ecfd80ca341e010cbdd42c937fceb9c927f9855c4"
+    },
+    {
+      "file": "releases/cad-review-2026-10-01/gerber-review.zip",
+      "bytes": 290068,
+      "sha256": "ea290d6e651d14d795ca1812399dcc32d2a327df6cdf01ceb878dcade6f0d35e"
     },
     {
       "file": "releases/cad-review-2026-10-01/gerber/gdep133c02-driver-B_Cu.gbl",
@@ -530,11 +399,6 @@
       "sha256": "eda4ce2110191bebd82cfb017cf16abeb2b9b240b9440f531c00e12faa5af7d3"
     },
     {
-      "file": "releases/cad-review-2026-10-01/gerber-review.zip",
-      "bytes": 290068,
-      "sha256": "ea290d6e651d14d795ca1812399dcc32d2a327df6cdf01ceb878dcade6f0d35e"
-    },
-    {
       "file": "releases/cad-review-2026-10-01/positions-kicad.csv",
       "bytes": 10990,
       "sha256": "f6dea1ee3a9dbc5f6ec1f90a1dbf5cb3d404760a4af931bb34b52a0b0f73a740"
@@ -551,8 +415,8 @@
     },
     {
       "file": "reports/check-provenance.json",
-      "bytes": 770,
-      "sha256": "0ae3716200c44deae5dbcf2f81180b2ce6315e6195e28cbb1b46003d591258cd"
+      "bytes": 1091,
+      "sha256": "bbc47305bdbcd2d411e6937b2743597d44150ead259b7752d1daeea584edbab5"
     },
     {
       "file": "reports/checkpoints/before-drc-repair.kicad_pcb",
@@ -627,12 +491,12 @@
     {
       "file": "reports/drc.json",
       "bytes": 376,
-      "sha256": "44dfb37ace9e6fd7c2d3ba721885cbc158948d0c09f97dd06664605ddf2a2b73"
+      "sha256": "e66143ce4d5617d983794288de2fea03b10801067ad4ea06f174e81d213cfe90"
     },
     {
       "file": "reports/erc.json",
       "bytes": 1594,
-      "sha256": "d48da3e6599cb763f2281b69904493ab19eb0d4c96ff8daac8d7c8de5583aa33"
+      "sha256": "691538c6bf27997860e0798c277ff2b1176a8ac57f53164105bb869424272962"
     },
     {
       "file": "reports/fanout.dsn",
@@ -656,8 +520,8 @@
     },
     {
       "file": "reports/gui-open-check.md",
-      "bytes": 941,
-      "sha256": "b8aa25ba6b86a7f45ba4ca9db2d9bef15d9da1628bea629ef3a71739ad77e629"
+      "bytes": 1278,
+      "sha256": "95cf5464ca648ec8206e5a925ae95566c997920d49dddbdda749cd849dbd8629"
     },
     {
       "file": "reports/manufacturing-file-check.json",
@@ -666,8 +530,8 @@
     },
     {
       "file": "reports/netlist.xml",
-      "bytes": 277383,
-      "sha256": "4ff0e6e8ce20ace017de4e37c4129d6f175c216873de870edc635c610e3c2ab5"
+      "bytes": 273566,
+      "sha256": "0c96b1a9a1e6b8c9e1210d97b688d97c901223221a50c29f45ae2b805558bb46"
     },
     {
       "file": "reports/pads.json",
@@ -675,9 +539,154 @@
       "sha256": "a0f097babb019f4245cdf933ffb9696c98254ad03310d83adda9b247cb66bc27"
     },
     {
+      "file": "reports/panel-interface-redraw/Driver-before.kicad_sym",
+      "bytes": 196408,
+      "sha256": "3e6f25ec57b0dc243514fb5e6b01f068ab2e8d7e2f6314e39ff75e8dc8d5f11a"
+    },
+    {
+      "file": "reports/panel-interface-redraw/component-comparison.json",
+      "bytes": 1080,
+      "sha256": "17558be0bd4094fc0ec5810d91be9fbaf64c54306920cbaffd97c93967628439"
+    },
+    {
+      "file": "reports/panel-interface-redraw/drc.json",
+      "bytes": 376,
+      "sha256": "e66143ce4d5617d983794288de2fea03b10801067ad4ea06f174e81d213cfe90"
+    },
+    {
+      "file": "reports/panel-interface-redraw/erc.json",
+      "bytes": 1594,
+      "sha256": "691538c6bf27997860e0798c277ff2b1176a8ac57f53164105bb869424272962"
+    },
+    {
+      "file": "reports/panel-interface-redraw/interface-before.kicad_sch",
+      "bytes": 217161,
+      "sha256": "bfae862b8e778dacb09cb3e1f20bf805c49178b9feb01996a840b151d8e775ab"
+    },
+    {
+      "file": "reports/panel-interface-redraw/interface.pdf",
+      "bytes": 166502,
+      "sha256": "d2bc4e7549160bbfac5b046d6d3628f9822039324fc5fa82aa3a47749d946eaf"
+    },
+    {
+      "file": "reports/panel-interface-redraw/interface.png",
+      "bytes": 191723,
+      "sha256": "3be4fdcce7388b106418d439970fd3925b0c2062f15fd264c7226f82eaafb226"
+    },
+    {
+      "file": "reports/panel-interface-redraw/layout-summary.json",
+      "bytes": 331,
+      "sha256": "b734793d40dfb3d63fd16a504a8466288e19b108dbd6d092bed51f1afdca7c50"
+    },
+    {
+      "file": "reports/panel-interface-redraw/netlist-after.xml",
+      "bytes": 273566,
+      "sha256": "0c96b1a9a1e6b8c9e1210d97b688d97c901223221a50c29f45ae2b805558bb46"
+    },
+    {
+      "file": "reports/panel-interface-redraw/netlist-before.xml",
+      "bytes": 275393,
+      "sha256": "48a22f02e26368e49d9dffa6710d293d6af87f9685a77c463c5feb3aa75d60ed"
+    },
+    {
+      "file": "reports/panel-interface-redraw/netlist-comparison.json",
+      "bytes": 448,
+      "sha256": "522c4ca81208687252eb1b4a2c3fe5854328a6725065fefd8d8a30e1f656026e"
+    },
+    {
+      "file": "reports/panel-interface-redraw/panel-before.kicad_sch",
+      "bytes": 246070,
+      "sha256": "9dfd21c46881b041e59ef90967e0af2c13128585918702264c65c2abbb30d739"
+    },
+    {
+      "file": "reports/panel-interface-redraw/panel.pdf",
+      "bytes": 166160,
+      "sha256": "f60730557e22dcc1c2d44df2fab09aa3b60f8344bf2def2e10b39bce29c9dc43"
+    },
+    {
+      "file": "reports/panel-interface-redraw/panel.png",
+      "bytes": 197097,
+      "sha256": "70e2c5217d456a581de775fbf5663242ca683e1519df02e60a854abb2ce1e622"
+    },
+    {
+      "file": "reports/panel-interface-redraw/provenance-before.json",
+      "bytes": 955,
+      "sha256": "a5af2f9365954c7c581490e4be87cd4f4c39a850e7f46c31f24c26fb9b09b24c"
+    },
+    {
+      "file": "reports/panel-interface-redraw/schematic.pdf",
+      "bytes": 522306,
+      "sha256": "d0b8131cf0289d643acd36085863064b685d0c2899f61254b52771615aa3ff2f"
+    },
+    {
+      "file": "reports/panel-interface-redraw/source-before.json",
+      "bytes": 570,
+      "sha256": "1e3daefb56b216bdf3926cd843a95ba049e140df962aeda4f0b98607672b7810"
+    },
+    {
       "file": "reports/placement.step",
       "bytes": 2425689,
       "sha256": "1bc01eb508f39d398620ba0855d3ff04845542aa4468e3f3a5cf89a98ede5a63"
+    },
+    {
+      "file": "reports/power-redraw/Driver-before.kicad_sym",
+      "bytes": 152244,
+      "sha256": "5a900f5b163fa7f530add4e4864c03710d3a2bdaaac03fc01bc0502f6a97d074"
+    },
+    {
+      "file": "reports/power-redraw/drc.json",
+      "bytes": 376,
+      "sha256": "91eefff7f7a82777c7083f65ee66b774bb160b9fe11fd1a2d340a8a1a1024e3c"
+    },
+    {
+      "file": "reports/power-redraw/erc.json",
+      "bytes": 1594,
+      "sha256": "4d7baa1a5c8625ef1a09c5c35ce42093a835c73abc54732e4c51d0d21df41014"
+    },
+    {
+      "file": "reports/power-redraw/layout-summary.json",
+      "bytes": 187,
+      "sha256": "a1dcc9f1a41c0bd70293194b4a22e2ccc65206dd2e0cd57e9e07c814ae148dea"
+    },
+    {
+      "file": "reports/power-redraw/netlist-after.xml",
+      "bytes": 275393,
+      "sha256": "48a22f02e26368e49d9dffa6710d293d6af87f9685a77c463c5feb3aa75d60ed"
+    },
+    {
+      "file": "reports/power-redraw/netlist-before.xml",
+      "bytes": 277383,
+      "sha256": "6341b201fee8044ad12f1947fab5797e52c6bb79cfe2d469c286d70377ad751d"
+    },
+    {
+      "file": "reports/power-redraw/netlist-comparison.json",
+      "bytes": 568,
+      "sha256": "a8d0b419b13adc7b341b6a0d8a8fbda2d2198eca45b755588da9af262e061161"
+    },
+    {
+      "file": "reports/power-redraw/power-before.kicad_sch",
+      "bytes": 338914,
+      "sha256": "d615d5c8c3cee7ca9526eebac850e4cc6440ff8cbfef47db3c9132ade8748bb1"
+    },
+    {
+      "file": "reports/power-redraw/power.pdf",
+      "bytes": 139697,
+      "sha256": "0839720f5c60d46859d9d641700d4f24c74fbf1872858903f67feb789cd2c1ac"
+    },
+    {
+      "file": "reports/power-redraw/power.png",
+      "bytes": 283259,
+      "sha256": "b35846dc318bbcdcfc93f8ee06c14759ebd4506d528ff1b0dfdb89ad70579d0c"
+    },
+    {
+      "file": "reports/power-redraw/provenance-before.json",
+      "bytes": 770,
+      "sha256": "0ae3716200c44deae5dbcf2f81180b2ce6315e6195e28cbb1b46003d591258cd"
+    },
+    {
+      "file": "reports/power-redraw/schematic.pdf",
+      "bytes": 490138,
+      "sha256": "28466348181ac478403456e10bc1a508d907b3d882233f0f9c2a6909b31d22d8"
     },
     {
       "file": "reports/power-reroute.dsn",
@@ -776,8 +785,8 @@
     },
     {
       "file": "reports/schematic.pdf",
-      "bytes": 462376,
-      "sha256": "527a21e53f82fa326a759c5b0ab0264215525018a1504f3e64e597ff03a6dab1"
+      "bytes": 522306,
+      "sha256": "d0b8131cf0289d643acd36085863064b685d0c2899f61254b52771615aa3ff2f"
     },
     {
       "file": "reports/unrouted-input.kicad_pcb",
@@ -786,8 +795,8 @@
     },
     {
       "file": "reports/validation-status.json",
-      "bytes": 1014,
-      "sha256": "dc91c43b44c768f030566b85092ef3fc3509fde7d4d47b9c385860891e620d79"
+      "bytes": 999,
+      "sha256": "4e7f2c9c64df0d62bbb2374f94998d96afb00ec03898e3695477b9a0b489bea3"
     },
     {
       "file": "scripts/add_ground_pours.py",
@@ -801,8 +810,8 @@
     },
     {
       "file": "scripts/check_design.py",
-      "bytes": 4972,
-      "sha256": "87d78697ba775281036ad657b4047651e382078a662a8603b50544b0cf56e02b"
+      "bytes": 5061,
+      "sha256": "aa72ca5b22595cd2dcd167586391353631fcffa2ecbe9d22588991518b0098dc"
     },
     {
       "file": "scripts/export_fanout.py",
@@ -860,6 +869,16 @@
       "sha256": "f8020bab0c563119782623903047752a20c33f77d095a91430aba494a982b54d"
     },
     {
+      "file": "scripts/redraw_panel_interface.py",
+      "bytes": 21977,
+      "sha256": "e1d7953b2b01f571e08d6a05ddc7c334dadca6775d03debd0a2a9b2b3b1d7798"
+    },
+    {
+      "file": "scripts/redraw_power.py",
+      "bytes": 17873,
+      "sha256": "73beafbff06bf19291a1a1dda805514b002e724261b5954c8ca259f76f7c6ec2"
+    },
+    {
       "file": "scripts/repair_drc.py",
       "bytes": 2010,
       "sha256": "9f208fb62d857aa547cceebb4fea213892c00fe5a95f9c9cd9db9affa8e39c2c"
@@ -873,6 +892,11 @@
       "file": "scripts/route_remaining.cpp",
       "bytes": 5442,
       "sha256": "52bc12737fa2882239071bb8020fd8b3df9ee3506a33e8833fe3450b546e103d"
+    },
+    {
+      "file": "scripts/schematic_sexp.py",
+      "bytes": 626,
+      "sha256": "986eae5b388c5deb3e2179b1392e236c9714a90335efad8e6290b079b92b1b60"
     },
     {
       "file": "scripts/sync_fpc.py",

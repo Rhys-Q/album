@@ -1,0 +1,7 @@
+{
+  "existing_symbols": 72,
+  "new_ground_symbols": 7,
+  "wire_segments": 212,
+  "net_labels": 55,
+  "source": "KiCad standard symbol geometry, project physical pin numbering retained"
+}

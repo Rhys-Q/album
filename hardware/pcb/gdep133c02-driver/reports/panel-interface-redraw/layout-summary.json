@@ -1,0 +1,16 @@
+{
+  "panel": {
+    "physical_components": 41,
+    "wire_segments": 224,
+    "interface_labels": 48,
+    "new_ground_symbols": 14,
+    "intentional_nc_pins": 4
+  },
+  "interface": {
+    "physical_components": 43,
+    "wire_segments": 144,
+    "interface_labels": 54,
+    "new_ground_symbols": 12,
+    "intentional_nc_pins": 9
+  }
+}
