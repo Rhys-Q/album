@@ -1,0 +1,204 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-01T16:46:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "gdep133c02-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 1.3500 mm",
+                    "pos": {
+                        "x": 129.35,
+                        "y": 122.3
+                    },
+                    "uuid": "9580803f-3b3e-496f-b1e8-e55c08b69c60"
+                },
+                {
+                    "description": "走线 [HOST_CS_M_N] (F.Cu), 长度: 2.4261 mm",
+                    "pos": {
+                        "x": 130.772,
+                        "y": 122.983
+                    },
+                    "uuid": "fe6ac350-a57c-4562-a28c-4defeda85063"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 BUSY_N 和 GND)",
+            "items": [
+                {
+                    "description": "走线 [BUSY_N] (F.Cu), 长度: 1.6524 mm",
+                    "pos": {
+                        "x": 97.25,
+                        "y": 59.42
+                    },
+                    "uuid": "132c72c4-d354-4562-ba40-1b0078c3a661"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 59.5
+                    },
+                    "uuid": "1ace15a9-5785-4c5f-8af8-14cb68d504e5"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0047 mm)",
+            "items": [
+                {
+                    "description": "走线 [VSNL] (F.Cu), 长度: 4.7203 mm",
+                    "pos": {
+                        "x": 115.1547,
+                        "y": 66.8203
+                    },
+                    "uuid": "03c5dd56-23bd-42d8-8b45-dcb8e56b86eb"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.2828 mm",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 66.4
+                    },
+                    "uuid": "f98d2421-afc1-440c-a298-2b61eb46ad1c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [VDD] (B.Cu), 长度: 0.9998 mm",
+                    "pos": {
+                        "x": 79.2269,
+                        "y": 73.675
+                    },
+                    "uuid": "99fcbcce-2049-4ef1-9f34-e6c327b17ea7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [RES_N] (In2.Cu), 长度: 3.2286 mm",
+                    "pos": {
+                        "x": 135.803,
+                        "y": 57.0163
+                    },
+                    "uuid": "27bd252c-be3d-42b6-8ea9-d18f072839b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [VGL] (In2.Cu), 长度: 12.6728 mm",
+                    "pos": {
+                        "x": 137.505,
+                        "y": 75.1476
+                    },
+                    "uuid": "3d935d61-0e37-4ee0-8015-4de9fa4fe40b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [VCOMBD_S] (In2.Cu), 长度: 0.6290 mm",
+                    "pos": {
+                        "x": 131.328,
+                        "y": 66.1899
+                    },
+                    "uuid": "ccc298ca-f83c-4e3d-b275-4af72090bced"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [VSPL2] (F.Cu), 长度: 1.1088 mm",
+                    "pos": {
+                        "x": 101.174,
+                        "y": 72.1011
+                    },
+                    "uuid": "2857a78f-9678-48a0-8c7a-6a60c60962dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (电路板配置约束 最小 0.2500 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 131.35,
+                        "y": 121.9
+                    },
+                    "uuid": "b392a359-1ad2-43f2-95a9-ea37568e0067"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 131.35,
+                        "y": 121.95
+                    },
+                    "uuid": "cc9e1130-833a-4516-b684-76b491edddcf"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

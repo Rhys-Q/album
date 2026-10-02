@@ -1,0 +1,17 @@
+Connector,Pin,Net,Direction,SupplyDomain,DefaultState
+J2,1,HOST_SCLK,Host to driver,HOST_3V3,See interface-power-state.md
+J2,2,GND,Supply/reference,HOST_3V3,Common ground
+J2,3,HOST_MOSI,Host to driver,HOST_3V3,See interface-power-state.md
+J2,4,GND,Supply/reference,HOST_3V3,Common ground
+J2,5,HOST_MISO,Driver to host,HOST_3V3,See interface-power-state.md
+J2,6,GND,Supply/reference,HOST_3V3,Common ground
+J2,7,HOST_CS_M_N,Host to driver,HOST_3V3,See interface-power-state.md
+J2,8,GND,Supply/reference,HOST_3V3,Common ground
+J2,9,HOST_CS_S_N,Host to driver,HOST_3V3,See interface-power-state.md
+J2,10,GND,Supply/reference,HOST_3V3,Common ground
+J2,11,HOST_RES_N,Host to driver,HOST_3V3,See interface-power-state.md
+J2,12,GND,Supply/reference,HOST_3V3,Common ground
+J2,13,HOST_BUSY_N,Driver to host,HOST_3V3,See interface-power-state.md
+J2,14,GND,Supply/reference,HOST_3V3,Common ground
+J2,15,EPD_PWR_EN,Host to driver,HOST_3V3,LOW by R30 via R29; screen disabled
+J2,16,HOST_3V3,Supply/reference,HOST_3V3,3.3V logic supply only

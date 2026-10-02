@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "Driver") (type "KiCad") (uri "${KIPRJMOD}/lib/Driver.pretty") (options "") (descr "Project-local footprints")))
