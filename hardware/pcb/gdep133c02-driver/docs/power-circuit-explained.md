@@ -1,8 +1,8 @@
 # 电源页原理详解：从 3.3V 到屏幕需要的正负电源
 
-日期：2026-10-02。对应当前 [power.kicad_sch](../power.kicad_sch)，建议同时打开[电源页 PDF](../reports/power-redraw/power.pdf)或[高清图](../reports/power-redraw/power.png)。
+日期：2026-10-07，v0.4 直供手焊版。对应当前 [power.kicad_sch](../power.kicad_sch)，建议同时打开[电源页 PDF](../reports/schematic.pdf)或[高清图](../reports/p1-direct-v0.4/schematic-page-2.png)。
 
-本文按图中的六个功能区解释全部 **70 个实体元器件**。每个器件的值、候选料号、封装和逐脚网络另列在文末清单，便于对照 KiCad。电源符号、网络标签和 PWR_FLAG 是绘图／电气检查对象，不是要购买的器件。
+本文按图中的六个功能区解释全部 **54 个实体元器件**。每个器件的值、候选料号、封装和逐脚网络另列在文末清单，便于对照 KiCad。电源符号、网络标签和 PWR_FLAG 是绘图／电气检查对象，不是要购买的器件。
 
 ## 1. 先说明这张图的设计依据
 
@@ -21,12 +21,12 @@
 ```mermaid
 flowchart LR
   J["J1：稳压 3.3V 输入"] --> S["U5：可控负载开关"]
-  S --> V["VIN：开关后的 3.3V"]
-  V --> B["L4：逻辑供电分支"] --> IO["EPD_3V3 → VDD / VDDIO"]
-  V --> A["L5 / R31 / C31 / C32 / R32"] --> AV["AVDD：模拟变换器输入"]
+  S --> V["EPD_3V3：开关后的 3.3V"]
+  V --> IO["逻辑铜线分支：VDD / VDDIO，C33"]
+  V --> AV["功率铜线分支：C31 / C32，三路变换器"]
   AV --> P["L1 / Q1 / D1：正升压"] --> VP[VDDP]
   AV --> N["L2 / Q8 / D2：反相"] --> VN[VDDN]
-  AV --> C["L3 / Q7 / D4：反相"] --> VB["VBB_3P5V / VNCP_3P5V"]
+  AV --> C["L3 / Q7 / D4：反相"] --> VB["VBB_3P5V / VBB_3P5V"]
   VP --> GP["Q3 / Q4 / D3 / C17：正电荷泵"] --> GH[VGH]
   P --> LX["LX：开关节点"]
   LX --> GP
@@ -44,17 +44,15 @@ flowchart LR
 
 | 网络／信号 | 在本图中的意思 | 阅读时要注意 |
 | --- | --- | --- |
-| BENCH_3V3、EPD_VDD、SW_IN | U5 前面的 3.3V 输入各段 | 0Ω连接仍有少量阻抗；不是几级稳压器 |
-| SW_OUT、VIN | U5 后面的电源 | `VIN` 是参考图沿用名称，不是另一个外部输入 |
-| EPD_3V3、VDD、VDDIO | 开关后的逻辑／接口供电 | 本项目都来自同一 3.3V；没有升压或电平转换 |
-| AVDD | 变换器的模拟输入电源 | 在本板正常供电时约 3.3V，不是 VDDP 高压输出 |
+| BENCH_3V3 | U5前面的稳压3.3V输入 | 原分段0Ω已删除，输入节点合并 |
+| EPD_3V3（屏幕VDD/VDDIO引脚） | 开关后的逻辑／功率共同供电 | 本项目都来自同一 3.3V；没有升压或电平转换 |
 | VDDP / VDDN | 正／负模拟电源 | 正负都是相对 GND 而言；绝对目标值由控制器设置决定 |
 | VGH / VGL | 正／负栅极驱动电源 | 用于屏幕内部 TFT 栅极驱动，不是 MCU GPIO 电压 |
-| VBB_3P5V / VNCP_3P5V | 两路负模拟偏置电源引脚，本方案用 R16 相连 | 名称含 3P5V，仍是负电源；不是 TFT_VCOM 电极输出 |
+| VBB_3P5V（屏幕41/56脚） | 两路负模拟偏置电源引脚，本方案直接相连 | 名称含 3P5V，仍是负电源；不是 TFT_VCOM 电极输出 |
 | TFT_VCOM / FPL_VCOM | 面板公共电极驱动输出，在面板页 | 不要与这里的偏置供电直接混同 |
 | LX | Q1 漏极、电感与二极管的开关节点 | 有脉动、尖峰、振铃，不能当作平稳直流电源 |
 | GDRP / GDRN / GDRC | 三个电感功率级的栅极驱动 | 对应 NMOS、PMOS及参考图采用的 PMOS；GDRC 资料矛盾见第 7 节 |
-| RESEP / RESEN / RESEC | 电流采样输入 | RESEP 是低边采样；另两路是靠近 AVDD 的高边节点 |
+| RESEP / RESEN / RESEC | 电流采样输入 | RESEP 是低边采样；另两路是靠近 EPD_3V3 的高边节点 |
 | DRVP / DRVN | 正／负栅极泵控制 | 正泵经 Q4、Q3控制基准节点；负泵经 Q6控制钳位节点 |
 | FBP / FBN、REG_VGN | 电压反馈、负泵内部参考输出 | REG_VGN 不是 GND；两个反馈公式不同 |
 
@@ -84,118 +82,103 @@ D3/D5/D6 的 BAT54S 内部是两只串联二极管：**1 脚 A → 3 脚 COM →
 
 它通常是可焊接的连接／拆分位置，让不同阶段的供电与信号有独立网络名称，便于隔离和改版。它有实际电阻、额定电流及寄生参数，不能无限通流；也不是保险丝。拆掉它可以断开支路，但测电流或替换阻值必须知道这条支路是否包含脉冲电流和反馈信号。
 
-## 4. 功能区 1：输入开关、滤波和供电分配（19 个器件）
+## 4. 功能区1：输入开关、滤波和供电分配（10个器件）
 
-### 4.1 供电主路径
+### 4.1 主路径与两个低压节点
 
 ```text
-J1.1 → R26 → EPD_VDD → R27 → SW_IN → U5 → SW_OUT → R28 → VIN
-J1.2 → GND
-VIN → L4 → EPD_3V3 → R33 → VDD
-                    └→ R34 → VDDIO
-VIN → L5 → AVDD_PRE → R31 → AVDD_CAP → R32 → AVDD
+J1.1 → BENCH_3V3 → U5.1 VIN
+U5.6 VOUT → EPD_3V3 → 逻辑铜线支路 → C33/FPC逻辑/接口/U4
+                     └→ 功率铜线支路 → C31/C32/三路变换器
+J2.15 EPD_PWR_EN → U5.3 ON；R30从ON接GND
+U5.4 CT → C36 → BENCH_3V3；U5.5 QOD直接接EPD_3V3
+J1.2、U5.2 → GND
 ```
 
-J1 要输入**已经稳压的 3.3V**。本页没有将 USB 5V／电池电压变成 3.3V 的稳压器，也没有防反接保险电路。U5 导通后，下游电压接近输入，减去开关、电阻、磁珠、走线上的压降。
+这里只用一台外部稳压3.3V电源。BENCH_3V3是开关前，EPD_3V3是开关后。L4/L5已删除，两条支路直接用铜线连接；原VIN/AVDD/EPD_3V3标签合并，屏幕AVDD引脚名称不变。逻辑与功率从输出储能区域分支，功率电流不经过逻辑末端细线。去掉磁珠后高频隔离减弱，保留全部去耦并验证刷新噪声、复位和通信。
 
-### 4.2 U5 的工作与启动问题
+### 4.2 U5为什么更换，C36怎样控制启动
 
-U5 是 TPS22913B 负载开关，`ON` 高有效。R29 将接口页的 `EPD_PWR_EN` 接到 `SW_ON`，R30 在控制信号悬空时把它拉低，使默认状态为关闭。
+U5采用 **TPS22917DBVR，SOT-23-6**，六个可见引脚比原四球WLCSP更适合手焊。VIN接3.3V输入，VOUT接负载；ON高时导通，低时关闭。QOD直接接VOUT，使关闭时通过芯片内部放电通道释放低压输出电容。内部电阻使这不是把输出硬短接到地。它不能证明各高压轨已经安全放完电。
 
-该芯片工作输入范围 1.4–5.5V，最大连续开关电流 2A，提供受控上升沿、反向电流保护及关断输出放电。**2A 是额定上限，不是自动限流值**。B 版本在 3.3V 的典型上升时间为 66µs，关断放电通路的典型电阻约 150Ω；这些值不能脱离数据手册的测试条件视为本板实测结果。[TI 本地规格书，第 6、18–20 页](../../../reference/gdep133c02/TPS22913-SLVSB49F.pdf)，[TI 产品说明](https://www.ti.com/product/TPS22913)。
+**C36=1nF，接CT与芯片VIN之间，不能改接CT与GND。** 它调整输出上升斜率，使大电容的充电电流较缓。选用0805、50V、C0G、±5%的C0805C102J5GACTU，容量稳定且易焊。毫秒级启动是设计预期，实际EPD_3V3稳定时间和浪涌须测量后确定。依据：[TI TPS22917手册](https://www.ti.com/lit/ds/symlink/tps22917.pdf)、[KEMET电容规格](https://search.kemet.com/download/specsheet/C0805C102J5GACTU)。
 
-大电容既能缓冲刷新负载，也会增加启动电流。只按本区的 C29/C30/C31/C32，名义容量就有 `4.7 + 4.7 + 100 + 100 = 209.4µF`。假设这些电容都完全跟随 3.3V、用 66µs 充满，量级估算 `I≈CΔV/Δt≈10.5A`；这只是说明不能忽略启动浪涌，**不是预测本板真的会出现这个电流**。实际取决于有效容量、输入阻抗、L5、供电限流以及芯片带载上升时间；66µs 也不等于所有电容在实际负载下的总充电时间。需要实测 VIN、AVDD 和输入电流。
+TPS22917最大连续开关电流2A，没有自动限流功能。C29/C30/C31/C32名义合计209.4µF；估算充电电流可用 `I≈C×ΔV/Δt`，但负载、走线阻抗、容量偏压、台式电源限流和斜率公差都会改变实际波形，不能从1nF直接承诺一个峰值电流。启动、稳态压降和温升仍须验收。
 
 ### 4.3 逐个器件解释
 
-| 位号 | 是什么、接在哪里 | 作用与设计理由 |
-| --- | --- | --- |
-| J1 | 两针排针，1 接 BENCH_3V3，2 接 GND | 本项目的台式电源入口。连接明确、便于实验；输入必须稳压且极性正确。 |
-| R26 | 1206 的 0Ω，BENCH_3V3—EPD_VDD | 将外部输入和参考电路输入分段，便于隔离；不稳压、不防反接。 |
-| C28 | 2.2µF/50V 陶瓷，EPD_VDD—GND | 开关输入侧局部去耦，为启动瞬态提供局部电荷；2.2µF沿用参考值，50V是当前候选耐压而非输入电压。 |
-| R27 | 1206 的 0Ω，EPD_VDD—SW_IN | U5 输入连接位，便于分段排查；正常装配不靠它产生电压差。 |
-| U5 | TPS22913BYZVT，四球负载开关 | 用 GPIO 控制整块屏幕驱动域供电；集成通断、上升沿控制和输出放电，减少外围器件。它不生成高压。 |
-| R28 | 1206 的 0Ω，SW_OUT—VIN | U5 输出到分配电源的连接位，便于隔离输入开关与后级负载。 |
-| R29 | 0603 的 0Ω，EPD_PWR_EN—SW_ON | 接通使能信号，保留修改驱动接口的位置；目前为 0Ω，不能称为已经配置好的 RC 延时或限流电阻。 |
-| R30 | 100kΩ，SW_ON—GND | 控制源悬空时关闭 U5；阻值大以减小使能拉高时的直流消耗，又提供确定的默认电平。具体抗干扰能力取决于漏电及布线。 |
-| C29 | 4.7µF/50V，VIN—GND | 输出侧局部储能／去耦，缓冲后级输入电流变化；过大也增加浪涌。 |
-| C30 | 4.7µF/50V，VIN—GND | 与 C29 并联，名义总计 9.4µF；分布放置可缩短不同负载的局部回路，并非单靠并联就保证低噪声。 |
-| L4 | BLM18PG221SH1D 磁珠，VIN—EPD_3V3 | 把逻辑供电分支与开关电源噪声隔开，配合去耦电容提供高频衰减。221 编码对应 220Ω级的高频标称阻抗，不能理解为直流串联 220Ω。 |
-| L5 | CBG160808U000T，VIN—AVDD_PRE | 参考图的模拟供电串联磁珠位置。原厂检索表显示这是标称0Ω、阻抗范围0～15Ω的低阻抗型号，不能等同于 L4的220Ω级磁珠，也不能按理想0Ω跳线理解。精确频率曲线及额定电流仍须核对完整规格。 |
-| R31 | 1206 的 0Ω，AVDD_PRE—AVDD_CAP | 模拟支路进入大电容节点的可拆连接；未设置串联阻值来限定充电电流。 |
-| R32 | 1206 的 0Ω，AVDD_CAP—AVDD | 大电容到模拟变换器供电的连接；可分开“储能节点”与“负载节点”，但正常状态不是独立稳压。 |
-| C31 | 100µF/6.3V，AVDD_CAP—GND | 模拟供电储能，缓冲多路功率级的负载变化；低于高压电容的耐压是因为这里正常约 3.3V。有效容量及瞬态裕量仍需核对。 |
-| C32 | 100µF/6.3V，AVDD_CAP—GND | 与 C31 并联，名义总计 200µF；增加储能，也增加启动充电负担。 |
-| R33 | 0603 的 0Ω，EPD_3V3—VDD | 屏幕 VDD 供电连接位，允许独立断开检查；不是电平转换或降压。 |
-| R34 | 0603 的 0Ω，EPD_3V3—VDDIO | 接口供电连接位，使 VDDIO 与本板逻辑域同源；改变这里会牵涉接口页上下电和电平兼容。 |
-| C33 | 100nF/50V，EPD_3V3—GND | 小容量局部去耦，用短回路旁路快速扰动；大电容的存在不能替代良好的小电容布局。 |
+| 位号 | 是什么、接在哪里 | 作用及保留理由 |
+|---|---|---|
+| J1 | 1接BENCH_3V3、2接GND的两针排针 | 外部稳压3.3V入口，适合台式限流电源 |
+| C28 | 2.2µF/50V，BENCH_3V3—GND | 开关输入去耦，缩短瞬态供电回路 |
+| U5 | TPS22917DBVR，SOT-23-6 | GPIO控制屏幕域电源，提供可调斜率和输出放电 |
+| R30 | 100kΩ，EPD_PWR_EN—GND | MCU高阻时默认关闭；拉高时耗电约33µA，拉低时没有这笔静态电流 |
+| C36 | 1nF/50V C0G，BENCH_3V3—SW_CT | 调整U5启动斜率，降低大电容充电浪涌 |
+| C29、C30 | 各4.7µF/50V，EPD_3V3—GND | 输出去耦，两只按分布位置支持局部电流 |
+| C31、C32 | 各100µF/6.3V，EPD_3V3—GND | 功率级储能，名义200µF；耐压、有效容量及启动负担需要核对 |
+| C33 | 100nF/50V，EPD_3V3—GND | 逻辑高频去耦；大电容不能替代短回路的小电容 |
 
-这里分出逻辑、模拟两路是为了减少开关功率级对逻辑供电的扰动。磁珠表现取决于频率、直流偏置、阻抗的电阻／电抗成分及周围电容；它与 15µH 储能电感的用途不同。实际能衰减多少噪声需要阻抗曲线和波形验证。
-
-L4的220Ω级阻抗由 [Murata原厂系列规格表](https://www.murata.com/products/productdata/8796737273886/QNFA9101.pdf?1698377420000=)支持。L5的低阻抗分类见 [风华 CBG原厂检索表](https://fhcomp.com/en/product_page/?code=030303&page=11)。本次检索到的该表列800mA，另一个原厂 [“Chip Bead”汇总表](https://www.fhcomp.com/en/product_page/?code=030300&page=31)列1000mA，且详情页直接访问失败；因此本文采用其一致的低阻抗属性解释功能，不把任一电流数值认定为采购验收规格。尤其 AVDD供应三路变换器，L5不能只按逻辑域的小电流负载审核。
+全部去耦保留；只减少两只磁珠。输入开关、储能电容、采样与反馈均保留。主干0.8mm、逻辑分支至少0.5mm，U5近引脚保留0.5mm逃线；电流与温升仍需实测。
 
 ## 5. 功能区 2：VDDP 正电源升压（7 个器件）
 
 ### 5.1 开关周期里的两个回路
 
-**Q1 导通：** 屏幕输出 GDRP，将 Q1 的栅源电压拉高。电流沿 `AVDD → L1 → LX → Q1 → RESEP → U1 → GND` 增长，L1 储能。LX 被拉到靠近地的低电位；正常升压状态下 D1 截止，负载暂由 C13 供电。
+**Q1 导通：** 屏幕输出 GDRP，将 Q1 的栅源电压拉高。电流沿 `EPD_3V3 → L1 → LX → Q1 → RESEP → U1 → GND` 增长，L1 储能。LX 被拉到靠近地的低电位；正常升压状态下 D1 截止，负载暂由 C13 供电。
 
-**Q1 关断：** L1 电流不能骤然消失，LX 电压上升，直到 D1 正向导通。电流沿 `AVDD → L1 → LX → D1 → VDDP → C13/负载 → GND` 流动，把储能和输入能量送往输出。
+**Q1 关断：** L1 电流不能骤然消失，LX 电压上升，直到 D1 正向导通。电流沿 `EPD_3V3 → L1 → LX → D1 → VDDP → C13/负载 → GND` 流动，把储能和输入能量送往输出。
 
-理想连续导通模式、稳态、忽略损耗时：`VDDP ≈ AVDD / (1−D)`，D 为 Q1 导通占空比。实际还受峰值电流、二极管压降、MOS导通损耗、电感损耗以及内部控制限制；轻载断续模式不能直接照此计算。
+理想连续导通模式、稳态、忽略损耗时：`VDDP ≈ EPD_3V3 / (1−D)`，D 为 Q1 导通占空比。实际还受峰值电流、二极管压降、MOS导通损耗、电感损耗以及内部控制限制；轻载断续模式不能直接照此计算。
 
-电感导通期间的纹波量级为 `ΔIL ≈ AVDD × ton / L1`。这解释了为什么需要知道开关频率及占空比，才能判断 15µH 和峰值电流是否合适。
+电感导通期间的纹波量级为 `ΔIL ≈ EPD_3V3 × ton / L1`。这解释了为什么需要知道开关频率及占空比，才能判断 15µH 和峰值电流是否合适。
 
 ### 5.2 逐个器件解释
 
 | 位号 | 是什么、接在哪里 | 作用与设计理由 |
 | --- | --- | --- |
-| L1 | 15µH 功率电感，AVDD—LX | 储存并释放磁场能量，是升压的核心。15µH沿用参考值；候选 MSS1246-153MLC 要按实际峰值、RMS、温升核对。 |
+| L1 | 15µH 功率电感，EPD_3V3—LX | 储存并释放磁场能量，是升压的核心。15µH沿用参考值；候选 MSS1246-153MLC 要按实际峰值、RMS、温升核对。 |
 | Q1 | DMN3065LW-7 NMOS，G=GDRP、S=RESEP、D=LX | 低边开关，周期性将 LX 经采样电阻拉向地。源极接近地，NMOS适合这种驱动位置；驱动能力仍要核对实际 VGS。 |
 | U1 | 0.2Ω WSL1206 采样电阻，RESEP—GND | 把开关电流变为控制器可感知的小电压，`VRESEP≈IQ1×0.2Ω`。保留 U 位号，但它不是 IC。 |
 | R2 | 1MΩ，GDRP—GND | 驱动高阻时给栅极提供泄放／默认低电平，减少悬空误导通；1MΩ不能当成能快速关断大栅极电荷的强驱动。 |
 | D1 | MBR230S1F-7 肖特基，A=LX、K=VDDP | Q1关断时把电感电流送入输出，导通时阻止输出向 LX 放电；低正向压降有助于效率。 |
-| C12 | 4.7µF/50V，AVDD—GND | 靠近功率级的输入去耦，缩短脉冲电流回路；与远处 C31/C32配合而非相互替代。 |
+| C12 | 4.7µF/50V，EPD_3V3—GND | 靠近功率级的输入去耦，缩短脉冲电流回路；与远处 C31/C32配合而非相互替代。 |
 | C13 | 10µF/50V，VDDP—GND | 输出储能和平滑纹波，在 D1不送电时支持负载；有效容量、纹波电流及高压裕量需要审核。 |
 
-本支路不是完全隔离的电源：即使 Q1 不开关，只要 AVDD 存在，仍有 `AVDD → L1 → D1 → VDDP` 的单向通路，输出可能被充到接近输入减去二极管压降。因此“停止 GDRP”不等于“VDDP立即为零”。
+本支路不是完全隔离的电源：即使 Q1 不开关，只要 EPD_3V3 存在，仍有 `EPD_3V3 → L1 → D1 → VDDP` 的单向通路，输出可能被充到接近输入减去二极管压降。因此“停止 GDRP”不等于“VDDP立即为零”。
 
 D1 候选器件的额定反向电压为 30V、平均整流电流为 2A，不能据此宣称所有工作状态都安全；应核对 VDDP上限和 LX振铃。其厂商页还列有 EOL 变更记录，后续采购应核查完整订购料号／替代型号。[Diodes MBR230S1F](https://www.diodes.com/part/view/MBR230S1F)。
 
-## 6. 功能区 3：VDDN 负电源反相变换（10 个器件）
+## 6. 功能区 3：VDDN 负电源反相变换（7 个器件）
 
 ### 6.1 为什么这个电感能生成负电压
 
 L2的一端接地，另一端接 SW_N；它不是 L1那种输入到开关节点的接法。Q8是位于正供电侧的 PMOS。
 
-**Q8导通：** GDRN 使栅极低于源极，电流沿 `AVDD → U2 → SENSE_N → Q8 → SW_N → L2 → GND` 增长。电感电流方向为 SW_N 到 GND。
+**Q8导通：** GDRN 使栅极低于源极，电流沿 `EPD_3V3 → U2 → RESEN → Q8 → SW_N → L2 → GND` 增长。电感电流方向为 SW_N 到 GND。
 
-**Q8关断：** 电感仍试图沿原方向流动，因此 SW_N被拉到负电位。D2在 `VDDN_RAW → SW_N` 方向导通；闭合回路为 `GND → C15/负载 → VDDN → R6 → VDDN_RAW → D2 → SW_N → L2 → GND`。它从输出节点抽走电荷，使 VDDN 相对地变负。对电容而言，电流由其地端流向负电压端，正好形成负输出所需的充电方向。
+**Q8关断：** 电感仍试图沿原方向流动，因此 SW_N被拉到负电位。D2在 `VDDN → SW_N` 方向导通；闭合回路为 `GND → C15/负载 → VDDN → VDDN → D2 → SW_N → L2 → GND`。它从输出节点抽走电荷，使 VDDN 相对地变负。对电容而言，电流由其地端流向负电压端，正好形成负输出所需的充电方向。
 
-理想连续导通稳态：`VDDN ≈ −AVDD × D / (1−D)`。开关关断时的耐压需求通常涉及 `AVDD + |VDDN|`，再加尖峰裕量；不能只用 3.3V输入判断 Q8和 D2耐压。
+理想连续导通稳态：`VDDN ≈ −EPD_3V3 × D / (1−D)`。开关关断时的耐压需求通常涉及 `EPD_3V3 + |VDDN|`，再加尖峰裕量；不能只用 3.3V输入判断 Q8和 D2耐压。
 
 ### 6.2 逐个器件解释
 
 | 位号 | 是什么、接在哪里 | 作用与设计理由 |
 | --- | --- | --- |
 | L2 | 15µH，SW_N—GND | 导通时储能，关断时把 SW_N拉负；数值和候选系列与 L1一致，但电流需求必须独立审核。 |
-| Q8 | DMP3068L-7 PMOS，G=GATE_N、S=SENSE_N、D=SW_N | 高边开关，用栅极相对源极下降来导通；符合规格书 GDRN 的 P沟道驱动定义。[原厂资料](https://www.diodes.com/datasheet/download/DMP3068L.pdf)。 |
-| U2 | 0.2Ω，AVDD—SENSE_N | 高边电流采样。导通时 `AVDD−VSENSE_N≈IQ8×0.2Ω`；SENSE_N本身仍接近正输入电压，不是接近地的小电压。 |
-| R3 | 1MΩ，AVDD—GATE_N | 驱动高阻时将 PMOS栅极拉回高电位，使其默认关闭；采样无电流时源极也接近 AVDD。 |
-| R4 | 0Ω，RESEN—SENSE_N | 把采样节点送到屏幕电流检测引脚；这是采样信号连接，不是主功率回路中的另一个限流电阻。 |
-| R5 | 0Ω，GDRN—GATE_N | 接通栅极驱动，保留修改串联栅极阻值的位置；目前不能宣称它已经限制开关速度。 |
-| R6 | 0Ω，VDDN_RAW—VDDN | 负输出连接／隔离位，不负责设定负压幅值。 |
-| D2 | MBR230S1F-7，A=VDDN_RAW、K=SW_N | SW_N拉负时提供电感续流和抽取输出电荷的路径；方向与正升压支路的“送电到正输出”不同。 |
-| C14 | 4.7µF/50V，AVDD—GND | 高边开关附近输入去耦，为导通脉冲提供局部电流。 |
+| Q8 | DMP3068L-7 PMOS，G=GDRN、S=RESEN、D=SW_N | 高边开关，用栅极相对源极下降来导通；符合规格书 GDRN 的 P沟道驱动定义。[原厂资料](https://www.diodes.com/datasheet/download/DMP3068L.pdf)。 |
+| U2 | 0.2Ω，EPD_3V3—RESEN | 高边电流采样。导通时 `EPD_3V3−VRESEN≈IQ8×0.2Ω`；RESEN本身仍接近正输入电压，不是接近地的小电压。 |
+| R3 | 1MΩ，EPD_3V3—GDRN | 驱动高阻时将 PMOS栅极拉回高电位，使其默认关闭；采样无电流时源极也接近 EPD_3V3。 |
+| D2 | MBR230S1F-7，A=VDDN、K=SW_N | SW_N拉负时提供电感续流和抽取输出电荷的路径；方向与正升压支路的“送电到正输出”不同。 |
+| C14 | 4.7µF/50V，EPD_3V3—GND | 高边开关附近输入去耦，为导通脉冲提供局部电流。 |
 | C15 | 10µF/50V，VDDN—GND | 负输出储能和平滑纹波；当前为无极性陶瓷电容，可以承受两端负方向的直流偏压。换成有极性电容时其正端应朝地侧，且仍须重新审核。 |
 
 这种负输出不是“把正电源接口交换一下”，而是实实在在地建立了低于板上 GND的电位。对采样测量尤其要注意：U2的压差方向、共模电压及采样走线均与 U1不同。
 
-## 7. 功能区 4：VCOM 所需负偏置供电（10 个器件）
+## 7. 功能区 4：VCOM 所需负偏置供电（7 个器件）
 
 ### 7.1 与 VDDN 的共同原理和不同职责
 
-本区同样是高边 PMOS、电感到地、负向整流的反相拓扑：导通时 `AVDD → U3 → Q7 → SW_VCOM → L3 → GND` 储能；关断时 `GND → C20/负载 → VBB_3P5V → D4 → SW_VCOM → L3 → GND` 续流，建立负电压。R16又把它接到 VNCP_3P5V。
+本区同样是高边 PMOS、电感到地、负向整流的反相拓扑：导通时 `EPD_3V3 → U3 → Q7 → SW_VCOM → L3 → GND` 储能；关断时 `GND → C20/负载 → VBB_3P5V → D4 → SW_VCOM → L3 → GND` 续流，建立负电压。41/56脚直接共用同一个VBB_3P5V网络。
 
 **这是 TFT_VCOM相关电路所需的负偏置供电，不是公共电极波形本身。** 规格书把 41脚 VNCP_3P5V、56脚 VBB_3P5V定义为负偏置输入，把 55脚 TFT_VCOM定义为驱动输出。网络名不等于控制器会在所有工作阶段精确输出 −3.500V。[屏幕规格书第 8–9 页](../../../../docs/raw/GDEP133C02.pdf)。
 
@@ -204,27 +187,24 @@ L2的一端接地，另一端接 SW_N；它不是 L1那种输入到开关节点�
 | 位号 | 是什么、接在哪里 | 作用与设计理由 |
 | --- | --- | --- |
 | L3 | 15µH，SW_VCOM—GND | 此负偏置支路的储能电感；保留参考值，不把 VDDN的实测／估算电流套用过来。 |
-| Q7 | PJA3433 PMOS，G=GATE_VCOM、S=SENSE_VCOM、D=SW_VCOM | 参考电路采用的高边 P沟道开关，导通需要负 VGS；控制极性矛盾必须按下文理解。 |
-| U3 | 0.2Ω，AVDD—SENSE_VCOM | 高边电流采样，`AVDD−VSENSE_VCOM≈IQ7×0.2Ω`；让 RESEC得到支路电流信息。 |
-| R13 | 1MΩ，AVDD—GATE_VCOM | 驱动释放时把栅极拉到输入侧，趋向关闭 PMOS。 |
-| R14 | 0Ω，RESEC—SENSE_VCOM | 采样信号连接位；不参与负输出分压设定。 |
-| R15 | 0Ω，GDRC—GATE_VCOM | 控制器到 Q7栅极的连接；目前无专门串联栅极阻尼值。 |
-| R16 | 0Ω，VBB_3P5V—VNCP_3P5V | 将两路偏置引脚共用同一负电源，沿用已采用的参考方案；不是可调分压器，也不能推广到所有屏幕版本。 |
+| Q7 | PJA3433 PMOS，G=GDRC、S=RESEC、D=SW_VCOM | 参考电路采用的高边 P沟道开关，导通需要负 VGS；控制极性矛盾必须按下文理解。 |
+| U3 | 0.2Ω，EPD_3V3—RESEC | 高边电流采样，`EPD_3V3−VRESEC≈IQ7×0.2Ω`；让 RESEC得到支路电流信息。 |
+| R13 | 1MΩ，EPD_3V3—GDRC | 驱动释放时把栅极拉到输入侧，趋向关闭 PMOS。 |
 | D4 | B0530W-7-F，A=VBB_3P5V、K=SW_VCOM | 负偏置续流／整流二极管。参考图选择小于 D1/D2的器件；不能由此推断本板实测负载一定小。 |
-| C19 | 4.7µF/50V，AVDD—GND | 本功率级输入脉冲去耦。 |
+| C19 | 4.7µF/50V，EPD_3V3—GND | 本功率级输入脉冲去耦。 |
 | C20 | 10µF/50V，VBB_3P5V—GND | 负偏置储能，降低负载和开关造成的电压波动。 |
 
 D4为 30V、0.5A等级肖特基，厂商对电容负载还给出电流降额条件。实际必须检查峰值、平均电流、结温和反向尖峰，不能用标称 0.5A代替校核。[Diodes B0530W规格书](https://www.diodes.com/datasheet/download/B0530W.pdf)。
 
 **资料矛盾保持透明：** 屏幕规格书将 GDRC写为 N沟道驱动，商家参考图却使用 PJA3433；其原厂资料为 P沟道 MOS。本项目此前采用的是参考图的器件与拓扑，所以本文按 PMOS解释，并没有从纸面资料证明内部驱动已经与它匹配。必须确认上电／工作／关断时 GDRC相对 Q7源极的波形。若并非所需的负 VGS，不能通过“改一下文字”解决，也不能未经重新分析就只换成 NMOS。[Panjit PJA3433原厂资料](https://www.panjit.com.cn/upload/datasheet/PJA3433.pdf)。
 
-## 8. 功能区 5：VGH 正栅极电荷泵（12 个器件）
+## 8. 功能区 5：VGH 正栅极电荷泵（11 个器件）
 
 ### 8.1 为什么已经有 VDDP，还需要这一支路
 
 模拟电源和栅极驱动电源承担不同功能。电荷泵利用已有 LX的周期跳变，通过飞跨电容和二极管转移电荷，让 VGH可以高于作为基准的正电位。这里“飞跨”是指电容两端都可能改变对地电位，不是一端固定接地的普通滤波电容。
 
-关键路径：`LX → R10 → PUMP_P_AC → C17 → PUMP_P_MID`。D3的第一只二极管从 PUMP_P_LOW到 PUMP_P_MID，第二只从 PUMP_P_MID到 VGH_RAW。Q3/Q4控制 PUMP_P_LOW，FBP反馈检测 VGH_RAW。
+关键路径：`LX → R10 → PUMP_P_AC → C17 → PUMP_P_MID`。D3的第一只二极管从 PUMP_P_LOW到 PUMP_P_MID，第二只从 PUMP_P_MID到 VGH。Q3/Q4控制 PUMP_P_LOW，FBP反馈检测 VGH。
 
 ### 8.2 Q3/Q4：把控制信号变成高压侧基准的调节
 
@@ -242,10 +222,10 @@ DRVP使 Q4导通时，Q4从 Q3基极抽取电流，路径是 `BASE_P → Q4 → 
 
 1. LX低相位使 PUMP_P_AC较低，D3第一只二极管向 PUMP_P_MID充电，把该节点钳到约 `PUMP_P_LOW−VF`，建立 C17两端的电压差。
 2. LX升高，C17短时保持两端电压差，PUMP_P_MID随之抬高。
-3. 当 PUMP_P_MID超过 VGH_RAW一个正向压降，D3第二只二极管导通，将电荷送入 C16和负载。
+3. 当 PUMP_P_MID超过 VGH一个正向压降，D3第二只二极管导通，将电荷送入 C16和负载。
 4. LX回落时，输出二极管截止，C16保持输出电压，下一周期补充电荷。
 
-忽略负载和寄生的拓扑量级近似是 `VGH_RAW ≈ PUMP_P_LOW + ΔVLX − 2VF`。这里的 ΔVLX是 LX高低相位之差；PUMP_P_LOW受控，因此不能直接宣布“VGH永远等于两倍 VDDP”。控制器还会根据 FBP调节泵基准／工作状态。
+忽略负载和寄生的拓扑量级近似是 `VGH ≈ PUMP_P_LOW + ΔVLX − 2VF`。这里的 ΔVLX是 LX高低相位之差；PUMP_P_LOW受控，因此不能直接宣布“VGH永远等于两倍 VDDP”。控制器还会根据 FBP调节泵基准／工作状态。
 
 ### 8.4 逐个器件解释
 
@@ -256,12 +236,11 @@ DRVP使 Q4导通时，Q4从 Q3基极抽取电流，路径是 `BASE_P → Q4 → 
 | R11 | 100kΩ，VDDP—BASE_P | Q4关闭时把 Q3基极拉回发射极，使 PNP默认关闭；也提供基极泄放路径。 |
 | R12 | 1.5kΩ，SOURCE_VGP—GND | Q4源极退化／电流约束，避免用强 NMOS直接把 PNP基极硬拉到地；数值沿用参考，实际控制范围待验证。 |
 | D3 | BAT54S，两只串联肖特基 | 第一只给飞跨节点建立基准，第二只向正输出整流；使输出电荷不会在回落相位沿原路径被抽回。 |
-| C16 | 4.7µF/50V，VGH_RAW—GND | 正栅极电源输出储能，降低泵周期纹波。 |
+| C16 | 4.7µF/50V，VGH—GND | 正栅极电源输出储能，降低泵周期纹波。 |
 | C17 | 470nF/50V，PUMP_P_MID—PUMP_P_AC | 飞跨电容，利用 LX摆幅搬运电荷。容量影响单周期可转移电荷和泵的等效输出阻抗。 |
 | C18 | 220nF/50V，PUMP_P_LOW—GND | 稳定受 Q3控制的泵基准节点，为短时泵电流提供局部电荷；不是 VGH最终输出滤波电容。 |
 | R7 | 4.3kΩ，FBP—GND | 正输出反馈分压的下臂，给 FBP提供对地比例信号。 |
-| R8 | 110kΩ，VGH_RAW—FBP | 正输出反馈分压的上臂，与 R7决定检测比例；不是靠电阻本身把输出稳住。 |
-| R9 | 0Ω，VGH_RAW—VGH | 原始输出到面板供电的连接／隔离位，不是调节输出的校准电阻。 |
+| R8 | 110kΩ，VGH—FBP | 正输出反馈分压的上臂，与 R7决定检测比例；不是靠电阻本身把输出稳住。 |
 | R10 | 2.2Ω，LX—PUMP_P_AC | 飞跨电容驱动中的小串联阻值，限制充放电脉冲、提供阻尼并隔开部分瞬态；实际振铃改善需波形确认。 |
 
 ### 8.5 正反馈分压的计算
@@ -269,14 +248,14 @@ DRVP使 Q4导通时，Q4从 Q3基极抽取电流，路径是 `BASE_P → Q4 → 
 忽略 FBP输入电流：
 
 ```text
-VFBP = VGH_RAW × 4.3k / (110k + 4.3k)
-     ≈ 0.03762 × VGH_RAW
-VGH_RAW ≈ 26.58 × VFBP
+VFBP = VGH × 4.3k / (110k + 4.3k)
+     ≈ 0.03762 × VGH
+VGH ≈ 26.58 × VFBP
 ```
 
-如果控制器将 FBP调节到某内部目标值 `VFBP_target`，才有 `VGH_RAW≈26.58×VFBP_target`。现有资料没有在这里完整给出该目标值与寄存器条件，**不能随手代入常见的 1.2V就认定输出是 31.9V**。
+如果控制器将 FBP调节到某内部目标值 `VFBP_target`，才有 `VGH≈26.58×VFBP_target`。现有资料没有在这里完整给出该目标值与寄存器条件，**不能随手代入常见的 1.2V就认定输出是 31.9V**。
 
-分压支路也消耗电流：`Idiv≈VGH_RAW/114.3kΩ`。降低阻值会增加静态消耗，增大阻值会提高输入漏电、噪声和寄生影响；参考设计用这组阻值折中，但具体稳定性没有在本项目证明。
+分压支路也消耗电流：`Idiv≈VGH/114.3kΩ`。降低阻值会增加静态消耗，增大阻值会提高输入漏电、噪声和寄生影响；参考设计用这组阻值折中，但具体稳定性没有在本项目证明。
 
 ## 9. 功能区 6：VGL 两级负栅极电荷泵（12 个器件）
 
@@ -373,7 +352,7 @@ MSS1246-153候选的 DCR最大 54.1mΩ，25°C、10%感量下降定义下电流 
 
 50V只是候选器件额定值，不能保证所有波形都低于限制。MLCC在直流偏压下有效容量可能下降，温度、公差、老化、ESR/ESL也会影响性能。例如“两只100µF并联”只保证名义标注合计200µF；不能保证3.3V下有效容量就是200µF。
 
-本图的 4.7µF、10µF负责局部／输出储能，100nF针对更短时间的扰动，470nF飞跨电容负责转移电荷。用途取决于连接和频率，不是只由容量大小决定。面板页 C1–C6的33µF替代组合不在本页70器件内，其有效容量问题另见设计审核。
+本图的 4.7µF、10µF负责局部／输出储能，100nF针对更短时间的扰动，470nF飞跨电容负责转移电荷。用途取决于连接和频率，不是只由容量大小决定。面板页 C1–C6的33µF替代组合不在本页54器件内，其有效容量问题另见设计审核。
 
 ### 10.4 为什么飞跨电容前有 2.2Ω
 
@@ -389,7 +368,7 @@ C17/C23/C24每次被 LX驱动时都会有充放电脉冲；电阻能降低脉冲
 
 ### 11.1 默认关闭／接入台式电源
 
-控制源高阻时，R30使 U5默认关闭；输入侧 EPD_VDD仍可有3.3V，不能把“屏幕关闭”理解为所有节点均断电。接口页缓冲和信号状态也必须与屏幕供电域匹配，防止信号引脚反向供电。
+控制源高阻时，R30使 U5默认关闭；输入侧 BENCH_3V3仍可有3.3V，不能把“屏幕关闭”理解为所有节点均断电。接口页直连GPIO状态也必须与屏幕供电域匹配，防止信号引脚反向供电。
 
 ### 11.2 开启屏幕电源
 
@@ -403,117 +382,89 @@ MCU拉高 EPD_PWR_EN，U5向后级充电。逻辑／模拟输入建立后，屏�
 
 正常关断应遵循已采用的 [接口与供电状态约定](interface-power-state.md)：结束刷新并确认屏幕允许的状态，执行正确的电源关闭／待机流程，处理接口信号，再关闭 U5。具体 BUSY极性、命令和时间条件以约定及适配的面板资料为准，不能仅用固定等待若干毫秒替代。
 
-U5内部输出放电主要作用于它直接连接的下游低压域；电感／磁珠／0Ω后的电容可经导通路径参与，但**各高压输出隔着二极管或晶体管，不能保证都被这个放电电阻直接清空**。C13/C15/C16/C20/C21仍可能储存正负电荷。R7/R8形成部分正输出泄放路径，其他支路也有控制器／负载／漏电路径，但这些不能证明已经满足面板安全放电条件。
+U5内部输出放电主要作用于它直接连接的下游低压域；电感／磁珠／铜线后的电容可经导通路径参与，但**各高压输出隔着二极管或晶体管，不能保证都被这个放电电阻直接清空**。C13/C15/C16/C20/C21仍可能储存正负电荷。R7/R8形成部分正输出泄放路径，其他支路也有控制器／负载／漏电路径，但这些不能证明已经满足面板安全放电条件。
 
 MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成正常电源关闭命令。突然断电的轨电压衰减顺序、接口反灌和残压需要实测。本文没有把该硬件认定为具有完整故障安全掉电机制。
 
 ## 12. 对照图学习与验证的办法
 
-第一遍只沿 J1到 AVDD、VDD、VDDIO找供电路径。第二遍只看三个电感支路，每次画出 MOS导通／关断两个闭合回路。第三遍把 BAT54S拆成两只二极管，给飞跨电容标出高／低相位电压方向。最后看 RESE和 FB，分别回答“检测的是电流还是电压”“参考电位在哪里”。
+第一遍只沿 J1到 EPD_3V3、VDD、VDDIO找供电路径。第二遍只看三个电感支路，每次画出 MOS导通／关断两个闭合回路。第三遍把 BAT54S拆成两只二极管，给飞跨电容标出高／低相位电压方向。最后看 RESE和 FB，分别回答“检测的是电流还是电压”“参考电位在哪里”。
 
 | 需要理解／验证的问题 | 观察对象 | 能回答什么 |
 | --- | --- | --- |
-| 输入开关是否适合大电容启动 | SW_ON、SW_IN、VIN、AVDD及输入电流 | 浪涌、压降、带载上升时间，不能仅看 U5标称2A |
+| 输入开关是否适合大电容启动 | EPD_PWR_EN、BENCH_3V3、EPD_3V3各支路及输入电流 | 浪涌、压降、带载上升时间，不能仅看 U5标称2A |
 | Q1升压过程是否正确 | GDRP相对 RESEP、LX、VDDP、U1压差 | 栅源驱动、开关尖峰、电流检测、输出是否稳定 |
 | 两路负变换器是否正确 | Q8/Q7栅源波形、SW_N/SW_VCOM、采样压差、负输出 | PMOS极性、峰值应力，尤其 GDRC矛盾 |
-| 正电荷泵是否搬运电荷 | LX、PUMP_P_AC/MID/LOW、VGH_RAW、FBP | 基准调节、整流方向、反馈比例 |
+| 正电荷泵是否搬运电荷 | LX、PUMP_P_AC/MID/LOW、VGH、FBP | 基准调节、整流方向、反馈比例 |
 | 两级负泵是否按预期工作 | LX、DOWN/MID/UP、VGL、FBN、REG_VGN、Q6驱动 | 一级／二级负电位、参考输出和实际反馈关系 |
 | 器件余量是否足够 | 三路电流波形、器件温升、各端间电压 | 采样电阻功率、电感饱和、器件耐压及损耗 |
 | 关闭是否满足面板要求 | 全部电源轨、BUSY、使能、接口信号 | 正常／异常掉电的残压与时序 |
 
-这是理解目标，不是未经审核即可通电的验收规程。测栅源或高边采样压差应使用合适的差分测量；普通接地示波器的地夹只能接板上 GND，接到 LX、SENSE_N等节点会改变电路甚至短路。所有测试记录应注明探头方法、带宽、输入限流、固件／面板版本及工作阶段。
+这是理解目标，不是未经审核即可通电的验收规程。测栅源或高边采样压差应使用合适的差分测量；普通接地示波器的地夹只能接板上 GND，接到 LX、RESEN等节点会改变电路甚至短路。所有测试记录应注明探头方法、带宽、输入限流、固件／面板版本及工作阶段。
 
 ## 13. 这份分析确定了什么，哪些不能从图上确定
 
-确定的内容包括：70个元器件的身份和连接、三个电感变换器的拓扑、两个电荷泵的整流路径、两个反馈网络的数学关系、默认开关行为和各器件在回路中的用途。
+确定的内容包括：54个元器件的身份和连接、三个电感变换器的拓扑、两个电荷泵的整流路径、两个反馈网络的数学关系、默认开关行为和各器件在回路中的用途。
 
-目前不能从这张图单独得到：所有电源目标值及容差、控制器开关频率／峰值阈值／补偿参数、实际有效电容、动态稳定性、GDRC与 Q7实际驱动匹配、L5完整阻抗曲线及准确额定电流、启动浪涌是否超出预算、温升和安全掉电达标情况。沿用厂家参考设计解释了这些值的出处，不能代替这些项目的验收。
+目前不能从这张图单独得到：所有电源目标值及容差、控制器开关频率／峰值阈值／补偿参数、实际有效电容、动态稳定性、GDRC与 Q7实际驱动匹配、共用电源的刷新噪声、启动浪涌是否超出预算、温升和安全掉电达标情况。沿用厂家参考设计解释了这些值的出处，不能代替这些项目的验收。
 
-## 附录 A：70 个实体器件的完整型号、封装与引脚网络
+## 附录A：54个器件的当前型号、封装及引脚
 
-下表由当前原生电源页的器件字段及 KiCad导出网表整理。料号是工程目前的候选记录，不代表供货、替代型号或生产资格已经核验。`U1/U2/U3`虽以 U开头，物理上仍是电阻；电容均为本工程采用的无极性陶瓷候选。
+| 位号 | 当前值 | 完整候选料号 | 本地封装 | 逐脚网络 |
+|---|---|---|---|---|
+| J1 | 3V3 BENCH ONLY | TSW-102-07-G-S | Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical | 1=BENCH_3V3<br>2=GND |
+| C28 | 2.2uF/50V | GRM32ER71H225KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=BENCH_3V3<br>2=GND |
+| U5 | TPS22917DBVR | TPS22917DBVR | Driver:Package_TO_SOT_SMD__SOT-23-6 | 1=BENCH_3V3<br>2=GND<br>3=EPD_PWR_EN<br>4=SW_CT<br>5=EPD_3V3<br>6=EPD_3V3 |
+| R30 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=EPD_PWR_EN<br>2=GND |
+| C29 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C30 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C31 | 100uF/6.3V | GRM32ER60J107ME20L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C32 | 100uF/6.3V | GRM32ER60J107ME20L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C33 | 100nF/50V | GRM188R71H104KA93D | Driver:Capacitor_SMD__C_0603_1608Metric | 1=EPD_3V3<br>2=GND |
+| L1 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=EPD_3V3<br>2=LX |
+| L2 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=SW_N<br>2=GND |
+| L3 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=SW_VCOM<br>2=GND |
+| Q1 | DMN3065LW-7 | DMN3065LW-7 | Driver:Package_TO_SOT_SMD__SOT-323_SC-70 | 1=GDRP<br>2=RESEP<br>3=LX |
+| Q8 | DMP3068L-7 | DMP3068L-7 | Driver:Package_TO_SOT_SMD__SOT-23 | 1=GDRN<br>2=RESEN<br>3=SW_N |
+| Q7 | PJA3433_R1_00001 | PJA3433_R1_00001 | Driver:Package_TO_SOT_SMD__SOT-23 | 1=GDRC<br>2=RESEC<br>3=SW_VCOM |
+| U1 | 0.2 ohm | WSL1206R2000FEA | Driver:Resistor_SMD__R_1206_3216Metric | 1=RESEP<br>2=GND |
+| U2 | 0.2 ohm | WSL1206R2000FEA | Driver:Resistor_SMD__R_1206_3216Metric | 1=EPD_3V3<br>2=RESEN |
+| U3 | 0.2 ohm | WSL1206R2000FEA | Driver:Resistor_SMD__R_1206_3216Metric | 1=EPD_3V3<br>2=RESEC |
+| R2 | 1M ohm | RC0603FR-071ML | Driver:Resistor_SMD__R_0603_1608Metric | 1=GDRP<br>2=GND |
+| R3 | 1M ohm | RC0603FR-071ML | Driver:Resistor_SMD__R_0603_1608Metric | 1=EPD_3V3<br>2=GDRN |
+| R13 | 1M ohm | RC0603FR-071ML | Driver:Resistor_SMD__R_0603_1608Metric | 1=EPD_3V3<br>2=GDRC |
+| D1 | MBR230S1F-7 | MBR230S1F-7 | Driver:Diode_SMD__D_SOD-123F | 1=VDDP<br>2=LX |
+| D2 | MBR230S1F-7 | MBR230S1F-7 | Driver:Diode_SMD__D_SOD-123F | 1=SW_N<br>2=VDDN |
+| D4 | B0530W-7-F | B0530W-7-F | Driver:Diode_SMD__D_SOD-123 | 1=SW_VCOM<br>2=VBB_3P5V |
+| C12 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C13 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VDDP<br>2=GND |
+| C14 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C15 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VDDN<br>2=GND |
+| C19 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
+| C20 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VBB_3P5V<br>2=GND |
+| Q3 | MMBT3906-7-F | MMBT3906-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=BASE_P<br>2=VDDP<br>3=PUMP_P_LOW |
+| Q4 | DMN3065LW-7 | DMN3065LW-7 | Driver:Package_TO_SOT_SMD__SOT-323_SC-70 | 1=DRVP<br>2=SOURCE_VGP<br>3=BASE_P |
+| R11 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=VDDP<br>2=BASE_P |
+| R12 | 1.5k ohm | RC0603FR-071K5L | Driver:Resistor_SMD__R_0603_1608Metric | 1=SOURCE_VGP<br>2=GND |
+| D3 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_P_LOW<br>2=VGH<br>3=PUMP_P_MID |
+| C16 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VGH<br>2=GND |
+| C17 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_P_MID<br>2=PUMP_P_AC |
+| C18 | 220nF/50V | GRM21BR71H224KA01L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_P_LOW<br>2=GND |
+| R7 | 4.3k ohm | RC0603FR-074K3L | Driver:Resistor_SMD__R_0603_1608Metric | 1=GND<br>2=FBP |
+| R8 | 110k ohm | RC0603FR-07110KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=FBP<br>2=VGH |
+| R10 | 2.2 ohm | RC0603FR-072R2L | Driver:Resistor_SMD__R_0603_1608Metric | 1=PUMP_P_AC<br>2=LX |
+| Q6 | MMBT3904-7-F | MMBT3904-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=DRVN<br>2=GND<br>3=PUMP_N_LOW |
+| D5 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=VGL<br>2=PUMP_N_MID<br>3=PUMP_N_UP |
+| D6 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_N_MID<br>2=PUMP_N_LOW<br>3=PUMP_N_DOWN |
+| C21 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VGL<br>2=GND |
+| C22 | 1uF/50V | GRM21BR71H105KA12L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_MID<br>2=GND |
+| C23 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_UP<br>2=PUMP_N_AC |
+| C24 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_DOWN<br>2=PUMP_N_AC |
+| C25 | 1uF/50V | GRM21BR71H105KA12L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=REG_VGN<br>2=GND |
+| C26 | 47nF/50V | GRM188R71H473KA61D | Driver:Capacitor_SMD__C_0603_1608Metric | 1=PUMP_N_LOW<br>2=GND |
+| R17 | 400k ohm | RC0603FR-07400KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=VGL<br>2=FBN |
+| R18 | 16k ohm | RC0603FR-0716KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=FBN<br>2=REG_VGN |
+| R19 | 2.2 ohm | RC0603FR-072R2L | Driver:Resistor_SMD__R_0603_1608Metric | 1=PUMP_N_AC<br>2=LX |
+| C36 | 1nF/50V C0G | C0805C102J5GACTU | Driver:Capacitor_SMD__C_0805_2012Metric | 1=BENCH_3V3<br>2=SW_CT |
 
-| 位号 | 当前值 | 候选料号 | 封装 | 逐脚网络 |
-| --- | --- | --- | --- | --- |
-| J1 | 3V3 BENCH ONLY | TSW-102-07-G-S | Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical | 1=BENCH_3V3<br>2=GND |
-| R26 | 0 ohm | RC1206JR-070RL | Resistor_SMD__R_1206_3216Metric | 1=BENCH_3V3<br>2=EPD_VDD |
-| C28 | 2.2uF/50V | GRM32ER71H225KA88L | Capacitor_SMD__C_1210_3225Metric | 1=EPD_VDD<br>2=GND |
-| R27 | 0 ohm | RC1206JR-070RL | Resistor_SMD__R_1206_3216Metric | 1=EPD_VDD<br>2=SW_IN |
-| U5 | TPS22913BYZVT | TPS22913BYZVT | Package_CSP__WLCSP-4_0.89x0.89mm_Layout2x2_P0.5mm | B1=GND<br>A2=SW_IN<br>B2=SW_ON<br>A1=SW_OUT |
-| R28 | 0 ohm | RC1206JR-070RL | Resistor_SMD__R_1206_3216Metric | 1=SW_OUT<br>2=VIN |
-| R29 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 1=EPD_PWR_EN<br>2=SW_ON |
-| R30 | 100k ohm | RC0603FR-07100KL | Resistor_SMD__R_0603_1608Metric | 2=GND<br>1=SW_ON |
-| C29 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VIN |
-| C30 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VIN |
-| L4 | BLM18PG221SH1D | BLM18PG221SH1D | Inductor_SMD__L_0603_1608Metric | 2=EPD_3V3<br>1=VIN |
-| L5 | CBG160808U000T | CBG160808U000T | Inductor_SMD__L_0603_1608Metric | 2=AVDD_PRE<br>1=VIN |
-| R31 | 0 ohm | RC1206JR-070RL | Resistor_SMD__R_1206_3216Metric | 2=AVDD_CAP<br>1=AVDD_PRE |
-| R32 | 0 ohm | RC1206JR-070RL | Resistor_SMD__R_1206_3216Metric | 2=AVDD<br>1=AVDD_CAP |
-| C31 | 100uF/6.3V | GRM32ER60J107ME20L | Capacitor_SMD__C_1210_3225Metric | 1=AVDD_CAP<br>2=GND |
-| C32 | 100uF/6.3V | GRM32ER60J107ME20L | Capacitor_SMD__C_1210_3225Metric | 1=AVDD_CAP<br>2=GND |
-| R33 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 1=EPD_3V3<br>2=VDD |
-| R34 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 1=EPD_3V3<br>2=VDDIO |
-| C33 | 100nF/50V | GRM188R71H104KA93D | Capacitor_SMD__C_0603_1608Metric | 1=EPD_3V3<br>2=GND |
-| L1 | 15uH | MSS1246-153MLC | Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=AVDD<br>2=LX |
-| Q1 | DMN3065LW-7 | DMN3065LW-7 | Package_TO_SOT_SMD__SOT-323_SC-70 | 1=GDRP<br>3=LX<br>2=RESEP |
-| U1 | 0.2 ohm | WSL1206R2000FEA | Resistor_SMD__R_1206_3216Metric | 2=GND<br>1=RESEP |
-| R2 | 1M ohm | RC0603FR-071ML | Resistor_SMD__R_0603_1608Metric | 1=GDRP<br>2=GND |
-| D1 | MBR230S1F-7 | MBR230S1F-7 | Diode_SMD__D_SOD-123F | 2=LX<br>1=VDDP |
-| C12 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 1=AVDD<br>2=GND |
-| C13 | 10uF/50V | GRM32ER71H106KA12L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VDDP |
-| L2 | 15uH | MSS1246-153MLC | Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 2=GND<br>1=SW_N |
-| Q8 | DMP3068L-7 | DMP3068L-7 | Package_TO_SOT_SMD__SOT-23 | 1=GATE_N<br>2=SENSE_N<br>3=SW_N |
-| U2 | 0.2 ohm | WSL1206R2000FEA | Resistor_SMD__R_1206_3216Metric | 1=AVDD<br>2=SENSE_N |
-| R3 | 1M ohm | RC0603FR-071ML | Resistor_SMD__R_0603_1608Metric | 1=AVDD<br>2=GATE_N |
-| R4 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 1=RESEN<br>2=SENSE_N |
-| R5 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 2=GATE_N<br>1=GDRN |
-| R6 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 2=VDDN<br>1=VDDN_RAW |
-| D2 | MBR230S1F-7 | MBR230S1F-7 | Diode_SMD__D_SOD-123F | 1=SW_N<br>2=VDDN_RAW |
-| C14 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 1=AVDD<br>2=GND |
-| C15 | 10uF/50V | GRM32ER71H106KA12L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VDDN |
-| L3 | 15uH | MSS1246-153MLC | Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 2=GND<br>1=SW_VCOM |
-| Q7 | PJA3433_R1_00001 | PJA3433_R1_00001 | Package_TO_SOT_SMD__SOT-23 | 1=GATE_VCOM<br>2=SENSE_VCOM<br>3=SW_VCOM |
-| U3 | 0.2 ohm | WSL1206R2000FEA | Resistor_SMD__R_1206_3216Metric | 1=AVDD<br>2=SENSE_VCOM |
-| R13 | 1M ohm | RC0603FR-071ML | Resistor_SMD__R_0603_1608Metric | 1=AVDD<br>2=GATE_VCOM |
-| R14 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 1=RESEC<br>2=SENSE_VCOM |
-| R15 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 2=GATE_VCOM<br>1=GDRC |
-| R16 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 1=VBB_3P5V<br>2=VNCP_3P5V |
-| D4 | B0530W-7-F | B0530W-7-F | Diode_SMD__D_SOD-123 | 1=SW_VCOM<br>2=VBB_3P5V |
-| C19 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 1=AVDD<br>2=GND |
-| C20 | 10uF/50V | GRM32ER71H106KA12L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VBB_3P5V |
-| Q3 | MMBT3906-7-F | MMBT3906-7-F | Package_TO_SOT_SMD__SOT-23 | 1=BASE_P<br>3=PUMP_P_LOW<br>2=VDDP |
-| Q4 | DMN3065LW-7 | DMN3065LW-7 | Package_TO_SOT_SMD__SOT-323_SC-70 | 3=BASE_P<br>1=DRVP<br>2=SOURCE_VGP |
-| R11 | 100k ohm | RC0603FR-07100KL | Resistor_SMD__R_0603_1608Metric | 2=BASE_P<br>1=VDDP |
-| R12 | 1.5k ohm | RC0603FR-071K5L | Resistor_SMD__R_0603_1608Metric | 2=GND<br>1=SOURCE_VGP |
-| D3 | BAT54S-7-F | BAT54S-7-F | Package_TO_SOT_SMD__SOT-23 | 1=PUMP_P_LOW<br>3=PUMP_P_MID<br>2=VGH_RAW |
-| C16 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VGH_RAW |
-| C17 | 470nF/50V | GRM21BR71H474KA88L | Capacitor_SMD__C_0805_2012Metric | 2=PUMP_P_AC<br>1=PUMP_P_MID |
-| C18 | 220nF/50V | GRM21BR71H224KA01L | Capacitor_SMD__C_0805_2012Metric | 2=GND<br>1=PUMP_P_LOW |
-| R7 | 4.3k ohm | RC0603FR-074K3L | Resistor_SMD__R_0603_1608Metric | 2=FBP<br>1=GND |
-| R8 | 110k ohm | RC0603FR-07110KL | Resistor_SMD__R_0603_1608Metric | 1=FBP<br>2=VGH_RAW |
-| R9 | 0 ohm | RC0603JR-070RL | Resistor_SMD__R_0603_1608Metric | 2=VGH<br>1=VGH_RAW |
-| R10 | 2.2 ohm | RC0603FR-072R2L | Resistor_SMD__R_0603_1608Metric | 2=LX<br>1=PUMP_P_AC |
-| Q6 | MMBT3904-7-F | MMBT3904-7-F | Package_TO_SOT_SMD__SOT-23 | 1=DRVN<br>2=GND<br>3=PUMP_N_LOW |
-| D5 | BAT54S-7-F | BAT54S-7-F | Package_TO_SOT_SMD__SOT-23 | 2=PUMP_N_MID<br>3=PUMP_N_UP<br>1=VGL |
-| D6 | BAT54S-7-F | BAT54S-7-F | Package_TO_SOT_SMD__SOT-23 | 3=PUMP_N_DOWN<br>2=PUMP_N_LOW<br>1=PUMP_N_MID |
-| C21 | 4.7uF/50V | GRM32ER71H475KA88L | Capacitor_SMD__C_1210_3225Metric | 2=GND<br>1=VGL |
-| C22 | 1uF/50V | GRM21BR71H105KA12L | Capacitor_SMD__C_0805_2012Metric | 2=GND<br>1=PUMP_N_MID |
-| C23 | 470nF/50V | GRM21BR71H474KA88L | Capacitor_SMD__C_0805_2012Metric | 2=PUMP_N_AC<br>1=PUMP_N_UP |
-| C24 | 470nF/50V | GRM21BR71H474KA88L | Capacitor_SMD__C_0805_2012Metric | 2=PUMP_N_AC<br>1=PUMP_N_DOWN |
-| C25 | 1uF/50V | GRM21BR71H105KA12L | Capacitor_SMD__C_0805_2012Metric | 2=GND<br>1=REG_VGN |
-| C26 | 47nF/50V | GRM188R71H473KA61D | Capacitor_SMD__C_0603_1608Metric | 2=GND<br>1=PUMP_N_LOW |
-| R17 | 400k ohm | RC0603FR-07400KL | Resistor_SMD__R_0603_1608Metric | 2=FBN<br>1=VGL |
-| R18 | 16k ohm | RC0603FR-0716KL | Resistor_SMD__R_0603_1608Metric | 1=FBN<br>2=REG_VGN |
-| R19 | 2.2 ohm | RC0603FR-072R2L | Resistor_SMD__R_0603_1608Metric | 2=LX<br>1=PUMP_N_AC |
-
-覆盖核对：功能区 1/2/3/4/5/6 分别解释 19/7/10/10/12/12 个实体器件，合计70个；逐项与原生页的位号集合匹配，无缺项、无重复项。
-
-## 附录 B：阅读器件字段与资料
-
-位号中的 R/C/L/Q/D通常对应电阻／电容／电感或磁珠／晶体管／二极管；本项目 U1–U3的命名例外已在正文解释。电阻阻值单位Ω，kΩ为千欧，MΩ为兆欧；µF是微法，nF是纳法；15µH是感量。电容值中的“/50V”是耐压，不是输出电压。
-
-0603、0805、1206、1210是常见英制贴片尺寸代码；例如0603约为1.6×0.8mm，1206约为3.2×1.6mm。封装决定焊盘和装配，不能根据器件大类随意替换。Q1/Q4为SOT-323，Q8及Q3/Q6为SOT-23，尺寸与引脚必须按完整料号核对；U5是2×2球WLCSP，球号A1/A2/B1/B2不能当成普通四脚封装编号。附录A保留项目库实际封装名称。
-
-本地资料：商家参考外围图解释拓扑出处；屏幕规格书解释控制／供电引脚定义；TI负载开关、Vishay电阻和Coilcraft电感规格书解释候选器件能力。本文各节已在相应结论旁链接。三极管类型及引脚资料另可查看 [MMBT3906 PNP](https://www.diodes.com/datasheet/download/MMBT3906.pdf)及 [MMBT3904 NPN](https://www.diodes.com/datasheet/download/MMBT3904.pdf)。线上规格查阅日期为2026-10-02。
-
-本次仅新增学习文档和阅读入口，没有修改原理图、PCB、BOM或制造文件；没有进行通电／波形／温升验证。
+元件位号保持原有习惯；U1–U3仍是0.2Ω采样电阻。所有原0Ω连接位已经删除，无法再通过拆下这些电阻隔离支路。0Ω用途的解释属于通用背景。上下电必须遵循[新版接口约定](interface-power-state.md)。

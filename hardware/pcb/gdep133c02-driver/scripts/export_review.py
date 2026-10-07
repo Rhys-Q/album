@@ -8,6 +8,7 @@ import subprocess, json, csv, hashlib, zipfile
 import pcbnew as pcb
 
 ROOT = Path(__file__).resolve().parents[1]
+raise SystemExit('Historical v0.2 exporter disabled: use export_hand_solder.py with a new versioned output directory; do not overwrite archived releases.')
 CLI = '/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
 NAME = 'gdep133c02-driver'
 BOARD = ROOT / (NAME + '.kicad_pcb')

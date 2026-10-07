@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-03T10:53:02",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2df5ab9d-628b-53bd-a709-8806893b789a",
+            "violations": []
+        },
+        {
+            "path": "/Power converters/",
+            "uuid_path": "/2df5ab9d-628b-53bd-a709-8806893b789a/c7527f93-a72b-5185-b98e-9cd586f1d09d",
+            "violations": []
+        },
+        {
+            "path": "/Panel and temperature/",
+            "uuid_path": "/2df5ab9d-628b-53bd-a709-8806893b789a/ee47e7da-03bc-5561-aebd-8654f37cc363",
+            "violations": []
+        },
+        {
+            "path": "/Host interface and test points/",
+            "uuid_path": "/2df5ab9d-628b-53bd-a709-8806893b789a/8a9a5ea2-3852-5e2d-a700-bacf0be3dc4d",
+            "violations": []
+        }
+    ],
+    "source": "gdep133c02-driver.kicad_sch"
+}

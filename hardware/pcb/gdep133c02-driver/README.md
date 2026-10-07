@@ -1,51 +1,34 @@
-# GDEP133C02 最小驱动板：CAD 修复版
+# GDEP133C02驱动板：v0.4手焊简化版
 
-2026-10-01，KiCad **10.0.6**。本轮已修复 CAD 连接与设计规则问题，原理图、PCB 均已实际打开验证。实物和关键功率参数尚未验收，当前制造文件用于审阅，尚未生产放行。
+2026-10-07，KiCad **10.0.6**。已移除L4/L5，以EPD_3V3统一开关后供电；已更新原生原理图与PCB，更新P1供电铜线和铺铜，完整ERC/DRC均为零。**102个装配件＝100个顶面贴片＋J1/J2两个直插排针**；24个测试点是铜焊盘，全部DNP。
 
-2026-10-02，电源页已重画为六个功能区的导线式原理图，器件连接与PCB保持一致，重新执行ERC/DRC通过。本次新页的GUI打开复查因工具访问被拒绝而待完成；上面的实际打开记录为2026-10-01版本。查看[电源页PDF](reports/power-redraw/power.pdf)及[阅读说明](docs/power-redraw.md)。
+这版按用户接受的软件上下电约束减少器件，移除17只0Ω及接口隔离电路，U5改为TPS22917DBVR/SOT-23-6并新增1nF软启动电容。功率级、温度检测和高压储能保留。详见[简化改版记录](docs/hand-solder-simplification.md)。
 
-2026-10-03，重新核对当前三页原理图与PCB：154个实体元器件的数值、封装和完整UUID路径一致，411个引脚网络一致；ERC 0，当前保存铜层的DRC 0／未连接0／一致性问题0。无需因图形重绘修改布局布线。本轮GUI访问仍被拒绝，自动重新铺铜检查异常退出，详见[同步核对记录](docs/pcb-sync-check-2026-10-03.md)。
+打开[gdep133c02-driver.kicad_pro](gdep133c02-driver.kicad_pro)。入口原理图含power/panel/interface三页；本地符号、封装及必要模型随工程保存。当前版本GUI实际打开仍被电脑控制工具拒绝，因此该项待完成。电气性能、实物连接器配接和安全掉电尚未实测；制造文件仍是审阅包。
 
-范围：外接 ESP32-S3 开发板、稳压3.3V限流台式电源，只做最小屏幕驱动硬件；不含固件、电池、SD、USB和整机结构。
+## 当前文件
 
-2026-10-02，Panel 与 Interface 页也已重画为导线式功能电路，完整网表和器件属性保持一致，最终 ERC/DRC 通过。查看 [Panel PDF](reports/panel-interface-redraw/panel.pdf)、[Interface PDF](reports/panel-interface-redraw/interface.pdf)及[阅读说明](docs/panel-interface-redraw.md)。当前新页的 GUI 打开复查仍因工具拒绝访问而待完成。
+- [整套原理图PDF](reports/schematic.pdf)
+- [电源详解](docs/power-circuit-explained.md)、[面板详解](docs/panel-circuit-explained.md)、[接口详解](docs/interface-circuit-explained.md)
+- [必须遵守的主机上下电约定](docs/interface-power-state.md)、[主控引脚表](docs/host-interface.csv)
+- [KiCad学习教程](docs/learning-guide.md)
+- [v0.4嘉立创兼容审阅包](releases/jlc-cn-review-v0.4-2026-10-07/README.md)
+- [嘉立创下单必读](../../../docs/raw/嘉立创下单必读.md)
 
-学习本工程：[从原理图到 PCB 的实操教程](docs/learning-guide.md)，包含电源与接口讲解、七课练习和自测答案。
+## 检查与生产边界
 
-电源专项：[电源页原理详解](docs/power-circuit-explained.md)，逐项解释70个元器件、六个功能区、开关周期电流路径、反馈计算及设计理由。
+ERC 0；DRC 0、未连接0、一致性问题0；313个连接引脚与设计记录及PCB焊盘一致。无DRC排除或忽略规则。原生pcbnew完成重新铺铜，最终未修改的KiCad CLI完成检查。记录见[验证状态](reports/validation-status.json)、[源文件哈希](reports/check-provenance.json)。GUI拒绝访问与实物验收缺口均已记录，release_allowed=false。
 
-接口与面板专项：[Interface 原理详解](docs/interface-circuit-explained.md)覆盖43个对象及缓冲／使能／默认状态；[Panel 原理详解](docs/panel-circuit-explained.md)覆盖41个器件、温度接口、六组电容及FPC全部60脚。
+只接受稳压3.3V台式电源和外接3.3V主控，所有地共地；无5V降压、电池、USB、SD或固件。J2.16已改为NC。没有硬件信号隔离：主控先上电、最后断电，屏幕关机前完成命令并将所有输出低、输入无上拉，禁止热插拔。
 
-## 工程和检查
+PCB仍为100×80mm、4层、1.6mm，层序F.Cu/In1.Cu/In2.Cu/B.Cu；In1为GND平面，正反面GND铺铜。最小线宽与间距0.2mm，输入原有0.8mm、功率核心0.5mm；P1新增逻辑连接0.5mm、功率连接0.8mm，逻辑与FPC扇出0.2mm。过孔0.6/0.3mm。四个Ø3.2mm NPTH安装孔的板框相对坐标为(5,5)、(95,5)、(5,75)、(95,75)mm。
 
-打开 `gdep133c02-driver.kicad_pro`；顶层原理图包含power/panel/interface三页。项目库与可取得的3D模型随工程保存。100×80mm四层板、1.6mm厚；四个Ø3.2mm NPTH安装孔，板框相对位置(5,5)、(95,5)、(5,75)、(95,75)mm。
+绝对板框左上(50,50)、右下(150,130)mm，制造坐标沿用KiCad输出，不独立平移Gerber或CPL。CPL全部顶面；实际元件旋转和连接器接触面仍须核对。[待验收项目](docs/design-review.md)包括有效容量、RMS/峰值电流、Kelvin误差、浪涌、温升和全轨掉电。
 
-- ERC：0违规。
-- 完整CLI DRC：0违规、0未连接、0原理图一致性问题。
-- GUI DRC：0违规、0未连接、0忽略检查；独立PCB编辑器的原理图一致性由CLI另行检查。
-- 无DRC排除，无忽略规则；最小铜间距/线宽0.2mm，孔间距0.25mm，铜到板边0.5mm。过孔0.6/0.3mm。
-- 输入主回路优选0.8mm、电源核心0.5mm，FPC扇出及信号最小0.2mm；In1.Cu为GND平面，正反面增加GND铺铜与连接。
-- 清除元件/丝印重叠、短路、悬空支线及重复过孔，修正器件字段、DNP、NC和安装孔属性的一致性。
-- FPC信号焊盘0.30×1.20mm、0.5mm间距，固定脚2.0×1.8mm；已按原厂60针公式修正，不再使用占位封装。
+## 修改与历史
 
-报告见 `reports/erc.json`、`reports/drc.json`、`reports/validation-status.json`；源文件校验哈希见 `reports/check-provenance.json`。最初238条违规、53个未连接和196个一致性问题的报告留作修复历史。原理图曾提示自动修复，已通过编辑器保存为本机原生格式并重新检查。
+原生CAD为真源。`design-data.json`记录固定接法，不承诺自动反向同步。修改后重新运行KiCad ERC/DRC、铺铜与导出；新导出器[scripts/export_hand_solder.py](scripts/export_hand_solder.py)使用KiCad内置Python，拒绝覆盖已有版本目录，后续导出应改为新的版本路径。`scripts/check_design.py`检查报告来源、连接、BOM数量和固定引脚。
 
-## 审阅文件
+`cad-review-2026-10-01`和`jlc-cn-review-2026-10-03`是简化前历史包，129个装配件，与当前v0.4不再一致，不能混用。旧STEP、重画专项PDF、旧同步报告也是历史快照；当前学习和制造核对使用上方链接。旧导出器已加保护，避免覆盖历史release。本次改版前源文件保存在`reports/p1-direct-v0.4/before/`，v0.3前的源文件及教程在`reports/hand-solder-v0.3/before/`；不修改用户的`.history`。
 
-`releases/cad-review-2026-10-01/` 保存四层Gerber、PTH/NPTH钻孔、孔位图、BOM、KiCad坐标和嘉立创格式CPL。`reports/`保存原理图PDF、STEP及top/ground/bottom SVG预览。导出成功不代表制造放行；尚未上传或下单。CPL旋转和连接器方向需结合实际选料检查。
-
-CAD绝对原点为(0,0)，板框左上为(50,50)mm，右下为(150,130)mm；坐标文件使用KiCad导出的毫米和Y轴惯例。不能单独移动Gerber或CPL原点。板厚1.6mm，建议审阅工艺为FR4四层、外层1oz；内层铜厚与介质叠层须在下单时明确，不以默认厚度计算温升。
-
-## 尚待工程验收
-
-1. 实际连接器/屏幕FPC的Pin1、接触面、插入方向和厚度；机械尺寸核对不能代替实物配接。
-2. C1–C6组合名义33.3µF，50V陶瓷的有效容量、轨电压边界和控制环路尚未通过审核。
-3. 三只0.2Ω采样电阻的RMS/脉冲功率、Kelvin采样误差及电感峰值；具体限制见 `docs/design-review.md`。
-4. 器件供货、装配方向和完整BOM复核；U5/FPC缺少精确3D实体，STEP不能作为全部器件的装配空间证明。
-5. 限流供电、全轨波形、温升、显示和安全掉电实测，全部未进行。
-
-## 修改和复查
-
-原生KiCad文件为后续修改依据。`design-data.json`保留录入和固定接法记录，不承诺反向同步；历史初始化脚本已加保护，避免覆盖修复后的工程。路由实验不是KiCad DRC或电源性能验收的替代品。
-
-关闭编辑器后，以KiCad内置Python运行 `scripts/export_review.py` 刷新真实ERC/DRC及导出，再用Python运行 `scripts/check_design.py` 检查398个连接管脚、固定接法、本地库和检查报告哈希。检查脚本不会授予生产放行。任何原生源文件修改后须重新执行检查并更新GUI验证记录。
+P1本次改版说明：[v0.4直供设计](docs/p1-direct-supply-v0.4.md)。v0.3审阅包保留作历史快照，与当前设计不一致。

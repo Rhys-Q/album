@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-03",
+  "kicad_version": "10.0.6",
+  "production_released": false,
+  "source_sha256": {
+    "gdep133c02-driver.kicad_sch": "836f8ca5ea6e39f0d41c9b1fcf2aa69fcccf92c8fe291b155f5f654ae658433d",
+    "gdep133c02-driver.kicad_pro": "33c635a2ff72e97161e35ef8ff7a288266b8368ff67e8224b76646200f0841e2",
+    "power.kicad_sch": "ae50863eb80416dfdaf7b73124bdf49edaa77b76a13798605edff0ce815e56f4",
+    "panel.kicad_sch": "654a0725cd2081c76ba03d633789a7ad32a607b1784c6e1d4fd753669221c444",
+    "interface.kicad_sch": "f01fc3849bf50990e17ebaace45e118c79bc696c4325d69c5c5dd37aaae26f86",
+    "gdep133c02-driver.kicad_dru": "0b6301cbabf5e998590617a47060083c8ccb09e53576f275c2c0e23e3b76d9bc",
+    "gdep133c02-driver.kicad_pcb": "4f5e9da7cfc4f586e853b47cc588c48d8a05c47790f1866050fb8550947ca69c",
+    "lib/Driver.kicad_sym": "d92f70b15cc9e014ae783e1888035afba96555f912a63748d5fe6d23699b982b"
+  },
+  "source_audit": "../../reports/release-audit-2026-10-03/comparison.json",
+  "geometry_comparison": {
+    "gdep133c02-driver-B_Cu.gbl": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-B_Mask.gbs": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-B_Silkscreen.gbo": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-Edge_Cuts.gm1": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-F_Cu.gtl": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-F_Mask.gts": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-F_Silkscreen.gto": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-In1_Cu.g1": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-In2_Cu.g2": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-NPTH.drl": "PASS: identical geometry commands; only comments/X2 attributes omitted",
+    "gdep133c02-driver-PTH.drl": "PASS: identical geometry commands; only comments/X2 attributes omitted"
+  },
+  "smt_bom_groups": 41,
+  "smt_components": 127,
+  "cpl_components": 127,
+  "manual_components": [
+    "J1",
+    "J2"
+  ],
+  "all_smt_on_top": true,
+  "numeric_coordinates_mm": true,
+  "origin_and_rotation_unchanged": true,
+  "jlc_smt_part_numbers": "NOT MATCHED; exact MPN preserved; no stock/substitution claim",
+  "zone_basis": "Existing saved PCB fills; no refill or save performed",
+  "files_sha256": {
+    "README.md": "2c9d7814103dc874ac6ad0d9830213eeb19b4573b62b1ee48c000f3a0e1108ce",
+    "gdep133c02-driver-bom-manual.csv": "e7085af1fb8d97b11e9f89379729ca5fa1c7ab0c38fa272adb12e20523e4f8c6",
+    "gdep133c02-driver-bom-smt.csv": "164fe2f4dad77c1bef524452d5a23e46d349f8e51414426ed1badf2383ac6754",
+    "gdep133c02-driver-cpl-smt.csv": "6488da84c67f3a1034cf2162f3430c1f6257ddc550b05f25eb0f43d0a6084d58",
+    "gdep133c02-driver-gerber-rs274x.zip": "736ebb15a053650aaa461069aa6ec4a458406b60ba892799f16dccafdda28213",
+    "gerber/gdep133c02-driver-B_Cu.gbl": "e84d08b4fdbcff2ba55a3326edb6da9c738ac9c6c848d3345c79354fe9c445f3",
+    "gerber/gdep133c02-driver-B_Mask.gbs": "aff8843efbcdde409aaa8a13da048780eac4f677b583c7cd6993fe128901d9c4",
+    "gerber/gdep133c02-driver-B_Silkscreen.gbo": "1d673ab9d06f41f499f8806904f792f772df54a34fd8253eeb53e4482ceccb31",
+    "gerber/gdep133c02-driver-Edge_Cuts.gm1": "c8261cd5465db93f7a0379866fc8710b14687d9735a7fb68606a727d8f0889c9",
+    "gerber/gdep133c02-driver-F_Cu.gtl": "a15e8959e498abd3a1beb90e35458740d90f422a845d8e0b1cb0a3dbe8a47487",
+    "gerber/gdep133c02-driver-F_Mask.gts": "f2e729920a05c711446a394fb4a2ed2a45244b9f836cbc857b01a6baaf5bec22",
+    "gerber/gdep133c02-driver-F_Silkscreen.gto": "eead67c7e2dc70c2e39f627efca3478fc6583102ab0d15e7909ba0e377921922",
+    "gerber/gdep133c02-driver-In1_Cu.g1": "281f1c24c2d23d989b3d22e3e8739d4f2f36632ca31a377e3c879fdc08304e3c",
+    "gerber/gdep133c02-driver-In2_Cu.g2": "c348d9ff61f47c606ab1c4458b1422619d6a8cc1946b2823172aa4d2442c6510",
+    "gerber/gdep133c02-driver-NPTH.drl": "b023ef77d008cf6109639b06b4c704cc8edcd499d8d7d1526f0f3815137bbe13",
+    "gerber/gdep133c02-driver-PTH.drl": "ea4e8e097db1bd28e9731ec72c0dbd66551c6c456f5dd4c80a5a73fba911dafe",
+    "gerber/gdep133c02-driver-job.gbrjob": "66b0dd8c37cd8fff456ebea90565b7f13f3cdbd6485bd45ef1bf2e865a39834f",
+    "positions-kicad.csv": "f6dea1ee3a9dbc5f6ec1f90a1dbf5cb3d404760a4af931bb34b52a0b0f73a740"
+  }
+}

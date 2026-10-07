@@ -1,5 +1,7 @@
 # CAD 修复记录（2026-10-01）
 
+历史快照：本文记录简化前版本；当前已采用v0.4，102个装配件，旧页/旧包不能与当前CAD混用。现行说明见[简化记录](hand-solder-simplification.md)、[当前工程](../README.md)。
+
 初次完整DRC：238条违规、53个未连接、196个原理图一致性问题。最终检查：上述三项均为0，ERC也是0。真实报告见reports/drc.json和erc.json，检查对应源哈希见check-provenance.json。
 
 - 修复Footprint字段、MPN/Manufacturer/Datasheet、DNP、测试焊盘、安装孔和NC网络的原理图一致性。

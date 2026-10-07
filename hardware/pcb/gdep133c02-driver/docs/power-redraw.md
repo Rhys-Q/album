@@ -1,5 +1,7 @@
 # 电源页重画与阅读顺序
 
+历史快照：本文记录简化前版本；当前已采用v0.4，102个装配件，旧页/旧包不能与当前CAD混用。现行说明见[简化记录](hand-solder-simplification.md)、[当前工程](../README.md)。
+
 2026-10-02，仅重画 `power.kicad_sch` 并同步项目符号库中对应符号的图形。现有70个电源页器件的位号、UUID、引脚UUID、值、料号、封装、DNP和连接保持一致；没有修改PCB、其他原理图页或设计规则。
 
 直接查看[电源页PDF](../reports/power-redraw/power.pdf)或[高清预览](../reports/power-redraw/power.png)。完整工程原理图PDF也已刷新。

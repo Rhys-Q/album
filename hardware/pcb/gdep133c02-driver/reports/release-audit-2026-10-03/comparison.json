@@ -1,0 +1,241 @@
+{
+  "notes": [
+    [
+      "TP1",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP2",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP3",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP4",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP5",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP6",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP7",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP8",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP9",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP10",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP11",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP12",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP13",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP14",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP15",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP16",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP17",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP18",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP19",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP20",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP21",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP22",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP23",
+      "assembly attribute",
+      "in_pos_files"
+    ],
+    [
+      "TP24",
+      "assembly attribute",
+      "in_pos_files"
+    ]
+  ],
+  "date": "2026-10-03",
+  "kicad_version": "10.0.6",
+  "checked_release": "cad-review-2026-10-01",
+  "differences": [],
+  "gerber_and_drill": {
+    "gdep133c02-driver-B_Cu.gbl": {
+      "match": true,
+      "normalized_sha256": "4ab51db9fea8fe841c385474f1b7348b7c3e00a0494b33bcfd4a23f4d33a5dc3"
+    },
+    "gdep133c02-driver-B_Mask.gbs": {
+      "match": true,
+      "normalized_sha256": "198709f851ad8c35c4bb13c1339cf8bcdf5f362cbc434e582cfb63a62ba1a849"
+    },
+    "gdep133c02-driver-B_Silkscreen.gbo": {
+      "match": true,
+      "normalized_sha256": "9368582de6934e2a094b547a62918c9b48830e982eb4842fd6579d7e687aaf70"
+    },
+    "gdep133c02-driver-Edge_Cuts.gm1": {
+      "match": true,
+      "normalized_sha256": "2aac21e66d8a19c4e188e38747a832f5bf6964db408fcdad14125620b4d8314b"
+    },
+    "gdep133c02-driver-F_Cu.gtl": {
+      "match": true,
+      "normalized_sha256": "99d8800d94717494dc7f079375db7dfbcfbed28af7e4fa27ed3f6815c1ce356f"
+    },
+    "gdep133c02-driver-F_Mask.gts": {
+      "match": true,
+      "normalized_sha256": "59fc17242eaa4748f1793b19ece121f44b27fac335d735b5b32d3942229535c0"
+    },
+    "gdep133c02-driver-F_Silkscreen.gto": {
+      "match": true,
+      "normalized_sha256": "94fd3675b76954208a7575ec757ac837fd6c84acf81c975e25f0557ec49ed2d8"
+    },
+    "gdep133c02-driver-In1_Cu.g1": {
+      "match": true,
+      "normalized_sha256": "395f4bcdb97e71fc33417c8700775d05ec592580f1d164df6dd976438d674b44"
+    },
+    "gdep133c02-driver-In2_Cu.g2": {
+      "match": true,
+      "normalized_sha256": "66932cf26f29fe071423e05ef8f0c9c3bf8979effe758a86b35c613ee0fa2415"
+    },
+    "gdep133c02-driver-NPTH.drl": {
+      "match": true,
+      "normalized_sha256": "790f9f2b26f9e2162abbfe8f76ac32330557756e7974eb5d17e55ab5a67cafa7"
+    },
+    "gdep133c02-driver-PTH.drl": {
+      "match": true,
+      "normalized_sha256": "602886e485220405c493ca8bec01f12e0e0d901d48efabe60dc3ca79734426c1"
+    }
+  },
+  "gerber_job_match": true,
+  "positions": {
+    "count": 127,
+    "match": true
+  },
+  "cpl": {
+    "count": 127,
+    "match": true
+  },
+  "bom": {
+    "assembled_components": 129,
+    "grouped_rows": 43,
+    "match": true,
+    "schematic_pcb_fields_and_assembly_flags_match": true
+  },
+  "zip_members": {
+    "gdep133c02-driver-B_Cu.gbl": true,
+    "gdep133c02-driver-B_Mask.gbs": true,
+    "gdep133c02-driver-B_Silkscreen.gbo": true,
+    "gdep133c02-driver-Edge_Cuts.gm1": true,
+    "gdep133c02-driver-F_Cu.gtl": true,
+    "gdep133c02-driver-F_Mask.gts": true,
+    "gdep133c02-driver-F_Silkscreen.gto": true,
+    "gdep133c02-driver-In1_Cu.g1": true,
+    "gdep133c02-driver-In2_Cu.g2": true,
+    "gdep133c02-driver-NPTH.drl": true,
+    "gdep133c02-driver-PTH.drl": true,
+    "gdep133c02-driver-job.gbrjob": true
+  },
+  "source_sha256": {
+    "gdep133c02-driver.kicad_sch": "836f8ca5ea6e39f0d41c9b1fcf2aa69fcccf92c8fe291b155f5f654ae658433d",
+    "gdep133c02-driver.kicad_pro": "33c635a2ff72e97161e35ef8ff7a288266b8368ff67e8224b76646200f0841e2",
+    "power.kicad_sch": "ae50863eb80416dfdaf7b73124bdf49edaa77b76a13798605edff0ce815e56f4",
+    "panel.kicad_sch": "654a0725cd2081c76ba03d633789a7ad32a607b1784c6e1d4fd753669221c444",
+    "interface.kicad_sch": "f01fc3849bf50990e17ebaace45e118c79bc696c4325d69c5c5dd37aaae26f86",
+    "gdep133c02-driver.kicad_dru": "0b6301cbabf5e998590617a47060083c8ccb09e53576f275c2c0e23e3b76d9bc",
+    "gdep133c02-driver.kicad_pcb": "4f5e9da7cfc4f586e853b47cc588c48d8a05c47790f1866050fb8550947ca69c",
+    "lib/Driver.kicad_sym": "d92f70b15cc9e014ae783e1888035afba96555f912a63748d5fe6d23699b982b"
+  },
+  "previous_provenance_matches_current": false,
+  "artifact_sha256": {
+    "README.md": "3be9e3389c56e850d5fdb7454f56f08b12b4c7a81c78dbf8af3ed775134e79f0",
+    "bom.csv": "5aaf1a004fe584db5c53d9dea641517e8b94afbb47582590edb6af7da7b8adec",
+    "cpl-jlc-review.csv": "d4f689189997bfaae71ff22f719e4c1897670e4b73af8e2f23aca965a8fa1c61",
+    "gdep133c02-driver-drill.rpt": "547f19905910ca0d19bd4d5ecfd80ca341e010cbdd42c937fceb9c927f9855c4",
+    "gerber/gdep133c02-driver-B_Cu.gbl": "1e726b0576d9c3c309d8f7ddeb98b354e18d8c02f86e68822c67ccd4905146aa",
+    "gerber/gdep133c02-driver-B_Mask.gbs": "11b296de12abf7d25cf67a012894e4222294f66e173f9b0f6d7dcf745d44492c",
+    "gerber/gdep133c02-driver-B_Silkscreen.gbo": "4a13fb6b86446fb28dff4e2f2a39a9b96fea7af7bd8600ddb42978eba3b6fe34",
+    "gerber/gdep133c02-driver-Edge_Cuts.gm1": "0e0484f7e2133ee204f1b7ef03a4306bc529d1bea71ee40203ce77520be1e562",
+    "gerber/gdep133c02-driver-F_Cu.gtl": "b8ea62f73dcd0ab52d72162d7d0c3bd5c0f77321af736a869e685ae49b456ae0",
+    "gerber/gdep133c02-driver-F_Mask.gts": "42059b3baa8958186cb0a41dc32e92b3f5e24e6e22a9ce3dd69e34d70d3fa150",
+    "gerber/gdep133c02-driver-F_Silkscreen.gto": "d03eeaf7cb9abe1d99c7d0bdc89cf473a710843f473bad0b379abe66e191e2bc",
+    "gerber/gdep133c02-driver-In1_Cu.g1": "ef9325a6264995532e4d02e0931dcb6ac072cef611da03bca393a01c46b5bda2",
+    "gerber/gdep133c02-driver-In2_Cu.g2": "b488b070a5d988d4c01216015cb78bbd03f7677420024ff276a55d927e2336e6",
+    "gerber/gdep133c02-driver-NPTH-drl_map.pdf": "4e920810ae8c6980a459399212531b71525909d150b362d7ca7667d13922e53f",
+    "gerber/gdep133c02-driver-NPTH.drl": "3d6a89b70ed10c291b7e47ab7a52e49632bfc3d429ddd2662d4806a30f143620",
+    "gerber/gdep133c02-driver-PTH-drl_map.pdf": "dd391ac8a8a3f186458fa5883463bc3609c0d926b527a54e185dc8f2c4fec762",
+    "gerber/gdep133c02-driver-PTH.drl": "05cd1dec57ce6d237ba08321a62ce761ef93412ef19b74d46109e8160669143f",
+    "gerber/gdep133c02-driver-job.gbrjob": "eda4ce2110191bebd82cfb017cf16abeb2b9b240b9440f531c00e12faa5af7d3",
+    "gerber-review.zip": "ea290d6e651d14d795ca1812399dcc32d2a327df6cdf01ceb878dcade6f0d35e",
+    "positions-kicad.csv": "f6dea1ee3a9dbc5f6ec1f90a1dbf5cb3d404760a4af931bb34b52a0b0f73a740"
+  },
+  "result": "PASS",
+  "drill_maps_render_match": {
+    "gdep133c02-driver-PTH-drl_map.pdf": true,
+    "gdep133c02-driver-NPTH-drl_map.pdf": true
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "gdep133c02-driver",
-  "revision": "0.1-draft",
+  "revision": "0.4-direct-p1",
   "parts": [
     {
       "ref": "J1",
@@ -25,32 +25,10 @@
       "uuid": "6566036d-f3ac-591a-8511-e8ed12a2081a"
     },
     {
-      "ref": "R26",
-      "value": "0 ohm",
-      "pins": {
-        "1": "BENCH_3V3",
-        "2": "EPD_VDD"
-      },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
-      "xy": [
-        20,
-        69
-      ],
-      "group": "entry",
-      "mpn": "RC1206JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "3badc7a9-3fb8-5549-bdf3-9aeaeefe0023"
-    },
-    {
       "ref": "C28",
       "value": "2.2uF/50V",
       "pins": {
-        "1": "EPD_VDD",
+        "1": "BENCH_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -69,110 +47,50 @@
       "uuid": "5bd97427-2cd0-520c-975e-c2941cd20b1a"
     },
     {
-      "ref": "R27",
-      "value": "0 ohm",
-      "pins": {
-        "1": "EPD_VDD",
-        "2": "SW_IN"
-      },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
-      "xy": [
-        27,
-        69
-      ],
-      "group": "entry",
-      "mpn": "RC1206JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "93b90482-9e86-5e28-8abf-42fe1dec20f5"
-    },
-    {
       "ref": "U5",
-      "value": "TPS22913BYZVT",
+      "value": "TPS22917DBVR",
       "pins": {
-        "A1": "SW_OUT",
-        "A2": "SW_IN",
-        "B1": "GND",
-        "B2": "SW_ON"
+        "1": "BENCH_3V3",
+        "2": "GND",
+        "3": "EPD_PWR_EN",
+        "4": "SW_CT",
+        "5": "EPD_3V3",
+        "6": "EPD_3V3"
       },
-      "fp": "Package_CSP:WLCSP-4_0.89x0.89mm_Layout2x2_P0.5mm",
+      "fp": "Package_TO_SOT_SMD:SOT-23-6",
       "xy": [
         32,
         69
       ],
       "group": "entry",
-      "mpn": "TPS22913BYZVT",
+      "mpn": "TPS22917DBVR",
       "vendor": "Texas Instruments",
-      "url": "https://www.ti.com/lit/ds/symlink/tps22913.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps22917.pdf",
       "names": {
-        "A1": "VOUT",
-        "A2": "VIN",
-        "B1": "GND",
-        "B2": "ON"
+        "1": "VIN",
+        "2": "GND",
+        "3": "ON",
+        "4": "CT",
+        "5": "QOD",
+        "6": "VOUT"
       },
       "types": {
-        "A1": "power_out",
-        "A2": "power_in",
-        "B1": "power_in",
-        "B2": "input"
+        "1": "power_in",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "passive",
+        "6": "power_out"
       },
       "dnp": false,
       "angle": 0,
       "uuid": "66f48b51-86e5-5a8b-9a88-c700e990110b"
     },
     {
-      "ref": "R28",
-      "value": "0 ohm",
-      "pins": {
-        "1": "SW_OUT",
-        "2": "VIN"
-      },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
-      "xy": [
-        37,
-        69
-      ],
-      "group": "entry",
-      "mpn": "RC1206JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "5f2849e0-ee44-50df-955f-bd83c98117c2"
-    },
-    {
-      "ref": "R29",
-      "value": "0 ohm",
-      "pins": {
-        "1": "EPD_PWR_EN",
-        "2": "SW_ON"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        28,
-        73
-      ],
-      "group": "entry",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "1fcfd799-fb81-5d5b-a949-5c6b724bc32d"
-    },
-    {
       "ref": "R30",
       "value": "100k ohm",
       "pins": {
-        "1": "SW_ON",
+        "1": "EPD_PWR_EN",
         "2": "GND"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
@@ -194,7 +112,7 @@
       "ref": "C29",
       "value": "4.7uF/50V",
       "pins": {
-        "1": "VIN",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -216,7 +134,7 @@
       "ref": "C30",
       "value": "4.7uF/50V",
       "pins": {
-        "1": "VIN",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -235,98 +153,10 @@
       "uuid": "0d9216c9-5257-528c-816c-5857aae3c0cd"
     },
     {
-      "ref": "L4",
-      "value": "BLM18PG221SH1D",
-      "pins": {
-        "1": "VIN",
-        "2": "EPD_3V3"
-      },
-      "fp": "Inductor_SMD:L_0603_1608Metric",
-      "xy": [
-        48,
-        69
-      ],
-      "group": "entry",
-      "mpn": "BLM18PG221SH1D",
-      "vendor": "Murata",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "75c99e82-d6f1-5c87-af1f-ac536530348b"
-    },
-    {
-      "ref": "L5",
-      "value": "CBG160808U000T",
-      "pins": {
-        "1": "VIN",
-        "2": "AVDD_PRE"
-      },
-      "fp": "Inductor_SMD:L_0603_1608Metric",
-      "xy": [
-        46,
-        61
-      ],
-      "group": "entry",
-      "mpn": "CBG160808U000T",
-      "vendor": "FH",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "4b8f95d7-4c68-5617-8c7d-9491e90c4e5e"
-    },
-    {
-      "ref": "R31",
-      "value": "0 ohm",
-      "pins": {
-        "1": "AVDD_PRE",
-        "2": "AVDD_CAP"
-      },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
-      "xy": [
-        51,
-        61
-      ],
-      "group": "entry",
-      "mpn": "RC1206JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "5173b970-e59c-5419-bdad-3250dec4e1c0"
-    },
-    {
-      "ref": "R32",
-      "value": "0 ohm",
-      "pins": {
-        "1": "AVDD_CAP",
-        "2": "AVDD"
-      },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
-      "xy": [
-        74,
-        55
-      ],
-      "group": "entry",
-      "mpn": "RC1206JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "64f1f08a-d78e-5468-8d72-8290da72ed95"
-    },
-    {
       "ref": "C31",
       "value": "100uF/6.3V",
       "pins": {
-        "1": "AVDD_CAP",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -348,7 +178,7 @@
       "ref": "C32",
       "value": "100uF/6.3V",
       "pins": {
-        "1": "AVDD_CAP",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -365,50 +195,6 @@
       "dnp": false,
       "angle": 0,
       "uuid": "f2d8f959-1fd1-5fca-b504-63e1dfd049b9"
-    },
-    {
-      "ref": "R33",
-      "value": "0 ohm",
-      "pins": {
-        "1": "EPD_3V3",
-        "2": "VDD"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        53,
-        69
-      ],
-      "group": "entry",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "160820c9-a759-5885-9559-ac130a4d38a9"
-    },
-    {
-      "ref": "R34",
-      "value": "0 ohm",
-      "pins": {
-        "1": "EPD_3V3",
-        "2": "VDDIO"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        58,
-        69
-      ],
-      "group": "entry",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "fbc43799-e48e-597d-a6c5-37ac4d0dc14f"
     },
     {
       "ref": "C33",
@@ -436,7 +222,7 @@
       "ref": "L1",
       "value": "15uH",
       "pins": {
-        "1": "AVDD",
+        "1": "EPD_3V3",
         "2": "LX"
       },
       "fp": "Inductor_SMD:L_Coilcraft_MSS1246T-XXX",
@@ -529,8 +315,8 @@
       "ref": "Q8",
       "value": "DMP3068L-7",
       "pins": {
-        "1": "GATE_N",
-        "2": "SENSE_N",
+        "1": "GDRN",
+        "2": "RESEN",
         "3": "SW_N"
       },
       "fp": "Package_TO_SOT_SMD:SOT-23",
@@ -556,8 +342,8 @@
       "ref": "Q7",
       "value": "PJA3433_R1_00001",
       "pins": {
-        "1": "GATE_VCOM",
-        "2": "SENSE_VCOM",
+        "1": "GDRC",
+        "2": "RESEC",
         "3": "SW_VCOM"
       },
       "fp": "Package_TO_SOT_SMD:SOT-23",
@@ -605,8 +391,8 @@
       "ref": "U2",
       "value": "0.2 ohm",
       "pins": {
-        "1": "AVDD",
-        "2": "SENSE_N"
+        "1": "EPD_3V3",
+        "2": "RESEN"
       },
       "fp": "Resistor_SMD:R_1206_3216Metric",
       "xy": [
@@ -627,8 +413,8 @@
       "ref": "U3",
       "value": "0.2 ohm",
       "pins": {
-        "1": "AVDD",
-        "2": "SENSE_VCOM"
+        "1": "EPD_3V3",
+        "2": "RESEC"
       },
       "fp": "Resistor_SMD:R_1206_3216Metric",
       "xy": [
@@ -671,8 +457,8 @@
       "ref": "R3",
       "value": "1M ohm",
       "pins": {
-        "1": "AVDD",
-        "2": "GATE_N"
+        "1": "EPD_3V3",
+        "2": "GDRN"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -693,8 +479,8 @@
       "ref": "R13",
       "value": "1M ohm",
       "pins": {
-        "1": "AVDD",
-        "2": "GATE_VCOM"
+        "1": "EPD_3V3",
+        "2": "GDRC"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -710,138 +496,6 @@
       "dnp": false,
       "angle": 0,
       "uuid": "478ce8ba-6cee-5b70-9648-57278e969cbf"
-    },
-    {
-      "ref": "R4",
-      "value": "0 ohm",
-      "pins": {
-        "1": "RESEN",
-        "2": "SENSE_N"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        39,
-        52
-      ],
-      "group": "converters",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "39dc4937-c4fc-5c5b-a755-752d8fc66613"
-    },
-    {
-      "ref": "R5",
-      "value": "0 ohm",
-      "pins": {
-        "1": "GDRN",
-        "2": "GATE_N"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        39,
-        44
-      ],
-      "group": "converters",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "db410483-4043-5e31-9888-06dbae6534e6"
-    },
-    {
-      "ref": "R6",
-      "value": "0 ohm",
-      "pins": {
-        "1": "VDDN_RAW",
-        "2": "VDDN"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        50,
-        45
-      ],
-      "group": "converters",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "84379155-6b97-5ce2-98e5-cc5469b864f3"
-    },
-    {
-      "ref": "R14",
-      "value": "0 ohm",
-      "pins": {
-        "1": "RESEC",
-        "2": "SENSE_VCOM"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        59,
-        52
-      ],
-      "group": "converters",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "a0ae9386-e614-5b30-935b-27e3649c3e74"
-    },
-    {
-      "ref": "R15",
-      "value": "0 ohm",
-      "pins": {
-        "1": "GDRC",
-        "2": "GATE_VCOM"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        59,
-        44
-      ],
-      "group": "converters",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "d087a8d4-ae55-5f13-965f-c5a23196eb96"
-    },
-    {
-      "ref": "R16",
-      "value": "0 ohm",
-      "pins": {
-        "1": "VBB_3P5V",
-        "2": "VNCP_3P5V"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        70,
-        45
-      ],
-      "group": "converters",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "aa936b4b-caf3-5a6b-8004-5d0fa00a4bf4"
     },
     {
       "ref": "D1",
@@ -873,7 +527,7 @@
       "value": "MBR230S1F-7",
       "pins": {
         "1": "SW_N",
-        "2": "VDDN_RAW"
+        "2": "VDDN"
       },
       "fp": "Diode_SMD:D_SOD-123F",
       "xy": [
@@ -922,7 +576,7 @@
       "ref": "C12",
       "value": "4.7uF/50V",
       "pins": {
-        "1": "AVDD",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -966,7 +620,7 @@
       "ref": "C14",
       "value": "4.7uF/50V",
       "pins": {
-        "1": "AVDD",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -1010,7 +664,7 @@
       "ref": "C19",
       "value": "4.7uF/50V",
       "pins": {
-        "1": "AVDD",
+        "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -1153,7 +807,7 @@
       "value": "BAT54S-7-F",
       "pins": {
         "1": "PUMP_P_LOW",
-        "2": "VGH_RAW",
+        "2": "VGH",
         "3": "PUMP_P_MID"
       },
       "fp": "Package_TO_SOT_SMD:SOT-23",
@@ -1179,7 +833,7 @@
       "ref": "C16",
       "value": "4.7uF/50V",
       "pins": {
-        "1": "VGH_RAW",
+        "1": "VGH",
         "2": "GND"
       },
       "fp": "Capacitor_SMD:C_1210_3225Metric",
@@ -1268,7 +922,7 @@
       "value": "110k ohm",
       "pins": {
         "1": "FBP",
-        "2": "VGH_RAW"
+        "2": "VGH"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -1284,28 +938,6 @@
       "dnp": false,
       "angle": 0,
       "uuid": "76017b1c-c9a9-59da-9828-cd422a4e58dd"
-    },
-    {
-      "ref": "R9",
-      "value": "0 ohm",
-      "pins": {
-        "1": "VGH_RAW",
-        "2": "VGH"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        37,
-        55
-      ],
-      "group": "pumps",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "cf9b1eee-00de-5268-a801-e7d166b75e61"
     },
     {
       "ref": "R10",
@@ -1614,7 +1246,7 @@
       "pins": {
         "1": "TSDA",
         "2": "TSCL",
-        "3": "ALERT_N",
+        "3": null,
         "4": "GND",
         "5": "GND",
         "6": "GND",
@@ -1699,50 +1331,6 @@
       "uuid": "aa7461c7-51ee-575d-8eb0-963f01992764"
     },
     {
-      "ref": "R22",
-      "value": "10k ohm",
-      "pins": {
-        "1": "ALERT_N",
-        "2": "EPD_3V3"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        9,
-        33
-      ],
-      "group": "panel",
-      "mpn": "RC0603FR-0710KL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "80109293-66ba-59f2-ae86-801906e6ec68"
-    },
-    {
-      "ref": "R23",
-      "value": "0 ohm",
-      "pins": {
-        "1": "ALERT_N",
-        "2": "GND"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        14,
-        33
-      ],
-      "group": "panel",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": true,
-      "angle": 0,
-      "uuid": "3dd508a8-c57d-5ee0-a4c6-8b02fb36232b"
-    },
-    {
       "ref": "C27",
       "value": "100nF/50V",
       "pins": {
@@ -1765,55 +1353,11 @@
       "uuid": "7b922b81-fb26-5d68-ac71-4f40b269d4cd"
     },
     {
-      "ref": "R24",
-      "value": "0 ohm",
-      "pins": {
-        "1": "BS0",
-        "2": "VDD"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        30,
-        11
-      ],
-      "group": "panel",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "cafdc2f9-5bd9-59e2-9008-199fe13c7d25"
-    },
-    {
-      "ref": "R25",
-      "value": "0 ohm",
-      "pins": {
-        "1": "BS1",
-        "2": "VDD"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        30.0,
-        13.5
-      ],
-      "group": "panel",
-      "mpn": "RC0603JR-070RL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "45bad6c6-0c4f-5954-bede-ea2c4330bce4"
-    },
-    {
       "ref": "R1",
       "value": "2k ohm",
       "pins": {
         "1": "BUSY_N",
-        "2": "VDDIO"
+        "2": "EPD_3V3"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -2513,272 +2057,10 @@
       "uuid": "f8e130f0-69c4-56f7-a813-84ac4d1aeb56"
     },
     {
-      "ref": "U6",
-      "value": "SN74LVC244APWR",
-      "pins": {
-        "1": "OE_PANEL_N",
-        "19": "OE_PANEL_N",
-        "10": "GND",
-        "20": "EPD_3V3",
-        "2": "HOST_SCLK",
-        "18": "BUF_SCLK",
-        "4": "HOST_MOSI",
-        "16": "BUF_MOSI",
-        "6": "HOST_CS_M_N",
-        "14": "BUF_CS_M_N",
-        "8": "HOST_CS_S_N",
-        "12": "BUF_CS_S_N",
-        "11": "HOST_RES_N",
-        "9": "BUF_RES_N",
-        "13": "GND",
-        "7": null,
-        "15": "GND",
-        "5": null,
-        "17": "GND",
-        "3": null
-      },
-      "fp": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
-      "xy": [
-        73,
-        64
-      ],
-      "group": "interface",
-      "mpn": "SN74LVC244APWR",
-      "vendor": "Texas Instruments",
-      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf",
-      "names": {
-        "1": "1OE_N",
-        "19": "2OE_N",
-        "10": "GND",
-        "20": "VCC",
-        "2": "A1",
-        "18": "Y1",
-        "4": "A2",
-        "16": "Y2",
-        "6": "A3",
-        "14": "Y3",
-        "8": "A4",
-        "12": "Y4",
-        "11": "A5",
-        "9": "Y5",
-        "13": "A6",
-        "7": "Y6",
-        "15": "A7",
-        "5": "Y7",
-        "17": "A8",
-        "3": "Y8"
-      },
-      "types": {
-        "1": "input",
-        "19": "input",
-        "10": "power_in",
-        "20": "power_in",
-        "2": "input",
-        "18": "tri_state",
-        "4": "input",
-        "16": "tri_state",
-        "6": "input",
-        "14": "tri_state",
-        "8": "input",
-        "12": "tri_state",
-        "11": "input",
-        "9": "tri_state",
-        "13": "input",
-        "7": "tri_state",
-        "15": "input",
-        "5": "tri_state",
-        "17": "input",
-        "3": "tri_state"
-      },
-      "dnp": false,
-      "angle": 0,
-      "uuid": "84dcd9b2-ca34-5d6d-8b8b-1101ae2ba50b"
-    },
-    {
-      "ref": "U7",
-      "value": "SN74LVC244APWR",
-      "pins": {
-        "1": "OE_HOST_N",
-        "19": "OE_HOST_N",
-        "10": "GND",
-        "20": "HOST_3V3",
-        "2": "BUSY_N",
-        "18": "HOST_BUSY_N",
-        "4": "SI1",
-        "16": "HOST_MISO",
-        "6": "GND",
-        "14": null,
-        "8": "GND",
-        "12": null,
-        "11": "GND",
-        "9": null,
-        "13": "GND",
-        "7": null,
-        "15": "GND",
-        "5": null,
-        "17": "GND",
-        "3": null
-      },
-      "fp": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
-      "xy": [
-        82,
-        64
-      ],
-      "group": "interface",
-      "mpn": "SN74LVC244APWR",
-      "vendor": "Texas Instruments",
-      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf",
-      "names": {
-        "1": "1OE_N",
-        "19": "2OE_N",
-        "10": "GND",
-        "20": "VCC",
-        "2": "A1",
-        "18": "Y1",
-        "4": "A2",
-        "16": "Y2",
-        "6": "A3",
-        "14": "Y3",
-        "8": "A4",
-        "12": "Y4",
-        "11": "A5",
-        "9": "Y5",
-        "13": "A6",
-        "7": "Y6",
-        "15": "A7",
-        "5": "Y7",
-        "17": "A8",
-        "3": "Y8"
-      },
-      "types": {
-        "1": "input",
-        "19": "input",
-        "10": "power_in",
-        "20": "power_in",
-        "2": "input",
-        "18": "tri_state",
-        "4": "input",
-        "16": "tri_state",
-        "6": "input",
-        "14": "tri_state",
-        "8": "input",
-        "12": "tri_state",
-        "11": "input",
-        "9": "tri_state",
-        "13": "input",
-        "7": "tri_state",
-        "15": "input",
-        "5": "tri_state",
-        "17": "input",
-        "3": "tri_state"
-      },
-      "dnp": false,
-      "angle": 0,
-      "uuid": "fdd097dd-3724-5a0b-a6d3-7910363b3dfd"
-    },
-    {
-      "ref": "Q9",
-      "value": "2N7002-7-F",
-      "pins": {
-        "1": "EPD_PWR_EN",
-        "2": "GND",
-        "3": "OE_PANEL_N"
-      },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
-      "xy": [
-        68,
-        68
-      ],
-      "group": "interface",
-      "mpn": "2N7002-7-F",
-      "vendor": "Diodes",
-      "url": "",
-      "names": {
-        "1": "G",
-        "2": "S",
-        "3": "D"
-      },
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "a3349bc1-0c90-5848-9132-d86184303412"
-    },
-    {
-      "ref": "Q10",
-      "value": "2N7002-7-F",
-      "pins": {
-        "1": "EPD_PWR_EN",
-        "2": "GND",
-        "3": "OE_HOST_N"
-      },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
-      "xy": [
-        88,
-        67
-      ],
-      "group": "interface",
-      "mpn": "2N7002-7-F",
-      "vendor": "Diodes",
-      "url": "",
-      "names": {
-        "1": "G",
-        "2": "S",
-        "3": "D"
-      },
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "533cca8a-7019-5a13-84bd-2179a8893415"
-    },
-    {
-      "ref": "R37",
-      "value": "10k ohm",
-      "pins": {
-        "1": "OE_PANEL_N",
-        "2": "EPD_3V3"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        68,
-        72
-      ],
-      "group": "interface",
-      "mpn": "RC0603FR-0710KL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "d686f1fd-e073-5f3a-ad78-28867bce3ba2"
-    },
-    {
-      "ref": "R38",
-      "value": "10k ohm",
-      "pins": {
-        "1": "OE_HOST_N",
-        "2": "HOST_3V3"
-      },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        91,
-        70
-      ],
-      "group": "interface",
-      "mpn": "RC0603FR-0710KL",
-      "vendor": "Yageo",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "48c305a8-d20c-599a-a225-c30e2bf8ee6f"
-    },
-    {
       "ref": "R39",
       "value": "33 ohm",
       "pins": {
-        "1": "BUF_SCLK",
+        "1": "HOST_SCLK",
         "2": "SCLK"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
@@ -2800,7 +2082,7 @@
       "ref": "R40",
       "value": "33 ohm",
       "pins": {
-        "1": "BUF_MOSI",
+        "1": "HOST_MOSI",
         "2": "SI0"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
@@ -2822,7 +2104,7 @@
       "ref": "R41",
       "value": "33 ohm",
       "pins": {
-        "1": "BUF_CS_M_N",
+        "1": "HOST_CS_M_N",
         "2": "CS_M_N"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
@@ -2844,7 +2126,7 @@
       "ref": "R42",
       "value": "33 ohm",
       "pins": {
-        "1": "BUF_CS_S_N",
+        "1": "HOST_CS_S_N",
         "2": "CS_S_N"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
@@ -2866,7 +2148,7 @@
       "ref": "R43",
       "value": "33 ohm",
       "pins": {
-        "1": "BUF_RES_N",
+        "1": "HOST_RES_N",
         "2": "RES_N"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
@@ -2933,7 +2215,7 @@
       "value": "100k ohm",
       "pins": {
         "1": "CS_M_N",
-        "2": "VDDIO"
+        "2": "EPD_3V3"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -2955,7 +2237,7 @@
       "value": "100k ohm",
       "pins": {
         "1": "CS_S_N",
-        "2": "VDDIO"
+        "2": "EPD_3V3"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -2995,58 +2277,14 @@
       "uuid": "4c10d0f4-ce03-54cd-a4f3-19124a18bd09"
     },
     {
-      "ref": "C34",
-      "value": "100nF/50V",
-      "pins": {
-        "1": "EPD_3V3",
-        "2": "GND"
-      },
-      "fp": "Capacitor_SMD:C_0603_1608Metric",
-      "xy": [
-        79,
-        59
-      ],
-      "group": "interface",
-      "mpn": "GRM188R71H104KA93D",
-      "vendor": "Murata",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "a78ad972-3738-500e-9bc8-a0252114b385"
-    },
-    {
-      "ref": "C35",
-      "value": "100nF/50V",
-      "pins": {
-        "1": "HOST_3V3",
-        "2": "GND"
-      },
-      "fp": "Capacitor_SMD:C_0603_1608Metric",
-      "xy": [
-        88,
-        60
-      ],
-      "group": "interface",
-      "mpn": "GRM188R71H104KA93D",
-      "vendor": "Murata",
-      "url": "",
-      "names": {},
-      "types": {},
-      "dnp": false,
-      "angle": 0,
-      "uuid": "982aea7d-6423-53d7-90df-d940c45b56bb"
-    },
-    {
       "ref": "J2",
-      "value": "HOST 3V3 LOGIC",
+      "value": "HOST DIRECT 3V3",
       "pins": {
         "1": "HOST_SCLK",
         "2": "GND",
         "3": "HOST_MOSI",
         "4": "GND",
-        "5": "HOST_MISO",
+        "5": "SI1",
         "6": "GND",
         "7": "HOST_CS_M_N",
         "8": "GND",
@@ -3054,10 +2292,10 @@
         "10": "GND",
         "11": "HOST_RES_N",
         "12": "GND",
-        "13": "HOST_BUSY_N",
+        "13": "BUSY_N",
         "14": "GND",
         "15": "EPD_PWR_EN",
-        "16": "HOST_3V3"
+        "16": null
       },
       "fp": "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical",
       "xy": [
@@ -3086,8 +2324,8 @@
         "6": "RESEP",
         "7": "GDRP",
         "8": "GND",
-        "9": "AVDD",
-        "10": "VDD",
+        "9": "EPD_3V3",
+        "10": "EPD_3V3",
         "11": null,
         "12": "VCC",
         "13": "VDDP",
@@ -3096,11 +2334,11 @@
         "16": "VDDN",
         "17": "VDDN",
         "18": "VCC",
-        "19": "VDDIO",
+        "19": "EPD_3V3",
         "20": "TSCL",
         "21": "TSDA",
-        "22": "BS0",
-        "23": "BS1",
+        "22": "EPD_3V3",
+        "23": "EPD_3V3",
         "24": "RES_N",
         "25": "BUSY_N",
         "26": "GND",
@@ -3118,7 +2356,7 @@
         "38": "FBN",
         "39": "REG_VGN",
         "40": null,
-        "41": "VNCP_3P5V",
+        "41": "VBB_3P5V",
         "42": "VSPH",
         "43": "VSPL",
         "44": "VSPL2",
@@ -3299,9 +2537,9 @@
     },
     {
       "ref": "TP2",
-      "value": "VIN",
+      "value": "EPD_3V3",
       "pins": {
-        "1": "VIN"
+        "1": "EPD_3V3"
       },
       "fp": "TestPoint:TestPoint_Pad_D1.5mm",
       "xy": [
@@ -3320,9 +2558,9 @@
     },
     {
       "ref": "TP3",
-      "value": "AVDD",
+      "value": "EPD_3V3",
       "pins": {
-        "1": "AVDD"
+        "1": "EPD_3V3"
       },
       "fp": "TestPoint:TestPoint_Pad_D1.5mm",
       "xy": [
@@ -3469,7 +2707,7 @@
       "ref": "TP10",
       "value": "VNCP_3P5V",
       "pins": {
-        "1": "VNCP_3P5V"
+        "1": "VBB_3P5V"
       },
       "fp": "TestPoint:TestPoint_Pad_D1.5mm",
       "xy": [
@@ -3779,6 +3017,28 @@
       "dnp": true,
       "angle": 0,
       "uuid": "1f5b5b06-c237-592b-8054-d6452910ea76"
+    },
+    {
+      "ref": "C36",
+      "value": "1nF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        37,
+        75
+      ],
+      "group": "entry",
+      "mpn": "C0805C102J5GACTU",
+      "vendor": "KEMET",
+      "url": "https://search.kemet.com/download/specsheet/C0805C102J5GACTU",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0,
+      "uuid": "da1c958d-2286-5c6f-9743-c49344031c99"
     }
   ],
   "board_mm": [

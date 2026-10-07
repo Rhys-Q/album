@@ -1,5 +1,7 @@
 # Panel / Interface 两页重画与阅读说明
 
+历史快照：本文记录简化前版本；当前已采用v0.4，102个装配件，旧页/旧包不能与当前CAD混用。现行说明见[简化记录](hand-solder-simplification.md)、[当前工程](../README.md)。
+
 2026-10-02，使用 KiCad 10.0.6 重画 `panel.kicad_sch`、`interface.kicad_sch`，同步项目符号库的对应图形。目标是用实际导线、标准无源／MOS符号及缓冲器通道图形表达电路，使局部功能可以沿线阅读。
 
 直接查看：

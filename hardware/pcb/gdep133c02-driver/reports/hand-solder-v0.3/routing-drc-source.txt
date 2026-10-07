@@ -1,0 +1,1 @@
+hardware/pcb/gdep133c02-driver/reports/hand-solder-v0.3/drc-clean10.json

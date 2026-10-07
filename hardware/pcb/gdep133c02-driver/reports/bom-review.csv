@@ -1,22 +1,12 @@
 Designator,Comment,Footprint,Manufacturer,MPN,Quantity,DNP,SelectionStatus
 J1,3V3 BENCH ONLY,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Samtec,TSW-102-07-G-S,1,False,DRAFT: procurement/parameters not released
-R26,0 ohm,Resistor_SMD:R_1206_3216Metric,Yageo,RC1206JR-070RL,1,False,DRAFT: procurement/parameters not released
 C28,2.2uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H225KA88L,1,False,DRAFT: procurement/parameters not released
-R27,0 ohm,Resistor_SMD:R_1206_3216Metric,Yageo,RC1206JR-070RL,1,False,DRAFT: procurement/parameters not released
-U5,TPS22913BYZVT,Package_CSP:WLCSP-4_0.89x0.89mm_Layout2x2_P0.5mm,Texas Instruments,TPS22913BYZVT,1,False,DRAFT: procurement/parameters not released
-R28,0 ohm,Resistor_SMD:R_1206_3216Metric,Yageo,RC1206JR-070RL,1,False,DRAFT: procurement/parameters not released
-R29,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
+U5,TPS22917DBVR,Package_TO_SOT_SMD:SOT-23-6,Texas Instruments,TPS22917DBVR,1,False,DRAFT: procurement/parameters not released
 R30,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
 C29,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
 C30,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-L4,BLM18PG221SH1D,Inductor_SMD:L_0603_1608Metric,Murata,BLM18PG221SH1D,1,False,DRAFT: procurement/parameters not released
-L5,CBG160808U000T,Inductor_SMD:L_0603_1608Metric,FH,CBG160808U000T,1,False,DRAFT: procurement/parameters not released
-R31,0 ohm,Resistor_SMD:R_1206_3216Metric,Yageo,RC1206JR-070RL,1,False,DRAFT: procurement/parameters not released
-R32,0 ohm,Resistor_SMD:R_1206_3216Metric,Yageo,RC1206JR-070RL,1,False,DRAFT: procurement/parameters not released
 C31,100uF/6.3V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER60J107ME20L,1,False,DRAFT: procurement/parameters not released
 C32,100uF/6.3V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER60J107ME20L,1,False,DRAFT: procurement/parameters not released
-R33,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R34,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
 C33,100nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H104KA93D,1,False,DRAFT: procurement/parameters not released
 L1,15uH,Inductor_SMD:L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
 L2,15uH,Inductor_SMD:L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
@@ -30,12 +20,6 @@ U3,0.2 ohm,Resistor_SMD:R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: 
 R2,1M ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071ML,1,False,DRAFT: procurement/parameters not released
 R3,1M ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071ML,1,False,DRAFT: procurement/parameters not released
 R13,1M ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071ML,1,False,DRAFT: procurement/parameters not released
-R4,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R5,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R6,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R14,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R15,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R16,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
 D1,MBR230S1F-7,Diode_SMD:D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
 D2,MBR230S1F-7,Diode_SMD:D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
 D4,B0530W-7-F,Diode_SMD:D_SOD-123,Diodes,B0530W-7-F,1,False,DRAFT: procurement/parameters not released
@@ -55,7 +39,6 @@ C17,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,
 C18,220nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H224KA01L,1,False,DRAFT: procurement/parameters not released
 R7,4.3k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-074K3L,1,False,DRAFT: procurement/parameters not released
 R8,110k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07110KL,1,False,DRAFT: procurement/parameters not released
-R9,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
 R10,2.2 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-072R2L,1,False,DRAFT: procurement/parameters not released
 Q6,MMBT3904-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,MMBT3904-7-F,1,False,DRAFT: procurement/parameters not released
 D5,BAT54S-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
@@ -72,11 +55,7 @@ R19,2.2 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-072R2L,1,False,DRAFT: 
 U4,TCN75AVOA713,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Microchip,TCN75AVOA713,1,False,DRAFT: procurement/parameters not released
 R20,4.7k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-074K7L,1,False,DRAFT: procurement/parameters not released
 R21,4.7k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-074K7L,1,False,DRAFT: procurement/parameters not released
-R22,10k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,1,False,DRAFT: procurement/parameters not released
-R23,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,True,DRAFT: procurement/parameters not released
 C27,100nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H104KA93D,1,False,DRAFT: procurement/parameters not released
-R24,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
-R25,0 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603JR-070RL,1,False,DRAFT: procurement/parameters not released
 R1,2k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-072KL,1,False,DRAFT: procurement/parameters not released
 R35,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
 R36,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
@@ -109,12 +88,6 @@ C8,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,D
 C9,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
 C10,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
 C11,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-U6,SN74LVC244APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,Texas Instruments,SN74LVC244APWR,1,False,DRAFT: procurement/parameters not released
-U7,SN74LVC244APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,Texas Instruments,SN74LVC244APWR,1,False,DRAFT: procurement/parameters not released
-Q9,2N7002-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,2N7002-7-F,1,False,DRAFT: procurement/parameters not released
-Q10,2N7002-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,2N7002-7-F,1,False,DRAFT: procurement/parameters not released
-R37,10k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,1,False,DRAFT: procurement/parameters not released
-R38,10k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,1,False,DRAFT: procurement/parameters not released
 R39,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
 R40,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
 R41,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
@@ -125,7 +98,6 @@ R45,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT
 R46,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
 R47,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
 R48,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-C34,100nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H104KA93D,1,False,DRAFT: procurement/parameters not released
-C35,100nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H104KA93D,1,False,DRAFT: procurement/parameters not released
-J2,HOST 3V3 LOGIC,Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical,Samtec,TSW-108-07-G-D,1,False,DRAFT: procurement/parameters not released
+J2,HOST DIRECT 3V3,Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical,Samtec,TSW-108-07-G-D,1,False,DRAFT: procurement/parameters not released
 FPC1,FPC-05FB-60PH20,Driver:FPC_05FB_60PH20,Xunpu,FPC-05FB-60PH20,1,False,DRAFT: procurement/parameters not released
+C36,1nF/50V C0G,Capacitor_SMD:C_0805_2012Metric,KEMET,C0805C102J5GACTU,1,False,DRAFT: procurement/parameters not released

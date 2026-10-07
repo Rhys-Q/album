@@ -579,10 +579,6 @@
       },
       {
         "netclass": "InputPower",
-        "pattern": "VIN"
-      },
-      {
-        "netclass": "InputPower",
         "pattern": "SW_IN"
       },
       {
@@ -608,10 +604,6 @@
       {
         "netclass": "InputPower",
         "pattern": "SW_ON"
-      },
-      {
-        "netclass": "PanelPower",
-        "pattern": "AVDD"
       },
       {
         "netclass": "PanelPower",
@@ -765,7 +757,7 @@
         },
         {
           "group_by": false,
-          "label": "描述",
+          "label": "\u63cf\u8ff0",
           "name": "Description",
           "show": false
         },

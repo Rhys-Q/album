@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-07",
   "kicad_version": "10.0.6",
-  "schematic_connected_pins": 398,
+  "schematic_connected_pins": 313,
   "pcb_pad_parity": "PASS",
   "fixed_pin_requirements": "PASS",
   "project_local_libraries_and_available_models": "PASS",
   "erc": "PASS - zero violations",
   "drc": "PASS - zero violations/unconnected/parity; no ignored checks or exclusions",
-  "gui_open": "NOT REPEATED for redrawn power/panel/interface - KiCad computer access denied again on 2026-10-03",
+  "gui_open": "NOT VERIFIED for v0.4 - Computer Use was not approved to use KiCad",
   "fpc_footprint": "LAND DIMENSIONS CHECKED - physical mating/pin orientation pending",
   "routing": "CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias",
   "power_trace_and_loop_review": "WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending",
@@ -17,6 +17,8 @@
   "cad_checks_pass": true,
   "review_package_available": true,
   "release_allowed": false,
-  "zone_refill": "NOT VERIFIED on 2026-10-03: --refill-zones exits 134; existing saved copper passes DRC",
-  "schematic_pcb_sync": "PASS: 154 component values/footprints/UUID paths, 411 pin nets"
+  "revision": "0.4-DIRECT-P1",
+  "assembled_components": 102,
+  "signal_isolation": "REMOVED - mandatory host power sequencing",
+  "zone_refill": "PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI"
 }
