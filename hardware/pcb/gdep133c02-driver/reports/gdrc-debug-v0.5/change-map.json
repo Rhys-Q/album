@@ -1,0 +1,38 @@
+{
+  "added": [
+    "R49",
+    "TP25",
+    "TP26"
+  ],
+  "new_net": "Q7_GATE",
+  "gate_side_pullup": "R13",
+  "baseline_sha256": {
+    "gdep133c02-driver.kicad_sch": "8b7ca3ddf1513d44166d8b1a3a43695529b22f2035d5370f647ed4af20d5af7f",
+    "gdep133c02-driver.kicad_pro": "6214e7724aab9520a9bd7d77fc4a193c4e738bdb42ec7c624bff639304b6b555",
+    "power.kicad_sch": "5e8ce6fbbc69a9d24b1aa1416bfc529c16f19aff9fa0f71dbd3ddad2182807f8",
+    "panel.kicad_sch": "d6af2a1aa7a3cf887730a32cabd1d73344dfd0c46ba7a46615fcde0e028e4aae",
+    "gdep133c02-driver.kicad_prl": "617deabbae3e6c0f1f72e124a19b6f475e7b400b1e2c64da54941b48ea1fb6fc",
+    "~gdep133c02-driver.kicad_pro.lck": "8ee4042125b7f8ecdd58383042e2f644a2d622fa534228f87415169ed7746bf2",
+    "interface.kicad_sch": "b1f4f027c3c1e75e56a7186927db47c3dae37540e613619297ae54bdc9564445",
+    "gdep133c02-driver.kicad_dru": "0b6301cbabf5e998590617a47060083c8ccb09e53576f275c2c0e23e3b76d9bc",
+    "gdep133c02-driver.kicad_pcb": "161cfa9e2ec1e7ade6b2c461c27bbe4466b1b1954e5bf802acd99f01fb29723a",
+    "design-data.json": "39ed2d2538a72b9775820bef234787a8f1c7824d351ab604b43a7bc4b0bc6670",
+    "lib/Driver.kicad_sym": "dc6af7dc5085408b81b3f1140bcd379e1774423f9cb6530707d1f6ea4e018961",
+    "scripts/check_design.py": "53e52585758caa303a3bce39eafa54363efb664bc995f6a34ea4b1c6dea2a190",
+    "scripts/export_hand_solder.py": "a6bd19ae5675d3f309e09a9088246378175bc31f493cb7807759465e999ed485",
+    "docs/hand-solder-simplification.md": "f0b3c9a0c4189621b6822f3d0fee8e24e98d9f2947dbc10649d98352747fe455",
+    "docs/fpc-footprint-review.md": "0323b86627004e6b66d708d6657930b219cca22ff01a024143d79b4ea5cff849",
+    "docs/interface-power-state.md": "898433f2c7a0fd5aa223f4c7c4ffd8bad7d41575dcc4e5b7b227eb8712e5d8d1",
+    "docs/power-redraw.md": "266a37c6d8f3c65142c807a16e733ed967951c03a13fdb4bf4e0217a4946babc",
+    "docs/panel-interface-redraw.md": "d22a374fa855eb10d7a21de93915072881d4f9eff985e44d116ba4156a028aae",
+    "docs/cad-repair.md": "1232614b9d98334aa0eb6d474c3a401769acd793b55283398f4c0447cf2b21cc",
+    "docs/p1-direct-supply-v0.4.md": "065872669735d03965c2dfe9e385db2e3a2c6fafcbae2b9dd23421a867e7c628",
+    "docs/learning-guide.md": "46b390dcf4ce3be535bd5d1ebd8d8d6bbcbaf5a9b171d4565c625b4d9c65dcde",
+    "docs/release-audit-2026-10-03.md": "63e09efd73d4b5f585c37c3ae9974add1a0566e0d4796491260eba6f71f8976a",
+    "docs/panel-circuit-explained.md": "ceaf538884e36d3a58e0012ae9f17496ce5e62c3a8816a53e8354eaa71abc7c9",
+    "docs/design-review.md": "426152b2286ac222d425509aa9f3e8a5ad318e90aa556603ceb65eba9edf7819",
+    "docs/pcb-sync-check-2026-10-03.md": "51beebe7e7da89db990c06c25dbec49bc5ec3d96e4d3e1bf172c6df1a87e3d66",
+    "docs/power-circuit-explained.md": "666a3ac289bdccaa9fa345fa4055052af5712c341299cdd28f76267550cfa001",
+    "docs/interface-circuit-explained.md": "1dcf081cca1e6f13dfbe7d1a4bc11e0917238d589ee353bf4200477b48e9c0d8"
+  }
+}

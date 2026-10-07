@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>/Users/rhys/tw/26/09/album/hardware/pcb/gdep133c02-driver/gdep133c02-driver.kicad_sch</source>
-    <date>2026-10-07T21:20:42</date>
+    <date>2026-10-07T23:41:54</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>GDEP133C02 minimum driver - DRAFT</title>
         <company>album</company>
-        <rev>0.4-DIRECT-P1</rev>
+        <rev>0.5-GDRC-DEBUG</rev>
         <date>2026-10-07</date>
         <source>gdep133c02-driver.kicad_sch</source>
         <comment number="1" value=""/>
@@ -26,7 +26,7 @@
       <title_block>
         <title>Power - wired functional circuits</title>
         <company/>
-        <rev>0.4-DIRECT-P1</rev>
+        <rev>0.5-GDRC-DEBUG</rev>
         <date>2026-10-07</date>
         <source>power.kicad_sch</source>
         <comment number="1" value=""/>
@@ -44,7 +44,7 @@
       <title_block>
         <title>Panel - wired functional circuits</title>
         <company/>
-        <rev>0.4-DIRECT-P1</rev>
+        <rev>0.5-GDRC-DEBUG</rev>
         <date>2026-10-07</date>
         <source>panel.kicad_sch</source>
         <comment number="1" value=""/>
@@ -62,7 +62,7 @@
       <title_block>
         <title>Interface - wired functional circuits</title>
         <company/>
-        <rev>0.4-DIRECT-P1</rev>
+        <rev>0.5-GDRC-DEBUG</rev>
         <date>2026-10-07</date>
         <source>interface.kicad_sch</source>
         <comment number="1" value=""/>
@@ -1390,6 +1390,86 @@
           <pins>
             <pin num="1"/>
             <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R49">
+      <value>0 ohm</value>
+      <footprint>Driver:Resistor_SMD__R_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">RC0805JR-070RL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Footprint">Driver:Resistor_SMD__R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Driver" part="P_R49" description=""/>
+      <property name="MPN" value="RC0805JR-070RL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Power converters"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
+      <tstamps>7827ba15-b2bd-4219-bcd5-fe7b2df676b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP25">
+      <value>GDRC</value>
+      <footprint>Driver:TestPoint__TestPoint_Pad_D1.5mm</footprint>
+      <fields>
+        <field name="MPN">PCB test pad</field>
+        <field name="Manufacturer">PCB</field>
+        <field name="Footprint">Driver:TestPoint__TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Driver" part="P_TP25" description=""/>
+      <property name="MPN" value="PCB test pad"/>
+      <property name="Manufacturer" value="PCB"/>
+      <property name="Sheetname" value="Power converters"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
+      <tstamps>676588b9-7211-43a2-a391-4a407b7fd7e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP26">
+      <value>Q7_GATE</value>
+      <footprint>Driver:TestPoint__TestPoint_Pad_D1.5mm</footprint>
+      <fields>
+        <field name="MPN">PCB test pad</field>
+        <field name="Manufacturer">PCB</field>
+        <field name="Footprint">Driver:TestPoint__TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Driver" part="P_TP26" description=""/>
+      <property name="MPN" value="PCB test pad"/>
+      <property name="Manufacturer" value="PCB"/>
+      <property name="Sheetname" value="Power converters"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
+      <tstamps>396f5632-8af6-4089-b172-52eaf2e2a28e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
           </pins>
         </unit>
       </units>
@@ -4804,6 +4884,19 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Driver" part="P_R49">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0 ohm</field>
+        <field name="Footprint">Driver:Resistor_SMD__R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Driver" part="P_R7">
       <fields>
         <field name="Reference">R</field>
@@ -5026,6 +5119,30 @@
       <fields>
         <field name="Reference">TP</field>
         <field name="Value">GND</field>
+        <field name="Footprint">Driver:TestPoint__TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver" part="P_TP25">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">GDRC</field>
+        <field name="Footprint">Driver:TestPoint__TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver" part="P_TP26">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">Q7_GATE</field>
         <field name="Footprint">Driver:TestPoint__TestPoint_Pad_D1.5mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -5292,8 +5409,8 @@
     </net>
     <net code="13" name="GDRC" class="Default">
       <node ref="FPC1" pin="3" pinfunction="GDRC_3" pintype="output"/>
-      <node ref="Q7" pin="1" pinfunction="G_1" pintype="passive"/>
-      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R49" pin="1" pintype="passive"/>
+      <node ref="TP25" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="14" name="GDRN" class="Default">
       <node ref="FPC1" pin="5" pinfunction="GDRN_5" pintype="output"/>
@@ -5456,88 +5573,94 @@
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="D3" pin="3" pinfunction="COM_3" pintype="passive"/>
     </net>
-    <net code="31" name="REG_VGN" class="Default">
+    <net code="31" name="Q7_GATE" class="Default">
+      <node ref="Q7" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R49" pin="2" pintype="passive"/>
+      <node ref="TP26" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="32" name="REG_VGN" class="Default">
       <node ref="C25" pin="1" pintype="passive"/>
       <node ref="FPC1" pin="39" pinfunction="REG_VGN_39" pintype="output"/>
       <node ref="R18" pin="2" pintype="passive"/>
     </net>
-    <net code="32" name="RESEC" class="Default">
+    <net code="33" name="RESEC" class="Default">
       <node ref="FPC1" pin="2" pinfunction="RESEC_2" pintype="input"/>
       <node ref="Q7" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="U3" pin="2" pintype="passive"/>
     </net>
-    <net code="33" name="RESEN" class="Default">
+    <net code="34" name="RESEN" class="Default">
       <node ref="FPC1" pin="4" pinfunction="RESEN_4" pintype="input"/>
       <node ref="Q8" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="U2" pin="2" pintype="passive"/>
     </net>
-    <net code="34" name="RESEP" class="PanelPower">
+    <net code="35" name="RESEP" class="PanelPower">
       <node ref="FPC1" pin="6" pinfunction="RESEP_6" pintype="input"/>
       <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="U1" pin="1" pintype="passive"/>
     </net>
-    <net code="35" name="RES_N" class="Default">
+    <net code="36" name="RES_N" class="Default">
       <node ref="FPC1" pin="24" pinfunction="RES_N_24" pintype="input"/>
       <node ref="R43" pin="2" pintype="passive"/>
       <node ref="R48" pin="1" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="36" name="SCLK" class="Default">
+    <net code="37" name="SCLK" class="Default">
       <node ref="FPC1" pin="28" pinfunction="SCLK_28" pintype="input"/>
       <node ref="R39" pin="2" pintype="passive"/>
       <node ref="R44" pin="1" pintype="passive"/>
     </net>
-    <net code="37" name="SI0" class="Default">
+    <net code="38" name="SI0" class="Default">
       <node ref="FPC1" pin="29" pinfunction="SI0_29" pintype="passive"/>
       <node ref="R40" pin="2" pintype="passive"/>
       <node ref="R45" pin="1" pintype="passive"/>
     </net>
-    <net code="38" name="SI1" class="Default">
+    <net code="39" name="SI1" class="Default">
       <node ref="FPC1" pin="30" pinfunction="SI1_30" pintype="passive"/>
       <node ref="J2" pin="5" pinfunction="MISO_5" pintype="passive"/>
     </net>
-    <net code="39" name="SI2" class="Default">
+    <net code="40" name="SI2" class="Default">
       <node ref="FPC1" pin="31" pinfunction="SI2_31" pintype="input"/>
       <node ref="R35" pin="1" pintype="passive"/>
     </net>
-    <net code="40" name="SI3" class="Default">
+    <net code="41" name="SI3" class="Default">
       <node ref="FPC1" pin="32" pinfunction="SI3_32" pintype="input"/>
       <node ref="R36" pin="1" pintype="passive"/>
     </net>
-    <net code="41" name="SOURCE_VGP" class="Default">
+    <net code="42" name="SOURCE_VGP" class="Default">
       <node ref="Q4" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
     </net>
-    <net code="42" name="SW_CT" class="Default">
+    <net code="43" name="SW_CT" class="Default">
       <node ref="C36" pin="2" pintype="passive"/>
       <node ref="U5" pin="4" pinfunction="CT_4" pintype="passive"/>
     </net>
-    <net code="43" name="SW_N" class="PanelPower">
+    <net code="44" name="SW_N" class="PanelPower">
       <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="Q8" pin="3" pinfunction="D_3" pintype="passive"/>
     </net>
-    <net code="44" name="SW_VCOM" class="PanelPower">
+    <net code="45" name="SW_VCOM" class="PanelPower">
       <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="Q7" pin="3" pinfunction="D_3" pintype="passive"/>
     </net>
-    <net code="45" name="TFT_VCOM" class="Default">
+    <net code="46" name="TFT_VCOM" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="FPC1" pin="55" pinfunction="TFT_VCOM_55" pintype="output"/>
       <node ref="TP11" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="46" name="TSCL" class="Default">
+    <net code="47" name="TSCL" class="Default">
       <node ref="FPC1" pin="20" pinfunction="TSCL_20" pintype="passive"/>
       <node ref="R20" pin="1" pintype="passive"/>
       <node ref="U4" pin="2" pinfunction="SCL_2" pintype="input"/>
     </net>
-    <net code="47" name="TSDA" class="Default">
+    <net code="48" name="TSDA" class="Default">
       <node ref="FPC1" pin="21" pinfunction="TSDA_21" pintype="passive"/>
       <node ref="R21" pin="1" pintype="passive"/>
       <node ref="U4" pin="1" pinfunction="SDA_1" pintype="bidirectional"/>
     </net>
-    <net code="48" name="VBB_3P5V" class="PanelPower">
+    <net code="49" name="VBB_3P5V" class="PanelPower">
       <node ref="C20" pin="1" pintype="passive"/>
       <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="FPC1" pin="41" pinfunction="VNCP_3P5V_41" pintype="passive"/>
@@ -5545,28 +5668,28 @@
       <node ref="TP10" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="49" name="VCC" class="Default">
+    <net code="50" name="VCC" class="Default">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="FPC1" pin="12" pinfunction="VCC_12" pintype="passive"/>
       <node ref="FPC1" pin="18" pinfunction="VCC1_18" pintype="passive"/>
       <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="50" name="VCOMBD_M" class="Default">
+    <net code="51" name="VCOMBD_M" class="Default">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="FPC1" pin="1" pinfunction="VCOMBD_M_1" pintype="passive"/>
     </net>
-    <net code="51" name="VCOMBD_S" class="Default">
+    <net code="52" name="VCOMBD_S" class="Default">
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="FPC1" pin="36" pinfunction="VCOMBD_S_36" pintype="output"/>
     </net>
-    <net code="52" name="VDDN" class="PanelPower">
+    <net code="53" name="VDDN" class="PanelPower">
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="FPC1" pin="16" pinfunction="VDDN_16" pintype="passive"/>
       <node ref="FPC1" pin="17" pinfunction="VDDN_17" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="53" name="VDDP" class="PanelPower">
+    <net code="54" name="VDDP" class="PanelPower">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="FPC1" pin="13" pinfunction="VDDP_13" pintype="passive"/>
@@ -5575,21 +5698,21 @@
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="54" name="VGH" class="Default">
+    <net code="55" name="VGH" class="Default">
       <node ref="C16" pin="1" pintype="passive"/>
       <node ref="D3" pin="2" pinfunction="K_2" pintype="passive"/>
       <node ref="FPC1" pin="59" pinfunction="VGH_59" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="55" name="VGL" class="Default">
+    <net code="56" name="VGL" class="Default">
       <node ref="C21" pin="1" pintype="passive"/>
       <node ref="D5" pin="1" pinfunction="A_1" pintype="passive"/>
       <node ref="FPC1" pin="60" pinfunction="VGL_60" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
       <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="56" name="VSNH" class="Default">
+    <net code="57" name="VSNH" class="Default">
       <node ref="C112" pin="1" pintype="passive"/>
       <node ref="C113" pin="1" pintype="passive"/>
       <node ref="C114" pin="1" pintype="passive"/>
@@ -5597,7 +5720,7 @@
       <node ref="FPC1" pin="48" pinfunction="VSNH_48" pintype="passive"/>
       <node ref="FPC1" pin="53" pinfunction="VSNH_53" pintype="passive"/>
     </net>
-    <net code="57" name="VSNL" class="Default">
+    <net code="58" name="VSNL" class="Default">
       <node ref="C115" pin="1" pintype="passive"/>
       <node ref="C116" pin="1" pintype="passive"/>
       <node ref="C117" pin="1" pintype="passive"/>
@@ -5605,7 +5728,7 @@
       <node ref="FPC1" pin="49" pinfunction="VSNL_49" pintype="passive"/>
       <node ref="FPC1" pin="52" pinfunction="VSNL_52" pintype="passive"/>
     </net>
-    <net code="58" name="VSNL2" class="Default">
+    <net code="59" name="VSNL2" class="Default">
       <node ref="C118" pin="1" pintype="passive"/>
       <node ref="C119" pin="1" pintype="passive"/>
       <node ref="C120" pin="1" pintype="passive"/>
@@ -5613,7 +5736,7 @@
       <node ref="FPC1" pin="50" pinfunction="VSNL2_50" pintype="passive"/>
       <node ref="FPC1" pin="51" pinfunction="VSNL2_51" pintype="passive"/>
     </net>
-    <net code="59" name="VSPH" class="Default">
+    <net code="60" name="VSPH" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C103" pin="1" pintype="passive"/>
       <node ref="C104" pin="1" pintype="passive"/>
@@ -5621,7 +5744,7 @@
       <node ref="FPC1" pin="42" pinfunction="VSPH_42" pintype="passive"/>
       <node ref="FPC1" pin="45" pinfunction="VSPH_45" pintype="passive"/>
     </net>
-    <net code="60" name="VSPL" class="Default">
+    <net code="61" name="VSPL" class="Default">
       <node ref="C106" pin="1" pintype="passive"/>
       <node ref="C107" pin="1" pintype="passive"/>
       <node ref="C108" pin="1" pintype="passive"/>
@@ -5629,7 +5752,7 @@
       <node ref="FPC1" pin="43" pinfunction="VSPL_43" pintype="passive"/>
       <node ref="FPC1" pin="46" pinfunction="VSPL_46" pintype="passive"/>
     </net>
-    <net code="61" name="VSPL2" class="Default">
+    <net code="62" name="VSPL2" class="Default">
       <node ref="C109" pin="1" pintype="passive"/>
       <node ref="C110" pin="1" pintype="passive"/>
       <node ref="C111" pin="1" pintype="passive"/>
@@ -5637,22 +5760,22 @@
       <node ref="FPC1" pin="44" pinfunction="VSPL2_44" pintype="passive"/>
       <node ref="FPC1" pin="47" pinfunction="VSPL2_47" pintype="passive"/>
     </net>
-    <net code="62" name="unconnected-(FPC1-DRVN2-Pad40)" class="Default">
+    <net code="63" name="unconnected-(FPC1-DRVN2-Pad40)" class="Default">
       <node ref="FPC1" pin="40" pinfunction="DRVN2_40" pintype="output+no_connect"/>
     </net>
-    <net code="63" name="unconnected-(FPC1-NC-Pad11)" class="Default">
+    <net code="64" name="unconnected-(FPC1-NC-Pad11)" class="Default">
       <node ref="FPC1" pin="11" pinfunction="NC_11" pintype="no_connect"/>
     </net>
-    <net code="64" name="unconnected-(FPC1-NC-Pad15)" class="Default">
+    <net code="65" name="unconnected-(FPC1-NC-Pad15)" class="Default">
       <node ref="FPC1" pin="15" pinfunction="NC_15" pintype="no_connect"/>
     </net>
-    <net code="65" name="unconnected-(FPC1-NC-Pad57)" class="Default">
+    <net code="66" name="unconnected-(FPC1-NC-Pad57)" class="Default">
       <node ref="FPC1" pin="57" pinfunction="NC_57" pintype="no_connect"/>
     </net>
-    <net code="66" name="unconnected-(J2-NC-Pad16)" class="Default">
+    <net code="67" name="unconnected-(J2-NC-Pad16)" class="Default">
       <node ref="J2" pin="16" pinfunction="NC_16" pintype="power_out+no_connect"/>
     </net>
-    <net code="67" name="unconnected-(U4-ALERT_N-Pad3)" class="Default">
+    <net code="68" name="unconnected-(U4-ALERT_N-Pad3)" class="Default">
       <node ref="U4" pin="3" pinfunction="ALERT_N_3" pintype="open_collector+no_connect"/>
     </net>
   </nets>

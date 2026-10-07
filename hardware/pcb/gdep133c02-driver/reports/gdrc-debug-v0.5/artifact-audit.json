@@ -1,0 +1,10 @@
+{
+  "source_matches_release": true,
+  "all_release_artifact_hashes_match": true,
+  "v0_4_release_unchanged": true,
+  "statistics_unique_entities": 129,
+  "bom_assembled": 103,
+  "bom_smt_and_cpl": 101,
+  "copper_tests_excluded_from_bom": true,
+  "gerber_zip_file_count": 11
+}

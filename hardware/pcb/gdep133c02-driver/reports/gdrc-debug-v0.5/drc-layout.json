@@ -1,0 +1,85 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-07T23:28:11",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "gdep133c02-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0303 mm)",
+            "items": [
+                {
+                    "description": "走线 [EPD_3V3] (F.Cu), 长度: 7.9903 mm",
+                    "pos": {
+                        "x": 102.525,
+                        "y": 90.0
+                    },
+                    "uuid": "7da07296-9925-4ff5-b0de-76041e27d7e7"
+                },
+                {
+                    "description": "F.Cu 上 R49 的焊盘 1 [GDRC]",
+                    "pos": {
+                        "x": 107.9875,
+                        "y": 94.0
+                    },
+                    "uuid": "ec4c358e-fcd1-4959-8337-61f1ed4c8682"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [Q7_GATE] (F.Cu), 长度: 3.8250 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 96.2
+                    },
+                    "uuid": "a68708fb-a81a-4b00-a256-bbff7adbdb40"
+                },
+                {
+                    "description": "走线 [EPD_3V3] (F.Cu), 长度: 2.3500 mm",
+                    "pos": {
+                        "x": 108.175,
+                        "y": 95.65
+                    },
+                    "uuid": "a6a2d231-a1aa-4677-ab37-99fe5a0462ef"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP25 的参考字段",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 95.7
+                    },
+                    "uuid": "0581cfd5-66ba-4de5-b889-c1af69f03091"
+                },
+                {
+                    "description": "TP26 的 圆形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 97.0
+                    },
+                    "uuid": "e0a0cbdc-f1fe-41a1-a4e5-d84322a85c22"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

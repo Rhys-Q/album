@@ -1,6 +1,6 @@
 {
   "name": "gdep133c02-driver",
-  "revision": "0.4-direct-p1",
+  "revision": "0.5-gdrc-debug",
   "parts": [
     {
       "ref": "J1",
@@ -342,7 +342,7 @@
       "ref": "Q7",
       "value": "PJA3433_R1_00001",
       "pins": {
-        "1": "GDRC",
+        "1": "Q7_GATE",
         "2": "RESEC",
         "3": "SW_VCOM"
       },
@@ -480,7 +480,7 @@
       "value": "1M ohm",
       "pins": {
         "1": "EPD_3V3",
-        "2": "GDRC"
+        "2": "Q7_GATE"
       },
       "fp": "Resistor_SMD:R_0603_1608Metric",
       "xy": [
@@ -3039,6 +3039,70 @@
       "dnp": false,
       "angle": 0,
       "uuid": "da1c958d-2286-5c6f-9743-c49344031c99"
+    },
+    {
+      "ref": "R49",
+      "value": "0 ohm",
+      "pins": {
+        "1": "GDRC",
+        "2": "Q7_GATE"
+      },
+      "fp": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        58.9,
+        43.7
+      ],
+      "group": "converters",
+      "mpn": "RC0805JR-070RL",
+      "vendor": "Yageo",
+      "url": "",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0,
+      "uuid": "2d63a01d-eae5-4563-ab6c-700abc3ead2b"
+    },
+    {
+      "ref": "TP25",
+      "value": "GDRC",
+      "pins": {
+        "1": "GDRC"
+      },
+      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "xy": [
+        54.5,
+        44
+      ],
+      "group": "test",
+      "mpn": "PCB test pad",
+      "vendor": "PCB",
+      "url": "",
+      "names": {},
+      "types": {},
+      "dnp": true,
+      "angle": 0,
+      "uuid": "4ffed17b-6d9d-4a2c-9315-77c3056d1b18"
+    },
+    {
+      "ref": "TP26",
+      "value": "Q7_GATE",
+      "pins": {
+        "1": "Q7_GATE"
+      },
+      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "xy": [
+        56,
+        48.5
+      ],
+      "group": "test",
+      "mpn": "PCB test pad",
+      "vendor": "PCB",
+      "url": "",
+      "names": {},
+      "types": {},
+      "dnp": true,
+      "angle": 0,
+      "uuid": "06bc1bf7-2b30-4949-a483-894403787910"
     }
   ],
   "board_mm": [

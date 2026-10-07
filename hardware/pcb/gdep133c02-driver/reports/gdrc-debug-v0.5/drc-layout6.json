@@ -1,0 +1,85 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-07T23:33:28",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "gdep133c02-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [Q7_GATE] (In2.Cu), 长度: 1.8250 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 98.5
+                    },
+                    "uuid": "1e62d0b5-46ce-4ba6-9dfc-9432b842b969"
+                },
+                {
+                    "description": "走线 [VGH] (In2.Cu), 长度: 16.6454 mm",
+                    "pos": {
+                        "x": 113.084,
+                        "y": 93.2298
+                    },
+                    "uuid": "65abfeb4-a472-44cc-90d6-6cdeecb5353f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0802 mm)",
+            "items": [
+                {
+                    "description": "走线 [CS_M_N] (B.Cu), 长度: 12.9049 mm",
+                    "pos": {
+                        "x": 99.0247,
+                        "y": 92.204
+                    },
+                    "uuid": "b2b2335e-a440-47d3-b748-03cd2d86311d"
+                },
+                {
+                    "description": "过孔 [Q7_GATE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 98.5
+                    },
+                    "uuid": "de1c0b4e-0baf-4c4c-8a1e-5e783c9fd4df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1548 mm)",
+            "items": [
+                {
+                    "description": "走线 [LX] (In2.Cu), 长度: 14.4917 mm",
+                    "pos": {
+                        "x": 103.974,
+                        "y": 99.5293
+                    },
+                    "uuid": "a7733502-a7ef-4087-b276-1b4f1f79d95e"
+                },
+                {
+                    "description": "过孔 [Q7_GATE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 98.5
+                    },
+                    "uuid": "de1c0b4e-0baf-4c4c-8a1e-5e783c9fd4df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

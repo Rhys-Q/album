@@ -1,6 +1,6 @@
-# v0.4设计变更与尚待审核
+# v0.5设计变更与尚待审核
 
-2026-10-07。17只0Ω及接口隔离电路已删除，102个装配件；原理图、PCB已同步重布、原生重新铺铜并通过完整ERC/DRC。GUI实际打开当前版本仍被工具拒绝，实物和功率验收待完成。软件上下电约束见[接口约定](interface-power-state.md)。
+2026-10-07。17只0Ω及接口隔离电路已删除，103个装配件；原理图、PCB已同步重布、原生重新铺铜并通过完整ERC/DRC。当前版本KiCad GUI实际打开已通过，实物和功率验收待完成。软件上下电约束见[接口约定](interface-power-state.md)。
 
 基线为归档的13.3E6 V1.0外围图及`pin-map.csv`的采用连接字段。BS0/BS1、D/C、DRVN2采用用户已接受的方案，不修改厂家原始文件。
 
@@ -20,3 +20,5 @@
 原厂资料：[WSL规格书](https://www.vishay.com/docs/30100/wsl.pdf)、[MSS1246规格书](https://www.coilcraft.com/getmedia/960fadbe-0ca0-40e2-ae20-64edb15f3a07/mss1246.pdf)，PDF归档在sources/。电容偏压/环路与实物匹配未验收，因此制造导出当前为审阅包，release_allowed=false。
 
 本次P1删除L4/L5、合并VIN/AVDD/EPD_3V3，铜线直接分支供电。保留所有电容，新增噪声/刷新通信验收项，见[P1改版](p1-direct-supply-v0.4.md)。
+
+P4新增调试断点R49及TP25/TP26，正常装R49；R13在栅极侧，GDRC驱动匹配仍须实测，见[GDRC调试说明](gdrc-debug-v0.5.md)。

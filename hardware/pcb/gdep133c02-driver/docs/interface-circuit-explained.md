@@ -1,4 +1,4 @@
-# Interface 原理详解：v0.4直连接口
+# Interface 原理详解：v0.5直连接口（本页接法不变）
 
 2026-10-07。对应[interface.kicad_sch](../interface.kicad_sch)及[当前原理图PDF](../reports/schematic.pdf)。本页11个装配元件，加24个仅铜焊盘的测试点。U6/U7、Q9/Q10、R37/R38、C34/C35已删除。
 
@@ -55,7 +55,7 @@ BUSY的2k上拉R1位于Panel页，从EPD_3V3供电；它与这里的100k弱默�
 
 ## 5. 测试点是什么
 
-TP1–TP24是PCB铜焊盘，全部DNP，不购买24个测试点元件，也不计入102个装配件。它们让探针接触输入、控制、功率轨和反馈等节点。测正负高压时以GND为参考，确认仪表范围；LX和采样节点的测试引线会影响波形，应尽量缩短回路。
+TP1–TP24是PCB铜焊盘，全部DNP，不购买24个测试点元件，也不计入103个装配件。它们让探针接触输入、控制、功率轨和反馈等节点。测正负高压时以GND为参考，确认仪表范围；LX和采样节点的测试引线会影响波形，应尽量缩短回路。
 
 ## 6. 软件必须承担的约束
 
@@ -105,3 +105,5 @@ TP1–TP24是PCB铜焊盘，全部DNP，不购买24个测试点元件，也不�
 | TP22 | GND | PCB test pad | Driver:TestPoint__TestPoint_Pad_D1.5mm | 1=GND |
 | TP23 | GND | PCB test pad | Driver:TestPoint__TestPoint_Pad_D1.5mm | 1=GND |
 | TP24 | GND | PCB test pad | Driver:TestPoint__TestPoint_Pad_D1.5mm | 1=GND |
+
+当前整板v0.5另外在Power页增加TP25/TP26，合计26个铜测试点；Interface页仍为24个。P4调试接法见[GDRC调试说明](gdrc-debug-v0.5.md)。

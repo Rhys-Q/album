@@ -28,10 +28,16 @@ assert parts['C36']['mpn']=='C0805C102J5GACTU'
 removed=json.loads((ROOT/'reports/hand-solder-v0.3/change-map.json').read_text())['removed']
 assert not (set(removed)|{'L4','L5'}).intersection(parts)
 assert not {'VIN','AVDD'}.intersection(want.values())
+assert parts['R49']['pins']=={'1':'GDRC','2':'Q7_GATE'}
+assert parts['R49']['value']=='0 ohm' and 'R_0805_' in parts['R49']['fp'] and not parts['R49']['dnp']
+assert parts['Q7']['pins']['1']=='Q7_GATE' and parts['R13']['pins']['2']=='Q7_GATE'
+assert parts['TP25']['pins']=={'1':'GDRC'} and parts['TP26']['pins']=={'1':'Q7_GATE'}
+assert parts['TP25']['dnp'] and parts['TP26']['dnp']
+assert [z['ref'] for z in parts.values() if {'GDRC','Q7_GATE'} <= set(z['pins'].values())]==['R49']
 for ref in ['C29','C30','C31','C32','C33']:
  assert set(parts[ref]['pins'].values())=={'EPD_3V3','GND'}
-assert sum(not z['dnp'] for z in parts.values())==102
-assert len(want)==313
+assert sum(not z['dnp'] for z in parts.values())==103
+assert len(want)==317
 for ref,host,screen in [('R39','HOST_SCLK','SCLK'),('R40','HOST_MOSI','SI0'),('R41','HOST_CS_M_N','CS_M_N'),('R42','HOST_CS_S_N','CS_S_N'),('R43','HOST_RES_N','RES_N')]:
  assert parts[ref]['pins']=={'1':host,'2':screen}
 # Footprints must resolve locally, with no personal-directory model dependencies.
@@ -50,8 +56,8 @@ for name,digest in proof['source_sha256'].items():
  assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest, ('Stale check report',name)
 result={'date':'2026-10-01','kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'NOT COMPLETED - see docs/design-review.md','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
 result['date']=proof['date']
-result['revision']='0.4-DIRECT-P1'
-result['assembled_components']=102
+result['revision']='0.5-GDRC-DEBUG'
+result['assembled_components']=103
 result['signal_isolation']='REMOVED - mandatory host power sequencing'
 result['zone_refill']=proof['zone_refill']
 result['gui_open']=proof.get('gui_open','NOT VERIFIED for current sources - see reports/gui-open-check.md for historical validation')

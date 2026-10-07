@@ -1,0 +1,108 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-07T23:30:43",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "gdep133c02-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "短路了两个不同网络的项目 (网络 Q7_GATE 和 LX)",
+            "items": [
+                {
+                    "description": "过孔 [Q7_GATE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 97.0
+                    },
+                    "uuid": "1c9a60ba-2780-4072-8246-98f7fd0f8172"
+                },
+                {
+                    "description": "走线 [LX] (In2.Cu), 长度: 14.4917 mm",
+                    "pos": {
+                        "x": 103.974,
+                        "y": 99.5293
+                    },
+                    "uuid": "a7733502-a7ef-4087-b276-1b4f1f79d95e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 VGH 和 Q7_GATE)",
+            "items": [
+                {
+                    "description": "走线 [VGH] (In2.Cu), 长度: 16.6454 mm",
+                    "pos": {
+                        "x": 113.084,
+                        "y": 93.2298
+                    },
+                    "uuid": "65abfeb4-a472-44cc-90d6-6cdeecb5353f"
+                },
+                {
+                    "description": "过孔 [Q7_GATE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 109.825,
+                        "y": 96.7
+                    },
+                    "uuid": "c217505b-6b93-43cd-8799-128bf72497b2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [LX] (In2.Cu), 长度: 14.4917 mm",
+                    "pos": {
+                        "x": 103.974,
+                        "y": 99.5293
+                    },
+                    "uuid": "a7733502-a7ef-4087-b276-1b4f1f79d95e"
+                },
+                {
+                    "description": "走线 [Q7_GATE] (In2.Cu), 长度: 3.8367 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 97.0
+                    },
+                    "uuid": "c893c8da-a87b-46a4-98ec-be107383a756"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [VGH] (In2.Cu), 长度: 16.6454 mm",
+                    "pos": {
+                        "x": 113.084,
+                        "y": 93.2298
+                    },
+                    "uuid": "65abfeb4-a472-44cc-90d6-6cdeecb5353f"
+                },
+                {
+                    "description": "走线 [Q7_GATE] (In2.Cu), 长度: 3.8367 mm",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 97.0
+                    },
+                    "uuid": "c893c8da-a87b-46a4-98ec-be107383a756"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        }
+    ]
+}

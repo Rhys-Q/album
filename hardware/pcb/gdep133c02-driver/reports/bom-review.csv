@@ -101,3 +101,4 @@ R48,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT
 J2,HOST DIRECT 3V3,Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical,Samtec,TSW-108-07-G-D,1,False,DRAFT: procurement/parameters not released
 FPC1,FPC-05FB-60PH20,Driver:FPC_05FB_60PH20,Xunpu,FPC-05FB-60PH20,1,False,DRAFT: procurement/parameters not released
 C36,1nF/50V C0G,Capacitor_SMD:C_0805_2012Metric,KEMET,C0805C102J5GACTU,1,False,DRAFT: procurement/parameters not released
+R49,0 ohm,Resistor_SMD:R_0805_2012Metric,Yageo,RC0805JR-070RL,1,False,DRAFT: procurement/parameters not released

@@ -1,6 +1,6 @@
 # Panel 原理图详解：60针屏幕接口、温度检测与电容网络
 
-日期：2026-10-07，v0.4。对应 [panel.kicad_sch](../panel.kicad_sch)，建议同时查看 [Panel PDF](../reports/schematic.pdf)或[高清图](../reports/p1-direct-v0.4/schematic-page-3.png)。
+日期：2026-10-07，v0.5（Panel接法不变）。对应 [panel.kicad_sch](../panel.kicad_sch)，建议同时查看 [Panel PDF](../reports/schematic.pdf)或[高清图](../reports/gdrc-debug-v0.5/schematic-page-3.png)。
 
 本页有 **37个器件位置**：一个60针连接器、一个温度传感器、5只电阻和30只电容；均为装配件。本文逐个解释其作用与设计理由。完整型号、封装、DNP、连接及FPC逐脚表在附录。配套阅读：[Interface详解](interface-circuit-explained.md)、[电源页详解](power-circuit-explained.md)。
 

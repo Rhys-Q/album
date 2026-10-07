@@ -1,6 +1,6 @@
 # GDEP133C02 相框 PCB 设计与实现方案
 
-2026-10-07实现更新：正式工程已改为v0.4直供手焊版，102个装配件；P1删除L4/L5，以铜线连接，并将开关后的VIN/AVDD/EPD_3V3合并为EPD_3V3；移除17只0Ω与U6/U7接口隔离，U5采用TPS22917DBVR/SOT-23-6，C36=1nF接CT与芯片VIN，J2.16 NC。三页原理图与PCB已同步、补线和重新铺铜，ERC/DRC0。本文后续厂家参考器件和历史资料表保留来源身份；本次P1改版见[直供说明](../../hardware/pcb/gdep133c02-driver/docs/p1-direct-supply-v0.4.md)。当前实装以[简化记录](../../hardware/pcb/gdep133c02-driver/docs/hand-solder-simplification.md)及[新版接口约定](../../hardware/pcb/gdep133c02-driver/docs/interface-power-state.md)为准，旧TPS22913及隔离接法不再是当前BOM。GUI当前版本实际打开及硬件验收未完成，制造包仍为审阅。
+2026-10-07实现更新：P4增加R49（0Ω/0805）与TP25/TP26，R13保留在Q7栅极侧，见[GDRC调试说明](../../hardware/pcb/gdep133c02-driver/docs/gdrc-debug-v0.5.md)。正式工程已改为v0.5直供手焊版，103个装配件；P1删除L4/L5，以铜线连接，并将开关后的VIN/AVDD/EPD_3V3合并为EPD_3V3；移除17只0Ω与U6/U7接口隔离，U5采用TPS22917DBVR/SOT-23-6，C36=1nF接CT与芯片VIN，J2.16 NC。三页原理图与PCB已同步、补线和重新铺铜，ERC/DRC0。本文后续厂家参考器件和历史资料表保留来源身份；本次P1改版见[直供说明](../../hardware/pcb/gdep133c02-driver/docs/p1-direct-supply-v0.4.md)。当前实装以[简化记录](../../hardware/pcb/gdep133c02-driver/docs/hand-solder-simplification.md)及[新版接口约定](../../hardware/pcb/gdep133c02-driver/docs/interface-power-state.md)为准，旧TPS22913及隔离接法不再是当前BOM。GUI当前版本实际打开已通过，硬件验收未完成，制造包仍为审阅。
 
 设计日期：2026-10-01。资料审阅更新：2026-10-01。状态：方案设计；已审阅用户提供的屏幕规格书与 ESP-IDF 示例，已补齐公开屏幕外围电路，资料与设计决策已闭环，可进入最小驱动原型阶段；到货与电气验收未完成；已修复最小驱动板 KiCad 工程，ERC/DRC零违规、未连接与原理图一致性问题均为零；FPC焊盘尺寸已核对，原理图和PCB实际打开验证完成，已导出制造审阅包；连接器实物配接及功率参数验收未完成，尚未生产放行；未编译/烧录示例，未进行电气实测。
 
@@ -140,7 +140,7 @@ NC 11/15/57 按规格书保持不连接，也不互相短接。RESE/GDR/DRV/反�
 | [TI TPS22913](https://www.ti.com/lit/ds/symlink/tps22913.pdf) | U5高有效，工作输入1.4–5.5V、最大连续2A；B/C型号有输出放电 | 不是稳压器；关断其输出不等于所有屏幕高压已放完；DSBGA需要对应封装/装配审核 |
 | [Microchip TCN75A](https://ww1.microchip.com/downloads/en/DeviceDoc/21935c.pdf) | U4工作2.7–5.5V，I²C，关断电流最大2µA | 应在受控屏幕3.3V域；不是常供电传感器，也未证明初始化已正确读温 |
 
-**输入路径已收敛为稳压3.3V方案。** 厂家外围参考图以磁珠分支供电；当前v0.4为BENCH_3V3经U5直接到EPD_3V3，逻辑与功率采用同网铜线支路，保留两只100µF电容；屏幕AVDD/VDD/VDDIO引脚都接EPD_3V3。手册p23要求屏幕3.3V。因此本项目由前级稳压3.3V供给该外围，不能把4AA原电池或USB5V接到EPD_VDD。外围图未显示前级降压器；最终共享还是独立稳压支路需按987.4mA屏幕峰值、MCU/SD并发负载与测量边界选型。
+**输入路径已收敛为稳压3.3V方案。** 厂家外围参考图以磁珠分支供电；当前v0.5为BENCH_3V3经U5直接到EPD_3V3，逻辑与功率采用同网铜线支路，保留两只100µF电容；屏幕AVDD/VDD/VDDIO引脚都接EPD_3V3。手册p23要求屏幕3.3V。因此本项目由前级稳压3.3V供给该外围，不能把4AA原电池或USB5V接到EPD_VDD。外围图未显示前级降压器；最终共享还是独立稳压支路需按987.4mA屏幕峰值、MCU/SD并发负载与测量边界选型。
 
 图中没有额外独立的专用升压控制IC，面板GDR/RESE/DRV/反馈脚驱动分立电源电路。主要参考件为：Q1/Q4 DMN3065LW-7、Q8 DMP3068L-7、Q3 MMBT3906、Q6 MMBT3904、Q7 PJA3433；D1/D2 MBR230S1F-7、D3/D5/D6 BAT54S、D4 B0530W；L1–L3 15µH。U1/U2/U3实为200mΩ电流采样电阻，不是待找专用IC。具体拓扑须逐网从原图录入，不能从器件列表拼接电路。电容耐压/介质/有效容量、电感饱和电流/DCR和部分器件完整采购信息尚缺，参考值不构成生产BOM。
 
