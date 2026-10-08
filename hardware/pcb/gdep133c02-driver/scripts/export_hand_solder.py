@@ -6,7 +6,7 @@ Refuses to overwrite an existing versioned release.
 from pathlib import Path
 import subprocess,json,csv,hashlib,zipfile
 import pcbnew as p
-R=Path(__file__).resolve().parents[1];CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli';NAME='gdep133c02-driver';BOARD=R/(NAME+'.kicad_pcb');SCH=R/(NAME+'.kicad_sch');OUT=R/'releases/jlc-cn-review-v0.5-2026-10-07'
+R=Path(__file__).resolve().parents[1];CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli';NAME='gdep133c02-driver';BOARD=R/(NAME+'.kicad_pcb');SCH=R/(NAME+'.kicad_sch');OUT=R/'releases/jlc-cn-review-v0.5-linkfix-2026-10-08'
 assert not OUT.exists(),'Existing review version must not be overwritten'
 def run(*args):subprocess.run([CLI,*map(str,args)],check=True)
 def digest(f):return hashlib.sha256(f.read_bytes()).hexdigest()
@@ -28,7 +28,7 @@ summary=dict(revision='0.5-GDRC-DEBUG',footprints=len(list(b.GetFootprints())),p
 (R/'reports/board-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 
 source=[f for f in R.iterdir() if f.suffix in ['.kicad_sch','.kicad_pro','.kicad_pcb','.kicad_dru']]+[R/'design-data.json',R/'lib/Driver.kicad_sym']+list((R/'lib/Driver.pretty').glob('*.kicad_mod'))
-proof=dict(date='2026-10-07',kicad_version='10.0.6',gui_open=json.loads((R/'reports/gdrc-debug-v0.5/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.5 native CAD, full ERC/DRC/parity, pad map, supply and direct signal fixed requirements',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
+proof=dict(date='2026-10-08',kicad_version='10.0.6',gui_open=json.loads((R/'reports/pcb-link-fix-2026-10-08/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.5 native CAD, full ERC/DRC/parity, pad map, supply and direct signal fixed requirements',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
 (R/'reports/check-provenance.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n')
 subprocess.run(['python3',str(R/'scripts/check_design.py')],check=True)
 OUT.mkdir();(OUT/'gerber').mkdir();(OUT/'stencil-optional').mkdir();(R/'reports/preview').mkdir(exist_ok=True)
@@ -61,6 +61,6 @@ files=[f for f in (OUT/'gerber').iterdir() if f.suffix in ['.gtl','.gbl','.g1','
 with zipfile.ZipFile(OUT/(NAME+'-gerber-rs274x.zip'),'w',zipfile.ZIP_DEFLATED) as z:
  for f in sorted(files):z.write(f,f.name)
 assert all(digest(R/name)==value for name,value in proof['source_sha256'].items()),'Source mutation during export'
-report=dict(date='2026-10-07',revision='0.5-GDRC-DEBUG',kicad_version='10.0.6',production_released=False,source_sha256=proof['source_sha256'],assembled_components=103,smt_components=101,smt_bom_groups=len(smt),cpl_components=101,manual_components=['J1','J2'],all_smt_on_top=True,erc_violations=0,drc_violations=0,unconnected_items=0,schematic_parity=0,gui_open=proof['gui_open'],zone_refill=proof['zone_refill'],jlc_part_numbers='NOT MATCHED',hardware_tests='NOT PERFORMED',files_sha256={str(f.relative_to(OUT)):digest(f) for f in sorted(OUT.rglob('*')) if f.is_file()})
+report=dict(date='2026-10-08',revision='0.5-GDRC-DEBUG',kicad_version='10.0.6',production_released=False,source_sha256=proof['source_sha256'],assembled_components=103,smt_components=101,smt_bom_groups=len(smt),cpl_components=101,manual_components=['J1','J2'],all_smt_on_top=True,erc_violations=0,drc_violations=0,unconnected_items=0,schematic_parity=0,gui_open=proof['gui_open'],zone_refill=proof['zone_refill'],jlc_part_numbers='NOT MATCHED',hardware_tests='NOT PERFORMED',files_sha256={str(f.relative_to(OUT)):digest(f) for f in sorted(OUT.rglob('*')) if f.is_file()})
 (OUT/'verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'output':str(OUT),'assembled':103,'smt':101,'smt_groups':len(smt),'CAD_checks':'PASS','production_released':False},ensure_ascii=False))

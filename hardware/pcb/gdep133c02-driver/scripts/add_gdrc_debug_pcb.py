@@ -17,7 +17,7 @@ for t in list(b.GetTracks()):
 a=parse((R/'power.kicad_sch').read_text());sy={next(z[2] for z in kids(s,'property') if z[1]=='Reference'):s for s in kids(a,'symbol')}
 def point(x,y):return p.VECTOR2I(p.FromMM(x),p.FromMM(y))
 def add(ref,fp,x,y,value,nets,dnp=False):
- f=p.FootprintLoad(str(R/'lib/Driver.pretty'),fp);f.SetReference(ref);f.SetValue(value);f.SetFPID(p.LIB_ID('Driver',fp));f.SetPosition(point(x,y));s=sy[ref];path=one(one(one(s,'instances'),'project'),'path')[1];f.SetPath(p.KIID_PATH(str(path)+'/'+str(one(s,'uuid')[1])));f.SetDNP(dnp);f.SetExcludedFromBOM(dnp)
+ f=p.FootprintLoad(str(R/'lib/Driver.pretty'),fp);f.SetReference(ref);f.SetValue(value);f.SetFPID(p.LIB_ID('Driver',fp));f.SetPosition(point(x,y));s=sy[ref];path=one(one(one(s,'instances'),'project'),'path')[1];f.SetPath(p.KIID_PATH('/'+'/'.join(str(path).strip('/').split('/')[1:])+'/'+str(one(s,'uuid')[1])));f.SetDNP(dnp);f.SetExcludedFromBOM(dnp)
  props={z[1]:z[2] for z in kids(s,'property')}
  for k in ['MPN','Manufacturer','Datasheet']:f.SetField(k,str(props[k]))
  f.Reference().SetTextSize(point(.8,.8));f.Reference().SetTextThickness(p.FromMM(.12));f.Reference().SetPosition(point(x,y-1.7));f.Value().SetVisible(False);b.Add(f)

@@ -49,7 +49,7 @@ rootuuid=str(one(parse((R/'gdep133c02-driver.kicad_sch').read_text()),'uuid')[1]
 for f in b.GetFootprints():
  ref=f.GetReference()
  if ref in components:
-  c=components[ref];f.SetPath(p.KIID_PATH('/'+rootuuid+c.find('sheetpath').attrib['tstamps']+c.findtext('tstamps')))
+  c=components[ref];f.SetPath(p.KIID_PATH(c.find('sheetpath').attrib['tstamps']+c.findtext('tstamps')))
   for pad in f.Pads():
    if (ref,pad.GetNumber()) in nets:pad.SetNet(net(nets[(ref,pad.GetNumber())]))
 # No obsolete net list entries: removal is safe after every connected object was remapped.

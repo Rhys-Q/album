@@ -1,0 +1,547 @@
+信息: 正在处理符号 'C17:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'U5:Driver:Package_TO_SOT_SMD__SOT-23-6'。
+信息: 正在处理符号 'U4:Driver:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm'。
+信息: 正在处理符号 'U3:Driver:Resistor_SMD__R_1206_3216Metric'。
+信息: 正在处理符号 'C2:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'U2:Driver:Resistor_SMD__R_1206_3216Metric'。
+信息: 正在处理符号 'U1:Driver:Resistor_SMD__R_1206_3216Metric'。
+信息: 正在处理符号 'TP26:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C3:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'TP25:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP24:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP23:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C4:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'TP22:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP21:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP20:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C5:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'TP19:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP18:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP17:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C6:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'TP16:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP15:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP14:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C7:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'TP13:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP12:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP11:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C8:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'TP10:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP9:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP8:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C9:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'TP7:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP6:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP5:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C10:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'TP4:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP3:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'TP2:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'C11:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'TP1:Driver:TestPoint__TestPoint_Pad_D1.5mm'。
+信息: 正在处理符号 'R49:Driver:Resistor_SMD__R_0805_2012Metric'。
+信息: 正在处理符号 'R48:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C12:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R47:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R46:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R45:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C13:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R44:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R43:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R42:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C14:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R41:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R40:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R39:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C15:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R36:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R35:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R30:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C16:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R21:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R20:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R19:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C36:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'R18:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R17:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R13:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C18:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'R12:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R11:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R10:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C19:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R8:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R7:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R3:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'C20:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'R2:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'R1:Driver:Resistor_SMD__R_0603_1608Metric'。
+信息: 正在处理符号 'Q8:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'C21:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'Q7:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'C1:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'Q6:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'C22:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'Q4:Driver:Package_TO_SOT_SMD__SOT-323_SC-70'。
+信息: 正在处理符号 'Q3:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'Q1:Driver:Package_TO_SOT_SMD__SOT-323_SC-70'。
+信息: 正在处理符号 'C23:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'L3:Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX'。
+信息: 正在处理符号 'L2:Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX'。
+信息: 正在处理符号 'L1:Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX'。
+信息: 正在处理符号 'C24:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'J2:Driver:Connector_PinHeader_2.54mm__PinHeader_2x08_P2.54mm_Vertical'。
+信息: 正在处理符号 'J1:Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical'。
+信息: 正在处理符号 'FPC1:Driver:FPC_05FB_60PH20'。
+信息: 正在处理符号 'C25:Driver:Capacitor_SMD__C_0805_2012Metric'。
+信息: 正在处理符号 'D6:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'D5:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'D4:Driver:Diode_SMD__D_SOD-123'。
+信息: 正在处理符号 'C26:Driver:Capacitor_SMD__C_0603_1608Metric'。
+信息: 正在处理符号 'D3:Driver:Package_TO_SOT_SMD__SOT-23'。
+信息: 正在处理符号 'D2:Driver:Diode_SMD__D_SOD-123F'。
+信息: 正在处理符号 'D1:Driver:Diode_SMD__D_SOD-123F'。
+信息: 正在处理符号 'C27:Driver:Capacitor_SMD__C_0603_1608Metric'。
+信息: 正在处理符号 'C120:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C119:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C118:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C28:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C117:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C116:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C115:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C29:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C114:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C113:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C112:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C30:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C111:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C110:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C109:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C31:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C108:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C107:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C106:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C32:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C105:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C104:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C103:Driver:Capacitor_SMD__C_1210_3225Metric'。
+信息: 正在处理符号 'C33:Driver:Capacitor_SMD__C_0603_1608Metric'。
+将 Q6 图纸文件更新为 'power.kicad_sch'。
+将 U5 图纸名称更新为 '/Power converters/'。
+更新 C33 单元的元数据。
+将 C33 图纸名称更新为 '/Power converters/'。
+将 C36 图纸名称更新为 '/Power converters/'。
+将 C36 图纸文件更新为 'power.kicad_sch'。
+更新 C36 单元的元数据。
+更新 C32 单元的元数据。
+将 C103 图纸名称更新为 '/Panel and temperature/'。
+将 C103 图纸文件更新为 'panel.kicad_sch'。
+更新 C103 单元的元数据。
+将 C32 图纸文件更新为 'power.kicad_sch'。
+将 C104 图纸名称更新为 '/Panel and temperature/'。
+将 C104 图纸文件更新为 'panel.kicad_sch'。
+更新 C104 单元的元数据。
+将 C32 图纸名称更新为 '/Power converters/'。
+将 C105 图纸名称更新为 '/Panel and temperature/'。
+将 C105 图纸文件更新为 'panel.kicad_sch'。
+更新 C105 单元的元数据。
+更新 C31 单元的元数据。
+将 C106 图纸名称更新为 '/Panel and temperature/'。
+将 C106 图纸文件更新为 'panel.kicad_sch'。
+更新 C106 单元的元数据。
+将 C31 图纸文件更新为 'power.kicad_sch'。
+将 C107 图纸名称更新为 '/Panel and temperature/'。
+将 C107 图纸文件更新为 'panel.kicad_sch'。
+更新 C107 单元的元数据。
+将 C31 图纸名称更新为 '/Power converters/'。
+将 C108 图纸名称更新为 '/Panel and temperature/'。
+将 C108 图纸文件更新为 'panel.kicad_sch'。
+更新 C108 单元的元数据。
+更新 C30 单元的元数据。
+将 C109 图纸名称更新为 '/Panel and temperature/'。
+将 C109 图纸文件更新为 'panel.kicad_sch'。
+更新 C109 单元的元数据。
+将 C30 图纸文件更新为 'power.kicad_sch'。
+将 C110 图纸名称更新为 '/Panel and temperature/'。
+将 C110 图纸文件更新为 'panel.kicad_sch'。
+更新 C110 单元的元数据。
+将 C30 图纸名称更新为 '/Power converters/'。
+将 C111 图纸名称更新为 '/Panel and temperature/'。
+将 C111 图纸文件更新为 'panel.kicad_sch'。
+更新 C111 单元的元数据。
+更新 C29 单元的元数据。
+将 C112 图纸名称更新为 '/Panel and temperature/'。
+将 C112 图纸文件更新为 'panel.kicad_sch'。
+更新 C112 单元的元数据。
+将 C29 图纸文件更新为 'power.kicad_sch'。
+将 C113 图纸名称更新为 '/Panel and temperature/'。
+将 C113 图纸文件更新为 'panel.kicad_sch'。
+更新 C113 单元的元数据。
+将 C29 图纸名称更新为 '/Power converters/'。
+将 C114 图纸名称更新为 '/Panel and temperature/'。
+将 C114 图纸文件更新为 'panel.kicad_sch'。
+更新 C114 单元的元数据。
+更新 C28 单元的元数据。
+将 C115 图纸名称更新为 '/Panel and temperature/'。
+将 C115 图纸文件更新为 'panel.kicad_sch'。
+更新 C115 单元的元数据。
+将 C28 图纸文件更新为 'power.kicad_sch'。
+将 C116 图纸名称更新为 '/Panel and temperature/'。
+将 C116 图纸文件更新为 'panel.kicad_sch'。
+更新 C116 单元的元数据。
+将 C28 图纸名称更新为 '/Power converters/'。
+将 C117 图纸名称更新为 '/Panel and temperature/'。
+将 C117 图纸文件更新为 'panel.kicad_sch'。
+更新 C117 单元的元数据。
+更新 C27 单元的元数据。
+将 C118 图纸名称更新为 '/Panel and temperature/'。
+将 C118 图纸文件更新为 'panel.kicad_sch'。
+更新 C118 单元的元数据。
+将 C27 图纸文件更新为 'panel.kicad_sch'。
+将 C119 图纸名称更新为 '/Panel and temperature/'。
+将 C119 图纸文件更新为 'panel.kicad_sch'。
+更新 C119 单元的元数据。
+将 C27 图纸名称更新为 '/Panel and temperature/'。
+将 C120 图纸名称更新为 '/Panel and temperature/'。
+将 C120 图纸文件更新为 'panel.kicad_sch'。
+更新 C120 单元的元数据。
+更新 C26 单元的元数据。
+将 D1 图纸名称更新为 '/Power converters/'。
+将 D1 图纸文件更新为 'power.kicad_sch'。
+更新 D1 单元的元数据。
+将 C26 图纸文件更新为 'power.kicad_sch'。
+将 D2 图纸名称更新为 '/Power converters/'。
+将 D2 图纸文件更新为 'power.kicad_sch'。
+更新 D2 单元的元数据。
+将 C26 图纸名称更新为 '/Power converters/'。
+将 D3 图纸名称更新为 '/Power converters/'。
+将 D3 图纸文件更新为 'power.kicad_sch'。
+更新 D3 单元的元数据。
+更新 C25 单元的元数据。
+将 D4 图纸名称更新为 '/Power converters/'。
+将 D4 图纸文件更新为 'power.kicad_sch'。
+更新 D4 单元的元数据。
+将 C25 图纸文件更新为 'power.kicad_sch'。
+将 D5 图纸名称更新为 '/Power converters/'。
+将 D5 图纸文件更新为 'power.kicad_sch'。
+更新 D5 单元的元数据。
+将 C25 图纸名称更新为 '/Power converters/'。
+将 D6 图纸名称更新为 '/Power converters/'。
+将 D6 图纸文件更新为 'power.kicad_sch'。
+更新 D6 单元的元数据。
+更新 C24 单元的元数据。
+将 FPC1 图纸名称更新为 '/Panel and temperature/'。
+将 FPC1 图纸文件更新为 'panel.kicad_sch'。
+更新 U5 单元的元数据。
+将 U5 图纸文件更新为 'power.kicad_sch'。
+更新 FPC1 单元的元数据。
+将 C24 图纸文件更新为 'power.kicad_sch'。
+将 J1 图纸名称更新为 '/Power converters/'。
+将 J1 图纸文件更新为 'power.kicad_sch'。
+更新 J1 单元的元数据。
+将 C24 图纸名称更新为 '/Power converters/'。
+将 J2 图纸名称更新为 '/Host interface and test points/'。
+将 J2 图纸文件更新为 'interface.kicad_sch'。
+更新 J2 单元的元数据。
+更新 C23 单元的元数据。
+将 L1 图纸名称更新为 '/Power converters/'。
+将 L1 图纸文件更新为 'power.kicad_sch'。
+更新 L1 单元的元数据。
+将 C23 图纸文件更新为 'power.kicad_sch'。
+将 L2 图纸名称更新为 '/Power converters/'。
+将 L2 图纸文件更新为 'power.kicad_sch'。
+更新 L2 单元的元数据。
+将 C23 图纸名称更新为 '/Power converters/'。
+将 L3 图纸名称更新为 '/Power converters/'。
+将 L3 图纸文件更新为 'power.kicad_sch'。
+更新 L3 单元的元数据。
+更新 C22 单元的元数据。
+将 Q1 图纸名称更新为 '/Power converters/'。
+将 Q1 图纸文件更新为 'power.kicad_sch'。
+更新 Q1 单元的元数据。
+将 C22 图纸文件更新为 'power.kicad_sch'。
+将 Q3 图纸名称更新为 '/Power converters/'。
+将 Q3 图纸文件更新为 'power.kicad_sch'。
+更新 Q3 单元的元数据。
+将 C22 图纸名称更新为 '/Power converters/'。
+将 Q4 图纸名称更新为 '/Power converters/'。
+将 Q4 图纸文件更新为 'power.kicad_sch'。
+更新 Q4 单元的元数据。
+更新 C21 单元的元数据。
+将 Q6 图纸名称更新为 '/Power converters/'。
+将 C21 图纸文件更新为 'power.kicad_sch'。
+更新 Q6 单元的元数据。
+将 C21 图纸名称更新为 '/Power converters/'。
+将 Q7 图纸名称更新为 '/Power converters/'。
+将 Q7 图纸文件更新为 'power.kicad_sch'。
+更新 Q7 单元的元数据。
+更新 C20 单元的元数据。
+将 Q8 图纸名称更新为 '/Power converters/'。
+将 Q8 图纸文件更新为 'power.kicad_sch'。
+更新 Q8 单元的元数据。
+将 C20 图纸文件更新为 'power.kicad_sch'。
+将 R1 图纸名称更新为 '/Panel and temperature/'。
+将 R1 图纸文件更新为 'panel.kicad_sch'。
+更新 R1 单元的元数据。
+将 C20 图纸名称更新为 '/Power converters/'。
+将 R2 图纸名称更新为 '/Power converters/'。
+将 R2 图纸文件更新为 'power.kicad_sch'。
+更新 R2 单元的元数据。
+更新 C19 单元的元数据。
+将 R3 图纸名称更新为 '/Power converters/'。
+将 R3 图纸文件更新为 'power.kicad_sch'。
+更新 R3 单元的元数据。
+将 C19 图纸文件更新为 'power.kicad_sch'。
+将 R7 图纸名称更新为 '/Power converters/'。
+将 R7 图纸文件更新为 'power.kicad_sch'。
+更新 R7 单元的元数据。
+将 C19 图纸名称更新为 '/Power converters/'。
+将 R8 图纸名称更新为 '/Power converters/'。
+将 R8 图纸文件更新为 'power.kicad_sch'。
+更新 R8 单元的元数据。
+更新 C18 单元的元数据。
+将 R10 图纸名称更新为 '/Power converters/'。
+将 R10 图纸文件更新为 'power.kicad_sch'。
+更新 R10 单元的元数据。
+将 C18 图纸文件更新为 'power.kicad_sch'。
+将 R11 图纸名称更新为 '/Power converters/'。
+将 R11 图纸文件更新为 'power.kicad_sch'。
+更新 R11 单元的元数据。
+将 C18 图纸名称更新为 '/Power converters/'。
+将 R12 图纸名称更新为 '/Power converters/'。
+将 R12 图纸文件更新为 'power.kicad_sch'。
+更新 R12 单元的元数据。
+更新 C17 单元的元数据。
+将 R13 图纸名称更新为 '/Power converters/'。
+将 R13 图纸文件更新为 'power.kicad_sch'。
+更新 R13 单元的元数据。
+将 C17 图纸文件更新为 'power.kicad_sch'。
+将 R17 图纸名称更新为 '/Power converters/'。
+将 R17 图纸文件更新为 'power.kicad_sch'。
+更新 R17 单元的元数据。
+将 C17 图纸名称更新为 '/Power converters/'。
+将 R18 图纸名称更新为 '/Power converters/'。
+将 R18 图纸文件更新为 'power.kicad_sch'。
+更新 R18 单元的元数据。
+更新 C16 单元的元数据。
+将 R19 图纸名称更新为 '/Power converters/'。
+将 R19 图纸文件更新为 'power.kicad_sch'。
+更新 R19 单元的元数据。
+将 C16 图纸文件更新为 'power.kicad_sch'。
+将 R20 图纸名称更新为 '/Panel and temperature/'。
+将 R20 图纸文件更新为 'panel.kicad_sch'。
+更新 R20 单元的元数据。
+将 C16 图纸名称更新为 '/Power converters/'。
+将 R21 图纸名称更新为 '/Panel and temperature/'。
+将 R21 图纸文件更新为 'panel.kicad_sch'。
+将 C33 图纸文件更新为 'power.kicad_sch'。
+更新 C15 单元的元数据。
+将 R30 图纸名称更新为 '/Power converters/'。
+将 R30 图纸文件更新为 'power.kicad_sch'。
+更新 R30 单元的元数据。
+将 C15 图纸文件更新为 'power.kicad_sch'。
+将 R35 图纸名称更新为 '/Panel and temperature/'。
+将 R35 图纸文件更新为 'panel.kicad_sch'。
+更新 R35 单元的元数据。
+将 C15 图纸名称更新为 '/Power converters/'。
+将 R36 图纸名称更新为 '/Panel and temperature/'。
+将 R36 图纸文件更新为 'panel.kicad_sch'。
+更新 R36 单元的元数据。
+更新 C14 单元的元数据。
+将 R39 图纸名称更新为 '/Host interface and test points/'。
+将 R39 图纸文件更新为 'interface.kicad_sch'。
+更新 R39 单元的元数据。
+将 C14 图纸文件更新为 'power.kicad_sch'。
+将 R40 图纸名称更新为 '/Host interface and test points/'。
+将 R40 图纸文件更新为 'interface.kicad_sch'。
+更新 R40 单元的元数据。
+将 C14 图纸名称更新为 '/Power converters/'。
+将 R41 图纸名称更新为 '/Host interface and test points/'。
+将 R41 图纸文件更新为 'interface.kicad_sch'。
+更新 R41 单元的元数据。
+更新 C13 单元的元数据。
+将 R42 图纸名称更新为 '/Host interface and test points/'。
+将 R42 图纸文件更新为 'interface.kicad_sch'。
+更新 R42 单元的元数据。
+将 C13 图纸文件更新为 'power.kicad_sch'。
+将 R43 图纸名称更新为 '/Host interface and test points/'。
+将 R43 图纸文件更新为 'interface.kicad_sch'。
+更新 R43 单元的元数据。
+将 C13 图纸名称更新为 '/Power converters/'。
+将 R44 图纸名称更新为 '/Host interface and test points/'。
+将 R44 图纸文件更新为 'interface.kicad_sch'。
+更新 R44 单元的元数据。
+更新 C12 单元的元数据。
+将 R45 图纸名称更新为 '/Host interface and test points/'。
+将 R45 图纸文件更新为 'interface.kicad_sch'。
+更新 R45 单元的元数据。
+将 C12 图纸文件更新为 'power.kicad_sch'。
+将 R46 图纸名称更新为 '/Host interface and test points/'。
+将 R46 图纸文件更新为 'interface.kicad_sch'。
+更新 R46 单元的元数据。
+将 C12 图纸名称更新为 '/Power converters/'。
+将 R47 图纸名称更新为 '/Host interface and test points/'。
+将 R47 图纸文件更新为 'interface.kicad_sch'。
+更新 R47 单元的元数据。
+更新 C11 单元的元数据。
+将 R48 图纸名称更新为 '/Host interface and test points/'。
+将 R48 图纸文件更新为 'interface.kicad_sch'。
+更新 R48 单元的元数据。
+将 C11 图纸文件更新为 'panel.kicad_sch'。
+将 R49 图纸名称更新为 '/Power converters/'。
+将 R49 图纸文件更新为 'power.kicad_sch'。
+更新 R49 单元的元数据。
+将 C11 图纸名称更新为 '/Panel and temperature/'。
+将 TP1 图纸名称更新为 '/Host interface and test points/'。
+将 TP1 图纸文件更新为 'interface.kicad_sch'。
+为 TP1 移除「从坐标文件中移除」制造特性。
+更新 TP1 单元的元数据。
+更新 C10 单元的元数据。
+将 TP2 图纸名称更新为 '/Host interface and test points/'。
+将 TP2 图纸文件更新为 'interface.kicad_sch'。
+为 TP2 移除「从坐标文件中移除」制造特性。
+更新 TP2 单元的元数据。
+将 C10 图纸文件更新为 'panel.kicad_sch'。
+将 TP3 图纸名称更新为 '/Host interface and test points/'。
+将 TP3 图纸文件更新为 'interface.kicad_sch'。
+为 TP3 移除「从坐标文件中移除」制造特性。
+更新 TP3 单元的元数据。
+将 C10 图纸名称更新为 '/Panel and temperature/'。
+将 TP4 图纸名称更新为 '/Host interface and test points/'。
+将 TP4 图纸文件更新为 'interface.kicad_sch'。
+为 TP4 移除「从坐标文件中移除」制造特性。
+更新 TP4 单元的元数据。
+更新 C9 单元的元数据。
+将 TP5 图纸名称更新为 '/Host interface and test points/'。
+将 TP5 图纸文件更新为 'interface.kicad_sch'。
+为 TP5 移除「从坐标文件中移除」制造特性。
+更新 TP5 单元的元数据。
+将 C9 图纸文件更新为 'panel.kicad_sch'。
+将 TP6 图纸名称更新为 '/Host interface and test points/'。
+将 TP6 图纸文件更新为 'interface.kicad_sch'。
+为 TP6 移除「从坐标文件中移除」制造特性。
+更新 TP6 单元的元数据。
+将 C9 图纸名称更新为 '/Panel and temperature/'。
+将 TP7 图纸名称更新为 '/Host interface and test points/'。
+将 TP7 图纸文件更新为 'interface.kicad_sch'。
+为 TP7 移除「从坐标文件中移除」制造特性。
+更新 TP7 单元的元数据。
+更新 C8 单元的元数据。
+将 TP8 图纸名称更新为 '/Host interface and test points/'。
+将 TP8 图纸文件更新为 'interface.kicad_sch'。
+为 TP8 移除「从坐标文件中移除」制造特性。
+更新 TP8 单元的元数据。
+将 C8 图纸文件更新为 'panel.kicad_sch'。
+将 TP9 图纸名称更新为 '/Host interface and test points/'。
+将 TP9 图纸文件更新为 'interface.kicad_sch'。
+为 TP9 移除「从坐标文件中移除」制造特性。
+更新 TP9 单元的元数据。
+将 C8 图纸名称更新为 '/Panel and temperature/'。
+将 TP10 图纸名称更新为 '/Host interface and test points/'。
+将 TP10 图纸文件更新为 'interface.kicad_sch'。
+为 TP10 移除「从坐标文件中移除」制造特性。
+更新 TP10 单元的元数据。
+更新 C7 单元的元数据。
+将 TP11 图纸名称更新为 '/Host interface and test points/'。
+将 TP11 图纸文件更新为 'interface.kicad_sch'。
+为 TP11 移除「从坐标文件中移除」制造特性。
+更新 TP11 单元的元数据。
+将 C7 图纸文件更新为 'panel.kicad_sch'。
+将 TP12 图纸名称更新为 '/Host interface and test points/'。
+将 TP12 图纸文件更新为 'interface.kicad_sch'。
+为 TP12 移除「从坐标文件中移除」制造特性。
+更新 TP12 单元的元数据。
+将 C7 图纸名称更新为 '/Panel and temperature/'。
+将 TP13 图纸名称更新为 '/Host interface and test points/'。
+将 TP13 图纸文件更新为 'interface.kicad_sch'。
+为 TP13 移除「从坐标文件中移除」制造特性。
+更新 TP13 单元的元数据。
+更新 C6 单元的元数据。
+将 TP14 图纸名称更新为 '/Host interface and test points/'。
+将 TP14 图纸文件更新为 'interface.kicad_sch'。
+为 TP14 移除「从坐标文件中移除」制造特性。
+更新 TP14 单元的元数据。
+将 C6 图纸文件更新为 'panel.kicad_sch'。
+将 TP15 图纸名称更新为 '/Host interface and test points/'。
+将 TP15 图纸文件更新为 'interface.kicad_sch'。
+为 TP15 移除「从坐标文件中移除」制造特性。
+更新 TP15 单元的元数据。
+将 C6 图纸名称更新为 '/Panel and temperature/'。
+将 TP16 图纸名称更新为 '/Host interface and test points/'。
+将 TP16 图纸文件更新为 'interface.kicad_sch'。
+为 TP16 移除「从坐标文件中移除」制造特性。
+更新 TP16 单元的元数据。
+更新 C5 单元的元数据。
+将 TP17 图纸名称更新为 '/Host interface and test points/'。
+将 TP17 图纸文件更新为 'interface.kicad_sch'。
+为 TP17 移除「从坐标文件中移除」制造特性。
+更新 TP17 单元的元数据。
+将 C5 图纸文件更新为 'panel.kicad_sch'。
+将 TP18 图纸名称更新为 '/Host interface and test points/'。
+将 TP18 图纸文件更新为 'interface.kicad_sch'。
+为 TP18 移除「从坐标文件中移除」制造特性。
+更新 TP18 单元的元数据。
+将 C5 图纸名称更新为 '/Panel and temperature/'。
+将 TP19 图纸名称更新为 '/Host interface and test points/'。
+将 TP19 图纸文件更新为 'interface.kicad_sch'。
+为 TP19 移除「从坐标文件中移除」制造特性。
+更新 TP19 单元的元数据。
+更新 C4 单元的元数据。
+将 TP20 图纸名称更新为 '/Host interface and test points/'。
+将 TP20 图纸文件更新为 'interface.kicad_sch'。
+为 TP20 移除「从坐标文件中移除」制造特性。
+更新 TP20 单元的元数据。
+将 C4 图纸文件更新为 'panel.kicad_sch'。
+将 TP21 图纸名称更新为 '/Host interface and test points/'。
+将 TP21 图纸文件更新为 'interface.kicad_sch'。
+为 TP21 移除「从坐标文件中移除」制造特性。
+更新 TP21 单元的元数据。
+将 C4 图纸名称更新为 '/Panel and temperature/'。
+将 TP22 图纸名称更新为 '/Host interface and test points/'。
+将 TP22 图纸文件更新为 'interface.kicad_sch'。
+为 TP22 移除「从坐标文件中移除」制造特性。
+更新 TP22 单元的元数据。
+更新 C3 单元的元数据。
+将 TP23 图纸名称更新为 '/Host interface and test points/'。
+将 TP23 图纸文件更新为 'interface.kicad_sch'。
+为 TP23 移除「从坐标文件中移除」制造特性。
+更新 TP23 单元的元数据。
+将 C3 图纸文件更新为 'panel.kicad_sch'。
+将 TP24 图纸名称更新为 '/Host interface and test points/'。
+将 TP24 图纸文件更新为 'interface.kicad_sch'。
+为 TP24 移除「从坐标文件中移除」制造特性。
+更新 TP24 单元的元数据。
+将 C3 图纸名称更新为 '/Panel and temperature/'。
+将 TP25 图纸名称更新为 '/Power converters/'。
+将 TP25 图纸文件更新为 'power.kicad_sch'。
+为 TP25 移除「从坐标文件中移除」制造特性。
+更新 TP25 单元的元数据。
+更新 C2 单元的元数据。
+将 TP26 图纸名称更新为 '/Power converters/'。
+将 TP26 图纸文件更新为 'power.kicad_sch'。
+为 TP26 移除「从坐标文件中移除」制造特性。
+更新 TP26 单元的元数据。
+将 C2 图纸文件更新为 'panel.kicad_sch'。
+将 U1 图纸名称更新为 '/Power converters/'。
+将 U1 图纸文件更新为 'power.kicad_sch'。
+更新 U1 单元的元数据。
+将 C2 图纸名称更新为 '/Panel and temperature/'。
+将 U2 图纸名称更新为 '/Power converters/'。
+将 U2 图纸文件更新为 'power.kicad_sch'。
+更新 U2 单元的元数据。
+更新 C1 单元的元数据。
+将 U3 图纸名称更新为 '/Power converters/'。
+将 U3 图纸文件更新为 'power.kicad_sch'。
+更新 U3 单元的元数据。
+将 C1 图纸文件更新为 'panel.kicad_sch'。
+将 U4 图纸名称更新为 '/Panel and temperature/'。
+将 U4 图纸文件更新为 'panel.kicad_sch'。
+更新 U4 单元的元数据。
+将 C1 图纸名称更新为 '/Panel and temperature/'。
+更新 R21 单元的元数据。
+警告: 找不到元件 FPC1 的焊盘 61 的网络 (引脚 61 不存在于符号中)。
+警告: 找不到元件 FPC1 的焊盘 62 的网络 (引脚 62 不存在于符号中)。
+
+
+信息: 总计警告: 2, 错误: 0。

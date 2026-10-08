@@ -52,7 +52,7 @@
 
 ## 第七课：制造文件、采购与上电
 
-使用`releases/jlc-cn-review-v0.5-2026-10-07/`。Gerber ZIP是制板数据；bom-all是完整103个采购清单；bom-smt是101个SMT清单；bom-manual是J1/J2；cpl-smt是101个位置；positions-kicad为原始核对坐标。BOM列出买什么，CPL列出装在哪里，不能互换。
+使用`releases/jlc-cn-review-v0.5-linkfix-2026-10-08/`。Gerber ZIP是制板数据；bom-all是完整103个采购清单；bom-smt是101个SMT清单；bom-manual是J1/J2；cpl-smt是101个位置；positions-kicad为原始核对坐标。BOM列出买什么，CPL列出装在哪里，不能互换。
 
 手焊下单可只做裸PCB，是否买钢网取决于使用锡膏回流还是烙铁。FPC、SOT-323和0603仍需放大观察、助焊剂、细焊锡、吸锡带及控温烙铁。焊后先断电查短路，再用限流3.3V分阶段检查；高压电源和屏幕接入需要按测量计划操作。
 

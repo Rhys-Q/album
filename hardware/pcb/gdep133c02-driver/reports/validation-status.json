@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "kicad_version": "10.0.6",
   "schematic_connected_pins": 317,
   "pcb_pad_parity": "PASS",
@@ -7,7 +7,7 @@
   "project_local_libraries_and_available_models": "PASS",
   "erc": "PASS - zero violations",
   "drc": "PASS - zero violations/unconnected/parity; no ignored checks or exclusions",
-  "gui_open": "PASS - KiCad 10.0.6 GUI opened current root/power schematic and PCB; R49/TP25/TP26 visible; PCB status 329 pads and zero unrouted",
+  "gui_open": "PASS - formal project KiCad 10.0.6 GUI Update PCB preview with reference relinking OFF; zero added/replaced/deleted footprints; two FPC mechanical pad warnings",
   "fpc_footprint": "LAND DIMENSIONS CHECKED - physical mating/pin orientation pending",
   "routing": "CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias",
   "power_trace_and_loop_review": "WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending",
@@ -19,6 +19,7 @@
   "release_allowed": false,
   "revision": "0.5-GDRC-DEBUG",
   "assembled_components": 103,
+  "pcb_symbol_links": "PASS - all 129 footprint links match KiCad-exported sheet paths without root UUID",
   "signal_isolation": "REMOVED - mandatory host power sequencing",
   "zone_refill": "PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI"
 }

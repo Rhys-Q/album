@@ -12,7 +12,7 @@
 - [电源详解](docs/power-circuit-explained.md)、[面板详解](docs/panel-circuit-explained.md)、[接口详解](docs/interface-circuit-explained.md)
 - [必须遵守的主机上下电约定](docs/interface-power-state.md)、[主控引脚表](docs/host-interface.csv)
 - [KiCad学习教程](docs/learning-guide.md)
-- [v0.5嘉立创兼容审阅包](releases/jlc-cn-review-v0.5-2026-10-07/README.md)
+- [v0.5嘉立创兼容审阅包](releases/jlc-cn-review-v0.5-linkfix-2026-10-08/README.md)
 - [嘉立创下单必读](../../../docs/raw/嘉立创下单必读.md)
 
 ## 检查与生产边界
@@ -34,3 +34,5 @@ PCB仍为100×80mm、4层、1.6mm，层序F.Cu/In1.Cu/In2.Cu/B.Cu；In1为GND平
 P1本次改版说明：[v0.4直供设计](docs/p1-direct-supply-v0.4.md)。v0.3审阅包保留作历史快照，与当前设计不一致。
 
 P4新增R49（0Ω/0805）、TP25/TP26；R13保留在Q7栅极侧，详见[GDRC调试说明](docs/gdrc-debug-v0.5.md)。v0.4审阅包为历史快照，不能与v0.5混用。
+
+2026-10-08：修正129个PCB符号关联路径，默认从原理图更新不再重复新增元件；布局和电路保留。详见[关联修复说明](docs/pcb-link-fix-2026-10-08.md)。

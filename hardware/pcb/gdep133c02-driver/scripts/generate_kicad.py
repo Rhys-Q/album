@@ -124,7 +124,7 @@ for i,name in enumerate(allnets,1):n=pcb.NETINFO_ITEM(b,name,i);b.Add(n);nm[name
 origin=(50,50)
 for p in PARTS:
  local=fpnames.get(p['fp'],fpc);f=pcb.FootprintLoad(str(ROOT/'lib/Driver.pretty'),local);assert f,local
- f.SetFPID(pcb.LIB_ID('Driver',local));f.SetReference(p['ref']);f.SetValue(p['value']);f.SetUuid(pcb.KIID(p['uuid']));f.SetPath(pcb.KIID_PATH('/'+rootid+'/'+ID('sheet/'+next(k for k,t,g in sections if p in g))+'/'+p['uuid']))
+ f.SetFPID(pcb.LIB_ID('Driver',local));f.SetReference(p['ref']);f.SetValue(p['value']);f.SetUuid(pcb.KIID(p['uuid']));f.SetPath(pcb.KIID_PATH('/'+ID('sheet/'+next(k for k,t,g in sections if p in g))+'/'+p['uuid']))
  f.SetPosition(pcb.VECTOR2I(pcb.FromMM(p['xy'][0]+50),pcb.FromMM(p['xy'][1]+50)));f.SetOrientationDegrees(p['angle']);f.Value().SetVisible(False)
  f.Reference().SetTextSize(pcb.VECTOR2I(pcb.FromMM(1),pcb.FromMM(1)));f.Reference().SetTextThickness(pcb.FromMM(.15))
  for pad in f.Pads():

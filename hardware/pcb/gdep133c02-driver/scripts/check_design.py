@@ -12,6 +12,19 @@ for net in xml.find('nets'):
   if ref.startswith('#') or net.attrib['name'].startswith('unconnected-'):continue
   got[key]=net.attrib['name']
 assert got==want,('Schematic differs from design data',set(got.items())^set(want.items()))
+# KiCad PCB symbol links omit the root schematic UUID. Compare against exported sheet paths.
+from schematic_sexp import parse,kids,one
+board_tree=parse((ROOT/'gdep133c02-driver.kicad_pcb').read_text())
+footprint_links={}
+for fp in kids(board_tree,'footprint'):
+ ref=next(z[2] for z in kids(fp,'property') if z[1]=='Reference')
+ assert ref not in footprint_links, ('Duplicate PCB reference',ref)
+ paths=kids(fp,'path');footprint_links[ref]=str(paths[0][1]) if paths else ''
+for comp in xml.find('components'):
+ ref=comp.attrib['ref']
+ if ref not in parts:continue
+ expected=comp.find('sheetpath').attrib['tstamps']+comp.findtext('tstamps')
+ assert footprint_links.get(ref)==expected, ('PCB symbol link incompatible with KiCad',ref,footprint_links.get(ref),expected)
 pads=json.loads((ROOT/'reports/pads.json').read_text());actual={(p['ref'],p['pin']):p['netname'] for p in pads if p['net'] and not p['netname'].startswith('unconnected-')}
 assert actual==want,('PCB pads differ from schematic',set(actual.items())^set(want.items()))
 for pin,net in [('22','EPD_3V3'),('23','EPD_3V3'),('26','GND'),('41','VBB_3P5V'),('56','VBB_3P5V')]:assert parts['FPC1']['pins'][pin]==net
@@ -58,6 +71,7 @@ result={'date':'2026-10-01','kicad_version':'10.0.6','schematic_connected_pins':
 result['date']=proof['date']
 result['revision']='0.5-GDRC-DEBUG'
 result['assembled_components']=103
+result['pcb_symbol_links']='PASS - all 129 footprint links match KiCad-exported sheet paths without root UUID'
 result['signal_isolation']='REMOVED - mandatory host power sequencing'
 result['zone_refill']=proof['zone_refill']
 result['gui_open']=proof.get('gui_open','NOT VERIFIED for current sources - see reports/gui-open-check.md for historical validation')

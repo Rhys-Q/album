@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS - formal project KiCad 10.0.6 GUI Update PCB preview with reference relinking OFF; zero added/replaced/deleted footprints; two FPC mechanical pad warnings",
+  "root_path": "/Users/rhys/tw/26/09/album/hardware/pcb/gdep133c02-driver",
+  "reference_relinking": false,
+  "new_footprints": 0,
+  "warnings": [
+    "FPC1 pad61/pad62 mechanical hold-down pads have no schematic signal pin"
+  ],
+  "preview_report": "update-preview.txt"
+}
