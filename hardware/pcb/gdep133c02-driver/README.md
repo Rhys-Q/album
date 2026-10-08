@@ -1,38 +1,28 @@
-# GDEP133C02驱动板：v0.5 GDRC调试版
+# GDEP133C02 驱动板：当前 v0.5 工程
 
-2026-10-07，KiCad **10.0.6**。已移除L4/L5，以EPD_3V3统一开关后供电；已更新原生原理图与PCB，更新P1供电铜线和铺铜，完整ERC/DRC均为零。**103个装配件＝101个顶面贴片＋J1/J2两个直插排针**；26个测试点是铜焊盘，全部DNP。
+KiCad **10.0.6**，维护日期2026-10-08。正式源文件是本目录的 `.kicad_pro`、四份 `.kicad_sch` 和 `.kicad_pcb`；本地 `lib/`、`models/`、库表及设计规则随工程管理。
 
-这版按用户接受的软件上下电约束减少器件，移除17只0Ω及接口隔离电路，U5改为TPS22917DBVR/SOT-23-6并新增1nF软启动电容。功率级、温度检测和高压储能保留。详见[简化改版记录](docs/hand-solder-simplification.md)。
+打开[gdep133c02-driver.kicad_pro](gdep133c02-driver.kicad_pro)。三张分层原理图对应同一块100×80mm、四层、1.6mm PCB。103个装配件＝101个顶面SMT＋J1/J2两个直插排针；26个DNP铜测试点无需采购，另有4个安装孔。PCB共133个封装。
 
-打开[gdep133c02-driver.kicad_pro](gdep133c02-driver.kicad_pro)。入口原理图含power/panel/interface三页；本地符号、封装及必要模型随工程保存。当前版本已在KiCad GUI实际打开并核对原理图与PCB。电气性能、实物连接器配接和安全掉电尚未实测；制造文件仍是审阅包。
+## 当前资料
 
-## 当前文件
+- [原理图PDF](reports/schematic.pdf)、[PCB顶层PDF](reports/preview/board.pdf)
+- [Power详解](docs/power-circuit-explained.md)、[Panel详解](docs/panel-circuit-explained.md)、[Interface详解](docs/interface-circuit-explained.md)
+- [当前配置与手焊说明](docs/current-configuration.md)、[P1供电](docs/p1-supply.md)、[GDRC调试](docs/gdrc-debug.md)
+- [上下电约定](docs/interface-power-state.md)、[主机引脚表](docs/host-interface.csv)
+- [KiCad学习指南](docs/learning-guide.md)、[从原理图到PCB教程](../../../docs/design/从原理图到PCB的KiCad新手教程.md)
+- [唯一保留的制造审阅包](releases/jlc-cn-review-v0.5-linkfix-2026-10-08/README.md)、[嘉立创下单必读](../../../docs/raw/嘉立创下单必读.md)
 
-- [整套原理图PDF](reports/schematic.pdf)
-- [电源详解](docs/power-circuit-explained.md)、[面板详解](docs/panel-circuit-explained.md)、[接口详解](docs/interface-circuit-explained.md)
-- [必须遵守的主机上下电约定](docs/interface-power-state.md)、[主控引脚表](docs/host-interface.csv)
-- [KiCad学习教程](docs/learning-guide.md)
-- [v0.5嘉立创兼容审阅包](releases/jlc-cn-review-v0.5-linkfix-2026-10-08/README.md)
-- [嘉立创下单必读](../../../docs/raw/嘉立创下单必读.md)
+## 检查与验收
 
-## 检查与生产边界
+ERC 0；DRC 0、未连接0、原理图一致性问题0；317个连接引脚与设计记录及PCB逐脚对应，129个符号关联通过检查。KiCad GUI实际打开及默认更新预览已通过；没有重复新增元件。详见[验证状态](reports/validation-status.json)、[源文件哈希](reports/check-provenance.json)、[符号关联说明](docs/pcb-symbol-links.md)。没有忽略规则或DRC排除。
 
-ERC 0；DRC 0、未连接0、一致性问题0；317个连接引脚与设计记录及PCB焊盘一致。无DRC排除或忽略规则。原生pcbnew完成重新铺铜，最终未修改的KiCad CLI完成检查。记录见[验证状态](reports/validation-status.json)、[源文件哈希](reports/check-provenance.json)。GUI实际打开已通过；实物验收缺口已记录，release_allowed=false。
+只接受稳压3.3V台式电源和3.3V外接主控。无接口硬件隔离，主控先上电、最后断电；屏幕关机前按约定执行命令并将GPIO输出低、输入无上拉，禁止热插拔。R49正常必须装上。电源瞬态、温升、有效容量、实物FPC配接、显示及安全掉电仍待验收，制造文件供工程审阅，[待审核项目](docs/design-review.md)未完成前不视为已验证产品。
 
-只接受稳压3.3V台式电源和外接3.3V主控，所有地共地；无5V降压、电池、USB、SD或固件。J2.16已改为NC。没有硬件信号隔离：主控先上电、最后断电，屏幕关机前完成命令并将所有输出低、输入无上拉，禁止热插拔。
+层序F.Cu/In1.Cu/In2.Cu/B.Cu；In1为GND平面，顶底面GND铺铜。179个过孔，其中27个GND过孔。最小线宽/铜间距0.2mm，功率核心常用0.5mm、输入及部分供电0.8mm；通孔过孔0.6/0.3mm。四个Ø3.2mm NPTH安装孔相对板框左上角为(5,5)、(95,5)、(5,75)、(95,75)mm。绝对板框(50,50)至(150,130)mm；导出时不要独立平移CPL。
 
-PCB仍为100×80mm、4层、1.6mm，层序F.Cu/In1.Cu/In2.Cu/B.Cu；In1为GND平面，正反面GND铺铜。最小线宽与间距0.2mm，输入原有0.8mm、功率核心0.5mm；P1新增逻辑连接0.5mm、功率连接0.8mm，逻辑与FPC扇出0.2mm。过孔0.6/0.3mm。四个Ø3.2mm NPTH安装孔的板框相对坐标为(5,5)、(95,5)、(5,75)、(95,75)mm。
+## 维护
 
-绝对板框左上(50,50)、右下(150,130)mm，制造坐标沿用KiCad输出，不独立平移Gerber或CPL。CPL全部顶面；实际元件旋转和连接器接触面仍须核对。[待验收项目](docs/design-review.md)包括有效容量、RMS/峰值电流、Kelvin误差、浪涌、温升和全轨掉电。
+原生CAD为真源，`design-data.json`记录固定接法，不自动双向同步。保留三个维护脚本：`check_design.py`检查连接/关联/报告来源，`export_hand_solder.py`检查并导出制造文件，`schematic_sexp.py`解析原生文件。导出器使用KiCad内置Python，拒绝覆盖现有release；下次正式改版应设置新的输出目录，验收新包后只保留最新包。
 
-## 修改与历史
-
-原生CAD为真源。`design-data.json`记录固定接法，不承诺自动反向同步。修改后重新运行KiCad ERC/DRC、铺铜与导出；新导出器[scripts/export_hand_solder.py](scripts/export_hand_solder.py)使用KiCad内置Python，拒绝覆盖已有版本目录，后续导出应改为新的版本路径。`scripts/check_design.py`检查报告来源、连接、BOM数量和固定引脚。
-
-`cad-review-2026-10-01`和`jlc-cn-review-2026-10-03`是简化前历史包，129个装配件，与当前v0.5不再一致，不能混用。旧STEP、重画专项PDF、旧同步报告也是历史快照；当前学习和制造核对使用上方链接。旧导出器已加保护，避免覆盖历史release。本次改版前源文件保存在`reports/p1-direct-v0.4/before/`，v0.3前的源文件及教程在`reports/hand-solder-v0.3/before/`；不修改用户的`.history`。
-
-P1本次改版说明：[v0.4直供设计](docs/p1-direct-supply-v0.4.md)。v0.3审阅包保留作历史快照，与当前设计不一致。
-
-P4新增R49（0Ω/0805）、TP25/TP26；R13保留在Q7栅极侧，详见[GDRC调试说明](docs/gdrc-debug-v0.5.md)。v0.4审阅包为历史快照，不能与v0.5混用。
-
-2026-10-08：修正129个PCB符号关联路径，默认从原理图更新不再重复新增元件；布局和电路保留。详见[关联修复说明](docs/pcb-link-fix-2026-10-08.md)。
+过期release、历史CAD副本、一次性迁移/布线脚本、旧专项报告和本地历史目录已清理。原厂屏幕资料、候选器件资料及总体设计保留。Git负责正式版本历史；自动历史和缓存不纳入当前交付。目录与恢复说明见[仓库维护约定](../../../docs/design/仓库目录与维护约定.md)。

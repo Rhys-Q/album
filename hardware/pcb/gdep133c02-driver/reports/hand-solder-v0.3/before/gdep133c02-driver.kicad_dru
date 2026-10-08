@@ -1,2 +1,0 @@
-(version 1)
-(rule "Minimum track width" (constraint track_width (min 0.20mm)))

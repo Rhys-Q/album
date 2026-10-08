@@ -1,10 +1,10 @@
 # GDEP133C02 相框 PCB 设计与实现方案
 
-2026-10-07实现更新：P4增加R49（0Ω/0805）与TP25/TP26，R13保留在Q7栅极侧，见[GDRC调试说明](../../hardware/pcb/gdep133c02-driver/docs/gdrc-debug-v0.5.md)。正式工程已改为v0.5直供手焊版，103个装配件；P1删除L4/L5，以铜线连接，并将开关后的VIN/AVDD/EPD_3V3合并为EPD_3V3；移除17只0Ω与U6/U7接口隔离，U5采用TPS22917DBVR/SOT-23-6，C36=1nF接CT与芯片VIN，J2.16 NC。三页原理图与PCB已同步、补线和重新铺铜，ERC/DRC0。本文后续厂家参考器件和历史资料表保留来源身份；本次P1改版见[直供说明](../../hardware/pcb/gdep133c02-driver/docs/p1-direct-supply-v0.4.md)。当前实装以[简化记录](../../hardware/pcb/gdep133c02-driver/docs/hand-solder-simplification.md)及[新版接口约定](../../hardware/pcb/gdep133c02-driver/docs/interface-power-state.md)为准，旧TPS22913及隔离接法不再是当前BOM。GUI当前版本实际打开已通过，硬件验收未完成，制造包仍为审阅。
+2026-10-07实现更新：P4增加R49（0Ω/0805）与TP25/TP26，R13保留在Q7栅极侧，见[GDRC调试说明](../../hardware/pcb/gdep133c02-driver/docs/gdrc-debug.md)。正式工程已改为v0.5直供手焊版，103个装配件；P1删除L4/L5，以铜线连接，并将开关后的VIN/AVDD/EPD_3V3合并为EPD_3V3；移除17只0Ω与U6/U7接口隔离，U5采用TPS22917DBVR/SOT-23-6，C36=1nF接CT与芯片VIN，J2.16 NC。三页原理图与PCB已同步、补线和重新铺铜，ERC/DRC0。本文后续厂家参考器件和历史资料表保留来源身份；本次P1改版见[直供说明](../../hardware/pcb/gdep133c02-driver/docs/p1-supply.md)。当前实装以[简化记录](../../hardware/pcb/gdep133c02-driver/docs/current-configuration.md)及[新版接口约定](../../hardware/pcb/gdep133c02-driver/docs/interface-power-state.md)为准，旧TPS22913及隔离接法不再是当前BOM。GUI当前版本实际打开已通过，硬件验收未完成，制造包仍为审阅。
 
 设计日期：2026-10-01。资料审阅更新：2026-10-01。状态：方案设计；已审阅用户提供的屏幕规格书与 ESP-IDF 示例，已补齐公开屏幕外围电路，资料与设计决策已闭环，可进入最小驱动原型阶段；到货与电气验收未完成；已修复最小驱动板 KiCad 工程，ERC/DRC零违规、未连接与原理图一致性问题均为零；FPC焊盘尺寸已核对，原理图和PCB实际打开验证完成，已导出制造审阅包；连接器实物配接及功率参数验收未完成，尚未生产放行；未编译/烧录示例，未进行电气实测。
 
-任务依据：[PCB 方案任务](../task/09-30-02-pcb.md)。需求基线：[总体设计](overview.md)。本文细化 PCB 的实现路径、接口和阶段门槛，供后续 agent 实施；不将待确认电路写成已验证设计。需求变更须同步总体设计、硬件接口记录和对应测试。
+当前实施依据为本文与正式工程记录。需求基线：[总体设计](overview.md)。本文细化 PCB 的实现路径、接口和阶段门槛，供后续 agent 实施；不将待确认电路写成已验证设计。需求变更须同步总体设计、硬件接口记录和对应测试。
 
 ## 1. 范围、基线与完成条件
 
@@ -306,9 +306,9 @@ LED 采用 GPIO 高有效点亮，默认低，串联限流电阻按 LED 压降�
 
 用户确认本轮先做最小驱动板、外接ESP32-S3开发板、只交付硬件；整机电池/SD/USB/交互留待后续集成。2026-10-01已创建 [原生工程与实施记录](../../hardware/pcb/gdep133c02-driver/README.md)，目录为 `hardware/pcb/gdep133c02-driver/`，与未来整机 `album/` 工程区分。
 
-原理图、项目库、100×80mm四层板已保存为原生KiCad工程。2026-10-01完成本轮CAD修复：ERC零违规，完整DRC零违规、零未连接、零原理图一致性问题；398个连接管脚通过固定接法及网表检查。共1538段走线、182个过孔，信号最小0.2mm，输入/电源核心优选0.8/0.5mm，过孔0.6/0.3mm；In1.Cu连续GND平面与正反面铺铜已实现。FPC焊盘依据原厂图修正，见工程封装核对记录。
+当前正式原理图、项目库和100×80mm四层PCB已保存。v0.5为103个装配件、26个铜测试点、133个PCB封装、317个连接引脚；1658段走线、179个过孔。In1.Cu为GND平面，顶底面铺地。FPC封装尺寸见工程核对记录。
 
-KiCad/Chrome访问及CLI DRC均已恢复；原理图与PCB实际打开验证完成，GUI DRC零违规/未连接/忽略检查，CLI另含原理图一致性检查。无DRC排除和忽略规则。已导出四层Gerber、PTH/NPTH钻孔、BOM、CPL、PDF、STEP和预览，保存于工程`releases/cad-review-2026-10-01/`及`reports/`。当前为CAD审阅成果，尚未生产放行：实物Pin1/接触面、有效电容量、采样电阻功率、回路瞬态及接屏/掉电测试未验收；详细状态见工程README与`reports/validation-status.json`。
+ERC/DRC、未连接、原理图一致性均为零，129个符号关联已修复并通过GUI默认更新预览验证。仅保留工程 `releases/jlc-cn-review-v0.5-linkfix-2026-10-08/` 制造审阅包。整机主控、电池、SD、USB等下文设计属于后续集成目标，不能当作当前驱动板功能。实物配接、有效容量、功率瞬态与安全掉电尚未验收，见工程README。
 
 ### 6.2 板层与布局
 

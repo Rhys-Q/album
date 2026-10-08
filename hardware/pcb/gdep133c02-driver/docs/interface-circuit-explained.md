@@ -106,4 +106,4 @@ TP1–TP24是PCB铜焊盘，全部DNP，不购买24个测试点元件，也不�
 | TP23 | GND | PCB test pad | Driver:TestPoint__TestPoint_Pad_D1.5mm | 1=GND |
 | TP24 | GND | PCB test pad | Driver:TestPoint__TestPoint_Pad_D1.5mm | 1=GND |
 
-当前整板v0.5另外在Power页增加TP25/TP26，合计26个铜测试点；Interface页仍为24个。P4调试接法见[GDRC调试说明](gdrc-debug-v0.5.md)。
+当前整板v0.5另外在Power页增加TP25/TP26，合计26个铜测试点；Interface页仍为24个。P4调试接法见[GDRC调试说明](gdrc-debug.md)。

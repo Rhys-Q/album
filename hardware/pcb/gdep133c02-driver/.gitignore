@@ -4,3 +4,6 @@
 _autosave-*
 .DS_Store
 __pycache__/
+
+# KiCad local snapshots and routing scratch output
+.history/

@@ -1,6 +1,6 @@
 # Panel 原理图详解：60针屏幕接口、温度检测与电容网络
 
-日期：2026-10-07，v0.5（Panel接法不变）。对应 [panel.kicad_sch](../panel.kicad_sch)，建议同时查看 [Panel PDF](../reports/schematic.pdf)或[高清图](../reports/gdrc-debug-v0.5/schematic-page-3.png)。
+日期：2026-10-07，v0.5（Panel接法不变）。对应 [panel.kicad_sch](../panel.kicad_sch)，建议同时查看 [Panel PDF](../reports/schematic.pdf)或[高清图](../reports/preview/schematic-panel.png)。
 
 本页有 **37个器件位置**：一个60针连接器、一个温度传感器、5只电阻和30只电容；均为装配件。本文逐个解释其作用与设计理由。完整型号、封装、DNP、连接及FPC逐脚表在附录。配套阅读：[Interface详解](interface-circuit-explained.md)、[电源页详解](power-circuit-explained.md)。
 
@@ -264,7 +264,7 @@ FPL_VCOM、TFT_VCOM、VCOMBD_M/S是屏幕内部驱动输出。显示效果取决
 | VCOM相关电容 | 厂家参考值和独立输出节点 | 实际波形、瞬态电流、显示效果及残压 |
 | 外部电源接口 | 对应GDR／RESE／DRV／FB连接 | 功率环路实际匹配，尤其GDRC与Q7控制极性 |
 
-本次对应v0.4 CAD和BOM，尚未生产放行，没有通电测试。原生重画版的ERC/DRC／网表检查与GUI复查边界见[重画说明](panel-interface-redraw.md)。
+本次对应当前v0.5 CAD和BOM，尚未生产放行，没有通电测试。检查与GUI状态见[验证状态](../reports/validation-status.json)。
 
 ## 附录A：37个器件的当前型号与逐脚连接
 

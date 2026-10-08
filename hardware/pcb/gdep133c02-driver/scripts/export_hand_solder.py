@@ -28,7 +28,7 @@ summary=dict(revision='0.5-GDRC-DEBUG',footprints=len(list(b.GetFootprints())),p
 (R/'reports/board-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 
 source=[f for f in R.iterdir() if f.suffix in ['.kicad_sch','.kicad_pro','.kicad_pcb','.kicad_dru']]+[R/'design-data.json',R/'lib/Driver.kicad_sym']+list((R/'lib/Driver.pretty').glob('*.kicad_mod'))
-proof=dict(date='2026-10-08',kicad_version='10.0.6',gui_open=json.loads((R/'reports/pcb-link-fix-2026-10-08/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.5 native CAD, full ERC/DRC/parity, pad map, supply and direct signal fixed requirements',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
+proof=dict(date='2026-10-08',kicad_version='10.0.6',gui_open=json.loads((R/'reports/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.5 native CAD, full ERC/DRC/parity, pad map, supply and direct signal fixed requirements',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
 (R/'reports/check-provenance.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n')
 subprocess.run(['python3',str(R/'scripts/check_design.py')],check=True)
 OUT.mkdir();(OUT/'gerber').mkdir();(OUT/'stencil-optional').mkdir();(R/'reports/preview').mkdir(exist_ok=True)

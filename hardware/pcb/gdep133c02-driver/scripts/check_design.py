@@ -38,7 +38,7 @@ assert parts['U5']['mpn']=='TPS22917DBVR'
 assert parts['U5']['pins']=={'1':'BENCH_3V3','2':'GND','3':'EPD_PWR_EN','4':'SW_CT','5':'EPD_3V3','6':'EPD_3V3'}
 assert set(parts['C36']['pins'].values())=={'SW_CT','BENCH_3V3'}
 assert parts['C36']['mpn']=='C0805C102J5GACTU'
-removed=json.loads((ROOT/'reports/hand-solder-v0.3/change-map.json').read_text())['removed']
+removed={'C34','C35','Q9','Q10','R14','R15','R16','R22','R23','R24','R25','R26','R27','R28','R29','R31','R32','R33','R34','R37','R38','R4','R5','R6','R9','U6','U7'}
 assert not (set(removed)|{'L4','L5'}).intersection(parts)
 assert not {'VIN','AVDD'}.intersection(want.values())
 assert parts['R49']['pins']=={'1':'GDRC','2':'Q7_GATE'}
@@ -74,7 +74,7 @@ result['assembled_components']=103
 result['pcb_symbol_links']='PASS - all 129 footprint links match KiCad-exported sheet paths without root UUID'
 result['signal_isolation']='REMOVED - mandatory host power sequencing'
 result['zone_refill']=proof['zone_refill']
-result['gui_open']=proof.get('gui_open','NOT VERIFIED for current sources - see reports/gui-open-check.md for historical validation')
+result['gui_open']=proof.get('gui_open','NOT VERIFIED for current sources - see reports/gui-open.json')
 (ROOT/'reports/validation-status.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 with (ROOT/'reports/bom-review.csv').open('w',newline='') as f:
  w=csv.writer(f,lineterminator="\n");w.writerow(['Designator','Comment','Footprint','Manufacturer','MPN','Quantity','DNP','SelectionStatus'])

@@ -1,6 +1,6 @@
 # 电源页原理详解：从 3.3V 到屏幕需要的正负电源
 
-日期：2026-10-07，v0.5 GDRC调试版。对应当前 [power.kicad_sch](../power.kicad_sch)，建议同时打开[电源页 PDF](../reports/schematic.pdf)或[高清图](../reports/gdrc-debug-v0.5/schematic-page-2.png)。
+日期：2026-10-07，v0.5 GDRC调试版。对应当前 [power.kicad_sch](../power.kicad_sch)，建议同时打开[电源页 PDF](../reports/schematic.pdf)或[高清图](../reports/preview/schematic-power.png)。
 
 本文按图中的六个功能区解释全部 **55 个装配元件及 2 个铜测试点**。每个器件的值、候选料号、封装和逐脚网络另列在文末清单，便于对照 KiCad。电源符号、网络标签和 PWR_FLAG 是绘图／电气检查对象，不是要购买的器件。
 
@@ -184,7 +184,7 @@ L2的一端接地，另一端接 SW_N；它不是 L1那种输入到开关节点�
 
 **这是 TFT_VCOM相关电路所需的负偏置供电，不是公共电极波形本身。** 规格书把 41脚 VNCP_3P5V、56脚 VBB_3P5V定义为负偏置输入，把 55脚 TFT_VCOM定义为驱动输出。网络名不等于控制器会在所有工作阶段精确输出 −3.500V。[屏幕规格书第 8–9 页](../../../../docs/raw/GDEP133C02.pdf)。
 
-GDRC经新增R49（0Ω/0805）驱动Q7_GATE；TP25测GDRC，TP26测Q7_GATE。R13保留在栅极侧，详见[GDRC调试说明](gdrc-debug-v0.5.md)。
+GDRC经新增R49（0Ω/0805）驱动Q7_GATE；TP25测GDRC，TP26测Q7_GATE。R13保留在栅极侧，详见[GDRC调试说明](gdrc-debug.md)。
 
 ### 7.2 逐个器件解释
 
@@ -478,7 +478,7 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 
 ## v0.5补充：P4栅极调试断点
 
-P4由原7个装配件增加为8个，另有TP25/TP26两个铜测试点。GDRC经R49（0Ω/0805）到Q7_GATE，再到Q7栅极；R13仍为1MΩ，上拉改接栅极侧Q7_GATE。其他功率连接保留，详见[GDRC调试说明](gdrc-debug-v0.5.md)。下列行补充附录A。
+P4由原7个装配件增加为8个，另有TP25/TP26两个铜测试点。GDRC经R49（0Ω/0805）到Q7_GATE，再到Q7栅极；R13仍为1MΩ，上拉改接栅极侧Q7_GATE。其他功率连接保留，详见[GDRC调试说明](gdrc-debug.md)。下列行补充附录A。
 
 | 位号 | 当前值 | 料号/装配 | 网络 |
 |---|---|---|---|

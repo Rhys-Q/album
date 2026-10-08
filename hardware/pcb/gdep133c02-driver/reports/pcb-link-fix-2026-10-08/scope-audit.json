@@ -1,7 +1,0 @@
-{
-  "corrected_footprint_paths": 129,
-  "only_removed_root_uuid_prefix": true,
-  "all_geometry_and_nets_unchanged": true,
-  "original_sha256": "cb5dbada1c3d4692946497a1efec29917c35daf7f1ad4ca649cb8aae4db998ff",
-  "corrected_sha256": "71b7a4908d2d4ba3500640ba735b4872ebc690317236b49569cf011197945b4a"
-}

@@ -13,9 +13,8 @@
     "gdep133c02-driver.kicad_dru": "0b6301cbabf5e998590617a47060083c8ccb09e53576f275c2c0e23e3b76d9bc",
     "gdep133c02-driver.kicad_pcb": "71b7a4908d2d4ba3500640ba735b4872ebc690317236b49569cf011197945b4a",
     "design-data.json": "a356d3f76d44c4fa683b48c6cd8517b0769e632d99ef15ff7c3871c95e6b7b93",
-    "lib/Driver.kicad_sym": "fcaa5ab8608a9827a627305021686b51ae477676ca0ff6ad324ee30fe68a8fc6",
+    "lib/Driver.kicad_sym": "7a728f2ec47e0e867e95859639af11d0cad401e242be36b2b90388effc3a45d5",
     "lib/Driver.pretty/Inductor_SMD__L_Coilcraft_MSS1246T-XXX.kicad_mod": "b31a7585f57b84e3526e925f91aca0393249b0b6c8b3a8ad3b565610a33d9b6c",
-    "lib/Driver.pretty/FPC_05FB_60PH20_UNVERIFIED.kicad_mod": "19ca41cf92721c7769d9a1f4db590dce6bce542e41077b1759a59549e0809c49",
     "lib/Driver.pretty/Package_TO_SOT_SMD__SOT-323_SC-70.kicad_mod": "208f82c73fe35ab740b664d8ec3319476b4b72cba4cbd002323aa0df54bcdecc",
     "lib/Driver.pretty/Resistor_SMD__R_0805_2012Metric.kicad_mod": "05f6f490bcf48326bb50972774dadde11e14866c8490196c55b64632ba5dfb0e",
     "lib/Driver.pretty/Resistor_SMD__R_0603_1608Metric.kicad_mod": "d06772f21ee8ab6bdbb38b8f8cdbaedd9f147a84feafc6afe43ff493161616df",
@@ -29,11 +28,9 @@
     "lib/Driver.pretty/FPC_05FB_60PH20.kicad_mod": "d10b2d711f47f96240a78c552f1737fcf7472daee4fc9025ac5c68cdc9323450",
     "lib/Driver.pretty/Diode_SMD__D_SOD-123.kicad_mod": "8294da7f87a689f664ad58a3be1d6fb3d789ae6d4f088d8f0adf6f1207380a24",
     "lib/Driver.pretty/Package_TO_SOT_SMD__SOT-23-6.kicad_mod": "e671a67513133739af3a45903ed1df5bedd5e97610b12cd4667e1d3f4a7cd431",
-    "lib/Driver.pretty/Package_SO__TSSOP-20_4.4x6.5mm_P0.65mm.kicad_mod": "0eebbc1f5649bf46caff67a9924b8b6b70e90487c58791b6638ef573c8aa10fd",
-    "lib/Driver.pretty/Package_CSP__WLCSP-4_0.89x0.89mm_Layout2x2_P0.5mm.kicad_mod": "1fc2a3dabb3cc3c96cd9e95fdd33cef1272b5b29bfbde4ac38054ac497b305fa",
     "lib/Driver.pretty/Diode_SMD__D_SOD-123F.kicad_mod": "8ee0577a7fd7285f0d2f75d1969b1e00b737f19309ba305bb3b1ffea43720106",
     "lib/Driver.pretty/Capacitor_SMD__C_0603_1608Metric.kicad_mod": "d9aa07322ae0ea0a626b33d40844dc753291dbeeb7184f06e8d787fb154e9d50",
-    "lib/Driver.pretty/Capacitor_SMD__C_0805_2012Metric.kicad_mod": "4af74b33d356fcb4c458f36df2374732916d340e114f3ab6e14a08912acc0ecc",
-    "lib/Driver.pretty/Inductor_SMD__L_0603_1608Metric.kicad_mod": "a309673c780d21daa7c28e12ed05527d6220d43c95006cb4c0354fad9ede68ca"
-  }
+    "lib/Driver.pretty/Capacitor_SMD__C_0805_2012Metric.kicad_mod": "4af74b33d356fcb4c458f36df2374732916d340e114f3ab6e14a08912acc0ecc"
+  },
+  "repository_cleanup_date": "2026-10-08"
 }

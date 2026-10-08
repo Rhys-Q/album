@@ -108,7 +108,7 @@ FPC1 的封装表示**连接器底座焊到板上**。屏幕排线插进底座�
 
 先读更新列表，再执行：确认新增、删除、封装变化、值和网络变化是否符合预期。初次做板时，很多封装会集中出现在一个待放置区域，焊盘间出现飞线。已有板更新时，可能只新增几件，并调整已有焊盘网络。
 
-**已有 PCB 却提示添加大量已有器件时：** 先停止更新。2026-10-08 已修复本项目此前生成的 PCB 关联路径兼容问题；正常更新保持“根据参考位号重新链接”关闭。现有板可能提示大量图纸/元数据字段更新，这与“添加封装”不同。使用正式修复后的文件或重新复制练习副本，见[关联修复记录](../../hardware/pcb/gdep133c02-driver/docs/pcb-link-fix-2026-10-08.md)。
+**已有 PCB 却提示添加大量已有器件时：** 先停止更新。2026-10-08 已修复本项目此前生成的 PCB 关联路径兼容问题；正常更新保持“根据参考位号重新链接”关闭。现有板可能提示大量图纸/元数据字段更新，这与“添加封装”不同。使用正式修复后的文件或重新复制练习副本，见[关联修复记录](../../hardware/pcb/gdep133c02-driver/docs/pcb-symbol-links.md)。
 
 初次更新完成后，你有“应该放哪些器件、应该怎样连”的信息，但还没有完成元件位置和铜线设计。原理图画得整齐，PCB 也不会自动按同样的左右顺序排好。
 
@@ -297,7 +297,7 @@ R49 到 Q7 的走线属于栅极驱动，电流主要是栅极充放电，布局
 
 Courtyard 可以帮助发现装配空间重叠，但不涵盖所有线缆、锁扣和工具空间。机械图和实物尺寸仍要核对。放大查看 FPC1 的信号焊盘与固定焊盘，确认接触面、排线厚度和 Pin1 对应，不能只看丝印轮廓。
 
-用“查看 → 3D 查看器”检查外形、方向和器件遮挡；模型缺失时不会显示完整器件，本板 FPC1、U5 等存在模型缺口，铜测试点和安装孔也不需要完整器件模型。历史 STEP 不是当前 v0.5 装配证明，3D 看起来漂亮也不能证明连接器配接正确。
+用“查看 → 3D 查看器”检查外形、方向和器件遮挡；模型缺失时不会显示完整器件，本板 FPC1、U5 等存在模型缺口，铜测试点和安装孔也不需要完整器件模型。仓库未保留过期整板 STEP；3D 看起来漂亮也不能证明连接器配接正确。
 
 ## 11. 第八步：检查 PCB，而不只是看画面
 
@@ -417,7 +417,7 @@ Gerber、钻孔和坐标必须使用一致的设计坐标体系，不能只把 C
 
 - [元器件统计与必要性](原理图子图元器件统计与必要性.md)：按页、按功能区核对每个器件。
 - [Power 原理详解](../../hardware/pcb/gdep133c02-driver/docs/power-circuit-explained.md)、[Panel 原理详解](../../hardware/pcb/gdep133c02-driver/docs/panel-circuit-explained.md)、[Interface 原理详解](../../hardware/pcb/gdep133c02-driver/docs/interface-circuit-explained.md)：理解为什么连接这些器件。
-- [GDRC 调试断点说明](../../hardware/pcb/gdep133c02-driver/docs/gdrc-debug-v0.5.md)：R49 和两个测试点的使用边界。
+- [GDRC 调试断点说明](../../hardware/pcb/gdep133c02-driver/docs/gdrc-debug.md)：R49 和两个测试点的使用边界。
 - [工程学习指南](../../hardware/pcb/gdep133c02-driver/docs/learning-guide.md)：已有工程的快速查阅练习。
 - [KiCad 10.0 官方入门](https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html)、[PCB 编辑器手册](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html)：查询菜单、工具和快捷键。
 
