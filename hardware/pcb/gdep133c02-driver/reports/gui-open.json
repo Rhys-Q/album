@@ -1,11 +1,20 @@
 {
-  "date": "2026-10-08",
-  "status": "PASS - formal project KiCad 10.0.6 GUI Update PCB preview with reference relinking OFF; zero added/replaced/deleted footprints; two FPC mechanical pad warnings",
+  "date": "2026-10-09",
+  "status": "PASS - managed formal project opened; Update PCB preview has zero actions, additions, replacements or errors",
   "root_path": "/Users/rhys/tw/26/09/album/hardware/pcb/gdep133c02-driver",
-  "reference_relinking": false,
   "new_footprints": 0,
+  "reference_relinking": false,
   "warnings": [
-    "FPC1 pad61/pad62 mechanical hold-down pads have no schematic signal pin"
+    "FPC1 mechanical retaining pads 61/62 have no schematic pins"
   ],
-  "preview_report": "update-preview.txt"
+  "update_preview": "reports/update-preview.txt",
+  "initial_preview": "reports/v06-update-before.txt",
+  "source_sha256": {
+    "gdep133c02-driver.kicad_sch": "7665234c46daab499657394ddf8970e7bebf854c5bef66efc4d5b896663da5c0",
+    "power.kicad_sch": "9fe09d16132fdccbcf77b8912fdaf156d90a3d630c47f9757f45d83f31b91801",
+    "panel.kicad_sch": "71319259ce96112f69cae3cc6d8c49ae90d1b61a040c1bdafa1e52b2b4bb34e8",
+    "interface.kicad_sch": "4315cd47e56a7343e80667c1ef5ae35279e4ac6e99caac73805657ba82d3ce7b",
+    "gdep133c02-driver.kicad_pcb": "4a69fddc1d2cbc0a477d4114c4482218e0030ae9387b29ebd307fe84fec0f921"
+  },
+  "notes": "Applied sheet/field/unit metadata through native Update PCB, saved board, reopened F8 and saved a no-action preview. FPC mechanical pad warnings are reported, not suppressed."
 }

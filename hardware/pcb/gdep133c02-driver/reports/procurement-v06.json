@@ -1,0 +1,2247 @@
+{
+  "C149504": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F1003T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/160838.html",
+    "domestic_stock": 2415774,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C149504",
+    "international_stock": 2415700,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0060",
+        "usdPrice": 0.006,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.006,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0047",
+        "usdPrice": 0.0047,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0047,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0041",
+        "usdPrice": 0.0041,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0041,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0037",
+        "usdPrice": 0.0037,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0037,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0035",
+        "usdPrice": 0.0035,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0035,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0034",
+        "usdPrice": 0.0034,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0034,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "100kΩ",
+        "parameterValue": "100kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17539": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F2003T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18227.html",
+    "domestic_stock": 441531,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17539",
+    "international_stock": 441500,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0056",
+        "usdPrice": 0.0056,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0056,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0044",
+        "usdPrice": 0.0044,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0044,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0036",
+        "usdPrice": 0.0036,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0036,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0032",
+        "usdPrice": 0.0032,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0032,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0029",
+        "usdPrice": 0.0029,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0029,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0027",
+        "usdPrice": 0.0027,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0027,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "200kΩ",
+        "parameterValue": "200kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17490": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F1602T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18178.html",
+    "domestic_stock": 258787,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17490",
+    "international_stock": 258700,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0082",
+        "usdPrice": 0.0082,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0082,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0067",
+        "usdPrice": 0.0067,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0067,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0058",
+        "usdPrice": 0.0058,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0058,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0053",
+        "usdPrice": 0.0053,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0053,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0048",
+        "usdPrice": 0.0048,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0048,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0046",
+        "usdPrice": 0.0046,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0046,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17490",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "16kΩ",
+        "parameterValue": "16kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17514": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F1004T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18202.html",
+    "domestic_stock": 1445832,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17514",
+    "international_stock": 1445800,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0044",
+        "usdPrice": 0.0044,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0044,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0035",
+        "usdPrice": 0.0035,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0035,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0029",
+        "usdPrice": 0.0029,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0029,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0026",
+        "usdPrice": 0.0026,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0026,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0023",
+        "usdPrice": 0.0023,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0023,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0022",
+        "usdPrice": 0.0022,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0022,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17514",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "1MΩ",
+        "parameterValue": "1MΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C4310": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F1501T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/4717.html",
+    "domestic_stock": 237538,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C4310",
+    "international_stock": 237500,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0035",
+        "usdPrice": 0.0035,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0035,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0028",
+        "usdPrice": 0.0028,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0028,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0022",
+        "usdPrice": 0.0022,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0022,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0020",
+        "usdPrice": 0.002,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.002,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0018",
+        "usdPrice": 0.0018,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0018,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C4310",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "1.5kΩ",
+        "parameterValue": "1.5kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17521": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F220KT5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18209.html",
+    "domestic_stock": 84636,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17521",
+    "international_stock": 84600,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0075",
+        "usdPrice": 0.0075,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0075,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0060",
+        "usdPrice": 0.006,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.006,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0051",
+        "usdPrice": 0.0051,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0051,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0046",
+        "usdPrice": 0.0046,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0046,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0042",
+        "usdPrice": 0.0042,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0042,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0039",
+        "usdPrice": 0.0039,
+        "cnyProductPriceList": null,
+        "discountRate": "0.9900",
+        "currencyPrice": 0.0039,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "2.2Ω",
+        "parameterValue": "2.2Ω"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±200ppm/℃",
+        "parameterValue": "±200ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17634": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F330JT5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18322.html",
+    "domestic_stock": 1195526,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17634",
+    "international_stock": 1195500,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0047",
+        "usdPrice": 0.0047,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0047,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0037",
+        "usdPrice": 0.0037,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0037,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0030",
+        "usdPrice": 0.003,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.003,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0027",
+        "usdPrice": 0.0027,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0027,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0024",
+        "usdPrice": 0.0024,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0024,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0023",
+        "usdPrice": 0.0023,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0023,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17634",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "33Ω",
+        "parameterValue": "33Ω"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±200ppm/℃",
+        "parameterValue": "±200ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C137599": {
+    "queried_date": "2026-10-09",
+    "mpn": "RC0805FR-07110KL",
+    "manufacturer": "YAGEO",
+    "domestic_product_url": "https://item.szlcsc.com/148915.html",
+    "domestic_stock": 8052,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C137599",
+    "international_stock": 8000,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0056",
+        "usdPrice": 0.0056,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0056,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0048",
+        "usdPrice": 0.0048,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0048,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0044",
+        "usdPrice": 0.0044,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0044,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0042",
+        "usdPrice": 0.0042,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0042,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0040",
+        "usdPrice": 0.004,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.004,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137599",
+    "datasheet_sha256": "e7dbabb0611925227ccfc429c14c8833a7b1f2c755684444124446f20b22a229",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "110kΩ",
+        "parameterValue": "110kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C137518": {
+    "queried_date": "2026-10-09",
+    "mpn": "RC0805FR-074K3L",
+    "manufacturer": "YAGEO",
+    "domestic_product_url": "https://item.szlcsc.com/148834.html",
+    "domestic_stock": 3226,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C137518",
+    "international_stock": 3200,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0101",
+        "usdPrice": 0.0101,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0101,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0090",
+        "usdPrice": 0.009,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.009,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0084",
+        "usdPrice": 0.0084,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0084,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0081",
+        "usdPrice": 0.0081,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0081,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0078",
+        "usdPrice": 0.0078,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0078,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0077",
+        "usdPrice": 0.0077,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0077,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137518",
+    "datasheet_sha256": "e7dbabb0611925227ccfc429c14c8833a7b1f2c755684444124446f20b22a229",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "4.3kΩ",
+        "parameterValue": "4.3kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17673": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F4701T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18361.html",
+    "domestic_stock": 1955395,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17673",
+    "international_stock": 1955300,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0051",
+        "usdPrice": 0.0051,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0051,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0040",
+        "usdPrice": 0.004,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.004,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0035",
+        "usdPrice": 0.0035,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0035,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0032",
+        "usdPrice": 0.0032,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0032,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0030",
+        "usdPrice": 0.003,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.003,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 100000,
+        "productPrice": "0.0029",
+        "usdPrice": 0.0029,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0029,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17673",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "4.7kΩ",
+        "parameterValue": "4.7kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C17604": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805W8F2001T5E",
+    "manufacturer": "UNI-ROYAL",
+    "domestic_product_url": "https://item.szlcsc.com/18292.html",
+    "domestic_stock": 3800967,
+    "domestic_moq": 100,
+    "domestic_purchase_multiple": 100,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17604",
+    "international_stock": 3800900,
+    "international_moq": 100,
+    "international_price_usd": [
+      {
+        "ladder": 100,
+        "productPrice": "0.0039",
+        "usdPrice": 0.0039,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0039,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0030",
+        "usdPrice": 0.003,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.003,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0025",
+        "usdPrice": 0.0025,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0025,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0023",
+        "usdPrice": 0.0023,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0023,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50000,
+        "productPrice": "0.0020",
+        "usdPrice": 0.002,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.002,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17604",
+    "datasheet_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "电阻类型",
+        "parameterCode": "param_11154",
+        "parameterDetailValue": "厚膜电阻",
+        "parameterValue": "厚膜电阻"
+      },
+      {
+        "parameterName": "阻值",
+        "parameterCode": "param_10835_n",
+        "parameterDetailValue": "2kΩ",
+        "parameterValue": "2kΩ"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10836_s",
+        "parameterDetailValue": "±1%",
+        "parameterValue": "±1%"
+      },
+      {
+        "parameterName": "功率",
+        "parameterCode": "param_10837_n",
+        "parameterDetailValue": "125mW",
+        "parameterValue": "125mW"
+      },
+      {
+        "parameterName": "工作电压",
+        "parameterCode": "param_11155_n",
+        "parameterDetailValue": "150V",
+        "parameterValue": "150V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10847_s",
+        "parameterDetailValue": "±100ppm/℃",
+        "parameterValue": "±100ppm/℃"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_11156_s",
+        "parameterDetailValue": "-55℃~+155℃",
+        "parameterValue": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C13967": {
+    "queried_date": "2026-10-09",
+    "mpn": "CL21B474KBFNNNE",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "domestic_product_url": "https://item.szlcsc.com/14623.html",
+    "domestic_stock": 36576,
+    "domestic_moq": 20,
+    "domestic_purchase_multiple": 20,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C13967",
+    "international_stock": 36560,
+    "international_moq": 20,
+    "international_price_usd": [
+      {
+        "ladder": 20,
+        "productPrice": "0.0230",
+        "usdPrice": 0.023,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.023,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 200,
+        "productPrice": "0.0184",
+        "usdPrice": 0.0184,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0184,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 600,
+        "productPrice": "0.0159",
+        "usdPrice": 0.0159,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0159,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 2000,
+        "productPrice": "0.0122",
+        "usdPrice": 0.0122,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0122,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0108",
+        "usdPrice": 0.0108,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0108,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 20000,
+        "productPrice": "0.0101",
+        "usdPrice": 0.0101,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0101,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
+    "datasheet_sha256": "96baebe4bd0ce363e87be28b5b003f511f1502e084a6fc4f02333ded56c808f6",
+    "adopted": false,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "容值",
+        "parameterCode": "param_10951_n",
+        "parameterDetailValue": "470nF",
+        "parameterValue": "470nF"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10952_s",
+        "parameterDetailValue": "±10%",
+        "parameterValue": "±10%"
+      },
+      {
+        "parameterName": "额定电压",
+        "parameterCode": "param_10953_n",
+        "parameterDetailValue": "50V",
+        "parameterValue": "50V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10954",
+        "parameterDetailValue": "X7R",
+        "parameterValue": "X7R"
+      }
+    ]
+  },
+  "C1711": {
+    "queried_date": "2026-10-09",
+    "mpn": "CL21B104KBCNNNC",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "domestic_product_url": "https://item.szlcsc.com/2063.html",
+    "domestic_stock": 550599,
+    "domestic_moq": 20,
+    "domestic_purchase_multiple": 20,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1711",
+    "international_stock": 550580,
+    "international_moq": 20,
+    "international_price_usd": [
+      {
+        "ladder": 20,
+        "productPrice": "0.0151",
+        "usdPrice": 0.0151,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0151,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 200,
+        "productPrice": "0.0118",
+        "usdPrice": 0.0118,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0118,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 600,
+        "productPrice": "0.0103",
+        "usdPrice": 0.0103,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0103,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 4000,
+        "productPrice": "0.0080",
+        "usdPrice": 0.008,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.008,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 8000,
+        "productPrice": "0.0075",
+        "usdPrice": 0.0075,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0075,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 20000,
+        "productPrice": "0.0072",
+        "usdPrice": 0.0072,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0072,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1711",
+    "datasheet_sha256": "96baebe4bd0ce363e87be28b5b003f511f1502e084a6fc4f02333ded56c808f6",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "容值",
+        "parameterCode": "param_10951_n",
+        "parameterDetailValue": "100nF",
+        "parameterValue": "100nF"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10952_s",
+        "parameterDetailValue": "±10%",
+        "parameterValue": "±10%"
+      },
+      {
+        "parameterName": "额定电压",
+        "parameterCode": "param_10953_n",
+        "parameterDetailValue": "50V",
+        "parameterValue": "50V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10954",
+        "parameterDetailValue": "X7R",
+        "parameterValue": "X7R"
+      }
+    ]
+  },
+  "C1745": {
+    "queried_date": "2026-10-09",
+    "mpn": "0805B473K500NT",
+    "manufacturer": "FH",
+    "domestic_product_url": "https://item.szlcsc.com/2097.html",
+    "domestic_stock": 55292,
+    "domestic_moq": 50,
+    "domestic_purchase_multiple": 50,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1745",
+    "international_stock": 55250,
+    "international_moq": 50,
+    "international_price_usd": [
+      {
+        "ladder": 50,
+        "productPrice": "0.0181",
+        "usdPrice": 0.0181,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0181,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 500,
+        "productPrice": "0.0146",
+        "usdPrice": 0.0146,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0146,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1500,
+        "productPrice": "0.0127",
+        "usdPrice": 0.0127,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0127,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 4000,
+        "productPrice": "0.0105",
+        "usdPrice": 0.0105,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0105,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 24000,
+        "productPrice": "0.0095",
+        "usdPrice": 0.0095,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0095,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 48000,
+        "productPrice": "0.0090",
+        "usdPrice": 0.009,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.009,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1745",
+    "datasheet_sha256": "705023d3be0454148a96fc2715d249a32d8ff442e70b64d1116d3490ed1d8136",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "容值",
+        "parameterCode": "param_10951_n",
+        "parameterDetailValue": "47nF",
+        "parameterValue": "47nF"
+      },
+      {
+        "parameterName": "精度",
+        "parameterCode": "param_10952_s",
+        "parameterDetailValue": "±10%",
+        "parameterValue": "±10%"
+      },
+      {
+        "parameterName": "额定电压",
+        "parameterCode": "param_10953_n",
+        "parameterDetailValue": "50V",
+        "parameterValue": "50V"
+      },
+      {
+        "parameterName": "温度系数",
+        "parameterCode": "param_10954",
+        "parameterDetailValue": "X7R",
+        "parameterValue": "X7R"
+      }
+    ]
+  },
+  "C42410552": {
+    "queried_date": "2026-10-09",
+    "mpn": "TJC8-2.54-2A",
+    "manufacturer": "DLL",
+    "domestic_product_url": "https://item.szlcsc.com/44387857.html",
+    "domestic_stock": 2589,
+    "domestic_moq": 20,
+    "domestic_purchase_multiple": 20,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C42410552",
+    "international_stock": 2580,
+    "international_moq": 20,
+    "international_price_usd": [
+      {
+        "ladder": 20,
+        "productPrice": "0.0376",
+        "usdPrice": 0.0376,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0376,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 200,
+        "productPrice": "0.0297",
+        "usdPrice": 0.0297,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0297,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 600,
+        "productPrice": "0.0258",
+        "usdPrice": 0.0258,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0258,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 2000,
+        "productPrice": "0.0229",
+        "usdPrice": 0.0229,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0229,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 10000,
+        "productPrice": "0.0205",
+        "usdPrice": 0.0205,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0205,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 20000,
+        "productPrice": "0.0193",
+        "usdPrice": 0.0193,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0193,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e9f3c2915a9e3fc695b50dadc57635c3.pdf?productCode=C42410552",
+    "datasheet_sha256": "6eb6664b1cdb8ea940d26c35d388af3b363514895f35487edec01d1a87614158",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "插针结构",
+        "parameterCode": "param_10864",
+        "parameterDetailValue": "1x2P",
+        "parameterValue": "1x2P"
+      },
+      {
+        "parameterName": "间距",
+        "parameterCode": "param_10865_n",
+        "parameterDetailValue": "2.54mm",
+        "parameterValue": "2.54mm"
+      },
+      {
+        "parameterName": "圆针/方针",
+        "parameterCode": "param_10868",
+        "parameterDetailValue": "方针",
+        "parameterValue": "方针"
+      },
+      {
+        "parameterName": "安装方式",
+        "parameterCode": "param_10867",
+        "parameterDetailValue": "直插",
+        "parameterValue": "直插"
+      },
+      {
+        "parameterName": "排数",
+        "parameterCode": "param_10863",
+        "parameterDetailValue": "单排",
+        "parameterValue": "单排"
+      },
+      {
+        "parameterName": "总PIN位数",
+        "parameterCode": "param_10862",
+        "parameterDetailValue": "2P",
+        "parameterValue": "2P"
+      },
+      {
+        "parameterName": "额定电流",
+        "parameterCode": "param_10869_n",
+        "parameterDetailValue": "3A",
+        "parameterValue": "3A"
+      },
+      {
+        "parameterName": "额定电压",
+        "parameterCode": "param_10870_n",
+        "parameterDetailValue": "250V",
+        "parameterValue": "250V"
+      },
+      {
+        "parameterName": "配合针长度",
+        "parameterCode": "param_10871_n",
+        "parameterDetailValue": "6.1mm",
+        "parameterValue": "6.1mm"
+      },
+      {
+        "parameterName": "塑高",
+        "parameterCode": "param_10872_n",
+        "parameterDetailValue": "2.5mm",
+        "parameterValue": "2.5mm"
+      },
+      {
+        "parameterName": "端接针长度",
+        "parameterCode": "param_10873_n",
+        "parameterDetailValue": "3mm",
+        "parameterValue": "3mm"
+      },
+      {
+        "parameterName": "触头材质",
+        "parameterCode": "param_10874",
+        "parameterDetailValue": "黄铜",
+        "parameterValue": "黄铜"
+      },
+      {
+        "parameterName": "触头镀层",
+        "parameterCode": "param_13283",
+        "parameterDetailValue": "金",
+        "parameterValue": "金"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_13284_s",
+        "parameterDetailValue": "-40℃~+105℃",
+        "parameterValue": "-40℃~+105℃"
+      },
+      {
+        "parameterName": "颜色",
+        "parameterCode": "param_13405",
+        "parameterDetailValue": "黑色",
+        "parameterValue": "黑色"
+      }
+    ]
+  },
+  "C68234": {
+    "queried_date": "2026-10-09",
+    "mpn": "2.54-2*8P",
+    "manufacturer": "BOOMELE(Boom Precision Elec)",
+    "domestic_product_url": "https://item.szlcsc.com/69336.html",
+    "domestic_stock": 35031,
+    "domestic_moq": 5,
+    "domestic_purchase_multiple": 5,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C68234",
+    "international_stock": 35030,
+    "international_moq": 5,
+    "international_price_usd": [
+      {
+        "ladder": 5,
+        "productPrice": "0.1344",
+        "usdPrice": 0.1344,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.1344,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50,
+        "productPrice": "0.1093",
+        "usdPrice": 0.1093,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.1093,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 150,
+        "productPrice": "0.0968",
+        "usdPrice": 0.0968,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0968,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 1000,
+        "productPrice": "0.0745",
+        "usdPrice": 0.0745,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0745,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 2000,
+        "productPrice": "0.0670",
+        "usdPrice": 0.067,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.067,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0632",
+        "usdPrice": 0.0632,
+        "cnyProductPriceList": null,
+        "discountRate": "1",
+        "currencyPrice": 0.0632,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/d52c83a07830c4e9e9a614accc55f5cd.pdf?productCode=C68234",
+    "datasheet_sha256": "2ca0710c19e7b1a11c0062278895f29943cd72797456b1710cee49589bd29c0a",
+    "adopted": false,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "插针结构",
+        "parameterCode": "param_10864",
+        "parameterDetailValue": "2x8P",
+        "parameterValue": "2x8P"
+      },
+      {
+        "parameterName": "间距",
+        "parameterCode": "param_10865_n",
+        "parameterDetailValue": "2.54mm",
+        "parameterValue": "2.54mm"
+      },
+      {
+        "parameterName": "行距",
+        "parameterCode": "param_10866_n",
+        "parameterDetailValue": "2.54mm",
+        "parameterValue": "2.54mm"
+      },
+      {
+        "parameterName": "圆针/方针",
+        "parameterCode": "param_10868",
+        "parameterDetailValue": "方针",
+        "parameterValue": "方针"
+      },
+      {
+        "parameterName": "安装方式",
+        "parameterCode": "param_10867",
+        "parameterDetailValue": "直插",
+        "parameterValue": "直插"
+      },
+      {
+        "parameterName": "排数",
+        "parameterCode": "param_10863",
+        "parameterDetailValue": "双排",
+        "parameterValue": "双排"
+      },
+      {
+        "parameterName": "总PIN位数",
+        "parameterCode": "param_10862",
+        "parameterDetailValue": "16P",
+        "parameterValue": "16P"
+      },
+      {
+        "parameterName": "额定电流",
+        "parameterCode": "param_10869_n",
+        "parameterDetailValue": "3A",
+        "parameterValue": "3A"
+      },
+      {
+        "parameterName": "额定电压",
+        "parameterCode": "param_10870_n",
+        "parameterDetailValue": "-",
+        "parameterValue": "-"
+      },
+      {
+        "parameterName": "配合针长度",
+        "parameterCode": "param_10871_n",
+        "parameterDetailValue": "5.9mm",
+        "parameterValue": "5.9mm"
+      },
+      {
+        "parameterName": "塑高",
+        "parameterCode": "param_10872_n",
+        "parameterDetailValue": "2.54mm",
+        "parameterValue": "2.54mm"
+      },
+      {
+        "parameterName": "端接针长度",
+        "parameterCode": "param_10873_n",
+        "parameterDetailValue": "3mm",
+        "parameterValue": "3mm"
+      },
+      {
+        "parameterName": "触头材质",
+        "parameterCode": "param_10874",
+        "parameterDetailValue": "黄铜",
+        "parameterValue": "黄铜"
+      },
+      {
+        "parameterName": "触头镀层",
+        "parameterCode": "param_13283",
+        "parameterDetailValue": "金",
+        "parameterValue": "金"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_13284_s",
+        "parameterDetailValue": "-55℃~+105℃",
+        "parameterValue": "-55℃~+105℃"
+      },
+      {
+        "parameterName": "颜色",
+        "parameterCode": "param_13405",
+        "parameterDetailValue": "黑色",
+        "parameterValue": "黑色"
+      }
+    ]
+  },
+  "C55629829": {
+    "queried_date": "2026-10-09",
+    "mpn": "SH-PZ254V-2x8P",
+    "manufacturer": "SHOU HAN",
+    "domestic_product_url": "https://item.szlcsc.com/59737003.html",
+    "domestic_stock": 500,
+    "domestic_moq": 5,
+    "domestic_purchase_multiple": 5,
+    "international_api_source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C55629829",
+    "international_stock": 500,
+    "international_moq": 5,
+    "international_price_usd": [
+      {
+        "ladder": 5,
+        "productPrice": "0.1231",
+        "usdPrice": 0.1231,
+        "cnyProductPriceList": null,
+        "discountRate": "0.5000",
+        "currencyPrice": 0.1231,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 50,
+        "productPrice": "0.0980",
+        "usdPrice": 0.098,
+        "cnyProductPriceList": null,
+        "discountRate": "0.5000",
+        "currencyPrice": 0.098,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 150,
+        "productPrice": "0.0854",
+        "usdPrice": 0.0854,
+        "cnyProductPriceList": null,
+        "discountRate": "0.5000",
+        "currencyPrice": 0.0854,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 500,
+        "productPrice": "0.0759",
+        "usdPrice": 0.0759,
+        "cnyProductPriceList": null,
+        "discountRate": "0.5000",
+        "currencyPrice": 0.0759,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 2500,
+        "productPrice": "0.0684",
+        "usdPrice": 0.0684,
+        "cnyProductPriceList": null,
+        "discountRate": "0.5000",
+        "currencyPrice": 0.0684,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      },
+      {
+        "ladder": 5000,
+        "productPrice": "0.0646",
+        "usdPrice": 0.0646,
+        "cnyProductPriceList": null,
+        "discountRate": "0.5000",
+        "currencyPrice": 0.0646,
+        "currencySymbol": "$",
+        "isForeignDiscount": null,
+        "ladderLevel": null
+      }
+    ],
+    "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a15807adb16db6524ac1ac5d15bcc78a.pdf?productCode=C55629829",
+    "datasheet_sha256": "9021e023871c4da7121af61e3e71dd369af85f43a5a57a02a26654ef6a53077a",
+    "adopted": true,
+    "domestic_small_quantity_price_cny": null,
+    "domestic_parameters": [
+      {
+        "parameterName": "插针结构",
+        "parameterCode": "param_10864",
+        "parameterDetailValue": "2x8P",
+        "parameterValue": "2x8P"
+      },
+      {
+        "parameterName": "间距",
+        "parameterCode": "param_10865_n",
+        "parameterDetailValue": "2.54mm",
+        "parameterValue": "2.54mm"
+      },
+      {
+        "parameterName": "行距",
+        "parameterCode": "param_10866_n",
+        "parameterDetailValue": "-",
+        "parameterValue": "-"
+      },
+      {
+        "parameterName": "圆针/方针",
+        "parameterCode": "param_10868",
+        "parameterDetailValue": "方针",
+        "parameterValue": "方针"
+      },
+      {
+        "parameterName": "安装方式",
+        "parameterCode": "param_10867",
+        "parameterDetailValue": "直插",
+        "parameterValue": "直插"
+      },
+      {
+        "parameterName": "排数",
+        "parameterCode": "param_10863",
+        "parameterDetailValue": "双排",
+        "parameterValue": "双排"
+      },
+      {
+        "parameterName": "总PIN位数",
+        "parameterCode": "param_10862",
+        "parameterDetailValue": "16P",
+        "parameterValue": "16P"
+      },
+      {
+        "parameterName": "额定电流",
+        "parameterCode": "param_10869_n",
+        "parameterDetailValue": "3A",
+        "parameterValue": "3A"
+      },
+      {
+        "parameterName": "额定电压",
+        "parameterCode": "param_10870_n",
+        "parameterDetailValue": "1kV",
+        "parameterValue": "1kV"
+      },
+      {
+        "parameterName": "配合针长度",
+        "parameterCode": "param_10871_n",
+        "parameterDetailValue": "6mm",
+        "parameterValue": "6mm"
+      },
+      {
+        "parameterName": "塑高",
+        "parameterCode": "param_10872_n",
+        "parameterDetailValue": "2.5mm",
+        "parameterValue": "2.5mm"
+      },
+      {
+        "parameterName": "端接针长度",
+        "parameterCode": "param_10873_n",
+        "parameterDetailValue": "3mm",
+        "parameterValue": "3mm"
+      },
+      {
+        "parameterName": "触头材质",
+        "parameterCode": "param_10874",
+        "parameterDetailValue": "黄铜",
+        "parameterValue": "黄铜"
+      },
+      {
+        "parameterName": "触头镀层",
+        "parameterCode": "param_13283",
+        "parameterDetailValue": "金",
+        "parameterValue": "金"
+      },
+      {
+        "parameterName": "工作温度",
+        "parameterCode": "param_13284_s",
+        "parameterDetailValue": "-40℃~+105℃",
+        "parameterValue": "-40℃~+105℃"
+      },
+      {
+        "parameterName": "颜色",
+        "parameterCode": "param_13405",
+        "parameterDetailValue": "黑色",
+        "parameterValue": "黑色"
+      }
+    ]
+  }
+}

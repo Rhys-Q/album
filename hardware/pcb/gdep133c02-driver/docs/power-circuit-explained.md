@@ -1,5 +1,6 @@
 # 电源页原理详解：从 3.3V 到屏幕需要的正负电源
 
+2026-10-09 v0.6改版说明：普通电阻已扩大0805；R17由400kΩ改为R17+R50两只200kΩ串联；部分小电容扩大0805。电路功能说明仍适用，现用型号、封装及装配数量以[本版审查](国内采购与手焊改版-v0.6.md)和本版BOM为准。GUI/采购缺口见当前验收记录，旧版验收不能替代新版。
 日期：2026-10-07，v0.5 GDRC调试版。对应当前 [power.kicad_sch](../power.kicad_sch)，建议同时打开[电源页 PDF](../reports/schematic.pdf)或[高清图](../reports/preview/schematic-power.png)。
 
 本文按图中的六个功能区解释全部 **55 个装配元件及 2 个铜测试点**。每个器件的值、候选料号、封装和逐脚网络另列在文末清单，便于对照 KiCad。电源符号、网络标签和 PWR_FLAG 是绘图／电气检查对象，不是要购买的器件。
@@ -316,7 +317,7 @@ VVGL ≈ VMID − ΔVLX + 2VF
 | C24 | 470nF/50V，PUMP_N_DOWN—PUMP_N_AC | 第一级飞跨电容，向 MID节点建立负电位；与 C23同值、同驱动，但位置和职责不同。 |
 | C25 | 1µF/50V，REG_VGN—GND | 给屏幕内部参考电压输出去耦，稳定反馈基准；电容本身不生成 REG_VGN。 |
 | C26 | 47nF/50V，PUMP_N_LOW—GND | Q6钳位节点的小容量储能／去耦，减小局部瞬态变化；容量更小会影响响应速度和纹波，不能称为最终输出滤波。 |
-| R17 | 400kΩ，VGL—FBN | 从负输出向反馈节点引入检测信息，是跨两个电位的反馈网络一臂。 |
+| R17+R50 | 两只200kΩ串联，合计400kΩ，VGL—FBN | 从负输出向反馈节点引入检测信息，是跨两个电位的反馈网络一臂。 |
 | R18 | 16kΩ，FBN—REG_VGN | 将内部参考输出引入反馈，与 R17设置负压检测关系；其另一端不是地。 |
 | R19 | 2.2Ω，LX—PUMP_N_AC | 两个飞跨电容共用的驱动串联阻值，约束充放电脉冲并提供阻尼；脉冲总负担与正泵 R10不同。 |
 
@@ -359,7 +360,7 @@ MSS1246-153候选的 DCR最大 54.1mΩ，25°C、10%感量下降定义下电流 
 
 50V只是候选器件额定值，不能保证所有波形都低于限制。MLCC在直流偏压下有效容量可能下降，温度、公差、老化、ESR/ESL也会影响性能。例如“两只100µF并联”只保证名义标注合计200µF；不能保证3.3V下有效容量就是200µF。
 
-本图的 4.7µF、10µF负责局部／输出储能，100nF针对更短时间的扰动，470nF飞跨电容负责转移电荷。用途取决于连接和频率，不是只由容量大小决定。面板页 C1–C6的33µF替代组合不在本页55个装配件内，其有效容量问题另见设计审核。
+本图的 4.7µF、10µF负责局部／输出储能，100nF针对更短时间的扰动，470nF飞跨电容负责转移电荷。用途取决于连接和频率，不是只由容量大小决定。面板页 C1–C6的33µF替代组合不在本页56个装配件内，其有效容量问题另见设计审核。
 
 ### 10.4 为什么飞跨电容前有 2.2Ω
 
@@ -411,35 +412,35 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 
 ## 13. 这份分析确定了什么，哪些不能从图上确定
 
-确定的内容包括：55个装配件及2个铜测试点元器件的身份和连接、三个电感变换器的拓扑、两个电荷泵的整流路径、两个反馈网络的数学关系、默认开关行为和各器件在回路中的用途。
+确定的内容包括：56个装配件及2个铜测试点元器件的身份和连接、三个电感变换器的拓扑、两个电荷泵的整流路径、两个反馈网络的数学关系、默认开关行为和各器件在回路中的用途。
 
 目前不能从这张图单独得到：所有电源目标值及容差、控制器开关频率／峰值阈值／补偿参数、实际有效电容、动态稳定性、GDRC与 Q7实际驱动匹配、共用电源的刷新噪声、启动浪涌是否超出预算、温升和安全掉电达标情况。沿用厂家参考设计解释了这些值的出处，不能代替这些项目的验收。
 
-## 附录A：55个装配件及2个铜测试点器件的当前型号、封装及引脚
+## 附录A：56个装配件及2个铜测试点器件的当前型号、封装及引脚
 
 | 位号 | 当前值 | 完整候选料号 | 本地封装 | 逐脚网络 |
 |---|---|---|---|---|
-| J1 | 3V3 BENCH ONLY | TSW-102-07-G-S | Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical | 1=BENCH_3V3<br>2=GND |
+| J1 | 3V3 BENCH ONLY | TJC8-2.54-2A | Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical | 1=BENCH_3V3<br>2=GND |
 | C28 | 2.2uF/50V | GRM32ER71H225KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=BENCH_3V3<br>2=GND |
 | U5 | TPS22917DBVR | TPS22917DBVR | Driver:Package_TO_SOT_SMD__SOT-23-6 | 1=BENCH_3V3<br>2=GND<br>3=EPD_PWR_EN<br>4=SW_CT<br>5=EPD_3V3<br>6=EPD_3V3 |
-| R30 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=EPD_PWR_EN<br>2=GND |
+| R30 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=EPD_PWR_EN<br>2=GND |
 | C29 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
 | C30 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
 | C31 | 100uF/6.3V | GRM32ER60J107ME20L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
 | C32 | 100uF/6.3V | GRM32ER60J107ME20L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
-| C33 | 100nF/50V | GRM188R71H104KA93D | Driver:Capacitor_SMD__C_0603_1608Metric | 1=EPD_3V3<br>2=GND |
+| C33 | 100nF/50V | CL21B104KBCNNNC | Driver:C_0805_HandSolder | 1=EPD_3V3<br>2=GND |
 | L1 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=EPD_3V3<br>2=LX |
 | L2 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=SW_N<br>2=GND |
 | L3 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=SW_VCOM<br>2=GND |
-| Q1 | DMN3065LW-7 | DMN3065LW-7 | Driver:Package_TO_SOT_SMD__SOT-323_SC-70 | 1=GDRP<br>2=RESEP<br>3=LX |
+| Q1 | DMN3065LW-7 | DMN3065LW-7 | Driver:SOT323_HandSolder | 1=GDRP<br>2=RESEP<br>3=LX |
 | Q8 | DMP3068L-7 | DMP3068L-7 | Driver:Package_TO_SOT_SMD__SOT-23 | 1=GDRN<br>2=RESEN<br>3=SW_N |
 | Q7 | PJA3433_R1_00001 | PJA3433_R1_00001 | Driver:Package_TO_SOT_SMD__SOT-23 | 1=Q7_GATE<br>2=RESEC<br>3=SW_VCOM |
 | U1 | 0.2 ohm | WSL1206R2000FEA | Driver:Resistor_SMD__R_1206_3216Metric | 1=RESEP<br>2=GND |
 | U2 | 0.2 ohm | WSL1206R2000FEA | Driver:Resistor_SMD__R_1206_3216Metric | 1=EPD_3V3<br>2=RESEN |
 | U3 | 0.2 ohm | WSL1206R2000FEA | Driver:Resistor_SMD__R_1206_3216Metric | 1=EPD_3V3<br>2=RESEC |
-| R2 | 1M ohm | RC0603FR-071ML | Driver:Resistor_SMD__R_0603_1608Metric | 1=GDRP<br>2=GND |
-| R3 | 1M ohm | RC0603FR-071ML | Driver:Resistor_SMD__R_0603_1608Metric | 1=EPD_3V3<br>2=GDRN |
-| R13 | 1M ohm | RC0603FR-071ML | Driver:Resistor_SMD__R_0603_1608Metric | 1=EPD_3V3<br>2=Q7_GATE |
+| R2 | 1M ohm | 0805W8F1004T5E | Driver:R_0805_HandSolder | 1=GDRP<br>2=GND |
+| R3 | 1M ohm | 0805W8F1004T5E | Driver:R_0805_HandSolder | 1=EPD_3V3<br>2=GDRN |
+| R13 | 1M ohm | 0805W8F1004T5E | Driver:R_0805_HandSolder | 1=EPD_3V3<br>2=Q7_GATE |
 | D1 | MBR230S1F-7 | MBR230S1F-7 | Driver:Diode_SMD__D_SOD-123F | 1=VDDP<br>2=LX |
 | D2 | MBR230S1F-7 | MBR230S1F-7 | Driver:Diode_SMD__D_SOD-123F | 1=SW_N<br>2=VDDN |
 | D4 | B0530W-7-F | B0530W-7-F | Driver:Diode_SMD__D_SOD-123 | 1=SW_VCOM<br>2=VBB_3P5V |
@@ -450,16 +451,16 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | C19 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
 | C20 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VBB_3P5V<br>2=GND |
 | Q3 | MMBT3906-7-F | MMBT3906-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=BASE_P<br>2=VDDP<br>3=PUMP_P_LOW |
-| Q4 | DMN3065LW-7 | DMN3065LW-7 | Driver:Package_TO_SOT_SMD__SOT-323_SC-70 | 1=DRVP<br>2=SOURCE_VGP<br>3=BASE_P |
-| R11 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=VDDP<br>2=BASE_P |
-| R12 | 1.5k ohm | RC0603FR-071K5L | Driver:Resistor_SMD__R_0603_1608Metric | 1=SOURCE_VGP<br>2=GND |
+| Q4 | DMN3065LW-7 | DMN3065LW-7 | Driver:SOT323_HandSolder | 1=DRVP<br>2=SOURCE_VGP<br>3=BASE_P |
+| R11 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=VDDP<br>2=BASE_P |
+| R12 | 1.5k ohm | 0805W8F1501T5E | Driver:R_0805_HandSolder | 1=SOURCE_VGP<br>2=GND |
 | D3 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_P_LOW<br>2=VGH<br>3=PUMP_P_MID |
 | C16 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VGH<br>2=GND |
 | C17 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_P_MID<br>2=PUMP_P_AC |
 | C18 | 220nF/50V | GRM21BR71H224KA01L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_P_LOW<br>2=GND |
-| R7 | 4.3k ohm | RC0603FR-074K3L | Driver:Resistor_SMD__R_0603_1608Metric | 1=GND<br>2=FBP |
-| R8 | 110k ohm | RC0603FR-07110KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=FBP<br>2=VGH |
-| R10 | 2.2 ohm | RC0603FR-072R2L | Driver:Resistor_SMD__R_0603_1608Metric | 1=PUMP_P_AC<br>2=LX |
+| R7 | 4.3k ohm | RC0805FR-074K3L | Driver:R_0805_HandSolder | 1=GND<br>2=FBP |
+| R8 | 110k ohm | RC0805FR-07110KL | Driver:R_0805_HandSolder | 1=FBP<br>2=VGH |
+| R10 | 2.2 ohm | 0805W8F220KT5E | Driver:R_0805_HandSolder | 1=PUMP_P_AC<br>2=LX |
 | Q6 | MMBT3904-7-F | MMBT3904-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=DRVN<br>2=GND<br>3=PUMP_N_LOW |
 | D5 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=VGL<br>2=PUMP_N_MID<br>3=PUMP_N_UP |
 | D6 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_N_MID<br>2=PUMP_N_LOW<br>3=PUMP_N_DOWN |
@@ -468,10 +469,11 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | C23 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_UP<br>2=PUMP_N_AC |
 | C24 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_DOWN<br>2=PUMP_N_AC |
 | C25 | 1uF/50V | GRM21BR71H105KA12L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=REG_VGN<br>2=GND |
-| C26 | 47nF/50V | GRM188R71H473KA61D | Driver:Capacitor_SMD__C_0603_1608Metric | 1=PUMP_N_LOW<br>2=GND |
-| R17 | 400k ohm | RC0603FR-07400KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=VGL<br>2=FBN |
-| R18 | 16k ohm | RC0603FR-0716KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=FBN<br>2=REG_VGN |
-| R19 | 2.2 ohm | RC0603FR-072R2L | Driver:Resistor_SMD__R_0603_1608Metric | 1=PUMP_N_AC<br>2=LX |
+| C26 | 47nF/50V | 0805B473K500NT | Driver:C_0805_HandSolder | 1=PUMP_N_LOW<br>2=GND |
+| R17 | 200k ohm | 0805W8F2003T5E | Driver:R_0805_HandSolder | 1=VGL_FB_MID<br>2=FBN |
+| R50 | 200k ohm | 0805W8F2003T5E | Driver:R_0805_HandSolder | 1=VGL<br>2=VGL_FB_MID |
+| R18 | 16k ohm | 0805W8F1602T5E | Driver:R_0805_HandSolder | 1=FBN<br>2=REG_VGN |
+| R19 | 2.2 ohm | 0805W8F220KT5E | Driver:R_0805_HandSolder | 1=PUMP_N_AC<br>2=LX |
 | C36 | 1nF/50V C0G | C0805C102J5GACTU | Driver:Capacitor_SMD__C_0805_2012Metric | 1=BENCH_3V3<br>2=SW_CT |
 
 元件位号保持原有习惯；U1–U3仍是0.2Ω采样电阻。所有原0Ω连接位已经删除，无法再通过拆下这些电阻隔离支路。0Ω用途的解释属于通用背景。上下电必须遵循[新版接口约定](interface-power-state.md)。

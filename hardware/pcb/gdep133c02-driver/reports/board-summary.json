@@ -1,9 +1,9 @@
 {
-  "revision": "0.5-GDRC-DEBUG",
-  "footprints": 133,
-  "pads": 329,
-  "tracks": 1658,
-  "vias": 179,
+  "revision": "0.6-domestic-hand-solder",
+  "footprints": 134,
+  "pads": 331,
+  "tracks": 2047,
+  "vias": 201,
   "minimum_track_mm": 0.2,
   "missing_3d_models": [
     "TP18",

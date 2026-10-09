@@ -23,6 +23,11 @@ for fp in kids(board_tree,'footprint'):
 for comp in xml.find('components'):
  ref=comp.attrib['ref']
  if ref not in parts:continue
+ z=parts[ref]
+ assert comp.findtext('value')==z['value'], ('Value mismatch',ref)
+ assert comp.findtext('footprint')==z['fp'], ('Footprint mismatch',ref)
+ fields={f.attrib['name']:f.text or '' for f in comp.findall('fields/field')}
+ assert fields.get('MPN')==z['mpn'] and fields.get('Manufacturer')==z['vendor'], ('BOM property mismatch',ref)
  expected=comp.find('sheetpath').attrib['tstamps']+comp.findtext('tstamps')
  assert footprint_links.get(ref)==expected, ('PCB symbol link incompatible with KiCad',ref,footprint_links.get(ref),expected)
 pads=json.loads((ROOT/'reports/pads.json').read_text());actual={(p['ref'],p['pin']):p['netname'] for p in pads if p['net'] and not p['netname'].startswith('unconnected-')}
@@ -49,8 +54,11 @@ assert parts['TP25']['dnp'] and parts['TP26']['dnp']
 assert [z['ref'] for z in parts.values() if {'GDRC','Q7_GATE'} <= set(z['pins'].values())]==['R49']
 for ref in ['C29','C30','C31','C32','C33']:
  assert set(parts[ref]['pins'].values())=={'EPD_3V3','GND'}
-assert sum(not z['dnp'] for z in parts.values())==103
-assert len(want)==317
+assert sum(not z['dnp'] for z in parts.values())==data['assembled_components']
+assert len(want)==sum(bool(v) for z in data['parts'] for v in z['pins'].values())
+assert parts['R17']['value']==parts['R50']['value']=='200k ohm'
+assert parts['R17']['pins']=={'1':'VGL_FB_MID','2':'FBN'}
+assert parts['R50']['pins']=={'1':'VGL','2':'VGL_FB_MID'}
 for ref,host,screen in [('R39','HOST_SCLK','SCLK'),('R40','HOST_MOSI','SI0'),('R41','HOST_CS_M_N','CS_M_N'),('R42','HOST_CS_S_N','CS_S_N'),('R43','HOST_RES_N','RES_N')]:
  assert parts[ref]['pins']=={'1':host,'2':screen}
 # Footprints must resolve locally, with no personal-directory model dependencies.
@@ -67,11 +75,11 @@ assert not any(v=='ignore' for v in pro['rule_severities'].values())
 proof=json.loads((ROOT/'reports/check-provenance.json').read_text())
 for name,digest in proof['source_sha256'].items():
  assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest, ('Stale check report',name)
-result={'date':'2026-10-01','kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'NOT COMPLETED - see docs/design-review.md','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
+result={'date':'2026-10-01','kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'PARTIAL - see docs/国内采购与手焊改版-v0.6.md and docs/采购清单-v0.6.csv; domestic payment and biased capacitance gaps remain','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
 result['date']=proof['date']
-result['revision']='0.5-GDRC-DEBUG'
-result['assembled_components']=103
-result['pcb_symbol_links']='PASS - all 129 footprint links match KiCad-exported sheet paths without root UUID'
+result['revision']=data['revision']
+result['assembled_components']=data['assembled_components']
+result['pcb_symbol_links']='PASS - all footprint links match KiCad-exported sheet paths without root UUID'
 result['signal_isolation']='REMOVED - mandatory host power sequencing'
 result['zone_refill']=proof['zone_refill']
 result['gui_open']=proof.get('gui_open','NOT VERIFIED for current sources - see reports/gui-open.json')

@@ -1,5 +1,6 @@
 # Panel 原理图详解：60针屏幕接口、温度检测与电容网络
 
+2026-10-09 v0.6改版说明：普通电阻已扩大0805；R17由400kΩ改为R17+R50两只200kΩ串联；部分小电容扩大0805。电路功能说明仍适用，现用型号、封装及装配数量以[本版审查](国内采购与手焊改版-v0.6.md)和本版BOM为准。GUI/采购缺口见当前验收记录，旧版验收不能替代新版。
 日期：2026-10-07，v0.5（Panel接法不变）。对应 [panel.kicad_sch](../panel.kicad_sch)，建议同时查看 [Panel PDF](../reports/schematic.pdf)或[高清图](../reports/preview/schematic-panel.png)。
 
 本页有 **37个器件位置**：一个60针连接器、一个温度传感器、5只电阻和30只电容；均为装配件。本文逐个解释其作用与设计理由。完整型号、封装、DNP、连接及FPC逐脚表在附录。配套阅读：[Interface详解](interface-circuit-explained.md)、[电源页详解](power-circuit-explained.md)。
@@ -271,12 +272,12 @@ FPL_VCOM、TFT_VCOM、VCOMBD_M/S是屏幕内部驱动输出。显示效果取决
 | 位号 | 当前值 | 完整候选料号 | 本地封装 | 逐脚网络 |
 |---|---|---|---|---|
 | U4 | TCN75AVOA713 | TCN75AVOA713 | Driver:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm | 1=TSDA<br>2=TSCL<br>3=NC<br>4=GND<br>5=GND<br>6=GND<br>7=GND<br>8=EPD_3V3 |
-| R20 | 4.7k ohm | RC0603FR-074K7L | Driver:Resistor_SMD__R_0603_1608Metric | 1=TSCL<br>2=EPD_3V3 |
-| R21 | 4.7k ohm | RC0603FR-074K7L | Driver:Resistor_SMD__R_0603_1608Metric | 1=TSDA<br>2=EPD_3V3 |
-| C27 | 100nF/50V | GRM188R71H104KA93D | Driver:Capacitor_SMD__C_0603_1608Metric | 1=EPD_3V3<br>2=GND |
-| R1 | 2k ohm | RC0603FR-072KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=BUSY_N<br>2=EPD_3V3 |
-| R35 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=SI2<br>2=GND |
-| R36 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=SI3<br>2=GND |
+| R20 | 4.7k ohm | 0805W8F4701T5E | Driver:R_0805_HandSolder | 1=TSCL<br>2=EPD_3V3 |
+| R21 | 4.7k ohm | 0805W8F4701T5E | Driver:R_0805_HandSolder | 1=TSDA<br>2=EPD_3V3 |
+| C27 | 100nF/50V | CL21B104KBCNNNC | Driver:C_0805_HandSolder | 1=EPD_3V3<br>2=GND |
+| R1 | 2k ohm | 0805W8F2001T5E | Driver:R_0805_HandSolder | 1=BUSY_N<br>2=EPD_3V3 |
+| R35 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=SI2<br>2=GND |
+| R36 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=SI3<br>2=GND |
 | C1 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VSPH<br>2=GND |
 | C103 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VSPH<br>2=GND |
 | C104 | 10uF/50V | GRM32ER71H106KA12L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VSPH<br>2=GND |

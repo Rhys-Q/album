@@ -1,104 +1,105 @@
 Designator,Comment,Footprint,Manufacturer,MPN,Quantity,DNP,SelectionStatus
-J1,3V3 BENCH ONLY,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Samtec,TSW-102-07-G-S,1,False,DRAFT: procurement/parameters not released
-C28,2.2uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H225KA88L,1,False,DRAFT: procurement/parameters not released
-U5,TPS22917DBVR,Package_TO_SOT_SMD:SOT-23-6,Texas Instruments,TPS22917DBVR,1,False,DRAFT: procurement/parameters not released
-R30,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-C29,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C30,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C31,100uF/6.3V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER60J107ME20L,1,False,DRAFT: procurement/parameters not released
-C32,100uF/6.3V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER60J107ME20L,1,False,DRAFT: procurement/parameters not released
-C33,100nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H104KA93D,1,False,DRAFT: procurement/parameters not released
-L1,15uH,Inductor_SMD:L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
-L2,15uH,Inductor_SMD:L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
-L3,15uH,Inductor_SMD:L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
-Q1,DMN3065LW-7,Package_TO_SOT_SMD:SOT-323_SC-70,Diodes,DMN3065LW-7,1,False,DRAFT: procurement/parameters not released
-Q8,DMP3068L-7,Package_TO_SOT_SMD:SOT-23,Diodes,DMP3068L-7,1,False,DRAFT: procurement/parameters not released
-Q7,PJA3433_R1_00001,Package_TO_SOT_SMD:SOT-23,Panjit,PJA3433_R1_00001,1,False,DRAFT: procurement/parameters not released
-U1,0.2 ohm,Resistor_SMD:R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: procurement/parameters not released
-U2,0.2 ohm,Resistor_SMD:R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: procurement/parameters not released
-U3,0.2 ohm,Resistor_SMD:R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: procurement/parameters not released
-R2,1M ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071ML,1,False,DRAFT: procurement/parameters not released
-R3,1M ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071ML,1,False,DRAFT: procurement/parameters not released
-R13,1M ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071ML,1,False,DRAFT: procurement/parameters not released
-D1,MBR230S1F-7,Diode_SMD:D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
-D2,MBR230S1F-7,Diode_SMD:D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
-D4,B0530W-7-F,Diode_SMD:D_SOD-123,Diodes,B0530W-7-F,1,False,DRAFT: procurement/parameters not released
-C12,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C13,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C14,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C15,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C19,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C20,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-Q3,MMBT3906-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,MMBT3906-7-F,1,False,DRAFT: procurement/parameters not released
-Q4,DMN3065LW-7,Package_TO_SOT_SMD:SOT-323_SC-70,Diodes,DMN3065LW-7,1,False,DRAFT: procurement/parameters not released
-R11,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-R12,1.5k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-071K5L,1,False,DRAFT: procurement/parameters not released
-D3,BAT54S-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
-C16,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C17,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-C18,220nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H224KA01L,1,False,DRAFT: procurement/parameters not released
-R7,4.3k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-074K3L,1,False,DRAFT: procurement/parameters not released
-R8,110k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07110KL,1,False,DRAFT: procurement/parameters not released
-R10,2.2 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-072R2L,1,False,DRAFT: procurement/parameters not released
-Q6,MMBT3904-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,MMBT3904-7-F,1,False,DRAFT: procurement/parameters not released
-D5,BAT54S-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
-D6,BAT54S-7-F,Package_TO_SOT_SMD:SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
-C21,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C22,1uF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H105KA12L,1,False,DRAFT: procurement/parameters not released
-C23,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-C24,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-C25,1uF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H105KA12L,1,False,DRAFT: procurement/parameters not released
-C26,47nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H473KA61D,1,False,DRAFT: procurement/parameters not released
-R17,400k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07400KL,1,False,DRAFT: procurement/parameters not released
-R18,16k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0716KL,1,False,DRAFT: procurement/parameters not released
-R19,2.2 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-072R2L,1,False,DRAFT: procurement/parameters not released
-U4,TCN75AVOA713,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Microchip,TCN75AVOA713,1,False,DRAFT: procurement/parameters not released
-R20,4.7k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-074K7L,1,False,DRAFT: procurement/parameters not released
-R21,4.7k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-074K7L,1,False,DRAFT: procurement/parameters not released
-C27,100nF/50V,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71H104KA93D,1,False,DRAFT: procurement/parameters not released
-R1,2k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-072KL,1,False,DRAFT: procurement/parameters not released
-R35,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-R36,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-C1,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C103,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C104,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C105,3.3uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C2,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C106,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C107,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C108,3.3uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C3,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C109,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C110,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C111,3.3uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C4,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C112,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C113,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C114,3.3uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C5,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C115,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C116,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C117,3.3uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C6,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C118,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C119,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C120,3.3uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C7,10uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C8,4.7uF/50V,Capacitor_SMD:C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C9,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-C10,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-C11,470nF/50V,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
-R39,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
-R40,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
-R41,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
-R42,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
-R43,33 ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,1,False,DRAFT: procurement/parameters not released
-R44,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-R45,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-R46,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-R47,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-R48,100k ohm,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-07100KL,1,False,DRAFT: procurement/parameters not released
-J2,HOST DIRECT 3V3,Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical,Samtec,TSW-108-07-G-D,1,False,DRAFT: procurement/parameters not released
+J1,3V3 BENCH ONLY,Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical,DLL,TJC8-2.54-2A,1,False,DRAFT: procurement/parameters not released
+C28,2.2uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H225KA88L,1,False,DRAFT: procurement/parameters not released
+U5,TPS22917DBVR,Driver:Package_TO_SOT_SMD__SOT-23-6,Texas Instruments,TPS22917DBVR,1,False,DRAFT: procurement/parameters not released
+R30,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+C29,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C30,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C31,100uF/6.3V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER60J107ME20L,1,False,DRAFT: procurement/parameters not released
+C32,100uF/6.3V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER60J107ME20L,1,False,DRAFT: procurement/parameters not released
+C33,100nF/50V,Driver:C_0805_HandSolder,Samsung,CL21B104KBCNNNC,1,False,DRAFT: procurement/parameters not released
+L1,15uH,Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
+L2,15uH,Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
+L3,15uH,Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX,Coilcraft,MSS1246-153MLC,1,False,DRAFT: procurement/parameters not released
+Q1,DMN3065LW-7,Driver:SOT323_HandSolder,Diodes,DMN3065LW-7,1,False,DRAFT: procurement/parameters not released
+Q8,DMP3068L-7,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,DMP3068L-7,1,False,DRAFT: procurement/parameters not released
+Q7,PJA3433_R1_00001,Driver:Package_TO_SOT_SMD__SOT-23,Panjit,PJA3433_R1_00001,1,False,DRAFT: procurement/parameters not released
+U1,0.2 ohm,Driver:Resistor_SMD__R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: procurement/parameters not released
+U2,0.2 ohm,Driver:Resistor_SMD__R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: procurement/parameters not released
+U3,0.2 ohm,Driver:Resistor_SMD__R_1206_3216Metric,Vishay,WSL1206R2000FEA,1,False,DRAFT: procurement/parameters not released
+R2,1M ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1004T5E,1,False,DRAFT: procurement/parameters not released
+R3,1M ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1004T5E,1,False,DRAFT: procurement/parameters not released
+R13,1M ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1004T5E,1,False,DRAFT: procurement/parameters not released
+D1,MBR230S1F-7,Driver:Diode_SMD__D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
+D2,MBR230S1F-7,Driver:Diode_SMD__D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
+D4,B0530W-7-F,Driver:Diode_SMD__D_SOD-123,Diodes,B0530W-7-F,1,False,DRAFT: procurement/parameters not released
+C12,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C13,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C14,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C15,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C19,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C20,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+Q3,MMBT3906-7-F,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,MMBT3906-7-F,1,False,DRAFT: procurement/parameters not released
+Q4,DMN3065LW-7,Driver:SOT323_HandSolder,Diodes,DMN3065LW-7,1,False,DRAFT: procurement/parameters not released
+R11,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+R12,1.5k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1501T5E,1,False,DRAFT: procurement/parameters not released
+D3,BAT54S-7-F,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
+C16,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C17,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
+C18,220nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H224KA01L,1,False,DRAFT: procurement/parameters not released
+R7,4.3k ohm,Driver:R_0805_HandSolder,YAGEO,RC0805FR-074K3L,1,False,DRAFT: procurement/parameters not released
+R8,110k ohm,Driver:R_0805_HandSolder,YAGEO,RC0805FR-07110KL,1,False,DRAFT: procurement/parameters not released
+R10,2.2 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F220KT5E,1,False,DRAFT: procurement/parameters not released
+Q6,MMBT3904-7-F,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,MMBT3904-7-F,1,False,DRAFT: procurement/parameters not released
+D5,BAT54S-7-F,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
+D6,BAT54S-7-F,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,BAT54S-7-F,1,False,DRAFT: procurement/parameters not released
+C21,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C22,1uF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H105KA12L,1,False,DRAFT: procurement/parameters not released
+C23,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
+C24,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
+C25,1uF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H105KA12L,1,False,DRAFT: procurement/parameters not released
+C26,47nF/50V,Driver:C_0805_HandSolder,FH,0805B473K500NT,1,False,DRAFT: procurement/parameters not released
+R17,200k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F2003T5E,1,False,DRAFT: procurement/parameters not released
+R18,16k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1602T5E,1,False,DRAFT: procurement/parameters not released
+R19,2.2 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F220KT5E,1,False,DRAFT: procurement/parameters not released
+U4,TCN75AVOA713,Driver:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm,Microchip,TCN75AVOA713,1,False,DRAFT: procurement/parameters not released
+R20,4.7k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F4701T5E,1,False,DRAFT: procurement/parameters not released
+R21,4.7k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F4701T5E,1,False,DRAFT: procurement/parameters not released
+C27,100nF/50V,Driver:C_0805_HandSolder,Samsung,CL21B104KBCNNNC,1,False,DRAFT: procurement/parameters not released
+R1,2k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F2001T5E,1,False,DRAFT: procurement/parameters not released
+R35,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+R36,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+C1,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C103,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C104,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C105,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
+C2,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C106,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C107,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C108,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
+C3,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C109,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C110,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C111,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
+C4,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C112,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C113,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C114,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
+C5,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C115,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C116,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C117,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
+C6,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C118,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C119,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C120,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
+C7,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C8,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
+C9,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
+C10,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
+C11,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
+R39,33 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F330JT5E,1,False,DRAFT: procurement/parameters not released
+R40,33 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F330JT5E,1,False,DRAFT: procurement/parameters not released
+R41,33 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F330JT5E,1,False,DRAFT: procurement/parameters not released
+R42,33 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F330JT5E,1,False,DRAFT: procurement/parameters not released
+R43,33 ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F330JT5E,1,False,DRAFT: procurement/parameters not released
+R44,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+R45,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+R46,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+R47,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+R48,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
+J2,HOST DIRECT 3V3,Driver:Connector_PinHeader_2.54mm__PinHeader_2x08_P2.54mm_Vertical,SHOU HAN,SH-PZ254V-2x8P,1,False,DRAFT: procurement/parameters not released
 FPC1,FPC-05FB-60PH20,Driver:FPC_05FB_60PH20,Xunpu,FPC-05FB-60PH20,1,False,DRAFT: procurement/parameters not released
-C36,1nF/50V C0G,Capacitor_SMD:C_0805_2012Metric,KEMET,C0805C102J5GACTU,1,False,DRAFT: procurement/parameters not released
-R49,0 ohm,Resistor_SMD:R_0805_2012Metric,Yageo,RC0805JR-070RL,1,False,DRAFT: procurement/parameters not released
+C36,1nF/50V C0G,Driver:Capacitor_SMD__C_0805_2012Metric,KEMET,C0805C102J5GACTU,1,False,DRAFT: procurement/parameters not released
+R49,0 ohm,Driver:Resistor_SMD__R_0805_2012Metric,Yageo,RC0805JR-070RL,1,False,DRAFT: procurement/parameters not released
+R50,200k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F2003T5E,1,False,DRAFT: procurement/parameters not released

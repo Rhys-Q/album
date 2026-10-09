@@ -1,6 +1,6 @@
 {
   "name": "gdep133c02-driver",
-  "revision": "0.5-gdrc-debug",
+  "revision": "0.6-domestic-hand-solder",
   "parts": [
     {
       "ref": "J1",
@@ -9,20 +9,22 @@
         "1": "BENCH_3V3",
         "2": "GND"
       },
-      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "fp": "Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical",
       "xy": [
         13,
         69
       ],
       "group": "entry",
-      "mpn": "TSW-102-07-G-S",
-      "vendor": "Samtec",
-      "url": "",
+      "mpn": "TJC8-2.54-2A",
+      "vendor": "DLL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/e9f3c2915a9e3fc695b50dadc57635c3.pdf?productCode=C42410552",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "6566036d-f3ac-591a-8511-e8ed12a2081a"
+      "uuid": "6566036d-f3ac-591a-8511-e8ed12a2081a",
+      "lcsc": "C42410552",
+      "selection_note": "国内2.54mm直插排针，3A，孔距及脚序不变。"
     },
     {
       "ref": "C28",
@@ -31,7 +33,7 @@
         "1": "BENCH_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         23,
         65
@@ -44,7 +46,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "5bd97427-2cd0-520c-975e-c2941cd20b1a"
+      "uuid": "5bd97427-2cd0-520c-975e-c2941cd20b1a",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "U5",
@@ -57,7 +61,7 @@
         "5": "EPD_3V3",
         "6": "EPD_3V3"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23-6",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23-6",
       "xy": [
         32,
         69
@@ -84,7 +88,9 @@
       },
       "dnp": false,
       "angle": 0,
-      "uuid": "66f48b51-86e5-5a8b-9a88-c700e990110b"
+      "uuid": "66f48b51-86e5-5a8b-9a88-c700e990110b",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C2681320"
     },
     {
       "ref": "R30",
@@ -93,20 +99,22 @@
         "1": "EPD_PWR_EN",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         32,
         73
       ],
       "group": "entry",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "b7db1938-eaba-5c3a-abb5-11a8cc9f6641"
+      "uuid": "b7db1938-eaba-5c3a-abb5-11a8cc9f6641",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "C29",
@@ -115,7 +123,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         37,
         64
@@ -123,12 +131,14 @@
       "group": "entry",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f557c48f-57d9-5d4c-a136-18aae272a6a8"
+      "uuid": "f557c48f-57d9-5d4c-a136-18aae272a6a8",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C30",
@@ -137,7 +147,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         43,
         64
@@ -145,12 +155,14 @@
       "group": "entry",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "0d9216c9-5257-528c-816c-5857aae3c0cd"
+      "uuid": "0d9216c9-5257-528c-816c-5857aae3c0cd",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C31",
@@ -159,7 +171,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         56,
         62
@@ -167,12 +179,14 @@
       "group": "entry",
       "mpn": "GRM32ER60J107ME20L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20170116/1484561244372.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "8be9d8e4-221f-554c-a826-ef5049f59a15"
+      "uuid": "8be9d8e4-221f-554c-a826-ef5049f59a15",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C88154"
     },
     {
       "ref": "C32",
@@ -181,7 +195,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         62,
         62
@@ -189,12 +203,14 @@
       "group": "entry",
       "mpn": "GRM32ER60J107ME20L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20170116/1484561244372.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f2d8f959-1fd1-5fca-b504-63e1dfd049b9"
+      "uuid": "f2d8f959-1fd1-5fca-b504-63e1dfd049b9",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C88154"
     },
     {
       "ref": "C33",
@@ -203,20 +219,22 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         54,
         73
       ],
       "group": "entry",
-      "mpn": "GRM188R71H104KA93D",
-      "vendor": "Murata",
-      "url": "",
+      "mpn": "CL21B104KBCNNNC",
+      "vendor": "Samsung",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1711",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f0d55f8e-116e-5267-8f34-b1d3657a9063"
+      "uuid": "f0d55f8e-116e-5267-8f34-b1d3657a9063",
+      "lcsc": "C1711",
+      "selection_note": "100nF/50V X7R±10%；0603增大为0805。"
     },
     {
       "ref": "L1",
@@ -225,7 +243,7 @@
         "1": "EPD_3V3",
         "2": "LX"
       },
-      "fp": "Inductor_SMD:L_Coilcraft_MSS1246T-XXX",
+      "fp": "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX",
       "xy": [
         24,
         35
@@ -238,7 +256,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "396b72d0-7245-5539-a929-f6c4d24282b7"
+      "uuid": "396b72d0-7245-5539-a929-f6c4d24282b7",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "L2",
@@ -247,7 +267,7 @@
         "1": "SW_N",
         "2": "GND"
       },
-      "fp": "Inductor_SMD:L_Coilcraft_MSS1246T-XXX",
+      "fp": "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX",
       "xy": [
         44,
         35
@@ -260,7 +280,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "c220295b-393c-5e32-b109-4d558c1b9170"
+      "uuid": "c220295b-393c-5e32-b109-4d558c1b9170",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "L3",
@@ -269,7 +291,7 @@
         "1": "SW_VCOM",
         "2": "GND"
       },
-      "fp": "Inductor_SMD:L_Coilcraft_MSS1246T-XXX",
+      "fp": "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX",
       "xy": [
         64,
         35
@@ -282,7 +304,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "9ae55387-f1f6-5a49-b346-82299063cfc8"
+      "uuid": "9ae55387-f1f6-5a49-b346-82299063cfc8",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "Q1",
@@ -292,7 +316,7 @@
         "2": "RESEP",
         "3": "LX"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-323_SC-70",
+      "fp": "Driver:SOT323_HandSolder",
       "xy": [
         24,
         45
@@ -309,7 +333,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "0b00ebd9-f3fd-56e0-a4c2-4171de849932"
+      "uuid": "0b00ebd9-f3fd-56e0-a4c2-4171de849932",
+      "selection_note": "保留DMN3065LW；SOT23候选Qg更高，改为同封装外伸焊盘。",
+      "lcsc": "C150506"
     },
     {
       "ref": "Q8",
@@ -319,7 +345,7 @@
         "2": "RESEN",
         "3": "SW_N"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         44,
         45
@@ -336,7 +362,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "86756e56-9531-5723-a5cf-c550ebcad951"
+      "uuid": "86756e56-9531-5723-a5cf-c550ebcad951",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C151010"
     },
     {
       "ref": "Q7",
@@ -346,7 +374,7 @@
         "2": "RESEC",
         "3": "SW_VCOM"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         64,
         45
@@ -363,7 +391,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "3da4ac43-a56a-5763-8140-46c148848227"
+      "uuid": "3da4ac43-a56a-5763-8140-46c148848227",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "U1",
@@ -372,7 +402,7 @@
         "1": "RESEP",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
+      "fp": "Driver:Resistor_SMD__R_1206_3216Metric",
       "xy": [
         24,
         50
@@ -385,7 +415,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "0620a84e-9ac3-5228-a31f-2a5a02e77d46"
+      "uuid": "0620a84e-9ac3-5228-a31f-2a5a02e77d46",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "U2",
@@ -394,7 +426,7 @@
         "1": "EPD_3V3",
         "2": "RESEN"
       },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
+      "fp": "Driver:Resistor_SMD__R_1206_3216Metric",
       "xy": [
         44,
         50
@@ -407,7 +439,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "9724dc3d-2e9e-52ee-8da8-7b059addc02d"
+      "uuid": "9724dc3d-2e9e-52ee-8da8-7b059addc02d",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "U3",
@@ -416,7 +450,7 @@
         "1": "EPD_3V3",
         "2": "RESEC"
       },
-      "fp": "Resistor_SMD:R_1206_3216Metric",
+      "fp": "Driver:Resistor_SMD__R_1206_3216Metric",
       "xy": [
         64,
         50
@@ -429,7 +463,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "d1fa0770-647e-5805-8275-5f475498fbd8"
+      "uuid": "d1fa0770-647e-5805-8275-5f475498fbd8",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "R2",
@@ -438,20 +474,22 @@
         "1": "GDRP",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         19,
         48
       ],
       "group": "converters",
-      "mpn": "RC0603FR-071ML",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1004T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17514",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "2d4e6b6d-b01b-55cc-89e7-c9c3d56b944d"
+      "uuid": "2d4e6b6d-b01b-55cc-89e7-c9c3d56b944d",
+      "lcsc": "C17514",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R3",
@@ -460,20 +498,22 @@
         "1": "EPD_3V3",
         "2": "GDRN"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         39,
         48
       ],
       "group": "converters",
-      "mpn": "RC0603FR-071ML",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1004T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17514",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "fc787361-4df4-5330-a1cc-f355b647c08c"
+      "uuid": "fc787361-4df4-5330-a1cc-f355b647c08c",
+      "lcsc": "C17514",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R13",
@@ -482,20 +522,22 @@
         "1": "EPD_3V3",
         "2": "Q7_GATE"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         59,
         48
       ],
       "group": "converters",
-      "mpn": "RC0603FR-071ML",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1004T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17514",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "478ce8ba-6cee-5b70-9648-57278e969cbf"
+      "uuid": "478ce8ba-6cee-5b70-9648-57278e969cbf",
+      "lcsc": "C17514",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "D1",
@@ -504,7 +546,7 @@
         "1": "VDDP",
         "2": "LX"
       },
-      "fp": "Diode_SMD:D_SOD-123F",
+      "fp": "Driver:Diode_SMD__D_SOD-123F",
       "xy": [
         29,
         44
@@ -520,7 +562,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "e901443e-d0d1-52f8-b543-0866ec5c1f4b"
+      "uuid": "e901443e-d0d1-52f8-b543-0866ec5c1f4b",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "D2",
@@ -529,7 +573,7 @@
         "1": "SW_N",
         "2": "VDDN"
       },
-      "fp": "Diode_SMD:D_SOD-123F",
+      "fp": "Driver:Diode_SMD__D_SOD-123F",
       "xy": [
         49,
         43
@@ -545,7 +589,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "1d510d3a-c297-5b72-94d7-e1687a8d9f9c"
+      "uuid": "1d510d3a-c297-5b72-94d7-e1687a8d9f9c",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "D4",
@@ -554,7 +600,7 @@
         "1": "SW_VCOM",
         "2": "VBB_3P5V"
       },
-      "fp": "Diode_SMD:D_SOD-123",
+      "fp": "Driver:Diode_SMD__D_SOD-123",
       "xy": [
         69,
         43
@@ -570,7 +616,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "528f114c-6cc9-5b28-99b5-d66b752718fa"
+      "uuid": "528f114c-6cc9-5b28-99b5-d66b752718fa",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C12",
@@ -579,7 +627,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         14,
         40
@@ -587,12 +635,14 @@
       "group": "converters",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "009be3eb-717d-5568-a74c-8caac6368db7"
+      "uuid": "009be3eb-717d-5568-a74c-8caac6368db7",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C13",
@@ -601,7 +651,7 @@
         "1": "VDDP",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         30,
         49
@@ -609,12 +659,14 @@
       "group": "converters",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "1a9782cb-6164-58b8-9b46-0e7ba364f20c"
+      "uuid": "1a9782cb-6164-58b8-9b46-0e7ba364f20c",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C14",
@@ -623,7 +675,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         34,
         40
@@ -631,12 +683,14 @@
       "group": "converters",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "cb01cad4-46db-5266-a0bb-f7767a9c61bc"
+      "uuid": "cb01cad4-46db-5266-a0bb-f7767a9c61bc",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C15",
@@ -645,7 +699,7 @@
         "1": "VDDN",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         51,
         49
@@ -653,12 +707,14 @@
       "group": "converters",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f2a33430-1a98-5472-aa43-e841c91aa949"
+      "uuid": "f2a33430-1a98-5472-aa43-e841c91aa949",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C19",
@@ -667,7 +723,7 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         54,
         40
@@ -675,12 +731,14 @@
       "group": "converters",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "ce9fa164-ab53-5bd4-bbf1-ce4782f9f7e0"
+      "uuid": "ce9fa164-ab53-5bd4-bbf1-ce4782f9f7e0",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C20",
@@ -689,7 +747,7 @@
         "1": "VBB_3P5V",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         71,
         49
@@ -697,12 +755,14 @@
       "group": "converters",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "09b5a33c-f282-5945-8ad6-8a4c2690d4f7"
+      "uuid": "09b5a33c-f282-5945-8ad6-8a4c2690d4f7",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "Q3",
@@ -712,7 +772,7 @@
         "2": "VDDP",
         "3": "PUMP_P_LOW"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         20,
         57
@@ -720,7 +780,7 @@
       "group": "pumps",
       "mpn": "MMBT3906-7-F",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20221028/DE85DC0248B2C64D4CE838286525BEA1.pdf",
       "names": {
         "1": "B",
         "2": "E",
@@ -729,7 +789,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "19235eb6-471d-52ad-b3a7-257b41e60d36"
+      "uuid": "19235eb6-471d-52ad-b3a7-257b41e60d36",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C82762"
     },
     {
       "ref": "Q4",
@@ -739,7 +801,7 @@
         "2": "SOURCE_VGP",
         "3": "BASE_P"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-323_SC-70",
+      "fp": "Driver:SOT323_HandSolder",
       "xy": [
         15,
         57
@@ -747,7 +809,7 @@
       "group": "pumps",
       "mpn": "DMN3065LW-7",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20230810/E543A40CD6CD762FC818366CFAE7D2A0.pdf",
       "names": {
         "1": "G",
         "2": "S",
@@ -756,7 +818,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "986e66ac-d133-5f58-abcd-a6568bc015e4"
+      "uuid": "986e66ac-d133-5f58-abcd-a6568bc015e4",
+      "selection_note": "保留DMN3065LW；SOT23候选Qg更高，改为同封装外伸焊盘。",
+      "lcsc": "C150506"
     },
     {
       "ref": "R11",
@@ -765,20 +829,22 @@
         "1": "VDDP",
         "2": "BASE_P"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         15,
         61
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "68056d04-8b96-50cb-b21b-8f367fbf0523"
+      "uuid": "68056d04-8b96-50cb-b21b-8f367fbf0523",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R12",
@@ -787,20 +853,22 @@
         "1": "SOURCE_VGP",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         11,
         61
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-071K5L",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1501T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C4310",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "150be5a2-0693-5156-b0b3-2ee82434dd97"
+      "uuid": "150be5a2-0693-5156-b0b3-2ee82434dd97",
+      "lcsc": "C4310",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "D3",
@@ -810,7 +878,7 @@
         "2": "VGH",
         "3": "PUMP_P_MID"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         24,
         56
@@ -818,7 +886,7 @@
       "group": "pumps",
       "mpn": "BAT54S-7-F",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
       "names": {
         "1": "A1",
         "2": "K2",
@@ -827,7 +895,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "0a6ea35b-d247-5b8c-9c0a-55f4105c90c6"
+      "uuid": "0a6ea35b-d247-5b8c-9c0a-55f4105c90c6",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C83574"
     },
     {
       "ref": "C16",
@@ -836,7 +906,7 @@
         "1": "VGH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         29,
         55
@@ -844,12 +914,14 @@
       "group": "pumps",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "022cedcf-e7a2-5e85-8d5b-f3551e92cafd"
+      "uuid": "022cedcf-e7a2-5e85-8d5b-f3551e92cafd",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C17",
@@ -858,7 +930,7 @@
         "1": "PUMP_P_MID",
         "2": "PUMP_P_AC"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         29,
         59
@@ -866,12 +938,14 @@
       "group": "pumps",
       "mpn": "GRM21BR71H474KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "da0cfb27-709c-50f3-9407-739a3fb2436f"
+      "uuid": "da0cfb27-709c-50f3-9407-739a3fb2436f",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86043"
     },
     {
       "ref": "C18",
@@ -880,7 +954,7 @@
         "1": "PUMP_P_LOW",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         20,
         61
@@ -888,12 +962,14 @@
       "group": "pumps",
       "mpn": "GRM21BR71H224KA01L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "30b67500-2214-584c-9fcf-d6cbbd05bb7a"
+      "uuid": "30b67500-2214-584c-9fcf-d6cbbd05bb7a",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86042"
     },
     {
       "ref": "R7",
@@ -902,20 +978,22 @@
         "1": "GND",
         "2": "FBP"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         34,
         55
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-074K3L",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "RC0805FR-074K3L",
+      "vendor": "YAGEO",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137518",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "25f69a1c-b2e9-5e40-8b40-1735ec6d0860"
+      "uuid": "25f69a1c-b2e9-5e40-8b40-1735ec6d0860",
+      "lcsc": "C137518",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R8",
@@ -924,20 +1002,22 @@
         "1": "FBP",
         "2": "VGH"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         34,
         58
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-07110KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "RC0805FR-07110KL",
+      "vendor": "YAGEO",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137599",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "76017b1c-c9a9-59da-9828-cd422a4e58dd"
+      "uuid": "76017b1c-c9a9-59da-9828-cd422a4e58dd",
+      "lcsc": "C137599",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R10",
@@ -946,20 +1026,22 @@
         "1": "PUMP_P_AC",
         "2": "LX"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         34,
         61
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-072R2L",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F220KT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "3aa9ce7a-d21f-553d-8f19-bf2419483e8d"
+      "uuid": "3aa9ce7a-d21f-553d-8f19-bf2419483e8d",
+      "lcsc": "C17521",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "Q6",
@@ -969,7 +1051,7 @@
         "2": "GND",
         "3": "PUMP_N_LOW"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         81,
         37
@@ -977,7 +1059,7 @@
       "group": "pumps",
       "mpn": "MMBT3904-7-F",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20230810/4AD110B3C3E81E2CEF5971F860B34099.pdf",
       "names": {
         "1": "B",
         "2": "E",
@@ -986,7 +1068,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "ab994df7-7668-5e52-8e30-c2d5f9266f34"
+      "uuid": "ab994df7-7668-5e52-8e30-c2d5f9266f34",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C94514"
     },
     {
       "ref": "D5",
@@ -996,7 +1080,7 @@
         "2": "PUMP_N_MID",
         "3": "PUMP_N_UP"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         86,
         29
@@ -1004,7 +1088,7 @@
       "group": "pumps",
       "mpn": "BAT54S-7-F",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
       "names": {
         "1": "A1",
         "2": "K2",
@@ -1013,7 +1097,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "7e74736a-3aa4-53fc-9186-066eed8a87e9"
+      "uuid": "7e74736a-3aa4-53fc-9186-066eed8a87e9",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C83574"
     },
     {
       "ref": "D6",
@@ -1023,7 +1109,7 @@
         "2": "PUMP_N_LOW",
         "3": "PUMP_N_DOWN"
       },
-      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
         86,
         37
@@ -1031,7 +1117,7 @@
       "group": "pumps",
       "mpn": "BAT54S-7-F",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
       "names": {
         "1": "A1",
         "2": "K2",
@@ -1040,7 +1126,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "84af8084-7fab-5819-bd3a-2d1c575b92d8"
+      "uuid": "84af8084-7fab-5819-bd3a-2d1c575b92d8",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C83574"
     },
     {
       "ref": "C21",
@@ -1049,7 +1137,7 @@
         "1": "VGL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         92,
         25
@@ -1057,12 +1145,14 @@
       "group": "pumps",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "c30117e3-3a57-5944-b8bd-b56204891830"
+      "uuid": "c30117e3-3a57-5944-b8bd-b56204891830",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C22",
@@ -1071,7 +1161,7 @@
         "1": "PUMP_N_MID",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         81,
         29
@@ -1079,12 +1169,14 @@
       "group": "pumps",
       "mpn": "GRM21BR71H105KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "42e9ad10-a18f-5735-b79d-83b2d82ff6c4"
+      "uuid": "42e9ad10-a18f-5735-b79d-83b2d82ff6c4",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77083"
     },
     {
       "ref": "C23",
@@ -1093,7 +1185,7 @@
         "1": "PUMP_N_UP",
         "2": "PUMP_N_AC"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         92,
         29
@@ -1101,12 +1193,14 @@
       "group": "pumps",
       "mpn": "GRM21BR71H474KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "ea463842-5eee-5805-a3f4-d69525249974"
+      "uuid": "ea463842-5eee-5805-a3f4-d69525249974",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86043"
     },
     {
       "ref": "C24",
@@ -1115,7 +1209,7 @@
         "1": "PUMP_N_DOWN",
         "2": "PUMP_N_AC"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         92,
         37
@@ -1123,12 +1217,14 @@
       "group": "pumps",
       "mpn": "GRM21BR71H474KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f3608122-3fcd-5886-b3df-465d9232a483"
+      "uuid": "f3608122-3fcd-5886-b3df-465d9232a483",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86043"
     },
     {
       "ref": "C25",
@@ -1137,7 +1233,7 @@
         "1": "REG_VGN",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         87,
         45
@@ -1145,12 +1241,14 @@
       "group": "pumps",
       "mpn": "GRM21BR71H105KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f2812e87-417a-5b59-9ff4-319dc8c38f2a"
+      "uuid": "f2812e87-417a-5b59-9ff4-319dc8c38f2a",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77083"
     },
     {
       "ref": "C26",
@@ -1159,42 +1257,46 @@
         "1": "PUMP_N_LOW",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         81,
         41
       ],
       "group": "pumps",
-      "mpn": "GRM188R71H473KA61D",
-      "vendor": "Murata",
-      "url": "",
+      "mpn": "0805B473K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1745",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "72f9c5b2-42de-5011-8ab3-f175d1966773"
+      "uuid": "72f9c5b2-42de-5011-8ab3-f175d1966773",
+      "lcsc": "C1745",
+      "selection_note": "47nF/50V X7R±10%；风华0805，保留耐压，动态波形待实测。"
     },
     {
       "ref": "R17",
-      "value": "400k ohm",
+      "value": "200k ohm",
       "pins": {
-        "1": "VGL",
+        "1": "VGL_FB_MID",
         "2": "FBN"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         91,
         41
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-07400KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F2003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "abc9f3a1-0416-5bf8-8b48-fbd23524b338"
+      "uuid": "abc9f3a1-0416-5bf8-8b48-fbd23524b338",
+      "lcsc": "C17539",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R18",
@@ -1203,20 +1305,22 @@
         "1": "FBN",
         "2": "REG_VGN"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         91,
         45
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-0716KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1602T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17490",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "2802c2cd-9d4f-5487-a8b2-da6dfe515974"
+      "uuid": "2802c2cd-9d4f-5487-a8b2-da6dfe515974",
+      "lcsc": "C17490",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R19",
@@ -1225,20 +1329,22 @@
         "1": "PUMP_N_AC",
         "2": "LX"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         92,
         33
       ],
       "group": "pumps",
-      "mpn": "RC0603FR-072R2L",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F220KT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "7def7659-9517-5761-af4f-7bc4cfa0d686"
+      "uuid": "7def7659-9517-5761-af4f-7bc4cfa0d686",
+      "lcsc": "C17521",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "U4",
@@ -1253,7 +1359,7 @@
         "7": "GND",
         "8": "EPD_3V3"
       },
-      "fp": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "fp": "Driver:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm",
       "xy": [
         12,
         27
@@ -1284,7 +1390,9 @@
       },
       "dnp": false,
       "angle": 0,
-      "uuid": "4669384d-7768-53a0-adc8-8890011d88f5"
+      "uuid": "4669384d-7768-53a0-adc8-8890011d88f5",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C144313"
     },
     {
       "ref": "R20",
@@ -1293,20 +1401,22 @@
         "1": "TSCL",
         "2": "EPD_3V3"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         9,
         20
       ],
       "group": "panel",
-      "mpn": "RC0603FR-074K7L",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F4701T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17673",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "eca7bcf7-266e-58d4-9f17-d7209908faee"
+      "uuid": "eca7bcf7-266e-58d4-9f17-d7209908faee",
+      "lcsc": "C17673",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R21",
@@ -1315,20 +1425,22 @@
         "1": "TSDA",
         "2": "EPD_3V3"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         14,
         20
       ],
       "group": "panel",
-      "mpn": "RC0603FR-074K7L",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F4701T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17673",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "aa7461c7-51ee-575d-8eb0-963f01992764"
+      "uuid": "aa7461c7-51ee-575d-8eb0-963f01992764",
+      "lcsc": "C17673",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "C27",
@@ -1337,20 +1449,22 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         6,
         24
       ],
       "group": "panel",
-      "mpn": "GRM188R71H104KA93D",
-      "vendor": "Murata",
-      "url": "",
+      "mpn": "CL21B104KBCNNNC",
+      "vendor": "Samsung",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1711",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "7b922b81-fb26-5d68-ac71-4f40b269d4cd"
+      "uuid": "7b922b81-fb26-5d68-ac71-4f40b269d4cd",
+      "lcsc": "C1711",
+      "selection_note": "100nF/50V X7R±10%；0603增大为0805。"
     },
     {
       "ref": "R1",
@@ -1359,20 +1473,22 @@
         "1": "BUSY_N",
         "2": "EPD_3V3"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         72,
         12
       ],
       "group": "panel",
-      "mpn": "RC0603FR-072KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F2001T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17604",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "61a5c413-2fa8-544e-9424-a8d34d7cee70"
+      "uuid": "61a5c413-2fa8-544e-9424-a8d34d7cee70",
+      "lcsc": "C17604",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R35",
@@ -1381,20 +1497,22 @@
         "1": "SI2",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         30.0,
         9.0
       ],
       "group": "panel",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "faf432de-0485-51bc-ab4b-0a274d539931"
+      "uuid": "faf432de-0485-51bc-ab4b-0a274d539931",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R36",
@@ -1403,20 +1521,22 @@
         "1": "SI3",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         40.0,
         3.5
       ],
       "group": "panel",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "8cea2c15-73e2-5169-8599-82c48b0d4b7c"
+      "uuid": "8cea2c15-73e2-5169-8599-82c48b0d4b7c",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "C1",
@@ -1425,7 +1545,7 @@
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         22.5,
         17
@@ -1433,12 +1553,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "7c47a940-db15-5224-a93e-9eea0e6ad374"
+      "uuid": "7c47a940-db15-5224-a93e-9eea0e6ad374",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C103",
@@ -1447,7 +1569,7 @@
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         27.5,
         17
@@ -1455,12 +1577,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "9a7e0e7f-65f7-55f6-993f-18af06f818ce"
+      "uuid": "9a7e0e7f-65f7-55f6-993f-18af06f818ce",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C104",
@@ -1469,7 +1593,7 @@
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         22.5,
         23
@@ -1477,12 +1601,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "51f9b468-5750-5f87-b0c1-97e79a74587e"
+      "uuid": "51f9b468-5750-5f87-b0c1-97e79a74587e",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C105",
@@ -1491,7 +1617,7 @@
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         27.5,
         23
@@ -1504,7 +1630,9 @@
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "bfeebab9-467d-5f43-8822-8f857843c0d2"
+      "uuid": "bfeebab9-467d-5f43-8822-8f857843c0d2",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C2",
@@ -1513,7 +1641,7 @@
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         31.5,
         17
@@ -1521,12 +1649,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "b0716500-be0e-57c1-a013-e38145552966"
+      "uuid": "b0716500-be0e-57c1-a013-e38145552966",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C106",
@@ -1535,7 +1665,7 @@
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         36.5,
         17
@@ -1543,12 +1673,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "175819c5-3359-51a4-8596-8d2e69e57025"
+      "uuid": "175819c5-3359-51a4-8596-8d2e69e57025",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C107",
@@ -1557,7 +1689,7 @@
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         31.5,
         23
@@ -1565,12 +1697,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "604029b3-0e14-5dbf-82df-34252fd16b83"
+      "uuid": "604029b3-0e14-5dbf-82df-34252fd16b83",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C108",
@@ -1579,7 +1713,7 @@
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         36.5,
         23
@@ -1592,7 +1726,9 @@
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "f0419365-7771-5939-8a42-f36853513dfc"
+      "uuid": "f0419365-7771-5939-8a42-f36853513dfc",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C3",
@@ -1601,7 +1737,7 @@
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         40.5,
         17
@@ -1609,12 +1745,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "8a6fb4c3-6a82-5238-b4c5-cdb42aa411dd"
+      "uuid": "8a6fb4c3-6a82-5238-b4c5-cdb42aa411dd",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C109",
@@ -1623,7 +1761,7 @@
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         45.5,
         17
@@ -1631,12 +1769,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "b37f2285-9f0c-5436-97bf-942aba0815de"
+      "uuid": "b37f2285-9f0c-5436-97bf-942aba0815de",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C110",
@@ -1645,7 +1785,7 @@
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         40.5,
         23
@@ -1653,12 +1793,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "541c2c77-d759-5cc2-8853-5f59e717a17f"
+      "uuid": "541c2c77-d759-5cc2-8853-5f59e717a17f",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C111",
@@ -1667,7 +1809,7 @@
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         45.5,
         23
@@ -1680,7 +1822,9 @@
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "9f8fd227-3da7-5a07-b77b-2fd893569fac"
+      "uuid": "9f8fd227-3da7-5a07-b77b-2fd893569fac",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C4",
@@ -1689,7 +1833,7 @@
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         49.5,
         17
@@ -1697,12 +1841,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "f18e56c2-edc3-5a5b-ae94-3804a4507e1f"
+      "uuid": "f18e56c2-edc3-5a5b-ae94-3804a4507e1f",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C112",
@@ -1711,7 +1857,7 @@
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         54.5,
         17
@@ -1719,12 +1865,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "dcb8df27-decf-5dcc-82e5-d5ec4e2a9067"
+      "uuid": "dcb8df27-decf-5dcc-82e5-d5ec4e2a9067",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C113",
@@ -1733,7 +1881,7 @@
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         49.5,
         23
@@ -1741,12 +1889,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "1fadf000-af65-53f8-88ad-47a74b99a638"
+      "uuid": "1fadf000-af65-53f8-88ad-47a74b99a638",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C114",
@@ -1755,7 +1905,7 @@
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         54.5,
         23
@@ -1768,7 +1918,9 @@
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "d2cb0944-3c12-5839-9d9e-b9b33fc5729f"
+      "uuid": "d2cb0944-3c12-5839-9d9e-b9b33fc5729f",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C5",
@@ -1777,7 +1929,7 @@
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         58.5,
         17
@@ -1785,12 +1937,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "3d9c6218-b3f1-5c1c-84b1-c08a120e1e4f"
+      "uuid": "3d9c6218-b3f1-5c1c-84b1-c08a120e1e4f",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C115",
@@ -1799,7 +1953,7 @@
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         63.5,
         17
@@ -1807,12 +1961,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "7efeacad-21b8-5830-9e85-41c88935036c"
+      "uuid": "7efeacad-21b8-5830-9e85-41c88935036c",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C116",
@@ -1821,7 +1977,7 @@
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         58.5,
         23
@@ -1829,12 +1985,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "2fac4cc1-49bb-5ff7-b9bb-0c197753e801"
+      "uuid": "2fac4cc1-49bb-5ff7-b9bb-0c197753e801",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C117",
@@ -1843,7 +2001,7 @@
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         63.5,
         23
@@ -1856,7 +2014,9 @@
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "9725c1de-4add-5dce-83d5-2accb4317982"
+      "uuid": "9725c1de-4add-5dce-83d5-2accb4317982",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C6",
@@ -1865,7 +2025,7 @@
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         67.5,
         17
@@ -1873,12 +2033,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "8992f71f-d261-5c10-af76-78afcd18a9b6"
+      "uuid": "8992f71f-d261-5c10-af76-78afcd18a9b6",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C118",
@@ -1887,7 +2049,7 @@
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         72.5,
         17
@@ -1895,12 +2057,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "7a3d586c-bccc-5f75-abed-c533bc42fda7"
+      "uuid": "7a3d586c-bccc-5f75-abed-c533bc42fda7",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C119",
@@ -1909,7 +2073,7 @@
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         67.5,
         23
@@ -1917,12 +2081,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "5f71b582-97da-58f5-937e-4c4690e4df5f"
+      "uuid": "5f71b582-97da-58f5-937e-4c4690e4df5f",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C120",
@@ -1931,7 +2097,7 @@
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         72.5,
         23
@@ -1944,7 +2110,9 @@
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "080b793d-1c6b-5f70-b8ea-02cfa7b1dad7"
+      "uuid": "080b793d-1c6b-5f70-b8ea-02cfa7b1dad7",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C7",
@@ -1953,7 +2121,7 @@
         "1": "VCC",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         78,
         16
@@ -1961,12 +2129,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H106KA12L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "fd86e631-e6e3-5786-9b43-b06f5bb1867c"
+      "uuid": "fd86e631-e6e3-5786-9b43-b06f5bb1867c",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C77102"
     },
     {
       "ref": "C8",
@@ -1975,7 +2145,7 @@
         "1": "TFT_VCOM",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
       "xy": [
         78,
         22
@@ -1983,12 +2153,14 @@
       "group": "panel",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "7413fcef-807a-5c53-b23b-50f30462e34c"
+      "uuid": "7413fcef-807a-5c53-b23b-50f30462e34c",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C86052"
     },
     {
       "ref": "C9",
@@ -1997,7 +2169,7 @@
         "1": "FPL_VCOM",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         85,
         18
@@ -2010,7 +2182,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "40e889b4-0104-556b-a1a5-7a6f304e6508"
+      "uuid": "40e889b4-0104-556b-a1a5-7a6f304e6508",
+      "lcsc": "",
+      "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
     },
     {
       "ref": "C10",
@@ -2019,7 +2193,7 @@
         "1": "VCOMBD_M",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         91,
         12
@@ -2032,7 +2206,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f9e6e286-4320-5a61-b2b5-68517938f61e"
+      "uuid": "f9e6e286-4320-5a61-b2b5-68517938f61e",
+      "lcsc": "",
+      "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
     },
     {
       "ref": "C11",
@@ -2041,7 +2217,7 @@
         "1": "VCOMBD_S",
         "2": "GND"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         91,
         18
@@ -2054,7 +2230,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "f8e130f0-69c4-56f7-a813-84ac4d1aeb56"
+      "uuid": "f8e130f0-69c4-56f7-a813-84ac4d1aeb56",
+      "lcsc": "",
+      "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
     },
     {
       "ref": "R39",
@@ -2063,20 +2241,22 @@
         "1": "HOST_SCLK",
         "2": "SCLK"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         49,
         77
       ],
       "group": "interface",
-      "mpn": "RC0603FR-0733RL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F330JT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17634",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "434ef3e2-39e7-5068-b739-a39d9de19932"
+      "uuid": "434ef3e2-39e7-5068-b739-a39d9de19932",
+      "lcsc": "C17634",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R40",
@@ -2085,20 +2265,22 @@
         "1": "HOST_MOSI",
         "2": "SI0"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         54,
         77
       ],
       "group": "interface",
-      "mpn": "RC0603FR-0733RL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F330JT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17634",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "a3a7bbeb-f84a-5d1c-9f3c-0454f4650fbd"
+      "uuid": "a3a7bbeb-f84a-5d1c-9f3c-0454f4650fbd",
+      "lcsc": "C17634",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R41",
@@ -2107,20 +2289,22 @@
         "1": "HOST_CS_M_N",
         "2": "CS_M_N"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         59,
         77
       ],
       "group": "interface",
-      "mpn": "RC0603FR-0733RL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F330JT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17634",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "ae617ab7-ceaa-5aed-8b70-360583dda50e"
+      "uuid": "ae617ab7-ceaa-5aed-8b70-360583dda50e",
+      "lcsc": "C17634",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R42",
@@ -2129,20 +2313,22 @@
         "1": "HOST_CS_S_N",
         "2": "CS_S_N"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         64,
         77
       ],
       "group": "interface",
-      "mpn": "RC0603FR-0733RL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F330JT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17634",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "63be70d1-f560-5e86-bacc-d8e27c24e8df"
+      "uuid": "63be70d1-f560-5e86-bacc-d8e27c24e8df",
+      "lcsc": "C17634",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R43",
@@ -2151,20 +2337,22 @@
         "1": "HOST_RES_N",
         "2": "RES_N"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         68,
         75
       ],
       "group": "interface",
-      "mpn": "RC0603FR-0733RL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F330JT5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17634",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "16e534aa-82a2-5a75-8994-31ada11195f4"
+      "uuid": "16e534aa-82a2-5a75-8994-31ada11195f4",
+      "lcsc": "C17634",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R44",
@@ -2173,20 +2361,22 @@
         "1": "SCLK",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         49,
         58
       ],
       "group": "interface",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "242edfe7-23d4-5ed9-8229-c38123ebfaf1"
+      "uuid": "242edfe7-23d4-5ed9-8229-c38123ebfaf1",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R45",
@@ -2195,20 +2385,22 @@
         "1": "SI0",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         54,
         58
       ],
       "group": "interface",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "2498a894-e9f2-5c07-b0b3-69e207a00513"
+      "uuid": "2498a894-e9f2-5c07-b0b3-69e207a00513",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R46",
@@ -2217,20 +2409,22 @@
         "1": "CS_M_N",
         "2": "EPD_3V3"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         59,
         58
       ],
       "group": "interface",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "80001428-51ad-5ef5-8afb-cc3373b88278"
+      "uuid": "80001428-51ad-5ef5-8afb-cc3373b88278",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R47",
@@ -2239,20 +2433,22 @@
         "1": "CS_S_N",
         "2": "EPD_3V3"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         64,
         58
       ],
       "group": "interface",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "c332d163-18ad-58eb-8549-19580526d324"
+      "uuid": "c332d163-18ad-58eb-8549-19580526d324",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "R48",
@@ -2261,20 +2457,22 @@
         "1": "RES_N",
         "2": "GND"
       },
-      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "fp": "Driver:R_0805_HandSolder",
       "xy": [
         69,
         58
       ],
       "group": "interface",
-      "mpn": "RC0603FR-07100KL",
-      "vendor": "Yageo",
-      "url": "",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "4c10d0f4-ce03-54cd-a4f3-19124a18bd09"
+      "uuid": "4c10d0f4-ce03-54cd-a4f3-19124a18bd09",
+      "lcsc": "C149504",
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
     },
     {
       "ref": "J2",
@@ -2297,20 +2495,22 @@
         "15": "EPD_PWR_EN",
         "16": null
       },
-      "fp": "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical",
+      "fp": "Driver:Connector_PinHeader_2.54mm__PinHeader_2x08_P2.54mm_Vertical",
       "xy": [
         72,
         76
       ],
       "group": "interface",
-      "mpn": "TSW-108-07-G-D",
-      "vendor": "Samtec",
-      "url": "",
+      "mpn": "SH-PZ254V-2x8P",
+      "vendor": "SHOU HAN",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/a15807adb16db6524ac1ac5d15bcc78a.pdf?productCode=C55629829",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
-      "uuid": "db18f9de-2ac6-5931-b411-1ba17b47881c"
+      "uuid": "db18f9de-2ac6-5931-b411-1ba17b47881c",
+      "lcsc": "C55629829",
+      "selection_note": "首韩2×8直插排针；原厂图20.32×5.0mm、2.54mm双排、0.64mm方针、3A；孔径1.05mm。"
     },
     {
       "ref": "FPC1",
@@ -2512,7 +2712,9 @@
       },
       "dnp": false,
       "angle": 0,
-      "uuid": "421be796-a9a9-57bf-b192-48fb8b7626a2"
+      "uuid": "421be796-a9a9-57bf-b192-48fb8b7626a2",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C2856839"
     },
     {
       "ref": "TP1",
@@ -2520,7 +2722,7 @@
       "pins": {
         "1": "BENCH_3V3"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         69
@@ -2533,7 +2735,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "a9153cd1-43a4-5aa8-af1f-c59be6f739e5"
+      "uuid": "a9153cd1-43a4-5aa8-af1f-c59be6f739e5",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP2",
@@ -2541,7 +2745,7 @@
       "pins": {
         "1": "EPD_3V3"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         63
@@ -2554,7 +2758,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "8603a3f2-f8e8-5af1-91a4-a42f47a9be5b"
+      "uuid": "8603a3f2-f8e8-5af1-91a4-a42f47a9be5b",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP3",
@@ -2562,7 +2768,7 @@
       "pins": {
         "1": "EPD_3V3"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         57
@@ -2575,7 +2781,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "748fa3bc-7d90-57a6-b36a-10ccce722fdf"
+      "uuid": "748fa3bc-7d90-57a6-b36a-10ccce722fdf",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP4",
@@ -2583,7 +2791,7 @@
       "pins": {
         "1": "EPD_3V3"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         51
@@ -2596,7 +2804,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "398c6ad1-cf1f-56c9-b5d6-19828e459aa7"
+      "uuid": "398c6ad1-cf1f-56c9-b5d6-19828e459aa7",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP5",
@@ -2604,7 +2814,7 @@
       "pins": {
         "1": "VDDP"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         45
@@ -2617,7 +2827,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "ffb45dfe-fb1e-54ef-bb46-1fe3b9eedf85"
+      "uuid": "ffb45dfe-fb1e-54ef-bb46-1fe3b9eedf85",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP6",
@@ -2625,7 +2837,7 @@
       "pins": {
         "1": "VDDN"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         39
@@ -2638,7 +2850,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "640e2de5-3e16-5529-abb9-399507299aae"
+      "uuid": "640e2de5-3e16-5529-abb9-399507299aae",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP7",
@@ -2646,7 +2860,7 @@
       "pins": {
         "1": "VGH"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         54
@@ -2659,7 +2873,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "ff8ffbc4-c796-5416-bf74-ec19908a4914"
+      "uuid": "ff8ffbc4-c796-5416-bf74-ec19908a4914",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP8",
@@ -2667,7 +2883,7 @@
       "pins": {
         "1": "VGL"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         48
@@ -2680,7 +2896,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "4060192f-e0e0-55a7-82b2-4525305f1282"
+      "uuid": "4060192f-e0e0-55a7-82b2-4525305f1282",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP9",
@@ -2688,7 +2906,7 @@
       "pins": {
         "1": "VBB_3P5V"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         42
@@ -2701,7 +2919,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "2eca7551-c178-521c-b760-b84eea4675f3"
+      "uuid": "2eca7551-c178-521c-b760-b84eea4675f3",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP10",
@@ -2709,7 +2929,7 @@
       "pins": {
         "1": "VBB_3P5V"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         36
@@ -2722,7 +2942,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "e7d04ee6-311f-57b6-9b53-61f114a5b760"
+      "uuid": "e7d04ee6-311f-57b6-9b53-61f114a5b760",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP11",
@@ -2730,7 +2952,7 @@
       "pins": {
         "1": "TFT_VCOM"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         30
@@ -2743,7 +2965,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "96c57cf9-a06a-5368-8871-ac7af8b8fcb5"
+      "uuid": "96c57cf9-a06a-5368-8871-ac7af8b8fcb5",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP12",
@@ -2751,7 +2975,7 @@
       "pins": {
         "1": "VCC"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         24
@@ -2764,7 +2988,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "bfbec1af-842d-503c-9963-ab5a22005ccd"
+      "uuid": "bfbec1af-842d-503c-9963-ab5a22005ccd",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP13",
@@ -2772,7 +2998,7 @@
       "pins": {
         "1": "BUSY_N"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         75,
         8
@@ -2785,7 +3011,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "8f7d292c-69cb-5ba5-9545-ed42a225b8eb"
+      "uuid": "8f7d292c-69cb-5ba5-9545-ed42a225b8eb",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP14",
@@ -2793,7 +3021,7 @@
       "pins": {
         "1": "EPD_PWR_EN"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         80,
         8
@@ -2806,7 +3034,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "93cfb4bc-70ff-52d6-bc62-df5ad677f2a2"
+      "uuid": "93cfb4bc-70ff-52d6-bc62-df5ad677f2a2",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP15",
@@ -2814,7 +3044,7 @@
       "pins": {
         "1": "RES_N"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         85,
         8
@@ -2827,7 +3057,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "2d31e053-afe8-55b0-a0c8-1f2a391c2a68"
+      "uuid": "2d31e053-afe8-55b0-a0c8-1f2a391c2a68",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP16",
@@ -2835,7 +3067,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         10,
         76
@@ -2848,7 +3080,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "d43ceecb-56f4-500d-8498-0220ade8c4cd"
+      "uuid": "d43ceecb-56f4-500d-8498-0220ade8c4cd",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP17",
@@ -2856,7 +3090,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         60
@@ -2869,7 +3103,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "14adeb44-2d92-5432-bd71-6fa62d481405"
+      "uuid": "14adeb44-2d92-5432-bd71-6fa62d481405",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP18",
@@ -2877,7 +3113,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         48
@@ -2890,7 +3126,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "129486d6-8210-5813-80ee-ceec9165135b"
+      "uuid": "129486d6-8210-5813-80ee-ceec9165135b",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP19",
@@ -2898,7 +3136,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         7,
         36
@@ -2911,7 +3149,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "fb3f2ca5-b033-53db-a097-8ad335d30edf"
+      "uuid": "fb3f2ca5-b033-53db-a097-8ad335d30edf",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP20",
@@ -2919,7 +3159,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         57
@@ -2932,7 +3172,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "b1f25c74-9a75-52ef-9168-134720361853"
+      "uuid": "b1f25c74-9a75-52ef-9168-134720361853",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP21",
@@ -2940,7 +3182,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         45
@@ -2953,7 +3195,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "1597f8a1-cf77-507d-8e05-71f2093b2dbf"
+      "uuid": "1597f8a1-cf77-507d-8e05-71f2093b2dbf",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP22",
@@ -2961,7 +3205,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         33
@@ -2974,7 +3218,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "1f97e26b-0d7d-5437-86bf-0062b56f2639"
+      "uuid": "1f97e26b-0d7d-5437-86bf-0062b56f2639",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP23",
@@ -2982,7 +3228,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         96,
         21
@@ -2995,7 +3241,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "b64d0606-a7ed-58d0-b39f-9e7526a737b9"
+      "uuid": "b64d0606-a7ed-58d0-b39f-9e7526a737b9",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP24",
@@ -3003,7 +3251,7 @@
       "pins": {
         "1": "GND"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         80,
         12
@@ -3016,7 +3264,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "1f5b5b06-c237-592b-8054-d6452910ea76"
+      "uuid": "1f5b5b06-c237-592b-8054-d6452910ea76",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "C36",
@@ -3025,7 +3275,7 @@
         "1": "BENCH_3V3",
         "2": "SW_CT"
       },
-      "fp": "Capacitor_SMD:C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
       "xy": [
         37,
         75
@@ -3038,7 +3288,9 @@
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "da1c958d-2286-5c6f-9743-c49344031c99"
+      "uuid": "da1c958d-2286-5c6f-9743-c49344031c99",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "R49",
@@ -3047,7 +3299,7 @@
         "1": "GDRC",
         "2": "Q7_GATE"
       },
-      "fp": "Resistor_SMD:R_0805_2012Metric",
+      "fp": "Driver:Resistor_SMD__R_0805_2012Metric",
       "xy": [
         58.9,
         43.7
@@ -3055,12 +3307,14 @@
       "group": "converters",
       "mpn": "RC0805JR-070RL",
       "vendor": "Yageo",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
-      "uuid": "2d63a01d-eae5-4563-ab6c-700abc3ead2b"
+      "uuid": "2d63a01d-eae5-4563-ab6c-700abc3ead2b",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": "C96345"
     },
     {
       "ref": "TP25",
@@ -3068,7 +3322,7 @@
       "pins": {
         "1": "GDRC"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         54.5,
         44
@@ -3081,7 +3335,9 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "4ffed17b-6d9d-4a2c-9315-77c3056d1b18"
+      "uuid": "4ffed17b-6d9d-4a2c-9315-77c3056d1b18",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
     },
     {
       "ref": "TP26",
@@ -3089,10 +3345,10 @@
       "pins": {
         "1": "Q7_GATE"
       },
-      "fp": "TestPoint:TestPoint_Pad_D1.5mm",
+      "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        56,
-        48.5
+        55,
+        47
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3102,7 +3358,33 @@
       "types": {},
       "dnp": true,
       "angle": 0,
-      "uuid": "06bc1bf7-2b30-4949-a483-894403787910"
+      "uuid": "06bc1bf7-2b30-4949-a483-894403787910",
+      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
+      "lcsc": ""
+    },
+    {
+      "ref": "R50",
+      "value": "200k ohm",
+      "pins": {
+        "1": "VGL",
+        "2": "VGL_FB_MID"
+      },
+      "fp": "Driver:R_0805_HandSolder",
+      "xy": [
+        86,
+        41
+      ],
+      "group": "pumps",
+      "mpn": "0805W8F2003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0,
+      "uuid": "f20457d6-8c8e-43b6-bd11-af99237b4887",
+      "lcsc": "C17539",
+      "selection_note": "与R17串联：200k+200k=400k，±1%最坏误差，±100ppm/℃。"
     }
   ],
   "board_mm": [
@@ -3110,5 +3392,8 @@
     80
   ],
   "fpc_footprint_verified": true,
-  "fpc_mating_verified": false
+  "fpc_mating_verified": false,
+  "date": "2026-10-09",
+  "assembled_components": 104,
+  "smt_components": 102
 }

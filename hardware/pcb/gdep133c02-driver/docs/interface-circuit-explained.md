@@ -1,5 +1,6 @@
 # Interface 原理详解：v0.5直连接口（本页接法不变）
 
+2026-10-09 v0.6改版说明：普通电阻已扩大0805；R17由400kΩ改为R17+R50两只200kΩ串联；部分小电容扩大0805。电路功能说明仍适用，现用型号、封装及装配数量以[本版审查](国内采购与手焊改版-v0.6.md)和本版BOM为准。GUI/采购缺口见当前验收记录，旧版验收不能替代新版。
 2026-10-07。对应[interface.kicad_sch](../interface.kicad_sch)及[当前原理图PDF](../reports/schematic.pdf)。本页11个装配元件，加24个仅铜焊盘的测试点。U6/U7、Q9/Q10、R37/R38、C34/C35已删除。
 
 ## 1. 信号怎样走
@@ -65,17 +66,17 @@ TP1–TP24是PCB铜焊盘，全部DNP，不购买24个测试点元件，也不�
 
 | 位号 | 当前值 | 完整候选料号 | 本地封装 | 逐脚网络 |
 |---|---|---|---|---|
-| R39 | 33 ohm | RC0603FR-0733RL | Driver:Resistor_SMD__R_0603_1608Metric | 1=HOST_SCLK<br>2=SCLK |
-| R40 | 33 ohm | RC0603FR-0733RL | Driver:Resistor_SMD__R_0603_1608Metric | 1=HOST_MOSI<br>2=SI0 |
-| R41 | 33 ohm | RC0603FR-0733RL | Driver:Resistor_SMD__R_0603_1608Metric | 1=HOST_CS_M_N<br>2=CS_M_N |
-| R42 | 33 ohm | RC0603FR-0733RL | Driver:Resistor_SMD__R_0603_1608Metric | 1=HOST_CS_S_N<br>2=CS_S_N |
-| R43 | 33 ohm | RC0603FR-0733RL | Driver:Resistor_SMD__R_0603_1608Metric | 1=HOST_RES_N<br>2=RES_N |
-| R44 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=SCLK<br>2=GND |
-| R45 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=SI0<br>2=GND |
-| R46 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=CS_M_N<br>2=EPD_3V3 |
-| R47 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=CS_S_N<br>2=EPD_3V3 |
-| R48 | 100k ohm | RC0603FR-07100KL | Driver:Resistor_SMD__R_0603_1608Metric | 1=RES_N<br>2=GND |
-| J2 | HOST 3V3 LOGIC | TSW-108-07-G-D | Driver:Connector_PinHeader_2.54mm__PinHeader_2x08_P2.54mm_Vertical | 1=HOST_SCLK<br>2=GND<br>3=HOST_MOSI<br>4=GND<br>5=SI1<br>6=GND<br>7=HOST_CS_M_N<br>8=GND<br>9=HOST_CS_S_N<br>10=GND<br>11=HOST_RES_N<br>12=GND<br>13=BUSY_N<br>14=GND<br>15=EPD_PWR_EN<br>16=NC |
+| R39 | 33 ohm | 0805W8F330JT5E | Driver:R_0805_HandSolder | 1=HOST_SCLK<br>2=SCLK |
+| R40 | 33 ohm | 0805W8F330JT5E | Driver:R_0805_HandSolder | 1=HOST_MOSI<br>2=SI0 |
+| R41 | 33 ohm | 0805W8F330JT5E | Driver:R_0805_HandSolder | 1=HOST_CS_M_N<br>2=CS_M_N |
+| R42 | 33 ohm | 0805W8F330JT5E | Driver:R_0805_HandSolder | 1=HOST_CS_S_N<br>2=CS_S_N |
+| R43 | 33 ohm | 0805W8F330JT5E | Driver:R_0805_HandSolder | 1=HOST_RES_N<br>2=RES_N |
+| R44 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=SCLK<br>2=GND |
+| R45 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=SI0<br>2=GND |
+| R46 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=CS_M_N<br>2=EPD_3V3 |
+| R47 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=CS_S_N<br>2=EPD_3V3 |
+| R48 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=RES_N<br>2=GND |
+| J2 | HOST DIRECT 3V3 | SH-PZ254V-2x8P | Driver:Connector_PinHeader_2.54mm__PinHeader_2x08_P2.54mm_Vertical | 1=HOST_SCLK<br>2=GND<br>3=HOST_MOSI<br>4=GND<br>5=SI1<br>6=GND<br>7=HOST_CS_M_N<br>8=GND<br>9=HOST_CS_S_N<br>10=GND<br>11=HOST_RES_N<br>12=GND<br>13=BUSY_N<br>14=GND<br>15=EPD_PWR_EN<br>16=NC |
 
 测试点清单（DNP，铜焊盘，无采购项）：
 
