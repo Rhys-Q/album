@@ -1,0 +1,29 @@
+{
+  "revision": "0.9-resistors",
+  "changed_refs": [
+    "R7",
+    "R10",
+    "R17",
+    "R19",
+    "R50"
+  ],
+  "baseline_sha256": {
+    "gdep133c02-driver.kicad_sch": "b0ead5a292ee5c37a8a52d07202ed72083f17193c4eb67c94e6ac01dba1fd8f9",
+    "power.kicad_sch": "3dbae1fc51b3ad78170cb9c6f5445731e248ecc0d28063817fe93439656e38e0",
+    "panel.kicad_sch": "3ab016269a8d06bdb523c599bdcb21a31095acd87ddaa366eb02706673ef3c5b",
+    "interface.kicad_sch": "833b15651dd9e97a0f2f30b411a7c2ec7792f7d22d66eca3964b16e768cc5f8f",
+    "gdep133c02-driver.kicad_pcb": "d40cc270f1d25dde36f328622689660ecb2259a58860c5b46418b17f89588811"
+  },
+  "checked_current_sha256": {
+    "gdep133c02-driver.kicad_sch": "07a02347f3cc5e78f1918521e42a3fd0896415dd06911ad1b1a4aabb43cd282b",
+    "power.kicad_sch": "885ba45c8b5df12759ae8e3473d8e824e199fe5e5b87359276737c8f4f86799b",
+    "panel.kicad_sch": "ac4064e79dd5a421dbfb5fca4ebd51c236073014e752e61b304afa603adc47cd",
+    "interface.kicad_sch": "031e112f30e4c019b7f7b8497113d80af5378911a0fdaebcc3904f418f576edf",
+    "gdep133c02-driver.kicad_pcb": "b050ba0975b95300fd8682bded75e581b12419dd296a619aad8962fb78e90792"
+  },
+  "footprint_positions_pads_pin_nets_layers_links": "IDENTICAL",
+  "tracks_vias_outline_and_mounts": "IDENTICAL",
+  "schematic_wires_labels_sheet_uuids": "IDENTICAL",
+  "all_symbol_uuids": "PRESERVED",
+  "notes": "Only metadata and revision updated; all five resistor footprints remain 0805; all other parts/assembly unchanged; full ERC/DRC and parity separately required."
+}

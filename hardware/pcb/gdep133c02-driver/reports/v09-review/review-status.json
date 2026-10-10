@@ -1,0 +1,49 @@
+{
+  "stage": "THREE_RESISTOR_GROUPS_AUTHORIZED_OTHER_EXCEPTIONS_RETAINED",
+  "created_at": "2026-10-10T21:28:39.896661+08:00",
+  "baseline": "0.8-cost",
+  "baseline_groups": 37,
+  "assembled": 104,
+  "physical_top_smd": 102,
+  "tht": 2,
+  "existing_basic_groups": 7,
+  "restoration_candidates": {
+    "C407467": "C17521",
+    "C2989258": "C17539",
+    "C881377": "C17667"
+  },
+  "proposed_basic_groups": 9,
+  "pending_exception_groups": 25,
+  "retail_candidate_rows": 806,
+  "queried_domestic_records": 806,
+  "query_errors": 20,
+  "smt_preferred_fee_status": "all 35 baseline SMD groups verified in native SMT search; Q7 stock=0",
+  "proposed_preferred_groups": 1,
+  "proposed_free_groups": 10,
+  "smt_search_records": 42,
+  "changed_cad": true,
+  "v09_released": true,
+  "baseline_cad_sha256": {
+    "gdep133c02-driver.kicad_sch": "b0ead5a292ee5c37a8a52d07202ed72083f17193c4eb67c94e6ac01dba1fd8f9",
+    "gdep133c02-driver.kicad_pro": "6214e7724aab9520a9bd7d77fc4a193c4e738bdb42ec7c624bff639304b6b555",
+    "power.kicad_sch": "3dbae1fc51b3ad78170cb9c6f5445731e248ecc0d28063817fe93439656e38e0",
+    "panel.kicad_sch": "3ab016269a8d06bdb523c599bdcb21a31095acd87ddaa366eb02706673ef3c5b",
+    "interface.kicad_sch": "833b15651dd9e97a0f2f30b411a7c2ec7792f7d22d66eca3964b16e768cc5f8f",
+    "gdep133c02-driver.kicad_dru": "0b6301cbabf5e998590617a47060083c8ccb09e53576f275c2c0e23e3b76d9bc",
+    "gdep133c02-driver.kicad_pcb": "d40cc270f1d25dde36f328622689660ecb2259a58860c5b46418b17f89588811",
+    "design-data.json": "f7bb182b3e4b53f6d873870ec438386cb8851cf7db5c042eaec81f165303fbbc"
+  },
+  "proposed_free_fitted_parts": 27,
+  "recommended_machine_parts": 30,
+  "recommended_manual_parts": 74,
+  "assembly_decisions_frozen": false,
+  "authorized_refs": [
+    "R10",
+    "R19",
+    "R17",
+    "R50",
+    "R7"
+  ],
+  "current_release": "releases/jlc-cn-review-v0.9-resistors-2026-10-10",
+  "scope": "only three resistor groups frozen and published; other 25 exception groups and all-SMD assembly retained from v0.8"
+}

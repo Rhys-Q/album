@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-09",
+  "market": "domestic szlcsc.com",
+  "records": [
+    {
+      "code": "C6628419",
+      "url": "https://item.szlcsc.com/7583380.html",
+      "mpn": "PJA3433_R1_00001",
+      "stock": 0,
+      "buy_multiple": 5,
+      "has_stock": "no",
+      "page_sha256": "b2091cf6f7738b7967c80beaa673eff87e4d5557fbe832555e2db876b6ad78fa"
+    },
+    {
+      "code": "C6357487",
+      "url": "https://item.szlcsc.com/7306678.html",
+      "mpn": "PJA3433-AU_R1_000A1",
+      "stock": 0,
+      "buy_multiple": 1,
+      "has_stock": "no",
+      "page_sha256": "08221e2b6c9ebff12cfd6cf20092c37efeb33602433463549912576880f6097d"
+    },
+    {
+      "code": "C545575",
+      "url": "https://item.szlcsc.com/566724.html",
+      "mpn": "SI2303",
+      "stock": 9941,
+      "buy_multiple": 20,
+      "has_stock": "yes",
+      "page_sha256": "e768702971026b725bb25d0b5d23885454177f42baff868e757a19800f7c2a21"
+    },
+    {
+      "code": "C5337195",
+      "url": "https://item.szlcsc.com/6103351.html",
+      "mpn": "BSS308PE-HXY",
+      "stock": 1436,
+      "buy_multiple": 10,
+      "has_stock": "yes",
+      "page_sha256": "8f9b747d53da52f0faf3b502af0e80d73ccc04117e7ca8fd24202dfb5a2e90df"
+    },
+    {
+      "code": "C5224069",
+      "url": "https://item.szlcsc.com/5925250.html",
+      "mpn": "DMP31D0U-7",
+      "stock": 1,
+      "buy_multiple": 5,
+      "has_stock": "no",
+      "page_sha256": "baa5182b6f9912bc1ce4d74ce5f29778e518a6d38ef76d3044d8e4552de25c8e"
+    }
+  ],
+  "decision": "No qualified direct replacement; CAD and v0.7 release unchanged",
+  "datasheets": {
+    "UMW SI2303": "https://datasheet.lcsc.com/datasheet/pdf/02aa239c720b83618fe1d3f97e2bb880.pdf?productCode=C545575",
+    "BSS308PE-HXY": "https://datasheet.lcsc.com/datasheet/pdf/88b3bb70d7f735005cb99581ae99e480.pdf?productCode=C5337195"
+  }
+}

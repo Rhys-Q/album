@@ -1,0 +1,140 @@
+{
+  "scope": "three resistor groups only",
+  "change": {
+    "R10": "C17521",
+    "R19": "C17521",
+    "R17": "C17539",
+    "R50": "C17539",
+    "R7": "C17667"
+  },
+  "notes": {
+    "C17521": "2.2Ω 0805 125mW 150V 200ppm/℃; tolerance restored 0.5% to reference 1%; pulse bench test pending",
+    "C17539": "200kΩ 0805 1% 125mW 150V; TCR restored 50 to 100ppm/℃; total400k unchanged; drift tradeoff documented",
+    "C17667": "4.3kΩ 0805 1% 125mW 150V 100ppm/℃; same pad and ratings; SMT preferred fee waiver explicitly verified"
+  },
+  "stock": {
+    "C17667": {
+      "code": "C17667",
+      "identity_ok": true,
+      "captcha": false,
+      "library_evidence": "扩展库 (免换料费)",
+      "mpn": "0805W8F4301T5E",
+      "tiers": [
+        [
+          1,
+          0.0485
+        ],
+        [
+          1000,
+          0.0389
+        ],
+        [
+          5000,
+          0.0333
+        ],
+        [
+          10000,
+          0.0301
+        ],
+        [
+          50000,
+          0.0274
+        ],
+        [
+          100000,
+          0.0259
+        ]
+      ],
+      "stock": 102438,
+      "free": true,
+      "queried_at": "2026-10-10T13:18:09.034Z",
+      "url": "https://www.jlc-smt.com/lcsc/search?q=C17667",
+      "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+    },
+    "C17521": {
+      "code": "C17521",
+      "identity_ok": true,
+      "captcha": false,
+      "library_evidence": "基础库 (免换料费)",
+      "mpn": "0805W8F220KT5E",
+      "tiers": [
+        [
+          1,
+          0.0453
+        ],
+        [
+          1000,
+          0.0364
+        ],
+        [
+          5000,
+          0.0306
+        ],
+        [
+          10000,
+          0.0273
+        ],
+        [
+          50000,
+          0.0248
+        ],
+        [
+          100000,
+          0.0235
+        ]
+      ],
+      "stock": 281124,
+      "free": true,
+      "queried_at": "2026-10-10T13:26:26.075Z",
+      "url": "https://www.jlc-smt.com/lcsc/search?q=C17521",
+      "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+    },
+    "C17539": {
+      "code": "C17539",
+      "identity_ok": true,
+      "captcha": false,
+      "library_evidence": "基础库 (免换料费)",
+      "mpn": "0805W8F2003T5E",
+      "tiers": [
+        [
+          1,
+          0.034
+        ],
+        [
+          1000,
+          0.0266
+        ],
+        [
+          5000,
+          0.0218
+        ],
+        [
+          10000,
+          0.0193
+        ],
+        [
+          50000,
+          0.0171
+        ],
+        [
+          100000,
+          0.016
+        ]
+      ],
+      "stock": 652598,
+      "free": true,
+      "queried_at": "2026-10-10T13:26:27.744Z",
+      "url": "https://www.jlc-smt.com/lcsc/search?q=C17539",
+      "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+    }
+  },
+  "baseline_sha256": {
+    "gdep133c02-driver.kicad_sch": "b0ead5a292ee5c37a8a52d07202ed72083f17193c4eb67c94e6ac01dba1fd8f9",
+    "power.kicad_sch": "3dbae1fc51b3ad78170cb9c6f5445731e248ecc0d28063817fe93439656e38e0",
+    "panel.kicad_sch": "3ab016269a8d06bdb523c599bdcb21a31095acd87ddaa366eb02706673ef3c5b",
+    "interface.kicad_sch": "833b15651dd9e97a0f2f30b411a7c2ec7792f7d22d66eca3964b16e768cc5f8f",
+    "gdep133c02-driver.kicad_pcb": "d40cc270f1d25dde36f328622689660ecb2259a58860c5b46418b17f89588811",
+    "design-data.json": "f7bb182b3e4b53f6d873870ec438386cb8851cf7db5c042eaec81f165303fbbc"
+  },
+  "remaining_exceptions": "25 original model groups retained; all 102 SMD still machine BOM; Q7 stock=0"
+}

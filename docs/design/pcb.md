@@ -1,6 +1,8 @@
+> 2026-10-10 v0.8：按38组原采购总价降序审查，6组电阻及1组二极管替换、C28改为既有4.7µF/50V。104装配件/102顶面SMT，37组BOM，CAD/ERC/DRC/GUI更新通过；预计采购额259.24→234.00元，Q7国内供货仍缺口。当前release为hardware/pcb/gdep133c02-driver/releases/jlc-cn-review-v0.9-resistors-2026-10-10/；旧版本描述仅作历史记录。
+
 # GDEP133C02 相框 PCB 设计与实现方案
 
-2026-10-09 v0.6改版：普通电阻扩大0805，R17拆为R17/R50两只200kΩ，当前104个装配件；详见[改版审查](../../hardware/pcb/gdep133c02-driver/docs/国内采购与手焊改版-v0.6.md)。当前ERC/DRC/未连接/一致性为0，工程模式GUI更新预览通过，无重复新增器件；v0.6制造文件位于hardware/pcb/gdep133c02-driver/releases/jlc-cn-review-v0.6-domestic-2026-10-09，仅保留当前包。
+2026-10-09 v0.6改版：普通电阻扩大0805，R17拆为R17/R50两只200kΩ，当前104个装配件；详见[改版审查](../../hardware/pcb/gdep133c02-driver/docs/国内采购与手焊改版-v0.6.md)。当前ERC/DRC/未连接/一致性为0，工程模式GUI更新预览通过，无重复新增器件；v0.6制造文件位于hardware/pcb/gdep133c02-driver/releases/jlc-cn-review-v0.9-resistors-2026-10-10，仅保留当前包。
 
 历史v0.5实现记录（不作为当前数量/GUI验收）：P4增加R49（0Ω/0805）与TP25/TP26，R13保留在Q7栅极侧，见[GDRC调试说明](../../hardware/pcb/gdep133c02-driver/docs/gdrc-debug.md)。正式工程已改为v0.5直供手焊版，103个装配件；P1删除L4/L5，以铜线连接，并将开关后的VIN/AVDD/EPD_3V3合并为EPD_3V3；移除17只0Ω与U6/U7接口隔离，U5采用TPS22917DBVR/SOT-23-6，C36=1nF接CT与芯片VIN，J2.16 NC。三页原理图与PCB已同步、补线和重新铺铜，ERC/DRC0。本文后续厂家参考器件和历史资料表保留来源身份；本次P1改版见[直供说明](../../hardware/pcb/gdep133c02-driver/docs/p1-supply.md)。当前实装以[简化记录](../../hardware/pcb/gdep133c02-driver/docs/current-configuration.md)及[新版接口约定](../../hardware/pcb/gdep133c02-driver/docs/interface-power-state.md)为准，旧TPS22913及隔离接法不再是当前BOM。GUI当前版本实际打开已通过，硬件验收未完成，制造包仍为审阅。
 
@@ -310,7 +312,7 @@ LED 采用 GPIO 高有效点亮，默认低，串联限流电阻按 LED 压降�
 
 当前正式原理图、项目库和100×80mm四层PCB已保存。v0.6为104个装配件、26个铜测试点、134个PCB封装、319个连接引脚；2047段走线、201个过孔。In1.Cu为GND平面，顶底面铺地。FPC封装尺寸见工程核对记录。
 
-ERC/DRC、未连接、原理图一致性均为零，130个符号关联通过命令行检查，当前GUI更新预览通过，无重复新增器件。v0.6制造审阅文件位于`releases/jlc-cn-review-v0.6-domestic-2026-10-09/`，release仅保留当前v0.6包。整机主控、电池、SD、USB等下文设计属于后续集成目标，不能当作当前驱动板功能。实物配接、有效容量、功率瞬态与安全掉电尚未验收，见工程README。
+ERC/DRC、未连接、原理图一致性均为零，130个符号关联通过命令行检查，当前GUI更新预览通过，无重复新增器件。v0.6制造审阅文件位于`releases/jlc-cn-review-v0.9-resistors-2026-10-10/`，release仅保留当前v0.6包。整机主控、电池、SD、USB等下文设计属于后续集成目标，不能当作当前驱动板功能。实物配接、有效容量、功率瞬态与安全掉电尚未验收，见工程README。
 
 ### 6.2 板层与布局
 

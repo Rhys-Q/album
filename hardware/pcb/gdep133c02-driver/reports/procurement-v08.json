@@ -1,0 +1,5966 @@
+{
+  "query_window": "2026-10-09 late evening to 2026-10-10 00:02 +08:00",
+  "currency": "CNY",
+  "source": "https://list.szlcsc.com/substitute/simple/list?productCode=<C-code> POST {} (native public product lookup)",
+  "tier_quantity_rule": "startPurchasedNumber multiplied by theRatio gives actual piece threshold; productPrice is CNY per piece",
+  "products": {
+    "C77102": {
+      "productCode": "C77102",
+      "productId": "78229",
+      "productModel": "GRM32ER71H106KA12L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "10uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 870,
+      "gdWarehouseStockNumber": 870,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 37350,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.0223
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.6562
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 1.4775
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 1.2961
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 1.2523
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.226
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj162586",
+              "fileUrl": "/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C50767259": {
+      "productCode": "C50767259",
+      "productId": "53406434",
+      "productModel": "TCC1210X7R106K500MT",
+      "productGradePlateName": "CCTC(三环)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "10uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 18400,
+      "gdWarehouseStockNumber": 18400,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 19015,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.1741
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.9257
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.8192
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.6863
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.6272
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.5916
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "2025版--三环电容通用产品承认书.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C172721": {
+      "productCode": "C172721",
+      "productId": "184109",
+      "productModel": "C1210X106K050T",
+      "productGradePlateName": "IHHEC(禾伸堂)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "10uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 5014,
+      "gdWarehouseStockNumber": 5014,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 5184,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.7311
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.3648
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.2078
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 1.0119
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.9247
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.8723
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj166338",
+              "fileUrl": "/upload/public/pdf/source/20181218/C172721_07ABA3A1C2D7E9B9870089BDC15ED9B1.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C597578": {
+      "productCode": "C597578",
+      "productId": "626194",
+      "productModel": "12105C106K4T2A",
+      "productGradePlateName": "Kyocera AVX",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "10uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 12140,
+      "gdWarehouseStockNumber": 12140,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 12140,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.3348
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.1005
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 1.0001
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.847
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.7912
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.7577
+        }
+      ],
+      "datasheets": []
+    },
+    "C397310": {
+      "productCode": "C397310",
+      "productId": "378870",
+      "productModel": "GRM32DR71H335KA88L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "3.3uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 3015,
+      "gdWarehouseStockNumber": 3015,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 3073,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.8
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 2.3
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 2.08
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 1.81
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.69
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj67624",
+              "fileUrl": "/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C692313": {
+      "productCode": "C692313",
+      "productId": "724196",
+      "productModel": "FS32X335K101EGG",
+      "productGradePlateName": "PSA(信昌电陶)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "3.3uF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 5670,
+      "gdWarehouseStockNumber": 5670,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 5894,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.115
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.8973
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.804
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.6876
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.6358
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.6047
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj25233",
+              "fileUrl": "/upload/public/pdf/source/20190723/C381466_B1CCDB289216E7EE775C98769E222CFD.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C1021610": {
+      "productCode": "C1021610",
+      "productId": "1111779",
+      "productModel": "FS32X335K500EGG",
+      "productGradePlateName": "PSA(信昌电陶)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "3.3uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 4440,
+      "gdWarehouseStockNumber": 4440,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 4443,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.0456
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.8453
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.7595
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.6524
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.6047
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj267174",
+              "fileUrl": "/upload/public/pdf/source/20201217/C1021605_6B9487E329D1C90DAA836B959F285786.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C54157488": {
+      "productCode": "C54157488",
+      "productId": "57394869",
+      "productModel": "CC1210X7R50V335KN",
+      "productGradePlateName": "TORCH(火炬)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "3.3uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R",
+        "工作温度": "-55℃~+125℃"
+      },
+      "totalStockNumber": 1895,
+      "gdWarehouseStockNumber": 1895,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1895,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.0774
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.8886
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.7942
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.7234
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "CC型片式多层瓷介电容器.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260724/90BCD21B20E81306F09B30AE75DC7A13.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C88154": {
+      "productCode": "C88154",
+      "productId": "89332",
+      "productModel": "GRM32ER60J107ME20L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "100uF",
+        "精度": "±20%",
+        "额定电压": "6.3V",
+        "温度系数": "X5R"
+      },
+      "totalStockNumber": 19280,
+      "gdWarehouseStockNumber": 19280,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 19282,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.9282
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 2.6312
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 2.4862
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 2.3569
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 2.3214
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 2.3
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj49286",
+              "fileUrl": "/upload/public/pdf/source/20170116/1484561244372.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C49066": {
+      "productCode": "C49066",
+      "productId": "50074",
+      "productModel": "CL32A107MQVNNNE",
+      "productGradePlateName": "SAMSUNG(三星)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "100uF",
+        "精度": "±20%",
+        "额定电压": "6.3V",
+        "温度系数": "X5R"
+      },
+      "totalStockNumber": 9794,
+      "gdWarehouseStockNumber": 9794,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 29670,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.5679
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.1576
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.9573
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.7786
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.7295
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.7
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj310654",
+              "fileUrl": "/upload/public/pdf/source/20160218/1457707763339.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C191180": {
+      "productCode": "C191180",
+      "productId": "214276",
+      "productModel": "JMK325BJ107MM-T",
+      "productGradePlateName": "TAIYO YUDEN(太诱)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "100uF",
+        "精度": "±20%",
+        "额定电压": "6.3V",
+        "温度系数": "X5R"
+      },
+      "totalStockNumber": 1757,
+      "gdWarehouseStockNumber": 1757,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1757,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.38
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.87
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.65
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 1.37
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 1.25
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.18
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj90962",
+              "fileUrl": "/upload/public/pdf/source/20190909/C426322_488BD416A500F475FF85774A153C014C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C6120022": {
+      "productCode": "C6120022",
+      "productId": "7062728",
+      "productModel": "CGA1210X6S107M6R3RT",
+      "productGradePlateName": "HRE(芯声)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "100uF",
+        "精度": "±20%",
+        "额定电压": "6.3V",
+        "温度系数": "X6S"
+      },
+      "totalStockNumber": 1514,
+      "gdWarehouseStockNumber": 1514,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1770,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.95
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.7
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.59
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 1.46
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 1.4
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.36
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "CGA1210X6S107M6R3RT.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250915/B21E480FEB7DB25EC6851A3EEFB1C6C9.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2681320": {
+      "productCode": "C2681320",
+      "productId": "2775165",
+      "productModel": "TPS22917DBVR",
+      "productGradePlateName": "TI(德州仪器)",
+      "encapsulationModel": "SOT-23-6",
+      "paramLinkedMap": {
+        "类型": "负载开关",
+        "通道数": "1",
+        "输入控制逻辑": "高电平有效",
+        "工作电压": "0V~5.5V",
+        "最大连续电流": "2A",
+        "导通电阻": "80mΩ",
+        "功能特性": "软启动；反向电流阻断；输出放电功能",
+        "工作温度": "-40℃~+125℃"
+      },
+      "totalStockNumber": 22180,
+      "gdWarehouseStockNumber": 22180,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 24685,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.4481
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.8942
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.6568
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 1.3606
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 1.2288
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.1496
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj182281",
+              "fileUrl": null,
+              "linkAddress": "https://www.ti.com/cn/lit/ds/symlink/tps22917.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "C5359093": {
+      "productCode": "C5359093",
+      "productId": "6170961",
+      "productModel": "MX22917T23",
+      "productGradePlateName": "Wuxi Maxinmicro(无锡明芯微)",
+      "encapsulationModel": "SOT-23-6",
+      "paramLinkedMap": {
+        "类型": "负载开关",
+        "输入控制逻辑": "高电平有效",
+        "工作电压": "1V~5.5V",
+        "最大连续电流": "2A",
+        "导通电阻": "240mΩ",
+        "功能特性": "集成电荷泵；反向电流阻断；输出放电功能；软启动",
+        "工作温度": "-40℃~+125℃"
+      },
+      "totalStockNumber": 13560,
+      "gdWarehouseStockNumber": 13560,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 13567,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.3399
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2679
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.2319
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.2049
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.1833
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1725
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1073986.pdf",
+              "fileUrl": "/upload/public/pdf/source/20240313/05E0248097EFA60BC00C61CCEFEDA5D5.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C307587": {
+      "productCode": "C307587",
+      "productId": "291261",
+      "productModel": "CL32B225KBJNNNE",
+      "productGradePlateName": "SAMSUNG(三星)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "2.2uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 25,
+      "gdWarehouseStockNumber": 25,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 44,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.3489
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 2.166
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 2.0746
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1290330.pdf",
+              "fileUrl": "/upload/public/pdf/source/20241023/F9C8A2F82AD37CA4C41E315F7D5D41DA.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C153036": {
+      "productCode": "C153036",
+      "productId": "164378",
+      "productModel": "FS32X225K101EGG",
+      "productGradePlateName": "PSA(信昌电陶)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "2.2uF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 306915,
+      "gdWarehouseStockNumber": 306915,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 333796,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.5432
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.4375
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.3832
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.3157
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.3001
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2895
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj25233",
+              "fileUrl": "/upload/public/pdf/source/20190723/C381466_B1CCDB289216E7EE775C98769E222CFD.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C5449052": {
+      "productCode": "C5449052",
+      "productId": "6351015",
+      "productModel": "TCC1210X7R225K101MT",
+      "productGradePlateName": "CCTC(三环)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "2.2uF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 325,
+      "gdWarehouseStockNumber": 325,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 7546,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.5329
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.4234
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.3686
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1091037.pdf",
+              "fileUrl": "/upload/public/pdf/source/20240328/FC4FC4E8780A07971FFD36E6DDB1E3ED.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C45071203": {
+      "productCode": "C45071203",
+      "productId": "47159384",
+      "productModel": "TCC1210X7R225K500MT",
+      "productGradePlateName": "CCTC(三环)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "2.2uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 2985,
+      "gdWarehouseStockNumber": 2985,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2987,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.5014
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.4001
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.3494
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.3115
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2811
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "2025版--三环电容通用产品承认书.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C86052": {
+      "productCode": "C86052",
+      "productId": "87228",
+      "productModel": "GRM32ER71H475KA88L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "4.7uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 38750,
+      "gdWarehouseStockNumber": 38750,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 46642,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.8859
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.7323
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.6532
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.5881
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.5654
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.55
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj162586",
+              "fileUrl": "/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C56055445": {
+      "productCode": "C56055445",
+      "productId": "60220569",
+      "productModel": "CS3225X7R475K101NRK",
+      "productGradePlateName": "SAMWHA(三和)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "4.7uF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R",
+        "工作温度": "-55℃~+125℃"
+      },
+      "totalStockNumber": 5060,
+      "gdWarehouseStockNumber": 5060,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 5064,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.7943
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.6407
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.5639
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.5063
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 799,
+          "productPrice": 0.4602
+        },
+        {
+          "startPurchasedNumber": 800,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.4372
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "CS3225X7R475K101NRK_1.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260910/9B9B4A07E893F27814190E6363693CA6.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C48543515": {
+      "productCode": "C48543515",
+      "productId": "50806441",
+      "productModel": "TCC1210X7R475K500MT",
+      "productGradePlateName": "CCTC(三环)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "4.7uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 55955,
+      "gdWarehouseStockNumber": 55955,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 57808,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.7954
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.6347
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.5544
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.4941
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.4459
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.4218
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "2025版--三环电容通用产品承认书.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C381465": {
+      "productCode": "C381465",
+      "productId": "354086",
+      "productModel": "FS32X475K500EGG",
+      "productGradePlateName": "PSA(信昌电陶)",
+      "encapsulationModel": "1210",
+      "paramLinkedMap": {
+        "容值": "4.7uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 780,
+      "gdWarehouseStockNumber": 780,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 783,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.7766
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.6181
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.5388
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj25233",
+              "fileUrl": "/upload/public/pdf/source/20190723/C381466_B1CCDB289216E7EE775C98769E222CFD.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C150506": {
+      "productCode": "C150506",
+      "productId": "161844",
+      "productModel": "DMN3065LW-7",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOT-323",
+      "paramLinkedMap": {
+        "数量": "1个N沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "4A",
+        "导通电阻(RDS(on))": "85mΩ@2.5V",
+        "耗散功率(Pd)": "770mW",
+        "阈值电压(Vgs(th))": "1.5V",
+        "栅极电荷量(Qg)": "11.7nC@10V",
+        "输入电容(Ciss)": "465pF",
+        "反向传输电容(Crss)": "43.8pF",
+        "工作温度": "-55℃~+150℃",
+        "类型": "N沟道",
+        "输出电容(Coss)": "49.5pF"
+      },
+      "totalStockNumber": 355,
+      "gdWarehouseStockNumber": 355,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 7917,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.725
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.3747
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.2245
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj414307.pdf",
+              "fileUrl": "/upload/public/pdf/source/20230810/E543A40CD6CD762FC818366CFAE7D2A0.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C144313": {
+      "productCode": "C144313",
+      "productId": "155645",
+      "productModel": "TCN75AVOA713",
+      "productGradePlateName": "MICROCHIP(美国微芯)",
+      "encapsulationModel": "SOIC-8",
+      "paramLinkedMap": {
+        "检测温度": "-40℃~+125℃",
+        "精度": "±2℃",
+        "工作电压": "2.7V~5.5V",
+        "接口类型": "I2C",
+        "温度转换时间": "240ms",
+        "温度分辨率": "12bit",
+        "功能特性": "温度阈值监测；硬件比较器/独立温控输出；可配置温度输出；低功耗待机"
+      },
+      "totalStockNumber": 443,
+      "gdWarehouseStockNumber": 443,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 534,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 7.8
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 6.61
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 5.96
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 5.22
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1523573.pdf",
+              "fileUrl": "/upload/public/pdf/source/20241220/9FBC7A0389354DA8678858E9FC11B307.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2073442": {
+      "productCode": "C2073442",
+      "productId": "2165027",
+      "productModel": "WSL1206R2000FEA",
+      "productGradePlateName": "VISHAY(威世)",
+      "encapsulationModel": "1206",
+      "paramLinkedMap": {
+        "电阻类型": "采样电阻",
+        "阻值": "200mΩ",
+        "精度": "±1%",
+        "功率": "250mW",
+        "温度系数": "±75ppm/℃",
+        "安装方式": "贴片"
+      },
+      "totalStockNumber": 2124,
+      "gdWarehouseStockNumber": 2124,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2124,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 2.48
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.93
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.7
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 1.41
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 1.27
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.2
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj68819",
+              "fileUrl": "/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C42460613": {
+      "productCode": "C42460613",
+      "productId": "44545414",
+      "productModel": "MFCR1206FR200QHR",
+      "productGradePlateName": "RESI(开步睿思)",
+      "encapsulationModel": "1206",
+      "paramLinkedMap": {
+        "电阻类型": "采样电阻",
+        "阻值": "200mΩ",
+        "精度": "±1%",
+        "功率": "1W",
+        "额定电流": "5.06A",
+        "温度系数": "±50ppm/℃",
+        "安装方式": "贴片"
+      },
+      "totalStockNumber": 9150,
+      "gdWarehouseStockNumber": 9150,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 9153,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.478
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.3798
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.3307
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.2939
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.2644
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2497
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "MFCR.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250208/3A06CA7E8B567BF18D6979B88C62A0AB.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2840871": {
+      "productCode": "C2840871",
+      "productId": "3021425",
+      "productModel": "STE1206M1W0R200F",
+      "productGradePlateName": "WALTER(华德)",
+      "encapsulationModel": "1206",
+      "paramLinkedMap": {
+        "电阻类型": "采样电阻",
+        "阻值": "200mΩ",
+        "精度": "±1%",
+        "功率": "1W",
+        "温度系数": "±50ppm/℃",
+        "安装方式": "贴片"
+      },
+      "totalStockNumber": 3930,
+      "gdWarehouseStockNumber": 3930,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 3933,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.265
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2122
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.1858
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1659
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj268908",
+              "fileUrl": "/upload/public/pdf/source/20210715/C2840871_8E8AEC92D2D972A3409DE56AC0C039BD.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2932839": {
+      "productCode": "C2932839",
+      "productId": "3278466",
+      "productModel": "HoYH1206-1W-200mR-1%",
+      "productGradePlateName": "Milliohm(毫欧)",
+      "encapsulationModel": "1206",
+      "paramLinkedMap": {
+        "电阻类型": "采样电阻",
+        "阻值": "200mΩ",
+        "精度": "±1%",
+        "功率": "1W",
+        "安装方式": "贴片"
+      },
+      "totalStockNumber": 25510,
+      "gdWarehouseStockNumber": 25510,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 25511,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.6248
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.5254
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.4758
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.4385
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.333
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.3181
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj180376",
+              "fileUrl": "/upload/public/pdf/source/20211116/A510C0D8A660B2C11D153FDB54B68FB7.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C151010": {
+      "productCode": "C151010",
+      "productId": "162350",
+      "productModel": "DMP3068L-7",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "3.3A",
+        "导通电阻(RDS(on))": "165mΩ@2.5V",
+        "耗散功率(Pd)": "1.2W",
+        "栅极电荷量(Qg)": "15.9nC@10V",
+        "输入电容(Ciss)": "708pF",
+        "反向传输电容(Crss)": "47pF",
+        "工作温度": "-55℃~+150℃",
+        "类型": "P沟道",
+        "输出电容(Coss)": "57pF"
+      },
+      "totalStockNumber": 22705,
+      "gdWarehouseStockNumber": 22705,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 23119,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.3727
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.1187
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.0098
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.874
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.7696
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.7333
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj415335.pdf",
+              "fileUrl": "/upload/public/pdf/source/20230810/CFF3BD81081388A4EBB6EC3A6D059219.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C5342419": {
+      "productCode": "C5342419",
+      "productId": "6117986",
+      "productModel": "TPM3407AS3",
+      "productGradePlateName": "TECH PUBLIC(台舟)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "4.1A",
+        "导通电阻(RDS(on))": "55mΩ@10V",
+        "耗散功率(Pd)": "1.51W",
+        "阈值电压(Vgs(th))": "1.5V",
+        "栅极电荷量(Qg)": "6.8nC@10V",
+        "输入电容(Ciss)": "580pF",
+        "反向传输电容(Crss)": "74pF",
+        "工作温度": "-55℃~+150℃",
+        "输出电容(Coss)": "98pF"
+      },
+      "totalStockNumber": 1350,
+      "gdWarehouseStockNumber": 1350,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1351,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2395
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2337
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.2299
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.226
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "TECH PUBLIC(台舟)场效应管(MOSFET)规格书",
+              "fileUrl": "/upload/public/pdf/source/20230105/F37E9F29D4810D231F8521EED8C0A6E6.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C52437602": {
+      "productCode": "C52437602",
+      "productId": "55308935",
+      "productModel": "3401A-TD",
+      "productGradePlateName": "TDSEMIC(拓电半导体)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "4A",
+        "导通电阻(RDS(on))": "47mΩ@10V",
+        "耗散功率(Pd)": "1.2W",
+        "阈值电压(Vgs(th))": "950mV",
+        "栅极电荷量(Qg)": "6.5nC",
+        "输入电容(Ciss)": "553pF",
+        "反向传输电容(Crss)": "35pF",
+        "工作温度": "-55℃~+150℃",
+        "类型": "P沟道",
+        "输出电容(Coss)": "57pF",
+        "栅极电压(Vgs)": "±12V"
+      },
+      "totalStockNumber": 10970,
+      "gdWarehouseStockNumber": 10970,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 10971,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2329
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1846
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.1605
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.1424
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.1279
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1207
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "3401A-TD.pdf",
+              "fileUrl": "/upload/public/pdf/source/20251105/BD79094269DB2053E732815C71E7913C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C55318446": {
+      "productCode": "C55318446",
+      "productId": "59241846",
+      "productModel": "SLDMP3098L",
+      "productGradePlateName": "Slkor(萨科微)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "3.8A",
+        "导通电阻(RDS(on))": "70mΩ@10V",
+        "耗散功率(Pd)": "1.05W",
+        "阈值电压(Vgs(th))": "2.5V",
+        "栅极电荷量(Qg)": "1.65nC@10V",
+        "输入电容(Ciss)": "366pF",
+        "反向传输电容(Crss)": "45pF",
+        "工作温度": "-55℃~+150℃",
+        "类型": "P沟道",
+        "输出电容(Coss)": "60pF"
+      },
+      "totalStockNumber": 50,
+      "gdWarehouseStockNumber": 50,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 50,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1835
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1794
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1768
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "SLDMP3098L  SOT-23.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260728/F4BEAF57E014D298D46385D8337DC27D.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C137518": {
+      "productCode": "C137518",
+      "productId": "148834",
+      "productModel": "RC0805FR-074K3L",
+      "productGradePlateName": "YAGEO(国巨)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "4.3kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 3000,
+      "gdWarehouseStockNumber": 3000,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 3076,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0612
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0549
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0512
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "PYu-RC_Group_51_RoHS_L_12.pdf.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C881377": {
+      "productCode": "C881377",
+      "productId": "944292",
+      "productModel": "CR0805F4K30P05Z",
+      "productGradePlateName": "EVER OHMS(天二科技)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "4.3kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 1200,
+      "gdWarehouseStockNumber": 1200,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1268,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0123
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0091
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0074
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1740539.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250725/88D6B0FBDD5EA0CBAC61CDC8208240BE.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C5140903": {
+      "productCode": "C5140903",
+      "productId": "5754984",
+      "productModel": "SC0805F4301F4ANRH",
+      "productGradePlateName": "Sunway(信维通信)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "4.3kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 100,
+      "gdWarehouseStockNumber": 100,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 147,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0107
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.008
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0064
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj156051",
+              "fileUrl": "/upload/public/pdf/source/20220728/FFCE43BB6DF8FA16AEE331F0F4B289DE.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C101723": {
+      "productCode": "C101723",
+      "productId": "102938",
+      "productModel": "CR0805F84301G",
+      "productGradePlateName": "LIZ(丽智电子)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "4.3kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+125℃"
+      },
+      "totalStockNumber": 800,
+      "gdWarehouseStockNumber": 800,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1110,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0125
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0098
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0076
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj53627",
+              "fileUrl": "/upload/public/pdf/source/20180403/C189438_6D658388CC7843F35BBC9018D03F0B8E.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C151335": {
+      "productCode": "C151335",
+      "productId": "162675",
+      "productModel": "MBR230S1F-7",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOD-123F",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "420mV@2A",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "2A",
+        "反向电流(Ir)": "1mA@30V",
+        "工作结温范围": "-55℃~+125℃",
+        "非重复峰值浪涌电流 (Ifsm)": "30A"
+      },
+      "totalStockNumber": 41295,
+      "gdWarehouseStockNumber": 41295,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 41298,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.1404
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.9261
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.8342
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.7196
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.6686
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.638
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj05121",
+              "fileUrl": "/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C52747979": {
+      "productCode": "C52747979",
+      "productId": "55639201",
+      "productModel": "PMEG3020EH-FS",
+      "productGradePlateName": "FUXINSEMI(富芯森美)",
+      "encapsulationModel": "SOD-123F",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "450mV@2A",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "2A",
+        "反向电流(Ir)": "200uA@30V",
+        "工作结温范围": "-55℃~+125℃",
+        "非重复峰值浪涌电流 (Ifsm)": "40A"
+      },
+      "totalStockNumber": 2490,
+      "gdWarehouseStockNumber": 2490,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2490,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.3421
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2725
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2377
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1831325.pdf",
+              "fileUrl": "/upload/public/pdf/source/20251229/C6B81931C88F2F0B2F3612A599533102.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C509951": {
+      "productCode": "C509951",
+      "productId": "523768",
+      "productModel": "RBR2MM30ATR",
+      "productGradePlateName": "ROHM(罗姆)",
+      "encapsulationModel": "SOD-123F",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "530mV@2A",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "2A",
+        "反向电流(Ir)": "50uA@30V",
+        "非重复峰值浪涌电流 (Ifsm)": "30A"
+      },
+      "totalStockNumber": 240,
+      "gdWarehouseStockNumber": 240,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 244,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.939
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.736
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.6491
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj236529",
+              "fileUrl": "/upload/public/pdf/source/20230201/4B7A4D7E339F7D48BC52EC27720A9360.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C509950": {
+      "productCode": "C509950",
+      "productId": "523767",
+      "productModel": "RBR2MM30ATFTR",
+      "productGradePlateName": "ROHM(罗姆)",
+      "encapsulationModel": "SOD-123F",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "530mV@2A",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "2A",
+        "反向电流(Ir)": "50uA@30V",
+        "非重复峰值浪涌电流 (Ifsm)": "30A"
+      },
+      "totalStockNumber": 1115,
+      "gdWarehouseStockNumber": 1115,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1117,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.3398
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.3314
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.3258
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.3202
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj236529",
+              "fileUrl": "/upload/public/pdf/source/20230201/4B7A4D7E339F7D48BC52EC27720A9360.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C1745": {
+      "productCode": "C1745",
+      "productId": "2097",
+      "productModel": "0805B473K500NT",
+      "productGradePlateName": "FH(风华)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "47nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 54950,
+      "gdWarehouseStockNumber": 54950,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 59735,
+      "productStockStatus": "yes",
+      "theRatio": 50,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1098
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0888
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 79,
+          "productPrice": 0.0772
+        },
+        {
+          "startPurchasedNumber": 80,
+          "endPurchasedNumber": 479,
+          "productPrice": 0.0638
+        },
+        {
+          "startPurchasedNumber": 480,
+          "endPurchasedNumber": 959,
+          "productPrice": 0.0578
+        },
+        {
+          "startPurchasedNumber": 960,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0545
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1946456.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260730/02F3503A6D76391150EDFB346112EFA5.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17490": {
+      "productCode": "C17490",
+      "productId": "18178",
+      "productModel": "0805W8F1602T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "16kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 252600,
+      "gdWarehouseStockNumber": 252600,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 287013,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0497
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0403
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.035
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0318
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0291
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0276
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2774511": {
+      "productCode": "C2774511",
+      "productId": "2912966",
+      "productModel": "HP05W3F1602T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "16kΩ",
+        "精度": "±1%",
+        "功率": "333mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 400,
+      "gdWarehouseStockNumber": 400,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 400,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0223
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0168
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0139
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1763421.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250917/FB799F7A765F4230017C2D4B5BB7ABC1.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17521": {
+      "productCode": "C17521",
+      "productId": "18209",
+      "productModel": "0805W8F220KT5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "2.2Ω",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±200ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 64000,
+      "gdWarehouseStockNumber": 64000,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 282095,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0453
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0364
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0306
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0276
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0251
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0237
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C407467": {
+      "productCode": "C407467",
+      "productId": "396024",
+      "productModel": "0805W8D220KT5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "2.2Ω",
+        "精度": "±0.5%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±200ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 4450,
+      "gdWarehouseStockNumber": 4450,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 4450,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0713
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0564
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0482
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0432
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0389
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0366
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C86043": {
+      "productCode": "C86043",
+      "productId": "87219",
+      "productModel": "GRM21BR71H474KA88L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "470nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 8690,
+      "gdWarehouseStockNumber": 8690,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 8699,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.4347
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.3578
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.3194
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.2906
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2676
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj162586",
+              "fileUrl": "/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C376993": {
+      "productCode": "C376993",
+      "productId": "349352",
+      "productModel": "TCC0805X7R474K500DT",
+      "productGradePlateName": "CCTC(三环)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "470nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 12080,
+      "gdWarehouseStockNumber": 12080,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 12096,
+      "productStockStatus": "yes",
+      "theRatio": 20,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.129
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0993
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.0828
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.0729
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0643
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "2025版--三环电容通用产品承认书.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2229498": {
+      "productCode": "C2229498",
+      "productId": "2321576",
+      "productModel": "CS0805KKX7R9BB474",
+      "productGradePlateName": "YAGEO(国巨)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "470nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 3020,
+      "gdWarehouseStockNumber": 3020,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 3020,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2593
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2064
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.1799
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1601
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1389539.pdf",
+              "fileUrl": "/upload/public/pdf/source/20241031/BFF9FD2323F8CB7A2AB882ECE015234E.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C340300": {
+      "productCode": "C340300",
+      "productId": "317640",
+      "productModel": "C0805X474K050T",
+      "productGradePlateName": "IHHEC(禾伸堂)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "470nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 1019,
+      "gdWarehouseStockNumber": 1019,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1019,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2044
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1569
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 149,
+          "productPrice": 0.1305
+        },
+        {
+          "startPurchasedNumber": 150,
+          "endPurchasedNumber": 449,
+          "productPrice": 0.1147
+        },
+        {
+          "startPurchasedNumber": 450,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.101
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj62356",
+              "fileUrl": "/upload/public/pdf/source/20190313/C374174_331C86E4A68CC9C732DA87186AAF7F8A.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C29925": {
+      "productCode": "C29925",
+      "productId": "30679",
+      "productModel": "0805CG102J500NT",
+      "productGradePlateName": "FH(风华)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "1nF",
+        "精度": "±5%",
+        "额定电压": "50V",
+        "温度系数": "C0G"
+      },
+      "totalStockNumber": 147500,
+      "gdWarehouseStockNumber": 147500,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 155224,
+      "productStockStatus": "yes",
+      "theRatio": 50,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0838
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0679
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 79,
+          "productPrice": 0.0591
+        },
+        {
+          "startPurchasedNumber": 80,
+          "endPurchasedNumber": 479,
+          "productPrice": 0.0482
+        },
+        {
+          "startPurchasedNumber": 480,
+          "endPurchasedNumber": 959,
+          "productPrice": 0.0437
+        },
+        {
+          "startPurchasedNumber": 960,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0412
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1946456.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260730/02F3503A6D76391150EDFB346112EFA5.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C94514": {
+      "productCode": "C94514",
+      "productId": "95712",
+      "productModel": "MMBT3904-7-F",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "NPN",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "310mW",
+        "直流电流增益(hFE)": "100",
+        "特征频率(fT)": "300MHz",
+        "集电极截止电流(Icbo)": "50nA",
+        "集射极饱和电压(VCE(sat))": "200mV",
+        "工作温度": "-55℃~+150℃",
+        "射基极击穿电压(Vebo)": "6V",
+        "数量": "1个NPN"
+      },
+      "totalStockNumber": 262810,
+      "gdWarehouseStockNumber": 262810,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 265574,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.3922
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.3201
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.2841
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.2571
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.2355
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2247
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj415852.pdf",
+              "fileUrl": "/upload/public/pdf/source/20230810/4AD110B3C3E81E2CEF5971F860B34099.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C18536": {
+      "productCode": "C18536",
+      "productId": "19236",
+      "productModel": "2N3904S-RTK/PS",
+      "productGradePlateName": "KEC",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "NPN",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "350mW",
+        "直流电流增益(hFE)": "100",
+        "特征频率(fT)": "300MHz",
+        "集电极截止电流(Icbo)": "50nA",
+        "集射极饱和电压(VCE(sat))": "300mV",
+        "射基极击穿电压(Vebo)": "6V",
+        "数量": "1个NPN"
+      },
+      "totalStockNumber": 171775,
+      "gdWarehouseStockNumber": 171775,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 171780,
+      "productStockStatus": "yes",
+      "theRatio": 25,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0709
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0563
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 119,
+          "productPrice": 0.0482
+        },
+        {
+          "startPurchasedNumber": 120,
+          "endPurchasedNumber": 479,
+          "productPrice": 0.0385
+        },
+        {
+          "startPurchasedNumber": 480,
+          "endPurchasedNumber": 959,
+          "productPrice": 0.0343
+        },
+        {
+          "startPurchasedNumber": 960,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.032
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj231859",
+              "fileUrl": "/upload/public/pdf/source/20180105/C112667_15151500846781234146.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C51953474": {
+      "productCode": "C51953474",
+      "productId": "54682184",
+      "productModel": "MMBT3904",
+      "productGradePlateName": "CCX(晁禾)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "NPN",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "200mW",
+        "直流电流增益(hFE)": "300",
+        "特征频率(fT)": "300MHz",
+        "集电极截止电流(Icbo)": "100nA",
+        "集射极饱和电压(VCE(sat))": "300mV",
+        "工作温度": "-55℃~+150℃",
+        "射基极击穿电压(Vebo)": "6V",
+        "数量": "1个NPN",
+        "配置": "独立式"
+      },
+      "totalStockNumber": 107390,
+      "gdWarehouseStockNumber": 107390,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 107390,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0614
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0485
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.0413
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.037
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.0332
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0312
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1782531.pdf",
+              "fileUrl": "/upload/public/pdf/source/20251107/11FB0E7266BA483B961BFC60A4E26F71.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C5184430": {
+      "productCode": "C5184430",
+      "productId": "5849866",
+      "productModel": "MMBT4401",
+      "productGradePlateName": "HXY MOSFET(华轩阳电子)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "NPN",
+        "集电极电流(Ic)": "600mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "300mW",
+        "直流电流增益(hFE)": "100",
+        "特征频率(fT)": "250MHz",
+        "集电极截止电流(Icbo)": "100nA",
+        "集射极饱和电压(VCE(sat))": "400mV",
+        "射基极击穿电压(Vebo)": "6V",
+        "数量": "1个NPN",
+        "配置": "独立式"
+      },
+      "totalStockNumber": 2580,
+      "gdWarehouseStockNumber": 2580,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2588,
+      "productStockStatus": "yes",
+      "theRatio": 20,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1107
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0881
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 149,
+          "productPrice": 0.0755
+        },
+        {
+          "startPurchasedNumber": 150,
+          "endPurchasedNumber": 449,
+          "productPrice": 0.0597
+        },
+        {
+          "startPurchasedNumber": 450,
+          "endPurchasedNumber": 1049,
+          "productPrice": 0.0532
+        },
+        {
+          "startPurchasedNumber": 1050,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0497
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1766394.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250918/66A3CC5C82AAF34209E99F6F6C490544.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C82762": {
+      "productCode": "C82762",
+      "productId": "83922",
+      "productModel": "MMBT3906-7-F",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "PNP",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "350mW",
+        "直流电流增益(hFE)": "100",
+        "特征频率(fT)": "250MHz",
+        "集电极截止电流(Icbo)": "50nA",
+        "集射极饱和电压(VCE(sat))": "400mV",
+        "工作温度": "-55℃~+150℃",
+        "射基极击穿电压(Vebo)": "6V",
+        "数量": "1个PNP"
+      },
+      "totalStockNumber": 37810,
+      "gdWarehouseStockNumber": 37810,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 38022,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.3728
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2938
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.2544
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.2248
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.2011
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1892
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "DIODES(美台)三极管(BJT)规格书",
+              "fileUrl": "/upload/public/pdf/source/20221028/DE85DC0248B2C64D4CE838286525BEA1.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C75549": {
+      "productCode": "C75549",
+      "productId": "76674",
+      "productModel": "MMBT3906,215",
+      "productGradePlateName": "Nexperia(安世)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "PNP",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "250mW",
+        "直流电流增益(hFE)": "100",
+        "特征频率(fT)": "250MHz",
+        "集电极截止电流(Icbo)": "50nA",
+        "集射极饱和电压(VCE(sat))": "400mV",
+        "工作温度": "-65℃~+150℃",
+        "射基极击穿电压(Vebo)": "6V",
+        "数量": "1个PNP",
+        "配置": "独立式"
+      },
+      "totalStockNumber": 96700,
+      "gdWarehouseStockNumber": 96700,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 96709,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2247
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.176
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.1517
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.1334
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.1188
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1115
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1203624.pdf",
+              "fileUrl": "/upload/public/pdf/source/20240724/46F9F96B4A131DA38CEAAA60D4751767.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C305435": {
+      "productCode": "C305435",
+      "productId": "289764",
+      "productModel": "MMBT3906",
+      "productGradePlateName": "BLUE ROCKET(蓝箭)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "PNP",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "300mW",
+        "直流电流增益(hFE)": "100",
+        "特征频率(fT)": "250MHz",
+        "集电极截止电流(Icbo)": "50nA",
+        "集射极饱和电压(VCE(sat))": "400mV",
+        "射基极击穿电压(Vebo)": "5V",
+        "数量": "1个PNP"
+      },
+      "totalStockNumber": 84600,
+      "gdWarehouseStockNumber": 84600,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 84602,
+      "productStockStatus": "yes",
+      "theRatio": 50,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0386
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 59,
+          "productPrice": 0.0335
+        },
+        {
+          "startPurchasedNumber": 60,
+          "endPurchasedNumber": 119,
+          "productPrice": 0.0306
+        },
+        {
+          "startPurchasedNumber": 120,
+          "endPurchasedNumber": 479,
+          "productPrice": 0.0288
+        },
+        {
+          "startPurchasedNumber": 480,
+          "endPurchasedNumber": 1019,
+          "productPrice": 0.0273
+        },
+        {
+          "startPurchasedNumber": 1020,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0265
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj120225",
+              "fileUrl": "/upload/public/pdf/source/20181015/C305435_C08D1E4C1058FD1ED6655BEFE6DED1D2.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C51953475": {
+      "productCode": "C51953475",
+      "productId": "54682185",
+      "productModel": "MMBT3906",
+      "productGradePlateName": "CCX(晁禾)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "晶体管类型": "PNP",
+        "集电极电流(Ic)": "200mA",
+        "集射极击穿电压(Vceo)": "40V",
+        "耗散功率(Pd)": "200mW",
+        "直流电流增益(hFE)": "300",
+        "特征频率(fT)": "300MHz",
+        "集电极截止电流(Icbo)": "100nA",
+        "集射极饱和电压(VCE(sat))": "300mV",
+        "工作温度": "-55℃~+150℃",
+        "射基极击穿电压(Vebo)": "5V",
+        "数量": "1个PNP",
+        "配置": "独立式"
+      },
+      "totalStockNumber": 10310,
+      "gdWarehouseStockNumber": 10310,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 10653,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0511
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0407
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.0349
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.0315
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.0285
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0269
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1782532.pdf",
+              "fileUrl": "/upload/public/pdf/source/20251107/37AA7C3096C22C232E780A0E6132389C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C124188": {
+      "productCode": "C124188",
+      "productId": "125463",
+      "productModel": "B0530W-7-F",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOD-123",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "430mV@500mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "500mA",
+        "反向电流(Ir)": "130uA@30V",
+        "工作结温范围": "-65℃~+125℃",
+        "非重复峰值浪涌电流 (Ifsm)": "5.9A"
+      },
+      "totalStockNumber": 10760,
+      "gdWarehouseStockNumber": 10760,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 10761,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.7363
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.5757
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.4954
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.4352
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.3788
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.3547
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1544379.pdf",
+              "fileUrl": "/upload/public/pdf/source/20241225/E2605F86CBDD833A242C4ED6CC4B6ED3.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C360773": {
+      "productCode": "C360773",
+      "productId": "335560",
+      "productModel": "SS0530_R1_00001",
+      "productGradePlateName": "PANJIT(强茂)",
+      "encapsulationModel": "SOD-123",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "430mV@500mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "500mA",
+        "反向电流(Ir)": "20uA@15V",
+        "工作结温范围": "-55℃~+125℃",
+        "非重复峰值浪涌电流 (Ifsm)": "5.5A"
+      },
+      "totalStockNumber": 2230,
+      "gdWarehouseStockNumber": 2230,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2230,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2507
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2001
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1748
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj87348",
+              "fileUrl": "/upload/public/pdf/source/20190107/C360773_364288997EFAD0C13F66BAC47B0856A2.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C7502708": {
+      "productCode": "C7502708",
+      "productId": "8589425",
+      "productModel": "B0530W",
+      "productGradePlateName": "R+O(宏嘉诚)",
+      "encapsulationModel": "SOD-123",
+      "paramLinkedMap": {
+        "二极管配置": "独立式",
+        "正向压降(Vf)": "430mV@500mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "500mA",
+        "反向电流(Ir)": "130uA",
+        "工作结温范围": "-55℃~+125℃",
+        "非重复峰值浪涌电流 (Ifsm)": "5.5A"
+      },
+      "totalStockNumber": 29120,
+      "gdWarehouseStockNumber": 29120,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 29153,
+      "productStockStatus": "yes",
+      "theRatio": 20,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1195
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0974
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 149,
+          "productPrice": 0.0852
+        },
+        {
+          "startPurchasedNumber": 150,
+          "endPurchasedNumber": 449,
+          "productPrice": 0.0778
+        },
+        {
+          "startPurchasedNumber": 450,
+          "endPurchasedNumber": 1049,
+          "productPrice": 0.0715
+        },
+        {
+          "startPurchasedNumber": 1050,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.068
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "B0520W THRU B0540W_Rev2.0.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250624/3BA4F928D35571B2257275F8EB18070E.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C52191398": {
+      "productCode": "C52191398",
+      "productId": "55017682",
+      "productModel": "MBR130W",
+      "productGradePlateName": "CBI(创基)",
+      "encapsulationModel": "SOD-123",
+      "paramLinkedMap": {
+        "二极管配置": "1个独立式",
+        "正向压降(Vf)": "350mV@100mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "1A",
+        "反向电流(Ir)": "200uA@30V",
+        "工作结温范围": "-65℃~+125℃",
+        "非重复峰值浪涌电流 (Ifsm)": "5.5A"
+      },
+      "totalStockNumber": 2520,
+      "gdWarehouseStockNumber": 2520,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2520,
+      "productStockStatus": "yes",
+      "theRatio": 20,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1236
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0956
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.08
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "MBR130W_SOD123.pdf",
+              "fileUrl": "/upload/public/pdf/source/20251027/FA9B3EEE95B47F35033A6A67C43E60CB.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C149504": {
+      "productCode": "C149504",
+      "productId": "160838",
+      "productModel": "0805W8F1003T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "100kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 2236900,
+      "gdWarehouseStockNumber": 2236900,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 3964881,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0361
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0286
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0248
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0223
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0213
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0206
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C83574": {
+      "productCode": "C83574",
+      "productId": "84739",
+      "productModel": "BAT54S-7-F",
+      "productGradePlateName": "DIODES(美台)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "二极管配置": "1对串联式",
+        "正向压降(Vf)": "800mV@100mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "200mA",
+        "反向电流(Ir)": "2uA@25V",
+        "非重复峰值浪涌电流 (Ifsm)": "600mA"
+      },
+      "totalStockNumber": 14260,
+      "gdWarehouseStockNumber": 14260,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 14264,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.7044
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.5855
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.526
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.4814
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.4268
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.409
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj981785.pdf",
+              "fileUrl": "/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C19726": {
+      "productCode": "C19726",
+      "productId": "20435",
+      "productModel": "BAT54SLT1G",
+      "productGradePlateName": "onsemi(安森美)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "二极管配置": "1对串联式",
+        "正向压降(Vf)": "800mV@100mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "200mA",
+        "反向电流(Ir)": "2uA@25V",
+        "工作结温范围": "-55℃~+150℃"
+      },
+      "totalStockNumber": 173616,
+      "gdWarehouseStockNumber": 173616,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 173616,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1551
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1151
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0973
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.084
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0786
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0751
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj351716",
+              "fileUrl": "/upload/public/pdf/source/20140815/1457707218410.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C7507575": {
+      "productCode": "C7507575",
+      "productId": "8598640",
+      "productModel": "BAT54SW-QX",
+      "productGradePlateName": "Nexperia(安世)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "二极管配置": "1对串联式",
+        "正向压降(Vf)": "800mV@100mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "200mA",
+        "工作结温范围": "-65℃~+150℃",
+        "非重复峰值浪涌电流 (Ifsm)": "600mA"
+      },
+      "totalStockNumber": 1230,
+      "gdWarehouseStockNumber": 1230,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1237,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1617
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1572
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.1543
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1513
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj430156.pdf",
+              "fileUrl": "/upload/public/pdf/source/20230814/95E9EFF26556995C14F38C534B5AC4D9.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2944161": {
+      "productCode": "C2944161",
+      "productId": "3330066",
+      "productModel": "BAT54S",
+      "productGradePlateName": "KUU",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "二极管配置": "1对串联式",
+        "正向压降(Vf)": "1V@100mA",
+        "直流反向耐压(Vr)": "30V",
+        "整流电流": "200mA",
+        "反向电流(Ir)": "2uA@25V"
+      },
+      "totalStockNumber": 2040,
+      "gdWarehouseStockNumber": 2040,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2046,
+      "productStockStatus": "yes",
+      "theRatio": 20,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0906
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0717
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 149,
+          "productPrice": 0.0612
+        },
+        {
+          "startPurchasedNumber": 150,
+          "endPurchasedNumber": 449,
+          "productPrice": 0.0498
+        },
+        {
+          "startPurchasedNumber": 450,
+          "endPurchasedNumber": 1049,
+          "productPrice": 0.0444
+        },
+        {
+          "startPurchasedNumber": 1050,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0414
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj180506",
+              "fileUrl": "/upload/public/pdf/source/20220114/5DC51B3B0713EE4B31972D20CF9B3A07.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C137599": {
+      "productCode": "C137599",
+      "productId": "148915",
+      "productModel": "RC0805FR-07110KL",
+      "productGradePlateName": "YAGEO(国巨)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "110kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 8000,
+      "gdWarehouseStockNumber": 8000,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 8013,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.034
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0291
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0266
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "PYu-RC_Group_51_RoHS_L_12.pdf.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C54921096": {
+      "productCode": "C54921096",
+      "productId": "58459825",
+      "productModel": "HRC0805F1103FNTN",
+      "productGradePlateName": "HC(华橙熊猫)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "110kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 5000,
+      "gdWarehouseStockNumber": 5000,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 5074,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0127
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.01
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0085
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0078
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0069
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "1-HRC常规厚膜片式电阻器 V1.0.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260509/3031D3F94DFCF39A88AC9AE852DB388B.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C5140228": {
+      "productCode": "C5140228",
+      "productId": "5753305",
+      "productModel": "SCR0805F110K",
+      "productGradePlateName": "VO(翔胜)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "110kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 1200,
+      "gdWarehouseStockNumber": 1200,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1260,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.013
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0099
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0077
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj67965",
+              "fileUrl": "/upload/public/pdf/source/20220823/E5DDB4243192CD3C8AE9677163F934FF.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C54863886": {
+      "productCode": "C54863886",
+      "productId": "58361373",
+      "productModel": "CL0805FN110KPS",
+      "productGradePlateName": "昶龙科技",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "110kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 700,
+      "gdWarehouseStockNumber": 700,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 717,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0079
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0077
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0076
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "厚膜片式电阻产品规格书（A3）.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250820/866DFE91D544A34F5C28F5E37EBB1ED7.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17539": {
+      "productCode": "C17539",
+      "productId": "18227",
+      "productModel": "0805W8F2003T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "200kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 427500,
+      "gdWarehouseStockNumber": 427500,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 657954,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.034
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0266
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0218
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0193
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0171
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.016
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C2989258": {
+      "productCode": "C2989258",
+      "productId": "3448681",
+      "productModel": "TC0550F2003T5G",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "薄膜电阻",
+        "阻值": "200kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±50ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 4930,
+      "gdWarehouseStockNumber": 4930,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 4945,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0401
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0315
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0267
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0238
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "TC系列.pdf.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250704/E55D4B940A787305EBFEE524BD083243.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C86042": {
+      "productCode": "C86042",
+      "productId": "87218",
+      "productModel": "GRM21BR71H224KA01L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "220nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 8475,
+      "gdWarehouseStockNumber": 8475,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 8477,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.6756
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.5748
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.5243
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.4865
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.3513
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.3361
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj162586",
+              "fileUrl": "/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C382241": {
+      "productCode": "C382241",
+      "productId": "355105",
+      "productModel": "FM21X224K101ECG",
+      "productGradePlateName": "PSA(信昌电陶)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "220nF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 17970,
+      "gdWarehouseStockNumber": 17970,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 17972,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.489
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.3859
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.3343
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.2957
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.2647
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2492
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj64900",
+              "fileUrl": "/upload/public/pdf/source/20191129/C464973_650D2E1C0337226551311C911F3C07C2.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C7224494": {
+      "productCode": "C7224494",
+      "productId": "8193161",
+      "productModel": "C0805C224K1RECAUTO",
+      "productGradePlateName": "KEMET(基美)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "220nF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 20,
+      "gdWarehouseStockNumber": 20,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 25,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2685
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2631
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2595
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj999425.pdf",
+              "fileUrl": "/upload/public/pdf/source/20240118/C84298A3E059FCE2372B8FEB41DD7765.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C559295": {
+      "productCode": "C559295",
+      "productId": "583177",
+      "productModel": "C0805X224K101T",
+      "productGradePlateName": "IHHEC(禾伸堂)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "220nF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 19,
+      "gdWarehouseStockNumber": 19,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 19,
+      "productStockStatus": "yes",
+      "theRatio": 1,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1652
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1274
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1064
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "MVC Series 中压 100V to630V.pdf",
+              "fileUrl": "/upload/public/pdf/source/20241031/3138B665B7E55A1CDCC76568A5D87DD6.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C96345": {
+      "productCode": "C96345",
+      "productId": "97549",
+      "productModel": "RC0805JR-070RL",
+      "productGradePlateName": "YAGEO(国巨)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "0Ω",
+        "精度": "±5%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 2996000,
+      "gdWarehouseStockNumber": 2996000,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 3057319,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0325
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.026
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0216
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0194
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0176
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0165
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "PYu-RC_Group_51_RoHS_L_12.pdf.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C54921246": {
+      "productCode": "C54921246",
+      "productId": "58459975",
+      "productModel": "HRC0805J000 FNTN",
+      "productGradePlateName": "HC(华橙熊猫)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "0Ω",
+        "精度": "±5%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±400ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 150100,
+      "gdWarehouseStockNumber": 150100,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 150169,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.01
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0079
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0067
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0062
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0055
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "1-HRC常规厚膜片式电阻器 V1.0.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260509/3031D3F94DFCF39A88AC9AE852DB388B.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17477": {
+      "productCode": "C17477",
+      "productId": "18165",
+      "productModel": "0805W8F0000T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "0Ω",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±800ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 4100900,
+      "gdWarehouseStockNumber": 4100900,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 6528653,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0268
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0214
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0181
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0163
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0155
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0151
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C54921091": {
+      "productCode": "C54921091",
+      "productId": "58459820",
+      "productModel": "HRC0805F0000FNTN",
+      "productGradePlateName": "HC(华橙熊猫)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "0Ω",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 623800,
+      "gdWarehouseStockNumber": 623800,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 623838,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0127
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.01
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0085
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0078
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0069
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "1-HRC常规厚膜片式电阻器 V1.0.pdf",
+              "fileUrl": "/upload/public/pdf/source/20260509/3031D3F94DFCF39A88AC9AE852DB388B.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C3016523": {
+      "productCode": "C3016523",
+      "productId": "3528977",
+      "productModel": "SCR0805F0R",
+      "productGradePlateName": "VO(翔胜)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "0Ω",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 2800,
+      "gdWarehouseStockNumber": 2800,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2838,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.011
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0086
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0068
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj150723",
+              "fileUrl": "/upload/public/pdf/source/20220513/247AF9639BA21CF93567DC289CCC6A22.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17673": {
+      "productCode": "C17673",
+      "productId": "18361",
+      "productModel": "0805W8F4701T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "4.7kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 1665700,
+      "gdWarehouseStockNumber": 1665700,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 4776015,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0306
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0243
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.021
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0189
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0181
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0175
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17634": {
+      "productCode": "C17634",
+      "productId": "18322",
+      "productModel": "0805W8F330JT5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "33Ω",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±200ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 1168400,
+      "gdWarehouseStockNumber": 1168400,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 1519388,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0285
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0222
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0182
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0162
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0143
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0134
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C6628419": {
+      "productCode": "C6628419",
+      "productId": "7583380",
+      "productModel": "PJA3433_R1_00001",
+      "productGradePlateName": "PANJIT(强茂)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "1.1A",
+        "导通电阻(RDS(on))": "370mΩ@4.5V",
+        "耗散功率(Pd)": "1.25W",
+        "阈值电压(Vgs(th))": "1.3V",
+        "栅极电荷量(Qg)": "1.6nC@4.5V",
+        "输入电容(Ciss)": "125pF",
+        "反向传输电容(Crss)": "6pF",
+        "工作温度": "-55℃~+150℃"
+      },
+      "totalStockNumber": 0,
+      "gdWarehouseStockNumber": 0,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 0,
+      "productStockStatus": "no",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 1.9521
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 1.6065
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 1.4584
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 1.2735
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 1.1912
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 1.1418
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj1486235.pdf",
+              "fileUrl": "/upload/public/pdf/source/20241202/D532886B64955C8497B692B002C131AB.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C110725": {
+      "productCode": "C110725",
+      "productId": "111950",
+      "productModel": "PPMT30V4",
+      "productGradePlateName": "Prisemi(芯导)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "4.2A",
+        "导通电阻(RDS(on))": "60mΩ@10V",
+        "耗散功率(Pd)": "1.2W",
+        "阈值电压(Vgs(th))": "1.3V",
+        "输入电容(Ciss)": "950pF",
+        "反向传输电容(Crss)": "75pF",
+        "工作温度": "-55℃~+150℃",
+        "类型": "P沟道",
+        "输出电容(Coss)": "110pF",
+        "栅极电压(Vgs)": "±12V"
+      },
+      "totalStockNumber": 21820,
+      "gdWarehouseStockNumber": 21820,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 21827,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2319
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1821
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.1572
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.1386
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.1236
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1162
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj137327",
+              "fileUrl": "/upload/public/pdf/source/20180326/C110725_ACCB19357F67EE48A949FC45A5E3716C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C194253": {
+      "productCode": "C194253",
+      "productId": "235299",
+      "productModel": "SI3401A-TP",
+      "productGradePlateName": "MCC(美微科)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "30V",
+        "连续漏极电流(Id)": "4.2A",
+        "导通电阻(RDS(on))": "60mΩ@10V",
+        "耗散功率(Pd)": "1.3W",
+        "阈值电压(Vgs(th))": "1.3V",
+        "输入电容(Ciss)": "1.05nF",
+        "反向传输电容(Crss)": "85pF",
+        "工作温度": "-55℃~+150℃",
+        "类型": "P沟道",
+        "输出电容(Coss)": "127pF",
+        "栅极电压(Vgs)": "±12V"
+      },
+      "totalStockNumber": 4590,
+      "gdWarehouseStockNumber": 4590,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 4594,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2395
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1913
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.1672
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1492
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj62978",
+              "fileUrl": "/upload/public/pdf/source/20180823/C194253_ABE7D3534F1CED4541D60841B244EDA8.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C53100530": {
+      "productCode": "C53100530",
+      "productId": "56072076",
+      "productModel": "SI2319DDS(TP)",
+      "productGradePlateName": "TECH PUBLIC(台舟)",
+      "encapsulationModel": "SOT-23",
+      "paramLinkedMap": {
+        "数量": "1个P沟道",
+        "漏源电压(Vdss)": "40V",
+        "连续漏极电流(Id)": "3A",
+        "导通电阻(RDS(on))": "95mΩ@10V",
+        "耗散功率(Pd)": "1.25W",
+        "阈值电压(Vgs(th))": "1.5V",
+        "栅极电荷量(Qg)": "6nC",
+        "输入电容(Ciss)": "505pF",
+        "反向传输电容(Crss)": "33pF",
+        "工作温度": "-55℃~+150℃",
+        "配置": "独立式",
+        "类型": "P沟道",
+        "输出电容(Coss)": "48pF",
+        "栅极电压(Vgs)": "±20V"
+      },
+      "totalStockNumber": 5940,
+      "gdWarehouseStockNumber": 5940,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 5944,
+      "productStockStatus": "yes",
+      "theRatio": 5,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.4942
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.3886
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.3358
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.2962
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 1199,
+          "productPrice": 0.2645
+        },
+        {
+          "startPurchasedNumber": 1200,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.2486
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "SI2319DDS.pdf",
+              "fileUrl": "/upload/public/pdf/source/20251217/566845BCE273343644C19DB8869A4220.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17514": {
+      "productCode": "C17514",
+      "productId": "18202",
+      "productModel": "0805W8F1004T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "1MΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 1371800,
+      "gdWarehouseStockNumber": 1371800,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 2340671,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0264
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.021
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0171
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0153
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0137
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0129
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C77083": {
+      "productCode": "C77083",
+      "productId": "78210",
+      "productModel": "GRM21BR71H105KA12L",
+      "productGradePlateName": "muRata(村田)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "1uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 117370,
+      "gdWarehouseStockNumber": 117370,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 126169,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.2589
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.2099
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 299,
+          "productPrice": 0.1847
+        },
+        {
+          "startPurchasedNumber": 300,
+          "endPurchasedNumber": 599,
+          "productPrice": 0.1639
+        },
+        {
+          "startPurchasedNumber": 600,
+          "endPurchasedNumber": 899,
+          "productPrice": 0.1567
+        },
+        {
+          "startPurchasedNumber": 900,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1517
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj162586",
+              "fileUrl": "/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C16195091": {
+      "productCode": "C16195091",
+      "productId": "17320168",
+      "productModel": "CL21B105KBFNNNF",
+      "productGradePlateName": "SAMSUNG(三星)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "1uF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 490,
+      "gdWarehouseStockNumber": 490,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 497,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.1802
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.1765
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.1741
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj454387.pdf",
+              "fileUrl": "/upload/public/pdf/source/20230905/D39DDA0BA0838CFA92ADB7CFAD5D25DE.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C17604": {
+      "productCode": "C17604",
+      "productId": "18292",
+      "productModel": "0805W8F2001T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "2kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 3655700,
+      "gdWarehouseStockNumber": 3655700,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 5340645,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0234
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0182
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0149
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.0136
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0119
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C4310": {
+      "productCode": "C4310",
+      "productId": "4717",
+      "productModel": "0805W8F1501T5E",
+      "productGradePlateName": "UNI-ROYAL(厚声)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "电阻类型": "厚膜电阻",
+        "阻值": "1.5kΩ",
+        "精度": "±1%",
+        "功率": "125mW",
+        "工作电压": "150V",
+        "温度系数": "±100ppm/℃",
+        "工作温度": "-55℃~+155℃"
+      },
+      "totalStockNumber": 193100,
+      "gdWarehouseStockNumber": 193100,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 675557,
+      "productStockStatus": "yes",
+      "theRatio": 100,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0212
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 49,
+          "productPrice": 0.0165
+        },
+        {
+          "startPurchasedNumber": 50,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.0131
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 499,
+          "productPrice": 0.012
+        },
+        {
+          "startPurchasedNumber": 500,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0105
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj01897",
+              "fileUrl": "/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C1711": {
+      "productCode": "C1711",
+      "productId": "2063",
+      "productModel": "CL21B104KBCNNNC",
+      "productGradePlateName": "SAMSUNG(三星)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "100nF",
+        "精度": "±10%",
+        "额定电压": "50V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 426700,
+      "gdWarehouseStockNumber": 426700,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 947438,
+      "productStockStatus": "yes",
+      "theRatio": 20,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0918
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0714
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 199,
+          "productPrice": 0.0623
+        },
+        {
+          "startPurchasedNumber": 200,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.0483
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 999,
+          "productPrice": 0.0456
+        },
+        {
+          "startPurchasedNumber": 1000,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0438
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "wj310654",
+              "fileUrl": "/upload/public/pdf/source/20160218/1457707763339.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    },
+    "C344180": {
+      "productCode": "C344180",
+      "productId": "322732",
+      "productModel": "TCC0805X7R104K101DT",
+      "productGradePlateName": "CCTC(三环)",
+      "encapsulationModel": "0805",
+      "paramLinkedMap": {
+        "容值": "100nF",
+        "精度": "±10%",
+        "额定电压": "100V",
+        "温度系数": "X7R"
+      },
+      "totalStockNumber": 423980,
+      "gdWarehouseStockNumber": 423980,
+      "jsWarehouseStockNumber": 0,
+      "smtStockNumber": 436359,
+      "productStockStatus": "yes",
+      "theRatio": 10,
+      "productPriceList": [
+        {
+          "startPurchasedNumber": 1,
+          "endPurchasedNumber": 9,
+          "productPrice": 0.0653
+        },
+        {
+          "startPurchasedNumber": 10,
+          "endPurchasedNumber": 29,
+          "productPrice": 0.0503
+        },
+        {
+          "startPurchasedNumber": 30,
+          "endPurchasedNumber": 99,
+          "productPrice": 0.042
+        },
+        {
+          "startPurchasedNumber": 100,
+          "endPurchasedNumber": 399,
+          "productPrice": 0.0369
+        },
+        {
+          "startPurchasedNumber": 400,
+          "endPurchasedNumber": 799,
+          "productPrice": 0.0326
+        },
+        {
+          "startPurchasedNumber": 800,
+          "endPurchasedNumber": -1,
+          "productPrice": 0.0303
+        }
+      ],
+      "datasheets": [
+        {
+          "fileType": "pdf_property",
+          "detailVOList": [
+            {
+              "fileName": "2025版--三环电容通用产品承认书.pdf",
+              "fileUrl": "/upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+              "linkAddress": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "domestic_page_checks": [
+    {
+      "productCode": "C881377",
+      "productModel": "CR0805F4K30P05Z",
+      "stockNumber": 1268,
+      "minBuyNumber": 1,
+      "theRatio": 100,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/944292.html",
+      "bulk_price": 0.0074,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/26b4fef0e40d7756d4bc5f75532f8423.pdf?productCode=C881377",
+      "intl_moq": 100
+    },
+    {
+      "productCode": "C5140228",
+      "productModel": "SCR0805F110K",
+      "stockNumber": 1260,
+      "minBuyNumber": 1,
+      "theRatio": 100,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/5753305.html",
+      "bulk_price": 0.0077,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/04ce3139d67e70b6b0ee7061f06aa3e9.pdf?productCode=C5140228",
+      "intl_moq": 100
+    },
+    {
+      "productCode": "C2774511",
+      "productModel": "HP05W3F1602T5E",
+      "stockNumber": 400,
+      "minBuyNumber": 1,
+      "theRatio": 100,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/2912966.html",
+      "bulk_price": 0.0139,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/72ec9a363d94a6fd0729e3976f9248d5.pdf?productCode=C2774511",
+      "intl_moq": 100
+    },
+    {
+      "productCode": "C407467",
+      "productModel": "0805W8D220KT5E",
+      "stockNumber": 4450,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/396024.html",
+      "bulk_price": 0.0366,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C407467",
+      "intl_moq": 1
+    },
+    {
+      "productCode": "C2989258",
+      "productModel": "TC0550F2003T5G",
+      "stockNumber": 4938,
+      "minBuyNumber": 1,
+      "theRatio": 10,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/3448681.html",
+      "bulk_price": 0.0238,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/d0d02de47642fe4f4639912f1a5cccad.pdf?productCode=C2989258",
+      "intl_moq": 10
+    },
+    {
+      "productCode": "C17477",
+      "productModel": "0805W8F0000T5E",
+      "stockNumber": 4100954,
+      "minBuyNumber": 1,
+      "theRatio": 100,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/18165.html",
+      "bulk_price": 0.0151,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17477",
+      "intl_moq": 100
+    },
+    {
+      "productCode": "C19726",
+      "productModel": "BAT54SLT1G",
+      "stockNumber": 173616,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/20435.html",
+      "bulk_price": 0.0751,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/46cb550ea5604e38b1c44b1ec0935405.pdf?productCode=C19726",
+      "intl_moq": 1
+    },
+    {
+      "productCode": "C509950",
+      "productModel": "RBR2MM30ATFTR",
+      "stockNumber": 1117,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/523767.html",
+      "bulk_price": 0.3202,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/379e850a28cf2e030240455befd99a6d.pdf?productCode=C509950",
+      "intl_moq": 5
+    },
+    {
+      "productCode": "C5359093",
+      "productModel": "MX22917T23",
+      "stockNumber": 13567,
+      "minBuyNumber": 1,
+      "theRatio": 10,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/6170961.html",
+      "bulk_price": 0.1725,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/4124348dd26a59864c44cab701c67afb.pdf?productCode=C5359093",
+      "intl_moq": 10
+    },
+    {
+      "productCode": "C42460613",
+      "productModel": "MFCR1206FR200QHR",
+      "stockNumber": 9153,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/44545414.html",
+      "bulk_price": 0.2497,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/20a3f4fe86689d5b8dc6667972aa3137.pdf?productCode=C42460613",
+      "intl_moq": 5
+    },
+    {
+      "productCode": "C17422",
+      "productModel": "0805W8F1103T5E",
+      "stockNumber": 35531,
+      "minBuyNumber": 1,
+      "theRatio": 100,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/18110.html",
+      "bulk_price": 0.0134,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17422",
+      "intl_moq": 100
+    },
+    {
+      "productCode": "C53896892",
+      "productModel": "PCR1040-150-M",
+      "stockNumber": 414,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/57092574.html",
+      "bulk_price": 0.6246,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892",
+      "intl_moq": 5
+    },
+    {
+      "productCode": "C42410552",
+      "productModel": "TJC8-2.54-2A",
+      "stockNumber": 2577,
+      "minBuyNumber": 1,
+      "theRatio": 20,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/44387857.html",
+      "bulk_price": 0.1392,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/e9f3c2915a9e3fc695b50dadc57635c3.pdf?productCode=C42410552",
+      "intl_moq": 20
+    },
+    {
+      "productCode": "C2856839",
+      "productModel": "FPC-05FB-60PH20",
+      "stockNumber": 7660,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/3056937.html",
+      "bulk_price": 1.23,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/bb83a8cf0950fd2606a9d5c5ac50ca05.pdf?productCode=C2856839",
+      "intl_moq": 1
+    },
+    {
+      "productCode": "C55629829",
+      "productModel": "SH-PZ254V-2x8P",
+      "stockNumber": 500,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/59737003.html",
+      "bulk_price": 0.3938,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/a15807adb16db6524ac1ac5d15bcc78a.pdf?productCode=C55629829",
+      "intl_moq": 5
+    },
+    {
+      "productCode": "C83574",
+      "productModel": "BAT54S-7-F",
+      "stockNumber": 14264,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/84739.html",
+      "bulk_price": 0.409,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/fa527e1a225be4f92339b09795667d25.pdf?productCode=C83574",
+      "intl_moq": 5
+    }
+  ],
+  "evidence_scope": "38 quoted originals and top-3 lower-payment candidates plus selected substitutions; public fields trimmed to electrical/price/stock/PDF fields, no account or quote private IDs"
+}

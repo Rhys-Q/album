@@ -1,3 +1,11 @@
+> 当前v0.9仅三组电阻变更：R7=C17667，R10/R19=C17521（1%），R17/R50=C17539（100ppm/℃）；阻值/拓扑/封装保持，见[改版说明](三组电阻免换料费改版-v0.9.md)。
+
+> v0.8最终版：D3/D5/D6现为onsemi BAT54SLT1G，串联结构和脚序不变，详见降本审核-v0.8.md；下文BAT54S家族原理仍适用。
+
+> 2026-10-10 v0.8：C28现为4.7µF/50V GRM32ER71H475KA88L；R7/R8/R18/R10/R19/R17/R50/R49换国内低价合格料，阻值及拓扑保持。当前型号及成本见[降本审核](降本审核-v0.8.md)。
+
+> 2026-10-09 v0.7：L1–L3改用PCR1040-150-M，C28改用CL32B225KBJNNNE，C36改用0805CG102J500NT；连接与功能保持，参数和焊盘依据见工程docs/三组现货替代-v0.7.md。
+
 # 电源页原理详解：从 3.3V 到屏幕需要的正负电源
 
 2026-10-09 v0.6改版说明：普通电阻已扩大0805；R17由400kΩ改为R17+R50两只200kΩ串联；部分小电容扩大0805。电路功能说明仍适用，现用型号、封装及装配数量以[本版审查](国内采购与手焊改版-v0.6.md)和本版BOM为准。GUI/采购缺口见当前验收记录，旧版验收不能替代新版。
@@ -102,7 +110,7 @@ J1.2、U5.2 → GND
 
 U5采用 **TPS22917DBVR，SOT-23-6**，六个可见引脚比原四球WLCSP更适合手焊。VIN接3.3V输入，VOUT接负载；ON高时导通，低时关闭。QOD直接接VOUT，使关闭时通过芯片内部放电通道释放低压输出电容。内部电阻使这不是把输出硬短接到地。它不能证明各高压轨已经安全放完电。
 
-**C36=1nF，接CT与芯片VIN之间，不能改接CT与GND。** 它调整输出上升斜率，使大电容的充电电流较缓。选用0805、50V、C0G、±5%的C0805C102J5GACTU，容量稳定且易焊。毫秒级启动是设计预期，实际EPD_3V3稳定时间和浪涌须测量后确定。依据：[TI TPS22917手册](https://www.ti.com/lit/ds/symlink/tps22917.pdf)、[KEMET电容规格](https://search.kemet.com/download/specsheet/C0805C102J5GACTU)。
+**C36=1nF，接CT与芯片VIN之间，不能改接CT与GND。** 它调整输出上升斜率，使大电容的充电电流较缓。选用0805、50V、C0G、±5%的0805CG102J500NT，容量稳定且易焊。毫秒级启动是设计预期，实际EPD_3V3稳定时间和浪涌须测量后确定。依据：[TI TPS22917手册](https://www.ti.com/lit/ds/symlink/tps22917.pdf)、[风华原厂资料](sources/v07/C29925.pdf)。
 
 TPS22917最大连续开关电流2A，没有自动限流功能。C29/C30/C31/C32名义合计209.4µF；估算充电电流可用 `I≈C×ΔV/Δt`，但负载、走线阻抗、容量偏压、台式电源限流和斜率公差都会改变实际波形，不能从1nF直接承诺一个峰值电流。启动、稳态压降和温升仍须验收。
 
@@ -111,7 +119,7 @@ TPS22917最大连续开关电流2A，没有自动限流功能。C29/C30/C31/C32�
 | 位号 | 是什么、接在哪里 | 作用及保留理由 |
 |---|---|---|
 | J1 | 1接BENCH_3V3、2接GND的两针排针 | 外部稳压3.3V入口，适合台式限流电源 |
-| C28 | 2.2µF/50V，BENCH_3V3—GND | 开关输入去耦，缩短瞬态供电回路 |
+| C28 | 4.7µF/50V，BENCH_3V3—GND | 开关输入去耦，缩短瞬态供电回路 |
 | U5 | TPS22917DBVR，SOT-23-6 | GPIO控制屏幕域电源，提供可调斜率和输出放电 |
 | R30 | 100kΩ，EPD_PWR_EN—GND | MCU高阻时默认关闭；拉高时耗电约33µA，拉低时没有这笔静态电流 |
 | C36 | 1nF/50V C0G，BENCH_3V3—SW_CT | 调整U5启动斜率，降低大电容充电浪涌 |
@@ -139,7 +147,7 @@ TPS22917最大连续开关电流2A，没有自动限流功能。C29/C30/C31/C32�
 
 | 位号 | 是什么、接在哪里 | 作用与设计理由 |
 | --- | --- | --- |
-| L1 | 15µH 功率电感，EPD_3V3—LX | 储存并释放磁场能量，是升压的核心。15µH沿用参考值；候选 MSS1246-153MLC 要按实际峰值、RMS、温升核对。 |
+| L1 | 15µH 功率电感，EPD_3V3—LX | 储存并释放磁场能量，是升压的核心。15µH沿用参考值；候选 PCR1040-150-M 要按实际峰值、RMS、温升核对。 |
 | Q1 | DMN3065LW-7 NMOS，G=GDRP、S=RESEP、D=LX | 低边开关，周期性将 LX 经采样电阻拉向地。源极接近地，NMOS适合这种驱动位置；驱动能力仍要核对实际 VGS。 |
 | U1 | 0.2Ω WSL1206 采样电阻，RESEP—GND | 把开关电流变为控制器可感知的小电压，`VRESEP≈IQ1×0.2Ω`。保留 U 位号，但它不是 IC。 |
 | R2 | 1MΩ，GDRP—GND | 驱动高阻时给栅极提供泄放／默认低电平，减少悬空误导通；1MΩ不能当成能快速关断大栅极电荷的强驱动。 |
@@ -352,7 +360,7 @@ VVGL = 26 × VFBN − 25 × VREG_VGN
 
 功率电感要在所需电流下储存能量，关键是感量、直流电阻、饱和电流与温升。电感太小，在相同电压和导通时间下纹波／峰值更大；太大则改变动态响应、体积及损耗。15µH是厂家参考值，不能在未知内部控制参数时随意改倍数。
 
-MSS1246-153候选的 DCR最大 54.1mΩ，25°C、10%感量下降定义下电流 4.58A，20°C温升条件 Irms 2.85A。不同“电流指标”定义不同，不能都叫最大允许电流。L1/L2/L3实际峰值仍未测得。[Coilcraft原厂资料归档](sources/coilcraft-mss1246.pdf)。
+当前PCR1040-150-M为15µH±20%，DCR最大50mΩ；典型饱和电流7A按感量下降30%定义，典型温升电流6.5A按温升40°C定义。不同电流指标的判据不能混用；实际峰值、损耗与温升仍须实测。[JIERR原厂资料](sources/v07/C53896892.pdf)。
 
 ### 10.3 为什么很多电容耐压 50V，两个大电容却是 6.3V
 
@@ -421,7 +429,7 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | 位号 | 当前值 | 完整候选料号 | 本地封装 | 逐脚网络 |
 |---|---|---|---|---|
 | J1 | 3V3 BENCH ONLY | TJC8-2.54-2A | Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical | 1=BENCH_3V3<br>2=GND |
-| C28 | 2.2uF/50V | GRM32ER71H225KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=BENCH_3V3<br>2=GND |
+| C28 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=BENCH_3V3<br>2=GND |
 | U5 | TPS22917DBVR | TPS22917DBVR | Driver:Package_TO_SOT_SMD__SOT-23-6 | 1=BENCH_3V3<br>2=GND<br>3=EPD_PWR_EN<br>4=SW_CT<br>5=EPD_3V3<br>6=EPD_3V3 |
 | R30 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=EPD_PWR_EN<br>2=GND |
 | C29 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
@@ -429,9 +437,9 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | C31 | 100uF/6.3V | GRM32ER60J107ME20L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
 | C32 | 100uF/6.3V | GRM32ER60J107ME20L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=EPD_3V3<br>2=GND |
 | C33 | 100nF/50V | CL21B104KBCNNNC | Driver:C_0805_HandSolder | 1=EPD_3V3<br>2=GND |
-| L1 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=EPD_3V3<br>2=LX |
-| L2 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=SW_N<br>2=GND |
-| L3 | 15uH | MSS1246-153MLC | Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX | 1=SW_VCOM<br>2=GND |
+| L1 | 15uH | PCR1040-150-M | Driver:L_JIERR_PCR1040 | 1=EPD_3V3<br>2=LX |
+| L2 | 15uH | PCR1040-150-M | Driver:L_JIERR_PCR1040 | 1=SW_N<br>2=GND |
+| L3 | 15uH | PCR1040-150-M | Driver:L_JIERR_PCR1040 | 1=SW_VCOM<br>2=GND |
 | Q1 | DMN3065LW-7 | DMN3065LW-7 | Driver:SOT323_HandSolder | 1=GDRP<br>2=RESEP<br>3=LX |
 | Q8 | DMP3068L-7 | DMP3068L-7 | Driver:Package_TO_SOT_SMD__SOT-23 | 1=GDRN<br>2=RESEN<br>3=SW_N |
 | Q7 | PJA3433_R1_00001 | PJA3433_R1_00001 | Driver:Package_TO_SOT_SMD__SOT-23 | 1=Q7_GATE<br>2=RESEC<br>3=SW_VCOM |
@@ -454,7 +462,7 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | Q4 | DMN3065LW-7 | DMN3065LW-7 | Driver:SOT323_HandSolder | 1=DRVP<br>2=SOURCE_VGP<br>3=BASE_P |
 | R11 | 100k ohm | 0805W8F1003T5E | Driver:R_0805_HandSolder | 1=VDDP<br>2=BASE_P |
 | R12 | 1.5k ohm | 0805W8F1501T5E | Driver:R_0805_HandSolder | 1=SOURCE_VGP<br>2=GND |
-| D3 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_P_LOW<br>2=VGH<br>3=PUMP_P_MID |
+| D3 | BAT54SLT1G | BAT54SLT1G | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_P_LOW<br>2=VGH<br>3=PUMP_P_MID |
 | C16 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VGH<br>2=GND |
 | C17 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_P_MID<br>2=PUMP_P_AC |
 | C18 | 220nF/50V | GRM21BR71H224KA01L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_P_LOW<br>2=GND |
@@ -462,8 +470,8 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | R8 | 110k ohm | RC0805FR-07110KL | Driver:R_0805_HandSolder | 1=FBP<br>2=VGH |
 | R10 | 2.2 ohm | 0805W8F220KT5E | Driver:R_0805_HandSolder | 1=PUMP_P_AC<br>2=LX |
 | Q6 | MMBT3904-7-F | MMBT3904-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=DRVN<br>2=GND<br>3=PUMP_N_LOW |
-| D5 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=VGL<br>2=PUMP_N_MID<br>3=PUMP_N_UP |
-| D6 | BAT54S-7-F | BAT54S-7-F | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_N_MID<br>2=PUMP_N_LOW<br>3=PUMP_N_DOWN |
+| D5 | BAT54SLT1G | BAT54SLT1G | Driver:Package_TO_SOT_SMD__SOT-23 | 1=VGL<br>2=PUMP_N_MID<br>3=PUMP_N_UP |
+| D6 | BAT54SLT1G | BAT54SLT1G | Driver:Package_TO_SOT_SMD__SOT-23 | 1=PUMP_N_MID<br>2=PUMP_N_LOW<br>3=PUMP_N_DOWN |
 | C21 | 4.7uF/50V | GRM32ER71H475KA88L | Driver:Capacitor_SMD__C_1210_3225Metric | 1=VGL<br>2=GND |
 | C22 | 1uF/50V | GRM21BR71H105KA12L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_MID<br>2=GND |
 | C23 | 470nF/50V | GRM21BR71H474KA88L | Driver:Capacitor_SMD__C_0805_2012Metric | 1=PUMP_N_UP<br>2=PUMP_N_AC |
@@ -474,7 +482,7 @@ MCU复位使 R30把 U5关掉，只实现默认供电关闭；它不等于完成�
 | R50 | 200k ohm | 0805W8F2003T5E | Driver:R_0805_HandSolder | 1=VGL<br>2=VGL_FB_MID |
 | R18 | 16k ohm | 0805W8F1602T5E | Driver:R_0805_HandSolder | 1=FBN<br>2=REG_VGN |
 | R19 | 2.2 ohm | 0805W8F220KT5E | Driver:R_0805_HandSolder | 1=PUMP_N_AC<br>2=LX |
-| C36 | 1nF/50V C0G | C0805C102J5GACTU | Driver:Capacitor_SMD__C_0805_2012Metric | 1=BENCH_3V3<br>2=SW_CT |
+| C36 | 1nF/50V C0G | 0805CG102J500NT | Driver:Capacitor_SMD__C_0805_2012Metric | 1=BENCH_3V3<br>2=SW_CT |
 
 元件位号保持原有习惯；U1–U3仍是0.2Ω采样电阻。所有原0Ω连接位已经删除，无法再通过拆下这些电阻隔离支路。0Ω用途的解释属于通用背景。上下电必须遵循[新版接口约定](interface-power-state.md)。
 

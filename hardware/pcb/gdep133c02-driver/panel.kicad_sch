@@ -7,7 +7,7 @@
 	(title_block
 		(title "Panel - wired functional circuits")
 		(date "2026-10-09")
-		(rev "0.6-DOMESTIC")
+		(rev "0.9-RESISTORS")
 	)
 	(lib_symbols
 		(symbol "Driver:GND"
@@ -7723,7 +7723,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
 			(at 30.48 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -7780,7 +7780,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86043"
 			(at 30.48 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -7847,7 +7847,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
 			(at 55.88 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -7904,7 +7904,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86043"
 			(at 55.88 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -8857,7 +8857,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
 			(at 223.52 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -8914,7 +8914,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86043"
 			(at 223.52 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -8981,7 +8981,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 269.24 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -9477,7 +9477,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf"
 			(at 375.92 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -9534,7 +9534,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C397310"
 			(at 375.92 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -9973,7 +9973,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf"
 			(at 375.92 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -10030,7 +10030,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C397310"
 			(at 375.92 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -10469,7 +10469,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf"
 			(at 375.92 320.04 0)
 			(hide yes)
 			(show_name no)
@@ -10526,7 +10526,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C397310"
 			(at 375.92 320.04 0)
 			(hide yes)
 			(show_name no)
@@ -10965,7 +10965,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf"
 			(at 375.92 347.98 0)
 			(hide yes)
 			(show_name no)
@@ -11022,7 +11022,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C397310"
 			(at 375.92 347.98 0)
 			(hide yes)
 			(show_name no)
@@ -11461,7 +11461,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf"
 			(at 375.92 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -11518,7 +11518,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C397310"
 			(at 375.92 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -11957,7 +11957,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf"
 			(at 375.92 403.86 0)
 			(hide yes)
 			(show_name no)
@@ -12014,7 +12014,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C397310"
 			(at 375.92 403.86 0)
 			(hide yes)
 			(show_name no)

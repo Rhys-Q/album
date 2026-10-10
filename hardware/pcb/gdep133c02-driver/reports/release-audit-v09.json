@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "revision": "0.9-resistors",
+  "source_and_export_hashes": "PASS",
+  "bom_groups": 37,
+  "assembled": 104,
+  "cpl": 102,
+  "old_release_removed_after_acceptance": true,
+  "backup_outside_repository": "/tmp/gdep-v08-release-before-v09-resistors.zip",
+  "scope": "3 groups / 5 resistors only; assembly unchanged",
+  "remaining_supply_gap": "Q7 C6628419 stock=0",
+  "hardware_tests": "NOT PERFORMED"
+}

@@ -7,7 +7,7 @@
 	(title_block
 		(title "Power - wired functional circuits")
 		(date "2026-10-09")
-		(rev "0.6-DOMESTIC")
+		(rev "0.9-RESISTORS")
 	)
 	(lib_symbols
 		(symbol "Driver:GND"
@@ -10875,7 +10875,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF/50V"
+		(property "Value" "4.7uF/50V"
 			(at 96.52 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10897,7 +10897,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10918,7 +10918,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM32ER71H225KA88L"
+		(property "MPN" "GRM32ER71H475KA88L"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10954,7 +10954,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86052"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10965,7 +10965,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -11281,7 +11281,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 215.9 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -11405,7 +11405,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 241.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -11962,7 +11962,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX"
+		(property "Footprint" "Driver:L_JIERR_PCR1040"
 			(at 66.04 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11973,7 +11973,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892"
 			(at 66.04 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11994,7 +11994,7 @@
 				)
 			)
 		)
-		(property "MPN" "MSS1246-153MLC"
+		(property "MPN" "PCR1040-150-M"
 			(at 66.04 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12005,7 +12005,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Coilcraft"
+		(property "Manufacturer" "JIERR"
 			(at 66.04 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12030,7 +12030,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C53896892"
 			(at 66.04 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12041,7 +12041,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"
 			(at 66.04 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12222,7 +12222,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf"
 			(at 121.92 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12279,7 +12279,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C151335"
 			(at 121.92 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12346,7 +12346,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf"
 			(at 99.06 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -12403,7 +12403,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2073442"
 			(at 99.06 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -12594,7 +12594,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 30.48 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -12969,7 +12969,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf"
 			(at 248.92 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -13026,7 +13026,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2073442"
 			(at 248.92 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -13082,7 +13082,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX"
+		(property "Footprint" "Driver:L_JIERR_PCR1040"
 			(at 248.92 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13093,7 +13093,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892"
 			(at 248.92 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13114,7 +13114,7 @@
 				)
 			)
 		)
-		(property "MPN" "MSS1246-153MLC"
+		(property "MPN" "PCR1040-150-M"
 			(at 248.92 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13125,7 +13125,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Coilcraft"
+		(property "Manufacturer" "JIERR"
 			(at 248.92 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13150,7 +13150,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C53896892"
 			(at 248.92 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13161,7 +13161,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"
 			(at 248.92 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13215,7 +13215,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf"
 			(at 281.94 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -13272,7 +13272,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C151335"
 			(at 281.94 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -13463,7 +13463,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 210.82 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -13771,7 +13771,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C6628419"
 			(at 439.42 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -13838,7 +13838,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf"
 			(at 436.88 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -13895,7 +13895,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2073442"
 			(at 436.88 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -13951,7 +13951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX"
+		(property "Footprint" "Driver:L_JIERR_PCR1040"
 			(at 436.88 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13962,7 +13962,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892"
 			(at 436.88 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13983,7 +13983,7 @@
 				)
 			)
 		)
-		(property "MPN" "MSS1246-153MLC"
+		(property "MPN" "PCR1040-150-M"
 			(at 436.88 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -13994,7 +13994,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Coilcraft"
+		(property "Manufacturer" "JIERR"
 			(at 436.88 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -14019,7 +14019,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C53896892"
 			(at 436.88 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -14030,7 +14030,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"
 			(at 436.88 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -14084,7 +14084,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20241225/E2605F86CBDD833A242C4ED6CC4B6ED3.pdf"
 			(at 469.9 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -14141,7 +14141,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C124188"
 			(at 469.9 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -14332,7 +14332,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 398.78 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -15059,7 +15059,7 @@
 				)
 			)
 		)
-		(property "Value" "BAT54S-7-F"
+		(property "Value" "BAT54SLT1G"
 			(at 170.18 318.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15080,7 +15080,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf"
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf"
 			(at 170.18 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -15101,7 +15101,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S-7-F"
+		(property "MPN" "BAT54SLT1G"
 			(at 170.18 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -15112,7 +15112,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Diodes"
+		(property "Manufacturer" "onsemi"
 			(at 170.18 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -15140,7 +15140,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C83574"
+		(property "LCSC" "C19726"
 			(at 170.18 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -15151,7 +15151,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 170.18 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -15207,7 +15207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 185.42 363.22 0)
 			(hide yes)
 			(show_name no)
@@ -15577,7 +15577,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137518"
+		(property "Datasheet" "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf"
 			(at 208.28 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -15598,7 +15598,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-074K3L"
+		(property "MPN" "0805W8F4301T5E"
 			(at 208.28 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -15609,7 +15609,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 208.28 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -15634,7 +15634,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C137518"
+		(property "LCSC" "C17667"
 			(at 208.28 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -15645,7 +15645,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "同阻值±1%常用0805；手焊加长焊盘。"
+		(property "BOM Comments" "v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"
 			(at 208.28 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -15656,7 +15656,12 @@
 				)
 			)
 		)
-	)
+		(property "LibraryCategory" "SMT优选合作（扩展库免换料费）" (at 208.28 370.84 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "FeeEvidence" "https://www.jlc-smt.com/lcsc/search?q=C17667 | 扩展库 (免换料费)" (at 208.28 370.84 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "StockQueriedAt" "2026-10-10T13:18:09.034Z" (at 208.28 370.84 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "AssemblyMethod" "SMT" (at 208.28 370.84 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "ExceptionDecision" "2026-10-10 user authorized three resistor groups only; all other assembly unchanged" (at 208.28 370.84 0) (hide yes) (effects (font (size 0.9 0.9))))
+)
 	(symbol
 		(lib_id "Driver:P_R8")
 		(at 208.28 350.52 180)
@@ -15701,7 +15706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137599"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/04ce3139d67e70b6b0ee7061f06aa3e9.pdf?productCode=C5140228"
 			(at 208.28 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -15722,7 +15727,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-07110KL"
+		(property "MPN" "SCR0805F110K"
 			(at 208.28 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -15733,7 +15738,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "VO"
 			(at 208.28 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -15758,7 +15763,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C137599"
+		(property "LCSC" "C5140228"
 			(at 208.28 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -15769,7 +15774,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "同阻值±1%常用0805；手焊加长焊盘。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 208.28 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -15823,7 +15828,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521"
+		(property "Datasheet" "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf"
 			(at 226.06 337.82 0)
 			(hide yes)
 			(show_name no)
@@ -15891,7 +15896,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "同阻值±1%常用0805；手焊加长焊盘。"
+		(property "BOM Comments" "v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"
 			(at 226.06 337.82 0)
 			(hide yes)
 			(show_name no)
@@ -15902,7 +15907,12 @@
 				)
 			)
 		)
-	)
+		(property "LibraryCategory" "基础库" (at 226.06 337.82 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "FeeEvidence" "https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)" (at 226.06 337.82 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "StockQueriedAt" "2026-10-10T13:26:26.075Z" (at 226.06 337.82 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "AssemblyMethod" "SMT" (at 226.06 337.82 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "ExceptionDecision" "2026-10-10 user authorized three resistor groups only; all other assembly unchanged" (at 226.06 337.82 0) (hide yes) (effects (font (size 0.9 0.9))))
+)
 	(symbol
 		(lib_id "Driver:P_Q6")
 		(at 462.28 340.36 0)
@@ -16051,7 +16061,7 @@
 				)
 			)
 		)
-		(property "Value" "BAT54S-7-F"
+		(property "Value" "BAT54SLT1G"
 			(at 358.14 298.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16072,7 +16082,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf"
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf"
 			(at 358.14 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -16093,7 +16103,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S-7-F"
+		(property "MPN" "BAT54SLT1G"
 			(at 358.14 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -16104,7 +16114,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Diodes"
+		(property "Manufacturer" "onsemi"
 			(at 358.14 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -16132,7 +16142,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C83574"
+		(property "LCSC" "C19726"
 			(at 358.14 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -16143,7 +16153,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 358.14 302.26 0)
 			(hide yes)
 			(show_name no)
@@ -16176,7 +16186,7 @@
 				)
 			)
 		)
-		(property "Value" "BAT54S-7-F"
+		(property "Value" "BAT54SLT1G"
 			(at 358.14 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16197,7 +16207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf"
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf"
 			(at 358.14 340.36 0)
 			(hide yes)
 			(show_name no)
@@ -16218,7 +16228,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S-7-F"
+		(property "MPN" "BAT54SLT1G"
 			(at 358.14 340.36 0)
 			(hide yes)
 			(show_name no)
@@ -16229,7 +16239,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Diodes"
+		(property "Manufacturer" "onsemi"
 			(at 358.14 340.36 0)
 			(hide yes)
 			(show_name no)
@@ -16257,7 +16267,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C83574"
+		(property "LCSC" "C19726"
 			(at 358.14 340.36 0)
 			(hide yes)
 			(show_name no)
@@ -16268,7 +16278,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 358.14 340.36 0)
 			(hide yes)
 			(show_name no)
@@ -16324,7 +16334,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf"
 			(at 309.88 325.12 0)
 			(hide yes)
 			(show_name no)
@@ -17064,7 +17074,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539"
+		(property "Datasheet" "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf"
 			(at 325.12 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -17132,7 +17142,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "同阻值±1%常用0805；手焊加长焊盘。"
+		(property "BOM Comments" "v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"
 			(at 325.12 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -17143,7 +17153,12 @@
 				)
 			)
 		)
-	)
+		(property "LibraryCategory" "基础库" (at 325.12 350.52 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "FeeEvidence" "https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)" (at 325.12 350.52 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "StockQueriedAt" "2026-10-10T13:26:27.744Z" (at 325.12 350.52 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "AssemblyMethod" "SMT" (at 325.12 350.52 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "ExceptionDecision" "2026-10-10 user authorized three resistor groups only; all other assembly unchanged" (at 325.12 350.52 0) (hide yes) (effects (font (size 0.9 0.9))))
+)
 	(symbol
 		(lib_id "Driver:P_R18")
 		(at 325.12 370.84 0)
@@ -17188,7 +17203,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17490"
+		(property "Datasheet" "https://www.uni-royal.cn/images/userfile/file/1723267015d7bab4914ae1a4d5.pdf"
 			(at 325.12 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -17209,7 +17224,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1602T5E"
+		(property "MPN" "HP05W3F1602T5E"
 			(at 325.12 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -17245,7 +17260,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17490"
+		(property "LCSC" "C2774511"
 			(at 325.12 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -17256,7 +17271,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "同阻值±1%常用0805；手焊加长焊盘。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 325.12 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -17310,7 +17325,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521"
+		(property "Datasheet" "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf"
 			(at 462.28 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -17378,7 +17393,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "同阻值±1%常用0805；手焊加长焊盘。"
+		(property "BOM Comments" "v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"
 			(at 462.28 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -17389,7 +17404,12 @@
 				)
 			)
 		)
-	)
+		(property "LibraryCategory" "基础库" (at 462.28 312.42 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "FeeEvidence" "https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)" (at 462.28 312.42 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "StockQueriedAt" "2026-10-10T13:26:26.075Z" (at 462.28 312.42 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "AssemblyMethod" "SMT" (at 462.28 312.42 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "ExceptionDecision" "2026-10-10 user authorized three resistor groups only; all other assembly unchanged" (at 462.28 312.42 0) (hide yes) (effects (font (size 0.9 0.9))))
+)
 	(symbol
 		(lib_id "Driver:GND")
 		(at 35.56 96.52 0)
@@ -17713,7 +17733,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0805C102J5GACTU"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29925"
 			(at 134.62 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -17734,7 +17754,7 @@
 				)
 			)
 		)
-		(property "MPN" "C0805C102J5GACTU"
+		(property "MPN" "0805CG102J500NT"
 			(at 134.62 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -17745,7 +17765,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KEMET"
+		(property "Manufacturer" "FH"
 			(at 134.62 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -17770,7 +17790,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C29925"
 			(at 134.62 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -17781,7 +17801,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"
 			(at 134.62 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -20723,7 +20743,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17477"
 			(at 480.06 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -20744,7 +20764,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805JR-070RL"
+		(property "MPN" "0805W8F0000T5E"
 			(at 480.06 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -20755,7 +20775,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 480.06 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -20780,7 +20800,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C96345"
+		(property "LCSC" "C17477"
 			(at 480.06 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -20791,7 +20811,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"
+		(property "BOM Comments" "v0.8 国内现货降本；详见降本审核-v0.8.md"
 			(at 480.06 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -21149,7 +21169,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539"
+		(property "Datasheet" "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf"
 			(at 325.12 335.28 0)
 			(hide yes)
 			(show_name no)
@@ -21217,7 +21237,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "与R17串联：200k+200k=400k，±1%最坏误差，±100ppm/℃。"
+		(property "BOM Comments" "v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"
 			(at 325.12 335.28 0)
 			(hide yes)
 			(show_name no)
@@ -21228,7 +21248,12 @@
 				)
 			)
 		)
-	)
+		(property "LibraryCategory" "基础库" (at 325.12 335.28 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "FeeEvidence" "https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)" (at 325.12 335.28 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "StockQueriedAt" "2026-10-10T13:26:27.744Z" (at 325.12 335.28 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "AssemblyMethod" "SMT" (at 325.12 335.28 0) (hide yes) (effects (font (size 0.9 0.9))))
+	(property "ExceptionDecision" "2026-10-10 user authorized three resistor groups only; all other assembly unchanged" (at 325.12 335.28 0) (hide yes) (effects (font (size 0.9 0.9))))
+)
 	(wire
 		(pts
 			(xy 325.12 339.09)

@@ -7,7 +7,7 @@
 	(title_block
 		(title "GDEP133C02 minimum driver - DRAFT")
 		(date "2026-10-09")
-		(rev "0.6-DOMESTIC")
+		(rev "0.9-RESISTORS")
 		(company "album")
 	)
 	(lib_symbols)

@@ -7,7 +7,7 @@
 	(title_block
 		(title "Interface - wired functional circuits")
 		(date "2026-10-09")
-		(rev "0.6-DOMESTIC")
+		(rev "0.9-RESISTORS")
 	)
 	(lib_symbols
 		(symbol "Driver:P_J2"

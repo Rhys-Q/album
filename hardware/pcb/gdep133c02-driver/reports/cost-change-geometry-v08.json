@@ -1,0 +1,22 @@
+{
+  "revision": "0.8-cost",
+  "baseline_sha256": {
+    "gdep133c02-driver.kicad_sch": "5fb141347861a05383ce12cd1c3f999ef93cf21704997589a919dcbec45026e1",
+    "power.kicad_sch": "22a53dde8e58be364575dd9e47d62158d7dbaf09eb2f80d0cf11d9ce4ed27d6d",
+    "panel.kicad_sch": "2057dee4422aa8bfc64c3f682547d8eddaecaf06d9fc9fd8a3792d1c41d226a2",
+    "interface.kicad_sch": "3d2e5271d4cb08c107c6f6b832704c17050b8ceedcbfb118d3b716ec08812090",
+    "gdep133c02-driver.kicad_pcb": "aed0778ff4973773dce19b3b0e8a5817c3a900e12b4f4000c094876bdab13653"
+  },
+  "checked_current_sha256": {
+    "gdep133c02-driver.kicad_sch": "b0ead5a292ee5c37a8a52d07202ed72083f17193c4eb67c94e6ac01dba1fd8f9",
+    "power.kicad_sch": "3dbae1fc51b3ad78170cb9c6f5445731e248ecc0d28063817fe93439656e38e0",
+    "panel.kicad_sch": "3ab016269a8d06bdb523c599bdcb21a31095acd87ddaa366eb02706673ef3c5b",
+    "interface.kicad_sch": "833b15651dd9e97a0f2f30b411a7c2ec7792f7d22d66eca3964b16e768cc5f8f",
+    "gdep133c02-driver.kicad_pcb": "d40cc270f1d25dde36f328622689660ecb2259a58860c5b46418b17f89588811"
+  },
+  "footprint_positions_pads_pin_nets_layers_links": "IDENTICAL",
+  "tracks_vias_outline_and_mounts": "IDENTICAL",
+  "schematic_wires_labels_sheet_uuids": "IDENTICAL",
+  "all_symbol_uuids": "PRESERVED during mutation (asserted against baseline)",
+  "notes": "No footprint change required: qualified 0805 resistor bodies and existing 1210 C28/C29 pad sizes retained; native zone refill rerun, full DRC and net parity separately checked."
+}

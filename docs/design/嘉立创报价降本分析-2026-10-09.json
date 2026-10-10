@@ -1,0 +1,219 @@
+{
+  "quote_attachment_sha256": "6cb44a98498316ae17c199df8d858bb8667e0b2a8317325c8cfd9a32acf855ed",
+  "candidates": [
+    {
+      "productCode": "C17667",
+      "productModel": "0805W8F4301T5E",
+      "stockNumber": 51257,
+      "minBuyNumber": 1,
+      "theRatio": 100,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/18355.html",
+      "bulk_price": 0.0274,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17667",
+      "intl_moq": 100,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": [
+        [
+          100,
+          0.0485
+        ],
+        [
+          1000,
+          0.0389
+        ]
+      ],
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C49066",
+      "productModel": "CL32A107MQVNNNE",
+      "stockNumber": 9794,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/50074.html",
+      "bulk_price": 0.7,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C49066",
+      "intl_moq": 1,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": [
+        [
+          1,
+          1.5679
+        ],
+        [
+          10,
+          1.1576
+        ],
+        [
+          30,
+          0.9573
+        ]
+      ],
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C380369",
+      "productModel": "TCC1210X5R107M6R3MT",
+      "stockNumber": 0,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "no",
+      "url": "https://item.szlcsc.com/352774.html",
+      "bulk_price": 1.2778,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/71a9f8eccc4da164324d4a716182c5e3.pdf?productCode=C380369",
+      "intl_moq": 1,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": null,
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C138687",
+      "productModel": "CL32B106KBJNNNE",
+      "stockNumber": 0,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "no",
+      "url": "https://item.szlcsc.com/150006.html",
+      "bulk_price": 0.9795,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/e42a32c717cc8f47823b44fed272ab10.pdf?productCode=C138687",
+      "intl_moq": 1,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": null,
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C54157488",
+      "productModel": "CC1210X7R50V335KN",
+      "stockNumber": 1895,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/57394869.html",
+      "bulk_price": 0.7234,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/49b70b003dccd16cc3fa313c34a02bab.pdf?productCode=C54157488",
+      "intl_moq": 5,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": [
+        [
+          5,
+          1.0774
+        ],
+        [
+          50,
+          0.8886
+        ]
+      ],
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C20526",
+      "productModel": "MMBT3904(RANGE:100-300)",
+      "stockNumber": 0,
+      "minBuyNumber": 1,
+      "theRatio": 50,
+      "hasStockNow": "no",
+      "url": "https://item.szlcsc.com/21237.html",
+      "bulk_price": 0.0415,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/9335632bcfa83df8351353eab379720e.pdf?productCode=C20526",
+      "intl_moq": 50,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": null,
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C7429",
+      "productModel": "NJM072BV",
+      "stockNumber": 0,
+      "minBuyNumber": 1,
+      "theRatio": 1,
+      "hasStockNow": "no",
+      "url": "https://item.szlcsc.com/7906.html",
+      "bulk_price": 1.1073,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/778417acb3fe40cebccd6b25cabf74c0.pdf?productCode=C7429",
+      "intl_moq": 1,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": null,
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C2102",
+      "productModel": "B0530W",
+      "stockNumber": 21754,
+      "minBuyNumber": 1,
+      "theRatio": 20,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/2459.html",
+      "bulk_price": 0.1257,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/5c12595fd71346098a7da710020b7d3d.pdf?productCode=C2102",
+      "intl_moq": 20,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": null,
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C475611",
+      "productModel": "B0530W",
+      "stockNumber": 2864,
+      "minBuyNumber": 1,
+      "theRatio": 20,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/482049.html",
+      "bulk_price": 0.0734,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/a8856f2e71ab97f1ffa2ebb2c8272eb8.pdf?productCode=C475611",
+      "intl_moq": 20,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": [
+        [
+          20,
+          0.1595
+        ],
+        [
+          200,
+          0.126
+        ]
+      ],
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C8592",
+      "productModel": "BAT54S KL4",
+      "stockNumber": 145376,
+      "minBuyNumber": 1,
+      "theRatio": 20,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/9087.html",
+      "bulk_price": 0.0738,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/5b474f3ae31f4955b5e416442eaeaed8.pdf?productCode=C8592",
+      "intl_moq": 20,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": [
+        [
+          20,
+          0.1418
+        ],
+        [
+          200,
+          0.1126
+        ]
+      ],
+      "bulk_price_is_not_moq_price": true
+    },
+    {
+      "productCode": "C86052",
+      "productModel": "GRM32ER71H475KA88L",
+      "stockNumber": 38754,
+      "minBuyNumber": 1,
+      "theRatio": 5,
+      "hasStockNow": "yes",
+      "url": "https://item.szlcsc.com/87228.html",
+      "bulk_price": 0.55,
+      "pdf": "https://datasheet.lcsc.com/datasheet/pdf/a4d1e2744bd5d44ba57842651a3fd598.pdf?productCode=C86052",
+      "intl_moq": 5,
+      "verified_at": "2026-10-09 Asia/Shanghai",
+      "domestic_price_tiers_observed_in_chrome": null,
+      "bulk_price_is_not_moq_price": true
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "productCode": "C50767259",
+    "productModel": "TCC1210X7R106K500MT",
+    "stockNumber": 18402,
+    "minBuyNumber": 1,
+    "theRatio": 5,
+    "hasStockNow": "yes",
+    "url": "https://item.szlcsc.com/53406434.html",
+    "bulk_price": 0.5916,
+    "pdf": "https://datasheet.lcsc.com/datasheet/pdf/71a9f8eccc4da164324d4a716182c5e3.pdf?productCode=C50767259",
+    "intl_moq": 5,
+    "checked_at": "2026-10-09 Asia/Shanghai",
+    "electrical_approval": "not_approved_dc_bias_evidence_missing",
+    "domestic_price_tiers": [
+      [
+        5,
+        1.1741
+      ],
+      [
+        50,
+        0.9257
+      ],
+      [
+        150,
+        0.8192
+      ],
+      [
+        1000,
+        0.6863
+      ],
+      [
+        2000,
+        0.6272
+      ],
+      [
+        5000,
+        0.5916
+      ]
+    ]
+  },
+  {
+    "productCode": "C17702791",
+    "productModel": "C1210B106M500NT",
+    "stockNumber": 5,
+    "minBuyNumber": 1,
+    "theRatio": 5,
+    "hasStockNow": "yes",
+    "url": "https://item.szlcsc.com/18842000.html",
+    "bulk_price": 1.1041,
+    "pdf": "https://datasheet.lcsc.com/datasheet/pdf/e1759b3e8001de2656707730498cf78e.pdf?productCode=C17702791",
+    "intl_moq": 5,
+    "checked_at": "2026-10-09 Asia/Shanghai",
+    "electrical_approval": "not_approved_dc_bias_evidence_missing"
+  },
+  {
+    "productCode": "C53084452",
+    "productModel": "CC1210X7R50V106KN",
+    "stockNumber": 5047,
+    "minBuyNumber": 1,
+    "theRatio": 5,
+    "hasStockNow": "yes",
+    "url": "https://item.szlcsc.com/56048917.html",
+    "bulk_price": 1.438,
+    "pdf": "https://datasheet.lcsc.com/datasheet/pdf/cb1030107ef4ece4b7f957d332c41950.pdf?productCode=C53084452",
+    "intl_moq": 5,
+    "checked_at": "2026-10-09 Asia/Shanghai",
+    "electrical_approval": "not_approved_dc_bias_evidence_missing"
+  },
+  {
+    "productCode": "C116808",
+    "productModel": "1210B106K500NT",
+    "stockNumber": 13772,
+    "minBuyNumber": 1,
+    "theRatio": 2,
+    "hasStockNow": "yes",
+    "url": "https://item.szlcsc.com/118063.html",
+    "bulk_price": 0.897,
+    "pdf": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C116808",
+    "intl_moq": 2,
+    "checked_at": "2026-10-09 Asia/Shanghai",
+    "electrical_approval": "not_approved_dc_bias_evidence_missing",
+    "domestic_price_tiers": [
+      [
+        2,
+        1.6747
+      ],
+      [
+        20,
+        1.3487
+      ],
+      [
+        60,
+        1.1896
+      ],
+      [
+        200,
+        1.0476
+      ],
+      [
+        1000,
+        1.0086
+      ],
+      [
+        2000,
+        0.897
+      ]
+    ]
+  },
+  {
+    "productCode": "C380368",
+    "productModel": "TCC1210X5R106K250GT",
+    "stockNumber": 0,
+    "minBuyNumber": 1,
+    "theRatio": 1,
+    "hasStockNow": "no",
+    "url": "https://item.szlcsc.com/352773.html",
+    "bulk_price": 0.6085,
+    "pdf": "",
+    "intl_moq": 1,
+    "checked_at": "2026-10-09 Asia/Shanghai",
+    "electrical_approval": "not_approved_dc_bias_evidence_missing"
+  }
+]

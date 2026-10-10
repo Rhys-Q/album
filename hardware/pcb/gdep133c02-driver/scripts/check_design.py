@@ -15,10 +15,11 @@ assert got==want,('Schematic differs from design data',set(got.items())^set(want
 # KiCad PCB symbol links omit the root schematic UUID. Compare against exported sheet paths.
 from schematic_sexp import parse,kids,one
 board_tree=parse((ROOT/'gdep133c02-driver.kicad_pcb').read_text())
-footprint_links={}
+footprint_links={};footprint_properties={}
 for fp in kids(board_tree,'footprint'):
  ref=next(z[2] for z in kids(fp,'property') if z[1]=='Reference')
  assert ref not in footprint_links, ('Duplicate PCB reference',ref)
+ footprint_properties[ref]={str(z[1]):str(z[2]) for z in kids(fp,'property')}
  paths=kids(fp,'path');footprint_links[ref]=str(paths[0][1]) if paths else ''
 for comp in xml.find('components'):
  ref=comp.attrib['ref']
@@ -28,6 +29,8 @@ for comp in xml.find('components'):
  assert comp.findtext('footprint')==z['fp'], ('Footprint mismatch',ref)
  fields={f.attrib['name']:f.text or '' for f in comp.findall('fields/field')}
  assert fields.get('MPN')==z['mpn'] and fields.get('Manufacturer')==z['vendor'], ('BOM property mismatch',ref)
+ assert fields.get('LCSC')==z['lcsc'], ('Schematic purchase code mismatch',ref)
+ assert all(footprint_properties[ref].get(key)==z[prop] for key,prop in [('Value','value'),('MPN','mpn'),('Manufacturer','vendor'),('LCSC','lcsc'),('Datasheet','url')]), ('PCB property mismatch',ref)
  expected=comp.find('sheetpath').attrib['tstamps']+comp.findtext('tstamps')
  assert footprint_links.get(ref)==expected, ('PCB symbol link incompatible with KiCad',ref,footprint_links.get(ref),expected)
 pads=json.loads((ROOT/'reports/pads.json').read_text());actual={(p['ref'],p['pin']):p['netname'] for p in pads if p['net'] and not p['netname'].startswith('unconnected-')}
@@ -42,7 +45,36 @@ assert parts['J2']['pins']['5']=='SI1' and parts['J2']['pins']['13']=='BUSY_N'
 assert parts['U5']['mpn']=='TPS22917DBVR'
 assert parts['U5']['pins']=={'1':'BENCH_3V3','2':'GND','3':'EPD_PWR_EN','4':'SW_CT','5':'EPD_3V3','6':'EPD_3V3'}
 assert set(parts['C36']['pins'].values())=={'SW_CT','BENCH_3V3'}
-assert parts['C36']['mpn']=='C0805C102J5GACTU'
+assert parts['C36']['mpn']=='0805CG102J500NT'
+assert parts['C36']['value']=='1nF/50V C0G'
+assert parts['C28']['mpn']==parts['C29']['mpn']=='GRM32ER71H475KA88L'
+assert parts['C28']['value']==parts['C29']['value']=='4.7uF/50V'
+assert parts['C28']['fp']==parts['C29']['fp']=='Driver:Capacitor_SMD__C_1210_3225Metric'
+assert parts['C28']['pins']=={'1':'BENCH_3V3','2':'GND'}
+for ref in ['L1','L2','L3']:
+ assert parts[ref]['mpn']=='PCR1040-150-M' and parts[ref]['fp']=='Driver:L_JIERR_PCR1040'
+# Preserve electrical constraints independent of purchasing changes.
+assert parts['Q7']['mpn']=='PJA3433_R1_00001'
+for ref in ['D3','D5','D6']:
+ assert parts[ref]['mpn']=='BAT54SLT1G' and parts[ref]['lcsc']=='C19726'
+ assert parts[ref]['fp']=='Driver:Package_TO_SOT_SMD__SOT-23'
+ assert parts[ref]['names']=={'1':'A1','2':'K2','3':'K1_A2'}
+for start in [103,106,109,112,115,118]:
+ for idx in [start,start+1]:assert parts['C'+str(idx)]['value']=='10uF/50V'
+ assert parts['C'+str(start+2)]['value']=='3.3uF/50V'
+for ref in ['C8','C14']:
+ assert parts[ref]['value']=='4.7uF/50V'
+for ref,mpn,code in [('R7','0805W8F4301T5E','C17667'),('R10','0805W8F220KT5E','C17521'),('R19','0805W8F220KT5E','C17521'),('R17','0805W8F2003T5E','C17539'),('R50','0805W8F2003T5E','C17539')]:
+ assert parts[ref]['mpn']==mpn and parts[ref]['lcsc']==code
+ assert parts[ref]['fp']=='Driver:R_0805_HandSolder' and parts[ref]['assembly']=='SMT'
+ for key,prop in [('LibraryCategory','library_category'),('FeeEvidence','fee_evidence'),('StockQueriedAt','stock_queried_at'),('AssemblyMethod','assembly'),('ExceptionDecision','exception_decision')]:
+  assert footprint_properties[ref].get(key)==parts[ref][prop],('Procurement field mismatch',ref,key)
+  fields={f.attrib['name']:f.text or '' for f in xml.find('components').find(f"comp[@ref='{ref}']").findall('fields/field')}
+  assert fields.get(key)==parts[ref][prop],('Schematic procurement field mismatch',ref,key)
+assert parts['R7']['value']=='4.3k ohm' and parts['R8']['value']=='110k ohm'
+assert parts['R18']['value']=='16k ohm'
+assert parts['R10']['value']==parts['R19']['value']=='2.2 ohm'
+assert all(z['lcsc'].startswith('C') for z in parts.values() if not z['dnp'])
 removed={'C34','C35','Q9','Q10','R14','R15','R16','R22','R23','R24','R25','R26','R27','R28','R29','R31','R32','R33','R34','R37','R38','R4','R5','R6','R9','U6','U7'}
 assert not (set(removed)|{'L4','L5'}).intersection(parts)
 assert not {'VIN','AVDD'}.intersection(want.values())
@@ -75,7 +107,7 @@ assert not any(v=='ignore' for v in pro['rule_severities'].values())
 proof=json.loads((ROOT/'reports/check-provenance.json').read_text())
 for name,digest in proof['source_sha256'].items():
  assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest, ('Stale check report',name)
-result={'date':'2026-10-01','kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'PARTIAL - see docs/国内采购与手焊改版-v0.6.md and docs/采购清单-v0.6.csv; domestic payment and biased capacitance gaps remain','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
+result={'date':data['date'],'kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'PARTIAL - see docs/三组电阻免换料费改版-v0.9.md and docs/采购清单-v0.9.csv; domestic payment and biased capacitance gaps remain','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
 result['date']=proof['date']
 result['revision']=data['revision']
 result['assembled_components']=data['assembled_components']

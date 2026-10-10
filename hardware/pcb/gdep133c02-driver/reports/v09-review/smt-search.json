@@ -1,0 +1,1545 @@
+[
+  {
+    "code": "C17422",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "0805W8F1103T5E",
+    "tiers": [
+      [
+        1,
+        0.0225
+      ],
+      [
+        1000,
+        0.0174
+      ],
+      [
+        5000,
+        0.0147
+      ],
+      [
+        10000,
+        0.0134
+      ],
+      [
+        50000,
+        0.0118
+      ]
+    ],
+    "stock": 47298,
+    "free": false,
+    "queried_at": "2026-10-10T13:17:24.052Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17422",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C407467",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "0805W8D220KT5E",
+    "tiers": [
+      [
+        1,
+        0.0713
+      ],
+      [
+        10,
+        0.0564
+      ],
+      [
+        30,
+        0.0482
+      ],
+      [
+        100,
+        0.0432
+      ],
+      [
+        500,
+        0.0389
+      ],
+      [
+        1000,
+        0.0366
+      ]
+    ],
+    "stock": 4450,
+    "free": false,
+    "queried_at": "2026-10-10T13:17:25.558Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C407467",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C2989258",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "TC0550F2003T5G",
+    "tiers": [
+      [
+        1,
+        0.0401
+      ],
+      [
+        100,
+        0.0315
+      ],
+      [
+        300,
+        0.0267
+      ],
+      [
+        1000,
+        0.0238
+      ],
+      [
+        5000,
+        0.0203
+      ],
+      [
+        10000,
+        0.019
+      ]
+    ],
+    "stock": 4935,
+    "free": false,
+    "queried_at": "2026-10-10T13:17:27.089Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C2989258",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17667",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库 (免换料费)",
+    "mpn": "0805W8F4301T5E",
+    "tiers": [
+      [
+        1,
+        0.0485
+      ],
+      [
+        1000,
+        0.0389
+      ],
+      [
+        5000,
+        0.0333
+      ],
+      [
+        10000,
+        0.0301
+      ],
+      [
+        50000,
+        0.0274
+      ],
+      [
+        100000,
+        0.0259
+      ]
+    ],
+    "stock": 102438,
+    "free": true,
+    "queried_at": "2026-10-10T13:18:09.034Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17667",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17490",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库 (免换料费)",
+    "mpn": "0805W8F1602T5E",
+    "tiers": [
+      [
+        1,
+        0.0497
+      ],
+      [
+        1000,
+        0.0403
+      ],
+      [
+        5000,
+        0.035
+      ],
+      [
+        10000,
+        0.0315
+      ],
+      [
+        50000,
+        0.0288
+      ],
+      [
+        100000,
+        0.0273
+      ]
+    ],
+    "stock": 286873,
+    "free": true,
+    "queried_at": "2026-10-10T13:18:10.662Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17490",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C25805",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库 (免换料费)",
+    "mpn": "0603WAF1103T5E",
+    "tiers": [
+      [
+        1,
+        0.0178
+      ],
+      [
+        1000,
+        0.0138
+      ],
+      [
+        5000,
+        0.0117
+      ],
+      [
+        10000,
+        0.0108
+      ],
+      [
+        50000,
+        0.0095
+      ]
+    ],
+    "stock": 239411,
+    "free": true,
+    "queried_at": "2026-10-10T13:18:12.290Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C25805",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C29925",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "0805CG102J500NT",
+    "tiers": [
+      [
+        1,
+        0.0838
+      ],
+      [
+        500,
+        0.0679
+      ],
+      [
+        1500,
+        0.0591
+      ],
+      [
+        4000,
+        0.0482
+      ],
+      [
+        24000,
+        0.0437
+      ],
+      [
+        48000,
+        0.0412
+      ]
+    ],
+    "stock": 154204,
+    "free": false,
+    "queried_at": "2026-10-10T13:18:13.912Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C29925",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C1745",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "0805B473K500NT",
+    "tiers": [
+      [
+        1,
+        0.11
+      ],
+      [
+        500,
+        0.0888
+      ],
+      [
+        1500,
+        0.0772
+      ],
+      [
+        4000,
+        0.0638
+      ],
+      [
+        24000,
+        0.0578
+      ],
+      [
+        48000,
+        0.0545
+      ]
+    ],
+    "stock": 59065,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:00.158Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C1745",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C881377",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "CR0805F4K30P05Z",
+    "tiers": [
+      [
+        1,
+        0.0123
+      ],
+      [
+        1000,
+        0.0091
+      ],
+      [
+        5000,
+        0.0074
+      ],
+      [
+        10000,
+        0.0066
+      ],
+      [
+        50000,
+        0.0056
+      ]
+    ],
+    "stock": 168,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:01.660Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C881377",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C5140228",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "SCR0805F110K",
+    "tiers": [
+      [
+        1,
+        0.013
+      ],
+      [
+        1000,
+        0.0099
+      ],
+      [
+        5000,
+        0.0077
+      ],
+      [
+        10000,
+        0.0069
+      ],
+      [
+        50000,
+        0.006
+      ]
+    ],
+    "stock": 1260,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:03.153Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C5140228",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C2774511",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "HP05W3F1602T5E",
+    "tiers": [
+      [
+        1,
+        0.0223
+      ],
+      [
+        1000,
+        0.0168
+      ],
+      [
+        5000,
+        0.0139
+      ],
+      [
+        10000,
+        0.0125
+      ],
+      [
+        50000,
+        0.0108
+      ]
+    ],
+    "stock": 400,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:04.659Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C2774511",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C1711",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "CL21B104KBCNNNC",
+    "tiers": [
+      [
+        1,
+        0.0918
+      ],
+      [
+        200,
+        0.0714
+      ],
+      [
+        600,
+        0.0623
+      ],
+      [
+        4000,
+        0.0483
+      ],
+      [
+        8000,
+        0.0456
+      ],
+      [
+        20000,
+        0.0438
+      ]
+    ],
+    "stock": 855525,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:37.298Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C1711",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C77102",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM32ER71H106KA12L",
+    "tiers": [
+      [
+        1,
+        2.0223
+      ],
+      [
+        50,
+        1.656
+      ],
+      [
+        150,
+        1.478
+      ],
+      [
+        1000,
+        1.296
+      ],
+      [
+        2000,
+        1.252
+      ],
+      [
+        5000,
+        1.226
+      ]
+    ],
+    "stock": 37069,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:38.958Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C77102",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C88154",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM32ER60J107ME20L",
+    "tiers": [
+      [
+        1,
+        2.928
+      ],
+      [
+        50,
+        2.631
+      ],
+      [
+        150,
+        2.486
+      ],
+      [
+        1000,
+        2.357
+      ],
+      [
+        2000,
+        2.321
+      ],
+      [
+        5000,
+        2.3
+      ]
+    ],
+    "stock": 19155,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:40.634Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C88154",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C397310",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM32DR71H335KA88L",
+    "tiers": [
+      [
+        1,
+        2.136
+      ],
+      [
+        50,
+        1.749
+      ],
+      [
+        150,
+        1.583
+      ],
+      [
+        1000,
+        1.376
+      ],
+      [
+        2000,
+        1.284
+      ],
+      [
+        5000,
+        1.229
+      ]
+    ],
+    "stock": 3073,
+    "free": false,
+    "queried_at": "2026-10-10T13:19:42.208Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C397310",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C86052",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM32ER71H475KA88L",
+    "tiers": [
+      [
+        1,
+        0.886
+      ],
+      [
+        50,
+        0.732
+      ],
+      [
+        150,
+        0.653
+      ],
+      [
+        1000,
+        0.588
+      ],
+      [
+        2000,
+        0.565
+      ],
+      [
+        5000,
+        0.55
+      ]
+    ],
+    "stock": 45538,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:17.908Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C86052",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C86043",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM21BR71H474KA88L",
+    "tiers": [
+      [
+        1,
+        0.435
+      ],
+      [
+        100,
+        0.358
+      ],
+      [
+        300,
+        0.319
+      ],
+      [
+        3000,
+        0.291
+      ],
+      [
+        6000,
+        0.268
+      ],
+      [
+        9000,
+        0.256
+      ]
+    ],
+    "stock": 8699,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:19.468Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C86043",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C86042",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM21BR71H224KA01L",
+    "tiers": [
+      [
+        1,
+        0.676
+      ],
+      [
+        50,
+        0.575
+      ],
+      [
+        150,
+        0.524
+      ],
+      [
+        500,
+        0.487
+      ],
+      [
+        3000,
+        0.351
+      ],
+      [
+        6000,
+        0.336
+      ]
+    ],
+    "stock": 8454,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:21.023Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C86042",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C77083",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "GRM21BR71H105KA12L",
+    "tiers": [
+      [
+        1,
+        0.259
+      ],
+      [
+        100,
+        0.21
+      ],
+      [
+        300,
+        0.185
+      ],
+      [
+        3000,
+        0.164
+      ],
+      [
+        6000,
+        0.157
+      ],
+      [
+        9000,
+        0.152
+      ]
+    ],
+    "stock": 109368,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:22.687Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C77083",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C1636",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "0603CG102J500NT",
+    "tiers": [
+      [
+        1,
+        0.0502
+      ],
+      [
+        1000,
+        0.0405
+      ],
+      [
+        4000,
+        0.0325
+      ],
+      [
+        8000,
+        0.0292
+      ],
+      [
+        48000,
+        0.0264
+      ],
+      [
+        100000,
+        0.0249
+      ]
+    ],
+    "stock": 88058,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:49.025Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C1636",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C2073442",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "WSL1206R2000FEA",
+    "tiers": [
+      [
+        1,
+        2.48
+      ],
+      [
+        10,
+        1.93
+      ],
+      [
+        30,
+        1.7
+      ],
+      [
+        100,
+        1.41
+      ],
+      [
+        500,
+        1.27
+      ],
+      [
+        1000,
+        1.2
+      ]
+    ],
+    "stock": 2094,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:50.553Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C2073442",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C53896892",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "PCR1040-150-M",
+    "tiers": [
+      [
+        1,
+        1.247
+      ],
+      [
+        50,
+        0.968
+      ],
+      [
+        150,
+        0.849
+      ],
+      [
+        500,
+        0.7
+      ],
+      [
+        2500,
+        0.633
+      ],
+      [
+        5000,
+        0.593
+      ]
+    ],
+    "stock": 414,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:52.089Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C53896892",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C150506",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "DMN3065LW-7",
+    "tiers": [
+      [
+        1,
+        1.725
+      ],
+      [
+        50,
+        1.375
+      ],
+      [
+        150,
+        1.225
+      ],
+      [
+        500,
+        1.0372
+      ],
+      [
+        3000,
+        0.954
+      ],
+      [
+        6000,
+        0.904
+      ]
+    ],
+    "stock": 7392,
+    "free": false,
+    "queried_at": "2026-10-10T13:20:53.640Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C150506",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C151010",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "DMP3068L-7",
+    "tiers": [
+      [
+        1,
+        1.373
+      ],
+      [
+        50,
+        1.119
+      ],
+      [
+        150,
+        1.0098
+      ],
+      [
+        500,
+        0.874
+      ],
+      [
+        3000,
+        0.77
+      ],
+      [
+        6000,
+        0.733
+      ]
+    ],
+    "stock": 23089,
+    "free": false,
+    "queried_at": "2026-10-10T13:21:47.995Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C151010",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C151335",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "MBR230S1F-7",
+    "tiers": [
+      [
+        1,
+        1.14
+      ],
+      [
+        50,
+        0.926
+      ],
+      [
+        150,
+        0.834
+      ],
+      [
+        500,
+        0.72
+      ],
+      [
+        3000,
+        0.669
+      ],
+      [
+        6000,
+        0.638
+      ]
+    ],
+    "stock": 41298,
+    "free": false,
+    "queried_at": "2026-10-10T13:21:49.587Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C151335",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C124188",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "B0530W-7-F",
+    "tiers": [
+      [
+        1,
+        0.736
+      ],
+      [
+        50,
+        0.576
+      ],
+      [
+        150,
+        0.495
+      ],
+      [
+        500,
+        0.435
+      ],
+      [
+        3000,
+        0.379
+      ],
+      [
+        6000,
+        0.355
+      ]
+    ],
+    "stock": 10761,
+    "free": false,
+    "queried_at": "2026-10-10T13:21:51.132Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C124188",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C19726",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "BAT54SLT1G",
+    "tiers": [
+      [
+        1,
+        0.155
+      ],
+      [
+        10,
+        0.115
+      ],
+      [
+        30,
+        0.0973
+      ],
+      [
+        100,
+        0.084
+      ],
+      [
+        500,
+        0.0786
+      ],
+      [
+        1000,
+        0.0751
+      ]
+    ],
+    "stock": 163060,
+    "free": false,
+    "queried_at": "2026-10-10T13:21:52.762Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C19726",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C94514",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "MMBT3904-7-F",
+    "tiers": [
+      [
+        1,
+        0.392
+      ],
+      [
+        100,
+        0.32
+      ],
+      [
+        300,
+        0.284
+      ],
+      [
+        3000,
+        0.257
+      ],
+      [
+        6000,
+        0.236
+      ],
+      [
+        9000,
+        0.225
+      ]
+    ],
+    "stock": 265330,
+    "free": false,
+    "queried_at": "2026-10-10T13:26:05.693Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C94514",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C82762",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "MMBT3906-7-F",
+    "tiers": [
+      [
+        1,
+        0.373
+      ],
+      [
+        100,
+        0.294
+      ],
+      [
+        300,
+        0.254
+      ],
+      [
+        3000,
+        0.225
+      ],
+      [
+        6000,
+        0.201
+      ],
+      [
+        9000,
+        0.189
+      ]
+    ],
+    "stock": 37890,
+    "free": false,
+    "queried_at": "2026-10-10T13:26:07.245Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C82762",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C6628419",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "PJA3433_R1_00001",
+    "tiers": [],
+    "stock": 0,
+    "free": false,
+    "queried_at": "2026-10-10T13:26:08.738Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C6628419",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C144313",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "TCN75AVOA713",
+    "tiers": [
+      [
+        1,
+        7.8
+      ],
+      [
+        10,
+        6.61
+      ],
+      [
+        30,
+        5.96
+      ],
+      [
+        100,
+        5.22
+      ],
+      [
+        500,
+        4.89
+      ],
+      [
+        1000,
+        4.74
+      ]
+    ],
+    "stock": 534,
+    "free": false,
+    "queried_at": "2026-10-10T13:26:10.222Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C144313",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C2681320",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "TPS22917DBVR",
+    "tiers": [
+      [
+        1,
+        2.448
+      ],
+      [
+        50,
+        1.894
+      ],
+      [
+        150,
+        1.657
+      ],
+      [
+        500,
+        1.361
+      ],
+      [
+        3000,
+        1.229
+      ],
+      [
+        6000,
+        1.15
+      ]
+    ],
+    "stock": 23889,
+    "free": false,
+    "queried_at": "2026-10-10T13:26:22.890Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C2681320",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C2856839",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "扩展库",
+    "mpn": "FPC-05FB-60PH20",
+    "tiers": [
+      [
+        1,
+        2.451
+      ],
+      [
+        10,
+        1.957
+      ],
+      [
+        30,
+        1.739
+      ],
+      [
+        100,
+        1.473
+      ],
+      [
+        500,
+        1.359
+      ],
+      [
+        1500,
+        1.169
+      ]
+    ],
+    "stock": 7645,
+    "free": false,
+    "queried_at": "2026-10-10T13:26:24.433Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C2856839",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17521",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F220KT5E",
+    "tiers": [
+      [
+        1,
+        0.0453
+      ],
+      [
+        1000,
+        0.0364
+      ],
+      [
+        5000,
+        0.0306
+      ],
+      [
+        10000,
+        0.0273
+      ],
+      [
+        50000,
+        0.0248
+      ],
+      [
+        100000,
+        0.0235
+      ]
+    ],
+    "stock": 281124,
+    "free": true,
+    "queried_at": "2026-10-10T13:26:26.075Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17521",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17539",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F2003T5E",
+    "tiers": [
+      [
+        1,
+        0.034
+      ],
+      [
+        1000,
+        0.0266
+      ],
+      [
+        5000,
+        0.0218
+      ],
+      [
+        10000,
+        0.0193
+      ],
+      [
+        50000,
+        0.0171
+      ],
+      [
+        100000,
+        0.016
+      ]
+    ],
+    "stock": 652598,
+    "free": true,
+    "queried_at": "2026-10-10T13:26:27.744Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17539",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17477",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F0000T5E",
+    "tiers": [
+      [
+        1,
+        0.0268
+      ],
+      [
+        1000,
+        0.0214
+      ],
+      [
+        5000,
+        0.0181
+      ],
+      [
+        10000,
+        0.0163
+      ],
+      [
+        50000,
+        0.0155
+      ],
+      [
+        100000,
+        0.0151
+      ]
+    ],
+    "stock": 6466409,
+    "free": true,
+    "queried_at": "2026-10-10T13:26:44.077Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17477",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C4310",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F1501T5E",
+    "tiers": [
+      [
+        1,
+        0.0212
+      ],
+      [
+        1000,
+        0.0165
+      ],
+      [
+        5000,
+        0.0131
+      ],
+      [
+        10000,
+        0.0119
+      ],
+      [
+        50000,
+        0.0104
+      ]
+    ],
+    "stock": 670095,
+    "free": true,
+    "queried_at": "2026-10-10T13:26:45.912Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C4310",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C149504",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F1003T5E",
+    "tiers": [
+      [
+        1,
+        0.0361
+      ],
+      [
+        1000,
+        0.0286
+      ],
+      [
+        5000,
+        0.0248
+      ],
+      [
+        10000,
+        0.0223
+      ],
+      [
+        50000,
+        0.0213
+      ],
+      [
+        100000,
+        0.0206
+      ]
+    ],
+    "stock": 3923011,
+    "free": true,
+    "queried_at": "2026-10-10T13:26:47.610Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C149504",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17514",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F1004T5E",
+    "tiers": [
+      [
+        1,
+        0.0264
+      ],
+      [
+        1000,
+        0.021
+      ],
+      [
+        5000,
+        0.0171
+      ],
+      [
+        10000,
+        0.0153
+      ],
+      [
+        50000,
+        0.0137
+      ],
+      [
+        100000,
+        0.0129
+      ]
+    ],
+    "stock": 2325315,
+    "free": true,
+    "queried_at": "2026-10-10T13:26:49.526Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17514",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17604",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F2001T5E",
+    "tiers": [
+      [
+        1,
+        0.0234
+      ],
+      [
+        1000,
+        0.0182
+      ],
+      [
+        5000,
+        0.0149
+      ],
+      [
+        10000,
+        0.0136
+      ],
+      [
+        50000,
+        0.0119
+      ]
+    ],
+    "stock": 5275955,
+    "free": true,
+    "queried_at": "2026-10-10T13:27:42.960Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17604",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17634",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F330JT5E",
+    "tiers": [
+      [
+        1,
+        0.0285
+      ],
+      [
+        1000,
+        0.0222
+      ],
+      [
+        5000,
+        0.0182
+      ],
+      [
+        10000,
+        0.0162
+      ],
+      [
+        50000,
+        0.0143
+      ],
+      [
+        100000,
+        0.0134
+      ]
+    ],
+    "stock": 1516041,
+    "free": true,
+    "queried_at": "2026-10-10T13:27:44.641Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17634",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  },
+  {
+    "code": "C17673",
+    "identity_ok": true,
+    "captcha": false,
+    "library_evidence": "基础库 (免换料费)",
+    "mpn": "0805W8F4701T5E",
+    "tiers": [
+      [
+        1,
+        0.0306
+      ],
+      [
+        1000,
+        0.0243
+      ],
+      [
+        5000,
+        0.021
+      ],
+      [
+        10000,
+        0.0189
+      ],
+      [
+        50000,
+        0.0181
+      ],
+      [
+        100000,
+        0.0175
+      ]
+    ],
+    "stock": 4704531,
+    "free": true,
+    "queried_at": "2026-10-10T13:27:46.326Z",
+    "url": "https://www.jlc-smt.com/lcsc/search?q=C17673",
+    "source": "native Chrome accessibility, exact C-code/model row; public price before shared-stock section"
+  }
+]

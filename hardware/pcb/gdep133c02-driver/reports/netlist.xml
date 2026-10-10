@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>/Users/rhys/tw/26/09/album/hardware/pcb/gdep133c02-driver/gdep133c02-driver.kicad_sch</source>
-    <date>2026-10-09T08:06:59</date>
+    <date>2026-10-10T21:56:56</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>GDEP133C02 minimum driver - DRAFT</title>
         <company>album</company>
-        <rev>0.6-DOMESTIC</rev>
+        <rev>0.9-RESISTORS</rev>
         <date>2026-10-09</date>
         <source>gdep133c02-driver.kicad_sch</source>
         <comment number="1" value=""/>
@@ -26,7 +26,7 @@
       <title_block>
         <title>Power - wired functional circuits</title>
         <company/>
-        <rev>0.6-DOMESTIC</rev>
+        <rev>0.9-RESISTORS</rev>
         <date>2026-10-09</date>
         <source>power.kicad_sch</source>
         <comment number="1" value=""/>
@@ -44,7 +44,7 @@
       <title_block>
         <title>Panel - wired functional circuits</title>
         <company/>
-        <rev>0.6-DOMESTIC</rev>
+        <rev>0.9-RESISTORS</rev>
         <date>2026-10-09</date>
         <source>panel.kicad_sch</source>
         <comment number="1" value=""/>
@@ -62,7 +62,7 @@
       <title_block>
         <title>Interface - wired functional circuits</title>
         <company/>
-        <rev>0.6-DOMESTIC</rev>
+        <rev>0.9-RESISTORS</rev>
         <date>2026-10-09</date>
         <source>interface.kicad_sch</source>
         <comment number="1" value=""/>
@@ -81,14 +81,14 @@
     <comp ref="C12">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C12" description=""/>
@@ -143,14 +143,14 @@
     <comp ref="C14">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C14" description=""/>
@@ -205,14 +205,14 @@
     <comp ref="C16">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C16" description=""/>
@@ -298,14 +298,14 @@
     <comp ref="C19">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C19" description=""/>
@@ -360,14 +360,14 @@
     <comp ref="C21">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C21" description=""/>
@@ -544,22 +544,23 @@
       </units>
     </comp>
     <comp ref="C28">
-      <value>2.2uF/50V</value>
+      <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H225KA88L</field>
+        <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
+        <field name="LCSC">C86052</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C28" description=""/>
-      <property name="MPN" value="GRM32ER71H225KA88L"/>
+      <property name="MPN" value="GRM32ER71H475KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C86052"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -576,14 +577,14 @@
     <comp ref="C29">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C29" description=""/>
@@ -607,14 +608,14 @@
     <comp ref="C30">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C30" description=""/>
@@ -731,21 +732,21 @@
     <comp ref="C36">
       <value>1nF/50V C0G</value>
       <footprint>Driver:Capacitor_SMD__C_0805_2012Metric</footprint>
-      <datasheet>https://search.kemet.com/download/specsheet/C0805C102J5GACTU</datasheet>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29925</datasheet>
       <fields>
-        <field name="MPN">C0805C102J5GACTU</field>
-        <field name="Manufacturer">KEMET</field>
-        <field name="LCSC"/>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
+        <field name="MPN">0805CG102J500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C29925</field>
+        <field name="BOM Comments">v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_0805_2012Metric</field>
-        <field name="Datasheet">https://search.kemet.com/download/specsheet/C0805C102J5GACTU</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29925</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C36" description=""/>
-      <property name="MPN" value="C0805C102J5GACTU"/>
-      <property name="Manufacturer" value="KEMET"/>
-      <property name="LCSC" value=""/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="0805CG102J500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C29925"/>
+      <property name="BOM Comments" value="v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -762,19 +763,20 @@
     <comp ref="D1">
       <value>MBR230S1F-7</value>
       <footprint>Driver:Diode_SMD__D_SOD-123F</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf</datasheet>
       <fields>
         <field name="MPN">MBR230S1F-7</field>
         <field name="Manufacturer">Diodes</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C151335</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Diode_SMD__D_SOD-123F</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_D1" description=""/>
       <property name="MPN" value="MBR230S1F-7"/>
       <property name="Manufacturer" value="Diodes"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C151335"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -792,19 +794,20 @@
     <comp ref="D2">
       <value>MBR230S1F-7</value>
       <footprint>Driver:Diode_SMD__D_SOD-123F</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf</datasheet>
       <fields>
         <field name="MPN">MBR230S1F-7</field>
         <field name="Manufacturer">Diodes</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C151335</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Diode_SMD__D_SOD-123F</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_D2" description=""/>
       <property name="MPN" value="MBR230S1F-7"/>
       <property name="Manufacturer" value="Diodes"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C151335"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -820,23 +823,23 @@
       </units>
     </comp>
     <comp ref="D3">
-      <value>BAT54S-7-F</value>
+      <value>BAT54SLT1G</value>
       <footprint>Driver:Package_TO_SOT_SMD__SOT-23</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf</datasheet>
+      <datasheet>https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf</datasheet>
       <fields>
-        <field name="MPN">BAT54S-7-F</field>
-        <field name="Manufacturer">Diodes</field>
-        <field name="LCSC">C83574</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
+        <field name="MPN">BAT54SLT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC">C19726</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:Package_TO_SOT_SMD__SOT-23</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf</field>
+        <field name="Datasheet">https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_D3" description=""/>
-      <property name="MPN" value="BAT54S-7-F"/>
-      <property name="Manufacturer" value="Diodes"/>
-      <property name="LCSC" value="C83574"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="BAT54SLT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC" value="C19726"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -854,19 +857,20 @@
     <comp ref="D4">
       <value>B0530W-7-F</value>
       <footprint>Driver:Diode_SMD__D_SOD-123</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20241225/E2605F86CBDD833A242C4ED6CC4B6ED3.pdf</datasheet>
       <fields>
         <field name="MPN">B0530W-7-F</field>
         <field name="Manufacturer">Diodes</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C124188</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Diode_SMD__D_SOD-123</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20241225/E2605F86CBDD833A242C4ED6CC4B6ED3.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_D4" description=""/>
       <property name="MPN" value="B0530W-7-F"/>
       <property name="Manufacturer" value="Diodes"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C124188"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -882,23 +886,23 @@
       </units>
     </comp>
     <comp ref="D5">
-      <value>BAT54S-7-F</value>
+      <value>BAT54SLT1G</value>
       <footprint>Driver:Package_TO_SOT_SMD__SOT-23</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf</datasheet>
+      <datasheet>https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf</datasheet>
       <fields>
-        <field name="MPN">BAT54S-7-F</field>
-        <field name="Manufacturer">Diodes</field>
-        <field name="LCSC">C83574</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
+        <field name="MPN">BAT54SLT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC">C19726</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:Package_TO_SOT_SMD__SOT-23</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf</field>
+        <field name="Datasheet">https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_D5" description=""/>
-      <property name="MPN" value="BAT54S-7-F"/>
-      <property name="Manufacturer" value="Diodes"/>
-      <property name="LCSC" value="C83574"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="BAT54SLT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC" value="C19726"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -914,23 +918,23 @@
       </units>
     </comp>
     <comp ref="D6">
-      <value>BAT54S-7-F</value>
+      <value>BAT54SLT1G</value>
       <footprint>Driver:Package_TO_SOT_SMD__SOT-23</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf</datasheet>
+      <datasheet>https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf</datasheet>
       <fields>
-        <field name="MPN">BAT54S-7-F</field>
-        <field name="Manufacturer">Diodes</field>
-        <field name="LCSC">C83574</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
+        <field name="MPN">BAT54SLT1G</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="LCSC">C19726</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:Package_TO_SOT_SMD__SOT-23</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf</field>
+        <field name="Datasheet">https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_D6" description=""/>
-      <property name="MPN" value="BAT54S-7-F"/>
-      <property name="Manufacturer" value="Diodes"/>
-      <property name="LCSC" value="C83574"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="BAT54SLT1G"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC" value="C19726"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -978,22 +982,22 @@
     </comp>
     <comp ref="L1">
       <value>15uH</value>
-      <footprint>Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/</datasheet>
+      <footprint>Driver:L_JIERR_PCR1040</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892</datasheet>
       <fields>
-        <field name="MPN">MSS1246-153MLC</field>
-        <field name="Manufacturer">Coilcraft</field>
-        <field name="LCSC"/>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/</field>
+        <field name="MPN">PCR1040-150-M</field>
+        <field name="Manufacturer">JIERR</field>
+        <field name="LCSC">C53896892</field>
+        <field name="BOM Comments">v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md</field>
+        <field name="Footprint">Driver:L_JIERR_PCR1040</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_L1" description=""/>
-      <property name="MPN" value="MSS1246-153MLC"/>
-      <property name="Manufacturer" value="Coilcraft"/>
-      <property name="LCSC" value=""/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="PCR1040-150-M"/>
+      <property name="Manufacturer" value="JIERR"/>
+      <property name="LCSC" value="C53896892"/>
+      <property name="BOM Comments" value="v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1009,22 +1013,22 @@
     </comp>
     <comp ref="L2">
       <value>15uH</value>
-      <footprint>Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/</datasheet>
+      <footprint>Driver:L_JIERR_PCR1040</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892</datasheet>
       <fields>
-        <field name="MPN">MSS1246-153MLC</field>
-        <field name="Manufacturer">Coilcraft</field>
-        <field name="LCSC"/>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/</field>
+        <field name="MPN">PCR1040-150-M</field>
+        <field name="Manufacturer">JIERR</field>
+        <field name="LCSC">C53896892</field>
+        <field name="BOM Comments">v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md</field>
+        <field name="Footprint">Driver:L_JIERR_PCR1040</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_L2" description=""/>
-      <property name="MPN" value="MSS1246-153MLC"/>
-      <property name="Manufacturer" value="Coilcraft"/>
-      <property name="LCSC" value=""/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="PCR1040-150-M"/>
+      <property name="Manufacturer" value="JIERR"/>
+      <property name="LCSC" value="C53896892"/>
+      <property name="BOM Comments" value="v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1040,22 +1044,22 @@
     </comp>
     <comp ref="L3">
       <value>15uH</value>
-      <footprint>Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/</datasheet>
+      <footprint>Driver:L_JIERR_PCR1040</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892</datasheet>
       <fields>
-        <field name="MPN">MSS1246-153MLC</field>
-        <field name="Manufacturer">Coilcraft</field>
-        <field name="LCSC"/>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/</field>
+        <field name="MPN">PCR1040-150-M</field>
+        <field name="Manufacturer">JIERR</field>
+        <field name="LCSC">C53896892</field>
+        <field name="BOM Comments">v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md</field>
+        <field name="Footprint">Driver:L_JIERR_PCR1040</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_L3" description=""/>
-      <property name="MPN" value="MSS1246-153MLC"/>
-      <property name="Manufacturer" value="Coilcraft"/>
-      <property name="LCSC" value=""/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="PCR1040-150-M"/>
+      <property name="Manufacturer" value="JIERR"/>
+      <property name="LCSC" value="C53896892"/>
+      <property name="BOM Comments" value="v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1204,7 +1208,7 @@
       <fields>
         <field name="MPN">PJA3433_R1_00001</field>
         <field name="Manufacturer">Panjit</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C6628419</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Package_TO_SOT_SMD__SOT-23</field>
         <field name="Datasheet">https://www.panjit.com.cn/upload/datasheet/PJA3433.pdf</field>
@@ -1213,7 +1217,7 @@
       <libsource lib="Driver" part="P_Q7" description=""/>
       <property name="MPN" value="PJA3433_R1_00001"/>
       <property name="Manufacturer" value="Panjit"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C6628419"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -1326,21 +1330,31 @@
     <comp ref="R7">
       <value>4.3k ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137518</datasheet>
+      <datasheet>https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</datasheet>
       <fields>
-        <field name="MPN">RC0805FR-074K3L</field>
-        <field name="Manufacturer">YAGEO</field>
-        <field name="LCSC">C137518</field>
-        <field name="BOM Comments">同阻值±1%常用0805；手焊加长焊盘。</field>
+        <field name="MPN">0805W8F4301T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C17667</field>
+        <field name="BOM Comments">v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md</field>
+        <field name="LibraryCategory">SMT优选合作（扩展库免换料费）</field>
+        <field name="FeeEvidence">https://www.jlc-smt.com/lcsc/search?q=C17667 | 扩展库 (免换料费)</field>
+        <field name="StockQueriedAt">2026-10-10T13:18:09.034Z</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-10 user authorized three resistor groups only; all other assembly unchanged</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137518</field>
+        <field name="Datasheet">https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R7" description=""/>
-      <property name="MPN" value="RC0805FR-074K3L"/>
-      <property name="Manufacturer" value="YAGEO"/>
-      <property name="LCSC" value="C137518"/>
-      <property name="BOM Comments" value="同阻值±1%常用0805；手焊加长焊盘。"/>
+      <property name="MPN" value="0805W8F4301T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C17667"/>
+      <property name="BOM Comments" value="v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"/>
+      <property name="LibraryCategory" value="SMT优选合作（扩展库免换料费）"/>
+      <property name="FeeEvidence" value="https://www.jlc-smt.com/lcsc/search?q=C17667 | 扩展库 (免换料费)"/>
+      <property name="StockQueriedAt" value="2026-10-10T13:18:09.034Z"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-10 user authorized three resistor groups only; all other assembly unchanged"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1357,21 +1371,21 @@
     <comp ref="R8">
       <value>110k ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137599</datasheet>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/04ce3139d67e70b6b0ee7061f06aa3e9.pdf?productCode=C5140228</datasheet>
       <fields>
-        <field name="MPN">RC0805FR-07110KL</field>
-        <field name="Manufacturer">YAGEO</field>
-        <field name="LCSC">C137599</field>
-        <field name="BOM Comments">同阻值±1%常用0805；手焊加长焊盘。</field>
+        <field name="MPN">SCR0805F110K</field>
+        <field name="Manufacturer">VO</field>
+        <field name="LCSC">C5140228</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137599</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/04ce3139d67e70b6b0ee7061f06aa3e9.pdf?productCode=C5140228</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R8" description=""/>
-      <property name="MPN" value="RC0805FR-07110KL"/>
-      <property name="Manufacturer" value="YAGEO"/>
-      <property name="LCSC" value="C137599"/>
-      <property name="BOM Comments" value="同阻值±1%常用0805；手焊加长焊盘。"/>
+      <property name="MPN" value="SCR0805F110K"/>
+      <property name="Manufacturer" value="VO"/>
+      <property name="LCSC" value="C5140228"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1388,21 +1402,31 @@
     <comp ref="R10">
       <value>2.2 ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521</datasheet>
+      <datasheet>https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</datasheet>
       <fields>
         <field name="MPN">0805W8F220KT5E</field>
         <field name="Manufacturer">UNI-ROYAL</field>
         <field name="LCSC">C17521</field>
-        <field name="BOM Comments">同阻值±1%常用0805；手焊加长焊盘。</field>
+        <field name="BOM Comments">v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)</field>
+        <field name="StockQueriedAt">2026-10-10T13:26:26.075Z</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-10 user authorized three resistor groups only; all other assembly unchanged</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521</field>
+        <field name="Datasheet">https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R10" description=""/>
       <property name="MPN" value="0805W8F220KT5E"/>
       <property name="Manufacturer" value="UNI-ROYAL"/>
       <property name="LCSC" value="C17521"/>
-      <property name="BOM Comments" value="同阻值±1%常用0805；手焊加长焊盘。"/>
+      <property name="BOM Comments" value="v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)"/>
+      <property name="StockQueriedAt" value="2026-10-10T13:26:26.075Z"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-10 user authorized three resistor groups only; all other assembly unchanged"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1512,21 +1536,31 @@
     <comp ref="R17">
       <value>200k ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539</datasheet>
+      <datasheet>https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</datasheet>
       <fields>
         <field name="MPN">0805W8F2003T5E</field>
         <field name="Manufacturer">UNI-ROYAL</field>
         <field name="LCSC">C17539</field>
-        <field name="BOM Comments">同阻值±1%常用0805；手焊加长焊盘。</field>
+        <field name="BOM Comments">v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)</field>
+        <field name="StockQueriedAt">2026-10-10T13:26:27.744Z</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-10 user authorized three resistor groups only; all other assembly unchanged</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539</field>
+        <field name="Datasheet">https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R17" description=""/>
       <property name="MPN" value="0805W8F2003T5E"/>
       <property name="Manufacturer" value="UNI-ROYAL"/>
       <property name="LCSC" value="C17539"/>
-      <property name="BOM Comments" value="同阻值±1%常用0805；手焊加长焊盘。"/>
+      <property name="BOM Comments" value="v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)"/>
+      <property name="StockQueriedAt" value="2026-10-10T13:26:27.744Z"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-10 user authorized three resistor groups only; all other assembly unchanged"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1543,21 +1577,21 @@
     <comp ref="R18">
       <value>16k ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17490</datasheet>
+      <datasheet>https://www.uni-royal.cn/images/userfile/file/1723267015d7bab4914ae1a4d5.pdf</datasheet>
       <fields>
-        <field name="MPN">0805W8F1602T5E</field>
+        <field name="MPN">HP05W3F1602T5E</field>
         <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="LCSC">C17490</field>
-        <field name="BOM Comments">同阻值±1%常用0805；手焊加长焊盘。</field>
+        <field name="LCSC">C2774511</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17490</field>
+        <field name="Datasheet">https://www.uni-royal.cn/images/userfile/file/1723267015d7bab4914ae1a4d5.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R18" description=""/>
-      <property name="MPN" value="0805W8F1602T5E"/>
+      <property name="MPN" value="HP05W3F1602T5E"/>
       <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="LCSC" value="C17490"/>
-      <property name="BOM Comments" value="同阻值±1%常用0805；手焊加长焊盘。"/>
+      <property name="LCSC" value="C2774511"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1574,21 +1608,31 @@
     <comp ref="R19">
       <value>2.2 ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521</datasheet>
+      <datasheet>https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</datasheet>
       <fields>
         <field name="MPN">0805W8F220KT5E</field>
         <field name="Manufacturer">UNI-ROYAL</field>
         <field name="LCSC">C17521</field>
-        <field name="BOM Comments">同阻值±1%常用0805；手焊加长焊盘。</field>
+        <field name="BOM Comments">v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)</field>
+        <field name="StockQueriedAt">2026-10-10T13:26:26.075Z</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-10 user authorized three resistor groups only; all other assembly unchanged</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521</field>
+        <field name="Datasheet">https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R19" description=""/>
       <property name="MPN" value="0805W8F220KT5E"/>
       <property name="Manufacturer" value="UNI-ROYAL"/>
       <property name="LCSC" value="C17521"/>
-      <property name="BOM Comments" value="同阻值±1%常用0805；手焊加长焊盘。"/>
+      <property name="BOM Comments" value="v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)"/>
+      <property name="StockQueriedAt" value="2026-10-10T13:26:26.075Z"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-10 user authorized three resistor groups only; all other assembly unchanged"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1636,21 +1680,21 @@
     <comp ref="R49">
       <value>0 ohm</value>
       <footprint>Driver:Resistor_SMD__R_0805_2012Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf</datasheet>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17477</datasheet>
       <fields>
-        <field name="MPN">RC0805JR-070RL</field>
-        <field name="Manufacturer">Yageo</field>
-        <field name="LCSC">C96345</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
+        <field name="MPN">0805W8F0000T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C17477</field>
+        <field name="BOM Comments">v0.8 国内现货降本；详见降本审核-v0.8.md</field>
         <field name="Footprint">Driver:Resistor_SMD__R_0805_2012Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17477</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R49" description=""/>
-      <property name="MPN" value="RC0805JR-070RL"/>
-      <property name="Manufacturer" value="Yageo"/>
-      <property name="LCSC" value="C96345"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="MPN" value="0805W8F0000T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C17477"/>
+      <property name="BOM Comments" value="v0.8 国内现货降本；详见降本审核-v0.8.md"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1667,21 +1711,31 @@
     <comp ref="R50">
       <value>200k ohm</value>
       <footprint>Driver:R_0805_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539</datasheet>
+      <datasheet>https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</datasheet>
       <fields>
         <field name="MPN">0805W8F2003T5E</field>
         <field name="Manufacturer">UNI-ROYAL</field>
         <field name="LCSC">C17539</field>
-        <field name="BOM Comments">与R17串联：200k+200k=400k，±1%最坏误差，±100ppm/℃。</field>
+        <field name="BOM Comments">v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)</field>
+        <field name="StockQueriedAt">2026-10-10T13:26:27.744Z</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-10 user authorized three resistor groups only; all other assembly unchanged</field>
         <field name="Footprint">Driver:R_0805_HandSolder</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539</field>
+        <field name="Datasheet">https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_R50" description=""/>
       <property name="MPN" value="0805W8F2003T5E"/>
       <property name="Manufacturer" value="UNI-ROYAL"/>
       <property name="LCSC" value="C17539"/>
-      <property name="BOM Comments" value="与R17串联：200k+200k=400k，±1%最坏误差，±100ppm/℃。"/>
+      <property name="BOM Comments" value="v0.9 三组电阻免换料费；详见三组电阻免换料费改版-v0.9.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)"/>
+      <property name="StockQueriedAt" value="2026-10-10T13:26:27.744Z"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-10 user authorized three resistor groups only; all other assembly unchanged"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1760,19 +1814,20 @@
     <comp ref="U1">
       <value>0.2 ohm</value>
       <footprint>Driver:Resistor_SMD__R_1206_3216Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf</datasheet>
       <fields>
         <field name="MPN">WSL1206R2000FEA</field>
         <field name="Manufacturer">Vishay</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C2073442</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Resistor_SMD__R_1206_3216Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_U1" description=""/>
       <property name="MPN" value="WSL1206R2000FEA"/>
       <property name="Manufacturer" value="Vishay"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C2073442"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -1790,19 +1845,20 @@
     <comp ref="U2">
       <value>0.2 ohm</value>
       <footprint>Driver:Resistor_SMD__R_1206_3216Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf</datasheet>
       <fields>
         <field name="MPN">WSL1206R2000FEA</field>
         <field name="Manufacturer">Vishay</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C2073442</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Resistor_SMD__R_1206_3216Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_U2" description=""/>
       <property name="MPN" value="WSL1206R2000FEA"/>
       <property name="Manufacturer" value="Vishay"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C2073442"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -1820,19 +1876,20 @@
     <comp ref="U3">
       <value>0.2 ohm</value>
       <footprint>Driver:Resistor_SMD__R_1206_3216Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf</datasheet>
       <fields>
         <field name="MPN">WSL1206R2000FEA</field>
         <field name="Manufacturer">Vishay</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C2073442</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Resistor_SMD__R_1206_3216Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_U3" description=""/>
       <property name="MPN" value="WSL1206R2000FEA"/>
       <property name="Manufacturer" value="Vishay"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C2073442"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -2102,14 +2159,14 @@
     <comp ref="C8">
       <value>4.7uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32ER71H475KA88L</field>
         <field name="Manufacturer">Murata</field>
         <field name="LCSC">C86052</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C8" description=""/>
@@ -2133,19 +2190,20 @@
     <comp ref="C9">
       <value>470nF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_0805_2012Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM21BR71H474KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C86043</field>
         <field name="BOM Comments">保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C9" description=""/>
       <property name="MPN" value="GRM21BR71H474KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C86043"/>
       <property name="BOM Comments" value="保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2163,19 +2221,20 @@
     <comp ref="C10">
       <value>470nF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_0805_2012Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM21BR71H474KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C86043</field>
         <field name="BOM Comments">保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C10" description=""/>
       <property name="MPN" value="GRM21BR71H474KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C86043"/>
       <property name="BOM Comments" value="保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2193,19 +2252,20 @@
     <comp ref="C11">
       <value>470nF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_0805_2012Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
       <fields>
         <field name="MPN">GRM21BR71H474KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C86043</field>
         <field name="BOM Comments">保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C11" description=""/>
       <property name="MPN" value="GRM21BR71H474KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C86043"/>
       <property name="BOM Comments" value="保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2316,19 +2376,20 @@
     <comp ref="C105">
       <value>3.3uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32DR71H335KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C397310</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C105" description=""/>
       <property name="MPN" value="GRM32DR71H335KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C397310"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2408,19 +2469,20 @@
     <comp ref="C108">
       <value>3.3uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32DR71H335KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C397310</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C108" description=""/>
       <property name="MPN" value="GRM32DR71H335KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C397310"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2500,19 +2562,20 @@
     <comp ref="C111">
       <value>3.3uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32DR71H335KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C397310</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C111" description=""/>
       <property name="MPN" value="GRM32DR71H335KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C397310"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2592,19 +2655,20 @@
     <comp ref="C114">
       <value>3.3uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32DR71H335KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C397310</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C114" description=""/>
       <property name="MPN" value="GRM32DR71H335KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C397310"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2684,19 +2748,20 @@
     <comp ref="C117">
       <value>3.3uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32DR71H335KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C397310</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C117" description=""/>
       <property name="MPN" value="GRM32DR71H335KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C397310"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
@@ -2776,19 +2841,20 @@
     <comp ref="C120">
       <value>3.3uF/50V</value>
       <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
+      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</datasheet>
       <fields>
         <field name="MPN">GRM32DR71H335KA88L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC"/>
+        <field name="LCSC">C397310</field>
         <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
         <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C120" description=""/>
       <property name="MPN" value="GRM32DR71H335KA88L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C397310"/>
       <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>

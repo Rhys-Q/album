@@ -1,6 +1,6 @@
 {
   "name": "gdep133c02-driver",
-  "revision": "0.6-domestic-hand-solder",
+  "revision": "0.9-resistors",
   "parts": [
     {
       "ref": "J1",
@@ -28,7 +28,7 @@
     },
     {
       "ref": "C28",
-      "value": "2.2uF/50V",
+      "value": "4.7uF/50V",
       "pins": {
         "1": "BENCH_3V3",
         "2": "GND"
@@ -39,16 +39,16 @@
         65
       ],
       "group": "entry",
-      "mpn": "GRM32ER71H225KA88L",
+      "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "5bd97427-2cd0-520c-975e-c2941cd20b1a",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "selection_note": "v0.8 qualified domestic cost replacement: BENCH_3V3 input bypass increased to existing 4.7µF/50V X7R 1210; see v0.8 input transient review",
+      "lcsc": "C86052"
     },
     {
       "ref": "U5",
@@ -131,7 +131,7 @@
       "group": "entry",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -155,7 +155,7 @@
       "group": "entry",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -243,22 +243,22 @@
         "1": "EPD_3V3",
         "2": "LX"
       },
-      "fp": "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX",
+      "fp": "Driver:L_JIERR_PCR1040",
       "xy": [
         24,
         35
       ],
       "group": "converters",
-      "mpn": "MSS1246-153MLC",
-      "vendor": "Coilcraft",
-      "url": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/",
+      "mpn": "PCR1040-150-M",
+      "vendor": "JIERR",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "396b72d0-7245-5539-a929-f6c4d24282b7",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
+      "lcsc": "C53896892"
     },
     {
       "ref": "L2",
@@ -267,22 +267,22 @@
         "1": "SW_N",
         "2": "GND"
       },
-      "fp": "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX",
+      "fp": "Driver:L_JIERR_PCR1040",
       "xy": [
         44,
         35
       ],
       "group": "converters",
-      "mpn": "MSS1246-153MLC",
-      "vendor": "Coilcraft",
-      "url": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/",
+      "mpn": "PCR1040-150-M",
+      "vendor": "JIERR",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "c220295b-393c-5e32-b109-4d558c1b9170",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
+      "lcsc": "C53896892"
     },
     {
       "ref": "L3",
@@ -291,22 +291,22 @@
         "1": "SW_VCOM",
         "2": "GND"
       },
-      "fp": "Driver:Inductor_SMD__L_Coilcraft_MSS1246T-XXX",
+      "fp": "Driver:L_JIERR_PCR1040",
       "xy": [
         64,
         35
       ],
       "group": "converters",
-      "mpn": "MSS1246-153MLC",
-      "vendor": "Coilcraft",
-      "url": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/mss-mos/mss1246/",
+      "mpn": "PCR1040-150-M",
+      "vendor": "JIERR",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/e6a3215768ac43dd7ce4fb124bc75d91.pdf?productCode=C53896892",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "9ae55387-f1f6-5a49-b346-82299063cfc8",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
+      "lcsc": "C53896892"
     },
     {
       "ref": "Q1",
@@ -393,7 +393,7 @@
       "angle": 0,
       "uuid": "3da4ac43-a56a-5763-8140-46c148848227",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C6628419"
     },
     {
       "ref": "U1",
@@ -410,14 +410,14 @@
       "group": "converters",
       "mpn": "WSL1206R2000FEA",
       "vendor": "Vishay",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "0620a84e-9ac3-5228-a31f-2a5a02e77d46",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C2073442"
     },
     {
       "ref": "U2",
@@ -434,14 +434,14 @@
       "group": "converters",
       "mpn": "WSL1206R2000FEA",
       "vendor": "Vishay",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "9724dc3d-2e9e-52ee-8da8-7b059addc02d",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C2073442"
     },
     {
       "ref": "U3",
@@ -458,14 +458,14 @@
       "group": "converters",
       "mpn": "WSL1206R2000FEA",
       "vendor": "Vishay",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20210602/CE5897E13CB99DCF20BCC39AB0A05E7D.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "d1fa0770-647e-5805-8275-5f475498fbd8",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C2073442"
     },
     {
       "ref": "R2",
@@ -554,7 +554,7 @@
       "group": "converters",
       "mpn": "MBR230S1F-7",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf",
       "names": {
         "1": "K",
         "2": "A"
@@ -564,7 +564,7 @@
       "angle": 0,
       "uuid": "e901443e-d0d1-52f8-b543-0866ec5c1f4b",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C151335"
     },
     {
       "ref": "D2",
@@ -581,7 +581,7 @@
       "group": "converters",
       "mpn": "MBR230S1F-7",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf",
       "names": {
         "1": "K",
         "2": "A"
@@ -591,7 +591,7 @@
       "angle": 0,
       "uuid": "1d510d3a-c297-5b72-94d7-e1687a8d9f9c",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C151335"
     },
     {
       "ref": "D4",
@@ -608,7 +608,7 @@
       "group": "converters",
       "mpn": "B0530W-7-F",
       "vendor": "Diodes",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20241225/E2605F86CBDD833A242C4ED6CC4B6ED3.pdf",
       "names": {
         "1": "K",
         "2": "A"
@@ -618,7 +618,7 @@
       "angle": 0,
       "uuid": "528f114c-6cc9-5b28-99b5-d66b752718fa",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C124188"
     },
     {
       "ref": "C12",
@@ -635,7 +635,7 @@
       "group": "converters",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -683,7 +683,7 @@
       "group": "converters",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -731,7 +731,7 @@
       "group": "converters",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -872,7 +872,7 @@
     },
     {
       "ref": "D3",
-      "value": "BAT54S-7-F",
+      "value": "BAT54SLT1G",
       "pins": {
         "1": "PUMP_P_LOW",
         "2": "VGH",
@@ -884,9 +884,9 @@
         56
       ],
       "group": "pumps",
-      "mpn": "BAT54S-7-F",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
+      "mpn": "BAT54SLT1G",
+      "vendor": "onsemi",
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf",
       "names": {
         "1": "A1",
         "2": "K2",
@@ -896,8 +896,8 @@
       "dnp": false,
       "angle": 0,
       "uuid": "0a6ea35b-d247-5b8c-9c0a-55f4105c90c6",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C83574"
+      "selection_note": "v0.8 qualified domestic cost replacement: 30V/200mA series dual, pin1=A/pin2=K/pin3=mid; Vf max 0.24/0.32/0.4/0.5/0.8V at same currents, CT<=10pF, trr<=5ns,225mW; same SOT-23",
+      "lcsc": "C19726"
     },
     {
       "ref": "C16",
@@ -914,7 +914,7 @@
       "group": "pumps",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -984,16 +984,21 @@
         55
       ],
       "group": "pumps",
-      "mpn": "RC0805FR-074K3L",
-      "vendor": "YAGEO",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137518",
+      "mpn": "0805W8F4301T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "25f69a1c-b2e9-5e40-8b40-1735ec6d0860",
-      "lcsc": "C137518",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "lcsc": "C17667",
+      "selection_note": "v0.9 three resistor groups only: 4.3kΩ 0805 1% 125mW 150V 100ppm/℃; same pad and ratings; SMT preferred fee waiver explicitly verified",
+      "library_category": "SMT优选合作（扩展库免换料费）",
+      "fee_evidence": "https://www.jlc-smt.com/lcsc/search?q=C17667 | 扩展库 (免换料费)",
+      "stock_queried_at": "2026-10-10T13:18:09.034Z",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-10 user authorized three resistor groups only; all other assembly unchanged"
     },
     {
       "ref": "R8",
@@ -1008,16 +1013,16 @@
         58
       ],
       "group": "pumps",
-      "mpn": "RC0805FR-07110KL",
-      "vendor": "YAGEO",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137599",
+      "mpn": "SCR0805F110K",
+      "vendor": "VO",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/04ce3139d67e70b6b0ee7061f06aa3e9.pdf?productCode=C5140228",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "76017b1c-c9a9-59da-9828-cd422a4e58dd",
-      "lcsc": "C137599",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "lcsc": "C5140228",
+      "selection_note": "v0.8 qualified domestic cost replacement: 110kΩ ±1%,125mW,150V,±100ppm/°C; same 0805 hand-solder pads"
     },
     {
       "ref": "R10",
@@ -1034,14 +1039,19 @@
       "group": "pumps",
       "mpn": "0805W8F220KT5E",
       "vendor": "UNI-ROYAL",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521",
+      "url": "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "3aa9ce7a-d21f-553d-8f19-bf2419483e8d",
       "lcsc": "C17521",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "v0.9 three resistor groups only: 2.2Ω 0805 125mW 150V 200ppm/℃; tolerance restored 0.5% to reference 1%; pulse bench test pending",
+      "library_category": "基础库",
+      "fee_evidence": "https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)",
+      "stock_queried_at": "2026-10-10T13:26:26.075Z",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-10 user authorized three resistor groups only; all other assembly unchanged"
     },
     {
       "ref": "Q6",
@@ -1074,7 +1084,7 @@
     },
     {
       "ref": "D5",
-      "value": "BAT54S-7-F",
+      "value": "BAT54SLT1G",
       "pins": {
         "1": "VGL",
         "2": "PUMP_N_MID",
@@ -1086,9 +1096,9 @@
         29
       ],
       "group": "pumps",
-      "mpn": "BAT54S-7-F",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
+      "mpn": "BAT54SLT1G",
+      "vendor": "onsemi",
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf",
       "names": {
         "1": "A1",
         "2": "K2",
@@ -1098,12 +1108,12 @@
       "dnp": false,
       "angle": 0,
       "uuid": "7e74736a-3aa4-53fc-9186-066eed8a87e9",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C83574"
+      "selection_note": "v0.8 qualified domestic cost replacement: 30V/200mA series dual, pin1=A/pin2=K/pin3=mid; Vf max 0.24/0.32/0.4/0.5/0.8V at same currents, CT<=10pF, trr<=5ns,225mW; same SOT-23",
+      "lcsc": "C19726"
     },
     {
       "ref": "D6",
-      "value": "BAT54S-7-F",
+      "value": "BAT54SLT1G",
       "pins": {
         "1": "PUMP_N_MID",
         "2": "PUMP_N_LOW",
@@ -1115,9 +1125,9 @@
         37
       ],
       "group": "pumps",
-      "mpn": "BAT54S-7-F",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240115/A9C163D17916CBBE9ED35A28B06BFB1E.pdf",
+      "mpn": "BAT54SLT1G",
+      "vendor": "onsemi",
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/bat54slt1-d.pdf",
       "names": {
         "1": "A1",
         "2": "K2",
@@ -1127,8 +1137,8 @@
       "dnp": false,
       "angle": 0,
       "uuid": "84af8084-7fab-5819-bd3a-2d1c575b92d8",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C83574"
+      "selection_note": "v0.8 qualified domestic cost replacement: 30V/200mA series dual, pin1=A/pin2=K/pin3=mid; Vf max 0.24/0.32/0.4/0.5/0.8V at same currents, CT<=10pF, trr<=5ns,225mW; same SOT-23",
+      "lcsc": "C19726"
     },
     {
       "ref": "C21",
@@ -1145,7 +1155,7 @@
       "group": "pumps",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -1289,14 +1299,19 @@
       "group": "pumps",
       "mpn": "0805W8F2003T5E",
       "vendor": "UNI-ROYAL",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539",
+      "url": "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "abc9f3a1-0416-5bf8-8b48-fbd23524b338",
       "lcsc": "C17539",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "v0.9 three resistor groups only: 200kΩ 0805 1% 125mW 150V; TCR restored 50 to 100ppm/℃; total400k unchanged; drift tradeoff documented",
+      "library_category": "基础库",
+      "fee_evidence": "https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)",
+      "stock_queried_at": "2026-10-10T13:26:27.744Z",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-10 user authorized three resistor groups only; all other assembly unchanged"
     },
     {
       "ref": "R18",
@@ -1311,16 +1326,16 @@
         45
       ],
       "group": "pumps",
-      "mpn": "0805W8F1602T5E",
+      "mpn": "HP05W3F1602T5E",
       "vendor": "UNI-ROYAL",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17490",
+      "url": "https://www.uni-royal.cn/images/userfile/file/1723267015d7bab4914ae1a4d5.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "2802c2cd-9d4f-5487-a8b2-da6dfe515974",
-      "lcsc": "C17490",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "lcsc": "C2774511",
+      "selection_note": "v0.8 qualified domestic cost replacement: 16kΩ ±1%,333mW,150V,±100ppm/°C; same 0805, more rated power"
     },
     {
       "ref": "R19",
@@ -1337,14 +1352,19 @@
       "group": "pumps",
       "mpn": "0805W8F220KT5E",
       "vendor": "UNI-ROYAL",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17521",
+      "url": "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "7def7659-9517-5761-af4f-7bc4cfa0d686",
       "lcsc": "C17521",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "v0.9 three resistor groups only: 2.2Ω 0805 125mW 150V 200ppm/℃; tolerance restored 0.5% to reference 1%; pulse bench test pending",
+      "library_category": "基础库",
+      "fee_evidence": "https://www.jlc-smt.com/lcsc/search?q=C17521 | 基础库 (免换料费)",
+      "stock_queried_at": "2026-10-10T13:26:26.075Z",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-10 user authorized three resistor groups only; all other assembly unchanged"
     },
     {
       "ref": "U4",
@@ -1625,14 +1645,14 @@
       "group": "panel",
       "mpn": "GRM32DR71H335KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "bfeebab9-467d-5f43-8822-8f857843c0d2",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C397310"
     },
     {
       "ref": "C2",
@@ -1721,14 +1741,14 @@
       "group": "panel",
       "mpn": "GRM32DR71H335KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "f0419365-7771-5939-8a42-f36853513dfc",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C397310"
     },
     {
       "ref": "C3",
@@ -1817,14 +1837,14 @@
       "group": "panel",
       "mpn": "GRM32DR71H335KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "9f8fd227-3da7-5a07-b77b-2fd893569fac",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C397310"
     },
     {
       "ref": "C4",
@@ -1913,14 +1933,14 @@
       "group": "panel",
       "mpn": "GRM32DR71H335KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "d2cb0944-3c12-5839-9d9e-b9b33fc5729f",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C397310"
     },
     {
       "ref": "C5",
@@ -2009,14 +2029,14 @@
       "group": "panel",
       "mpn": "GRM32DR71H335KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "9725c1de-4add-5dce-83d5-2accb4317982",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C397310"
     },
     {
       "ref": "C6",
@@ -2105,14 +2125,14 @@
       "group": "panel",
       "mpn": "GRM32DR71H335KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "080b793d-1c6b-5f70-b8ea-02cfa7b1dad7",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "lcsc": "C397310"
     },
     {
       "ref": "C7",
@@ -2153,7 +2173,7 @@
       "group": "panel",
       "mpn": "GRM32ER71H475KA88L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
@@ -2177,13 +2197,13 @@
       "group": "panel",
       "mpn": "GRM21BR71H474KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "40e889b4-0104-556b-a1a5-7a6f304e6508",
-      "lcsc": "",
+      "lcsc": "C86043",
       "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
     },
     {
@@ -2201,13 +2221,13 @@
       "group": "panel",
       "mpn": "GRM21BR71H474KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "f9e6e286-4320-5a61-b2b5-68517938f61e",
-      "lcsc": "",
+      "lcsc": "C86043",
       "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
     },
     {
@@ -2225,13 +2245,13 @@
       "group": "panel",
       "mpn": "GRM21BR71H474KA88L",
       "vendor": "Murata",
-      "url": "",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "f8e130f0-69c4-56f7-a813-84ac4d1aeb56",
-      "lcsc": "",
+      "lcsc": "C86043",
       "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
     },
     {
@@ -3281,16 +3301,16 @@
         75
       ],
       "group": "entry",
-      "mpn": "C0805C102J5GACTU",
-      "vendor": "KEMET",
-      "url": "https://search.kemet.com/download/specsheet/C0805C102J5GACTU",
+      "mpn": "0805CG102J500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29925",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "da1c958d-2286-5c6f-9743-c49344031c99",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": ""
+      "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
+      "lcsc": "C29925"
     },
     {
       "ref": "R49",
@@ -3305,16 +3325,16 @@
         43.7
       ],
       "group": "converters",
-      "mpn": "RC0805JR-070RL",
-      "vendor": "Yageo",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20250610/89E4D743C004A82A45145C7A2CC3A578.pdf",
+      "mpn": "0805W8F0000T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17477",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "2d63a01d-eae5-4563-ab6c-700abc3ead2b",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C96345"
+      "selection_note": "v0.8 qualified domestic cost replacement: 0Ω jumper <50mΩ,2A rated/5A overload, same debug function",
+      "lcsc": "C17477"
     },
     {
       "ref": "TP25",
@@ -3377,14 +3397,19 @@
       "group": "pumps",
       "mpn": "0805W8F2003T5E",
       "vendor": "UNI-ROYAL",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17539",
+      "url": "https://www.uni-royal.cn/en/images/userfile/file/1668661899c56505e6d9ab55c7.pdf",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "f20457d6-8c8e-43b6-bd11-af99237b4887",
       "lcsc": "C17539",
-      "selection_note": "与R17串联：200k+200k=400k，±1%最坏误差，±100ppm/℃。"
+      "selection_note": "v0.9 three resistor groups only: 200kΩ 0805 1% 125mW 150V; TCR restored 50 to 100ppm/℃; total400k unchanged; drift tradeoff documented",
+      "library_category": "基础库",
+      "fee_evidence": "https://www.jlc-smt.com/lcsc/search?q=C17539 | 基础库 (免换料费)",
+      "stock_queried_at": "2026-10-10T13:26:27.744Z",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-10 user authorized three resistor groups only; all other assembly unchanged"
     }
   ],
   "board_mm": [
@@ -3393,7 +3418,9 @@
   ],
   "fpc_footprint_verified": true,
   "fpc_mating_verified": false,
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "assembled_components": 104,
-  "smt_components": 102
+  "smt_components": 102,
+  "release_version": "0.9",
+  "release_slug": "jlc-cn-review-v0.9-resistors-2026-10-10"
 }
