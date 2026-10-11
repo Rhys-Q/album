@@ -13,6 +13,8 @@ args=argparse.ArgumentParser();args.add_argument('--draft',action='store_true',h
 if options.draft:OUT=R/'reports/staging-v0.11-basic17-2026-10-11'
 data=json.loads((R/'design-data.json').read_text())
 assert not OUT.exists(),'Existing review version must not be overwritten'
+assembly_plan=json.loads((R/'assembly-plan.json').read_text())
+manual_refs=set(assembly_plan['manual_smd_refs']+assembly_plan['manual_tht_refs'])
 def run(*args):subprocess.run([CLI,*map(str,args)],check=True)
 def digest(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 def write(f,cols,rows):
@@ -42,8 +44,8 @@ tracks=list(b.GetTracks())
 summary=dict(revision=data['revision'],footprints=len(list(b.GetFootprints())),pads=len(pads),tracks=sum(not isinstance(t,p.PCB_VIA) for t in tracks),vias=sum(isinstance(t,p.PCB_VIA) for t in tracks),minimum_track_mm=min(p.ToMM(t.GetWidth()) for t in tracks if not isinstance(t,p.PCB_VIA)),missing_3d_models=[f.GetReference() for f in b.GetFootprints() if not len(f.Models())])
 (R/'reports/board-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 
-source=[f for f in R.iterdir() if f.suffix in ['.kicad_sch','.kicad_pro','.kicad_pcb','.kicad_dru']]+[R/'design-data.json',R/'lib/Driver.kicad_sym']+list((R/'lib/Driver.pretty').glob('*.kicad_mod'))+list((R/'models').rglob('*.step'))+list((R/'scripts').glob('*.py'))+[R/'docs/采购清单-v0.10.csv',R/'docs/例外决定-v0.9.csv',R/'reports/basic-library-recheck-2026-10-11/products.json',R/'reports/basic-library-recheck-2026-10-11/group-review.json']+[R/'reports/baseline-design-v010.json',R/'reports/stock-refresh-v011.json',R/'reports/silkscreen-labels-v011.json',R/'reports/gui-observation-v011.md']+[R/'fp-lib-table',R/'sym-lib-table',R/'reports/procurement-v011.json',R/'reports/cost-change-geometry-v011.json',R/'reports/update-preview-first-v011.txt',R/'reports/update-preview-v011.txt',R/'reports/gui-open.json',R/'reports/update-preview.txt',R/'README.md']+list((R/'docs/sources').rglob('*.pdf'))+list((R/'docs').glob('*v0.11*'))+list((R/'docs').glob('*.md'))
-proof=dict(date=data['date'],kicad_version='10.0.6',gui_open=json.loads((R/'reports/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.11 17 user-selected basic-library prototype groups; 147 assembled, 145 SMT; 14 groups electrical equivalence unverified; native CAD/full ERC/DRC/parity/pad map/link checks',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
+source=[f for f in R.iterdir() if f.suffix in ['.kicad_sch','.kicad_pro','.kicad_pcb','.kicad_dru']]+[R/'design-data.json',R/'assembly-plan.json',R/'lib/Driver.kicad_sym']+list((R/'lib/Driver.pretty').glob('*.kicad_mod'))+list((R/'models').rglob('*.step'))+list((R/'scripts').glob('*.py'))+[R/'docs/采购清单-v0.10.csv',R/'docs/例外决定-v0.9.csv',R/'reports/basic-library-recheck-2026-10-11/products.json',R/'reports/basic-library-recheck-2026-10-11/group-review.json']+[R/'reports/baseline-design-v010.json',R/'reports/stock-refresh-v011.json',R/'reports/silkscreen-labels-v011.json',R/'reports/gui-observation-v011.md']+[R/'fp-lib-table',R/'sym-lib-table',R/'reports/procurement-v011.json',R/'reports/cost-change-geometry-v011.json',R/'reports/update-preview-first-v011.txt',R/'reports/update-preview-v011.txt',R/'reports/gui-open.json',R/'reports/update-preview.txt',R/'README.md']+list((R/'docs/sources').rglob('*.pdf'))+list((R/'docs').glob('*v0.11*'))+list((R/'docs').glob('*.md'))
+proof=dict(date=data['date'],kicad_version='10.0.6',gui_open=json.loads((R/'reports/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.11 17 user-selected basic-library prototype groups; 147 assembled, 145 physical SMD, 138 machine SMT and 9 manual; 14 groups electrical equivalence unverified; native CAD/full ERC/DRC/parity/pad map/link checks',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
 (R/'reports/check-provenance.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n')
 subprocess.run(['python3',str(R/'scripts/check_design.py')],check=True)
 OUT.mkdir();(OUT/'gerber').mkdir();(OUT/'stencil-optional').mkdir();(R/'reports/preview').mkdir(exist_ok=True)
@@ -57,7 +59,11 @@ for label,layers in [('top','F.Cu,F.Silkscreen,Edge.Cuts'),('ground','In1.Cu,Edg
 for preview in (R/'reports/preview').glob('*.svg'):
  preview.write_text('\n'.join(line.rstrip() for line in preview.read_text().splitlines())+'\n')
 with (OUT/'positions-kicad.csv').open(newline='') as f:positions=list(csv.DictReader(f))
-refs={r['Ref'] for r in positions};assert len(refs)==len(positions)==data['smt_components'];assert all(r['Side']=='top' for r in positions)
+# Native position export retains physical SMDs; assembly-plan determines machine placement.
+assert len(positions)==data['smt_components']
+positions=[row for row in positions if row['Ref'] not in manual_refs]
+machine_count=data['smt_components']-len(assembly_plan['manual_smd_refs'])
+refs={r['Ref'] for r in positions};assert len(refs)==len(positions)==machine_count;assert all(r['Side']=='top' for r in positions)
 footprints={f.GetReference():f for f in b.GetFootprints()}
 for row in positions:
  fp=footprints[row['Ref']];q=fp.GetPosition()
@@ -79,10 +85,10 @@ for (v,fp,vendor,mpn),rr in sorted(groups.items()):
  (smt if rr[0] in refs else manual).append(row)
 assert sum(r['Quantity'] for r in allbom)==data['assembled_components']
 assert {ref for row in smt for ref in row['Designator'].split(',')}==refs
-assert {ref for row in manual for ref in row['Designator'].split(',')}=={'J1','J2'}
+assert {ref for row in manual for ref in row['Designator'].split(',')}==manual_refs
 for suffix,rows in [('bom-all',allbom),('bom-smt',smt),('bom-manual',manual)]:write(OUT/(NAME+'-'+suffix+'.csv'),cols,rows)
 files=[f for f in (OUT/'gerber').iterdir() if f.suffix in ['.gtl','.gbl','.g1','.g2','.gts','.gbs','.gto','.gbo','.gm1','.drl']];assert len(files)==11
-with zipfile.ZipFile(OUT/(NAME+'-gerber-rs274x.zip'),'w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(OUT/(NAME+'-gerber-rs274x-latest.zip'),'w',zipfile.ZIP_DEFLATED) as z:
  for f in sorted(files):z.write(f,f.name)
 run('pcb','export','pdf',BOARD,'-l','F.Cu,F.Silkscreen,Edge.Cuts','-o',R/'reports/preview/board.pdf')
 run('pcb','export','pdf',BOARD,'-l','F.Fab,F.Silkscreen,Edge.Cuts','-o',OUT/'assembly-top.pdf')
@@ -91,8 +97,8 @@ for name in ['gui-open.json','erc.json','drc.json','validation-status.json','cos
 shutil.copy2(R/'reports/schematic.pdf',OUT/'schematic-v0.11.pdf')
 shutil.copy2(R/'reports/preview/board.pdf',OUT/'pcb-v0.11.pdf')
 for filename in ['采购清单-v0.11.csv','逐位号替换对照-v0.11.csv','基础库17组改版-v0.11.md','手焊说明-v0.11.md','17组决定及剩余例外-v0.11.csv']:shutil.copy2(R/'docs'/filename,OUT/filename)
-(OUT/'README.md').write_text('# v0.11 17组基础库原型制造审阅包\n\n147个装配件，145个顶面SMT，36组完整BOM。BOM/CPL/制造文件来源见verification.json。'+('\n\n暂存包：GUI验收尚未通过。' if options.draft else '\n\nCAD及原生KiCad更新预览已通过；电气实板性能尚未验收。')+'\n\nGerber压缩包含四层铜、双面阻焊/丝印、板框及PTH/NPTH钻孔。基础库17组由用户指定采用；3组参数审核通过，14组等效性能未验证。组合新增43件，不承诺订单总价节省。C15008 SMT库存未知，部分公开库存刷新未成功；订单重核。剩余7组保留原件，仍全部机器贴片；J1/J2手工插件。\n\n新增密集区部分位号仅在F.Fab，装配时结合assembly-top.pdf与BOM。Q7保留R49；低栅压驱动、瞬态、偏压容量、温升、显示和安全掉电需焊后验收。\n')
+(OUT/'README.md').write_text('# v0.11 17组基础库原型制造审阅包\n\n147个装配件，145个顶面SMD；其中138个机器贴片、9个手工装配，36组完整BOM。BOM/CPL/制造文件来源见verification.json。'+('\n\n暂存包：GUI验收尚未通过。' if options.draft else '\n\nCAD及原生KiCad更新预览已通过；电气实板性能尚未验收。')+'\n\nGerber压缩包含四层铜、双面阻焊/丝印、板框及PTH/NPTH钻孔。基础库17组由用户指定采用；3组参数审核通过，14组等效性能未验证。组合新增43件，不承诺订单总价节省。C15008 SMT库存未知，部分公开库存刷新未成功；订单重核。剩余7组保留原型号；E02/E07/E16/E23/E25由用户淘宝采购手焊，U4/U5/Q3/D3/D5/D6/FPC1不进入机器BOM/CPL；J1/J2手工插件。装配分配以assembly-plan.json为准，positions-kicad.csv为包含全部145个SMD的原生坐标，仅cpl-smt.csv用于机器贴片。\n\n新增密集区部分位号仅在F.Fab，装配时结合assembly-top.pdf与BOM。Q7保留R49；低栅压驱动、瞬态、偏压容量、温升、显示和安全掉电需焊后验收。\n')
 assert all(digest(R/name)==value for name,value in proof['source_sha256'].items()),'Source mutation during export'
-report=dict(date=data['date'],revision=data['revision'],kicad_version='10.0.6',production_released=False,source_sha256=proof['source_sha256'],assembled_components=data['assembled_components'],smt_components=data['smt_components'],smt_bom_groups=len(smt),cpl_components=data['smt_components'],manual_components=['J1','J2'],all_smt_on_top=True,erc_violations=0,drc_violations=0,unconnected_items=0,schematic_parity=0,gui_open=proof['gui_open'],zone_refill=proof['zone_refill'],jlc_part_numbers='COMPLETE codes; domestic SMT supply PARTIAL: C15008 SMT stock unknown; partial refresh failures and electrical equivalence gaps documented' ,hardware_tests='NOT PERFORMED',files_sha256={str(f.relative_to(OUT)):digest(f) for f in sorted(OUT.rglob('*')) if f.is_file()})
+report=dict(date=data['date'],revision=data['revision'],kicad_version='10.0.6',production_released=False,source_sha256=proof['source_sha256'],assembled_components=data['assembled_components'],smt_components=machine_count,physical_smd_components=data['smt_components'],smt_bom_groups=len(smt),cpl_components=machine_count,manual_components=sorted(manual_refs),all_smt_on_top=True,erc_violations=0,drc_violations=0,unconnected_items=0,schematic_parity=0,gui_open=proof['gui_open'],zone_refill=proof['zone_refill'],jlc_part_numbers='COMPLETE codes; domestic SMT supply PARTIAL: C15008 SMT stock unknown; partial refresh failures and electrical equivalence gaps documented' ,hardware_tests='NOT PERFORMED',files_sha256={str(f.relative_to(OUT)):digest(f) for f in sorted(OUT.rglob('*')) if f.is_file()})
 (OUT/'verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-print(json.dumps({'output':str(OUT),'assembled':data['assembled_components'],'smt':data['smt_components'],'smt_groups':len(smt),'CAD_checks':'PASS','production_released':False},ensure_ascii=False))
+print(json.dumps({'output':str(OUT),'assembled':data['assembled_components'],'smt':machine_count,'smt_groups':len(smt),'CAD_checks':'PASS','production_released':False},ensure_ascii=False))

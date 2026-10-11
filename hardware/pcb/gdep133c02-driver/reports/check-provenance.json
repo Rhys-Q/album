@@ -3,7 +3,7 @@
   "kicad_version": "10.0.6",
   "gui_open": "PASS - native PCB opened; F8 applied, saved; second preview has zero new footprints and zero actions",
   "zone_refill": "PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI",
-  "scope": "v0.11 17 user-selected basic-library prototype groups; 147 assembled, 145 SMT; 14 groups electrical equivalence unverified; native CAD/full ERC/DRC/parity/pad map/link checks",
+  "scope": "v0.11 17 user-selected basic-library prototype groups; 147 assembled, 145 SMT; 14 groups electrical equivalence unverified; native CAD/full ERC/DRC/parity/pad map/link checks; 2026-10-11 assembly-only update: 138 machine + 9 manual, unchanged CAD",
   "source_sha256": {
     "gdep133c02-driver.kicad_sch": "e81e893dadb5fa065dd58d86795414a23e8e384708fcb8b9a3fb575a3dde4ad2",
     "gdep133c02-driver.kicad_pro": "6214e7724aab9520a9bd7d77fc4a193c4e738bdb42ec7c624bff639304b6b555",
@@ -56,7 +56,7 @@
     "models/D_SOD-123.step": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
     "scripts/check_design.py": "1f385d0d094ac953615def8c59e1a15f036435be1ab792a4a388c67f7cade9d4",
     "scripts/schematic_sexp.py": "986eae5b388c5deb3e2179b1392e236c9714a90335efad8e6290b079b92b1b60",
-    "scripts/export_hand_solder.py": "e4b555ffb903ebb5da5e202685c1f9a4aff05add5a671093f4bd20a53dd8ccb2",
+    "scripts/export_hand_solder.py": "58bd63f03d5f2235f15f487856f4f854a9434af6afb4adc2378e647c9ae81cf2",
     "scripts/document_basic17.py": "66d9a48f5902de726cdd348dfabd0ac15a8cc98bf3cc9fdeff0d77ec85f4ac21",
     "docs/采购清单-v0.10.csv": "46bc56d86b766fcf8be0b9f3731f80727a8f7f388b4210bd1a6567147e0f5a36",
     "docs/例外决定-v0.9.csv": "553fa9f58a6516d0f5bae9379edfb27e03a75f8d88bbc052d13c5010f7062f5a",
@@ -74,7 +74,7 @@
     "reports/update-preview-v011.txt": "163fdee313e129a873b1621574d722ff80416745357780ee08d41e65e67ad443",
     "reports/gui-open.json": "652f240dbd1ca6d691f9aff1a3d7b5e340409df8c6e3d94f134286d69dc41cee",
     "reports/update-preview.txt": "163fdee313e129a873b1621574d722ff80416745357780ee08d41e65e67ad443",
-    "README.md": "293bd5e94abb03f4a498d7b618a36c57cf41666e3386eeccdfd8cbeeefa9ded3",
+    "README.md": "5c5509338b9c0a2f538e2b7aa691d3a8a9a01615b1c2e679cc238205fd4914ca",
     "docs/sources/xunpu-fpc-original.pdf": "12245e62318e88243326680db0254801a4aa4ec7fbb119f964c415b9af3cc6d3",
     "docs/sources/vishay-wsl.pdf": "96c2dc89ae1e3039815ed6c41f566a6e9f6b53035f8e45ea2ada1697935a44dc",
     "docs/sources/xunpu-fpc-recovered.pdf": "c07dd4560bf3868345b113c9c1a8ab8c9a43c5fd1fa992216aa873e546c931e9",
@@ -120,9 +120,9 @@
     "docs/sources/v09-review/C1636.pdf": "705023d3be0454148a96fc2715d249a32d8ff442e70b64d1116d3490ed1d8136",
     "docs/sources/v010/C440198-Murata.pdf": "ff8de8901544f5f40e46e0b801bb28caac254650efdf906e3a49aa4d4b8d3d09",
     "docs/基础库17组改版-v0.11.md": "2be92f854d38b90c4aa79be44d914a9ae2500ee81d1295dd3cdedaee902437ef",
-    "docs/17组决定及剩余例外-v0.11.csv": "051ba21d886eaad2c9b8a522fb375c4965a3265339097cb46cc938740329f11c",
-    "docs/手焊说明-v0.11.md": "feef2250156e7f925ff9ef387e2707f17f29824226cf48e0b6697c7f9ea0477e",
-    "docs/采购清单-v0.11.csv": "b5e231f4bcd068fb00d0b66b4e93ebed6df85d920f8b3db45af675432dd6b8fa",
+    "docs/17组决定及剩余例外-v0.11.csv": "1879e7ce23039eef86fa77ecd5667fd911e8830956e4c176b32866d88e5303b3",
+    "docs/手焊说明-v0.11.md": "19f2fbcdc951562ec11723b75d46db6926fd0ed3c775280fe9f72c8cb410a8be",
+    "docs/采购清单-v0.11.csv": "05e19c0428967c0c02c6aba988c2bce430861a5ed11f0c7f602e4cbc832321d5",
     "docs/逐位号替换对照-v0.11.csv": "a58acb5c784d637c962c8f57b439d7188aa030efd7f0becb6a461f1df49844d9",
     "docs/例外清单-v0.9.md": "a99fdf918b03d8df873034d835b31a9bc7a00adba327d052da9a4fdc85b59013",
     "docs/fpc-footprint-review.md": "0323b86627004e6b66d708d6657930b219cca22ff01a024143d79b4ea5cff849",
@@ -150,6 +150,7 @@
     "docs/手焊说明-v0.8.md": "1411da4c78f1a764b4caa32ba200a322a78e1c9e4acff04ccbfa6d8f5ea0f2ce",
     "docs/interface-circuit-explained.md": "42408062e0c9b31e73ee4207d514867156ab9cd8f453c7e6314d9eba8d3f3a50",
     "docs/国内采购与手焊改版-v0.7.md": "8da7b5b9f1f44826442f9ebcbe6095a40d46a8aabd11c4ecd3dd5e39a90dec78",
-    "docs/三组电阻免换料费改版-v0.9.md": "439d358adcb602d679d4724b21514ffd183d867977df28d52d30ff542833b400"
+    "docs/三组电阻免换料费改版-v0.9.md": "439d358adcb602d679d4724b21514ffd183d867977df28d52d30ff542833b400",
+    "assembly-plan.json": "1512944d18a91b70392688286f0c4f2bd67119b2b3b12611e1fc1cd8f639b89f"
   }
 }
