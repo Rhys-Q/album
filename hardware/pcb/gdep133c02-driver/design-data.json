@@ -1,6 +1,6 @@
 {
   "name": "gdep133c02-driver",
-  "revision": "0.10-e01",
+  "revision": "0.11-basic17",
   "parts": [
     {
       "ref": "J1",
@@ -11,8 +11,8 @@
       },
       "fp": "Driver:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical",
       "xy": [
-        13,
-        69
+        13.0,
+        69.0
       ],
       "group": "entry",
       "mpn": "TJC8-2.54-2A",
@@ -21,10 +21,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "6566036d-f3ac-591a-8511-e8ed12a2081a",
       "lcsc": "C42410552",
-      "selection_note": "国内2.54mm直插排针，3A，孔距及脚序不变。"
+      "selection_note": "国内2.54mm直插排针，3A，孔距及脚序不变。",
+      "assembly": "MANUAL"
     },
     {
       "ref": "C28",
@@ -33,22 +34,27 @@
         "1": "BENCH_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        23,
-        65
+        23.0,
+        65.0
       ],
       "group": "entry",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "5bd97427-2cd0-520c-975e-c2941cd20b1a",
-      "selection_note": "v0.8 qualified domestic cost replacement: BENCH_3V3 input bypass increased to existing 4.7µF/50V X7R 1210; see v0.8 input transient review",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "U5",
@@ -63,8 +69,8 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23-6",
       "xy": [
-        32,
-        69
+        32.0,
+        69.0
       ],
       "group": "entry",
       "mpn": "TPS22917DBVR",
@@ -87,10 +93,11 @@
         "6": "power_out"
       },
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "66f48b51-86e5-5a8b-9a88-c700e990110b",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C2681320"
+      "lcsc": "C2681320",
+      "assembly": "SMT"
     },
     {
       "ref": "R30",
@@ -101,8 +108,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        32,
-        73
+        32.0,
+        73.0
       ],
       "group": "entry",
       "mpn": "0805W8F1003T5E",
@@ -111,10 +118,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "b7db1938-eaba-5c3a-abb5-11a8cc9f6641",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "C29",
@@ -123,22 +131,27 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        37,
-        64
+        37.0,
+        64.0
       ],
       "group": "entry",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f557c48f-57d9-5d4c-a136-18aae272a6a8",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C30",
@@ -147,22 +160,27 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        43,
-        64
+        43.0,
+        64.0
       ],
       "group": "entry",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "0d9216c9-5257-528c-816c-5857aae3c0cd",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C31",
@@ -171,22 +189,27 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        56,
-        62
+        56.0,
+        62.0
       ],
       "group": "entry",
-      "mpn": "GRM32ER60J107ME20L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20170116/1484561244372.pdf",
+      "mpn": "CL31A107MQHNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15008",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "8be9d8e4-221f-554c-a826-ef5049f59a15",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C88154"
+      "selection_note": "C15008是100µF/6.3V X5R 1206国内基础库、商城有货，但SMT库存未返回，不能当作0或有货；偏压曲线未取得。C96123为47µF/6.3V基础库，商城0、SMT有货，2×47µF＋4.7µF需调整且不可直接用标称证明。C16133钽电容ESR标称1.7Ω@100kHz，有极性和浪涌约束，不是陶瓷直替。",
+      "lcsc": "C15008",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15681.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:12:33.174140+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E04; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C32",
@@ -195,46 +218,56 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        62,
-        62
+        62.0,
+        62.0
       ],
       "group": "entry",
-      "mpn": "GRM32ER60J107ME20L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20170116/1484561244372.pdf",
+      "mpn": "CL31A107MQHNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15008",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f2d8f959-1fd1-5fca-b504-63e1dfd049b9",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C88154"
+      "selection_note": "C15008是100µF/6.3V X5R 1206国内基础库、商城有货，但SMT库存未返回，不能当作0或有货；偏压曲线未取得。C96123为47µF/6.3V基础库，商城0、SMT有货，2×47µF＋4.7µF需调整且不可直接用标称证明。C16133钽电容ESR标称1.7Ω@100kHz，有极性和浪涌约束，不是陶瓷直替。",
+      "lcsc": "C15008",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15681.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:12:33.174140+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E04; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C33",
-      "value": "100nF/50V",
+      "value": "100nF/100V",
       "pins": {
         "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        54,
-        73
+        54.0,
+        73.0
       ],
       "group": "entry",
-      "mpn": "CL21B104KBCNNNC",
-      "vendor": "Samsung",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1711",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f0d55f8e-116e-5267-8f34-b1d3657a9063",
-      "lcsc": "C1711",
-      "selection_note": "100nF/50V X7R±10%；0603增大为0805。"
+      "lcsc": "C28233",
+      "selection_note": "C28233 CL21B104KCFNNNE：100nF/100V/X7R/±10%0805基础库，有国内SMT库存；原/新同三星CL21B系列，耐压提升，温度特性保持。普通3.3V/100nF去耦不要求取得两份完全相同的高压偏压曲线才可推荐；保留旁边大电容。厚度代码C→F，名义0.85→1.25mm，实施时检查高度及courtyard。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E21; parametric review PASS, CAD validation pending"
     },
     {
       "ref": "L1",
@@ -245,8 +278,8 @@
       },
       "fp": "Driver:L_JIERR_PCR1040",
       "xy": [
-        24,
-        35
+        24.0,
+        35.0
       ],
       "group": "converters",
       "mpn": "PCR1040-150-M",
@@ -255,10 +288,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "396b72d0-7245-5539-a929-f6c4d24282b7",
       "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
-      "lcsc": "C53896892"
+      "lcsc": "C53896892",
+      "assembly": "SMT"
     },
     {
       "ref": "L2",
@@ -269,8 +303,8 @@
       },
       "fp": "Driver:L_JIERR_PCR1040",
       "xy": [
-        44,
-        35
+        44.0,
+        35.0
       ],
       "group": "converters",
       "mpn": "PCR1040-150-M",
@@ -279,10 +313,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "c220295b-393c-5e32-b109-4d558c1b9170",
       "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
-      "lcsc": "C53896892"
+      "lcsc": "C53896892",
+      "assembly": "SMT"
     },
     {
       "ref": "L3",
@@ -293,8 +328,8 @@
       },
       "fp": "Driver:L_JIERR_PCR1040",
       "xy": [
-        64,
-        35
+        64.0,
+        35.0
       ],
       "group": "converters",
       "mpn": "PCR1040-150-M",
@@ -303,28 +338,29 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "9ae55387-f1f6-5a49-b346-82299063cfc8",
       "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
-      "lcsc": "C53896892"
+      "lcsc": "C53896892",
+      "assembly": "SMT"
     },
     {
       "ref": "Q1",
-      "value": "DMN3065LW-7",
+      "value": "AO3400A",
       "pins": {
         "1": "GDRP",
         "2": "RESEP",
         "3": "LX"
       },
-      "fp": "Driver:SOT323_HandSolder",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        24,
-        45
+        24.0,
+        45.0
       ],
       "group": "converters",
-      "mpn": "DMN3065LW-7",
-      "vendor": "Diodes",
-      "url": "https://www.diodes.com/part/view/DMN3065LW",
+      "mpn": "AO3400A",
+      "vendor": "AOS",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/130876b936da464599428c58fd8de8f6.pdf?productCode=C20917",
       "names": {
         "1": "G",
         "2": "S",
@@ -332,14 +368,19 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "0b00ebd9-f3fd-56e0-a4c2-4171de849932",
-      "selection_note": "保留DMN3065LW；SOT23候选Qg更高，改为同封装外伸焊盘。",
-      "lcsc": "C150506"
+      "selection_note": "AO3400A C20917国内基础库，SOT23需要替换SOT323焊盘，2.5V Ron≤48mΩ。Qg典型6nC@4.5V，对DMN3065约5.5nC@4.5V，条件并不完全相同；AO与原件栅源绝对限值均±12V，并未降低；Ciss典型630pF对原465pF，增约35%，需要分别核对Q1/Q4驱动负载与源极摆幅。-13包装候选SMT库存0且非免费。",
+      "lcsc": "C20917",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/21629.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:47.487158+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E09; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "Q8",
-      "value": "DMP3068L-7",
+      "value": "AO3401A",
       "pins": {
         "1": "GDRN",
         "2": "RESEN",
@@ -347,13 +388,13 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        44,
-        45
+        44.0,
+        45.0
       ],
       "group": "converters",
-      "mpn": "DMP3068L-7",
-      "vendor": "Diodes",
-      "url": "https://www.diodes.com/datasheet/download/DMP3068L.pdf",
+      "mpn": "AO3401A",
+      "vendor": "AOS",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/fee353dd1e9e0bc90b295f14f381aa4c.pdf?productCode=C15127",
       "names": {
         "1": "G",
         "2": "S",
@@ -361,14 +402,19 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "86756e56-9531-5723-a5cf-c550ebcad951",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C151010"
+      "selection_note": "AO3401A C15127有基础库库存，与原件同为栅源极±12V。Qg约7nC@4.5V对原7.3nC，不能说总栅电荷显著变大；但Qgd典型2.5nC对1.7nC，原DMP还提供-1.8V的Ron保证而AO只到-2.5V。需核对低栅压导通、Miller段驱动、体二极管恢复；20V C10487不满足保持30V耐压要求。",
+      "lcsc": "C15127",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15801.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:47.923870+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E10; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "Q7",
-      "value": "PJA3433_R1_00001",
+      "value": "AO3401A",
       "pins": {
         "1": "Q7_GATE",
         "2": "RESEC",
@@ -376,13 +422,13 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        64,
-        45
+        64.0,
+        45.0
       ],
       "group": "converters",
-      "mpn": "PJA3433_R1_00001",
-      "vendor": "Panjit",
-      "url": "https://www.panjit.com.cn/upload/datasheet/PJA3433.pdf",
+      "mpn": "AO3401A",
+      "vendor": "AOS",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/fee353dd1e9e0bc90b295f14f381aa4c.pdf?productCode=C15127",
       "names": {
         "1": "G",
         "2": "S",
@@ -390,10 +436,15 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "3da4ac43-a56a-5763-8140-46c148848227",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C6628419"
+      "selection_note": "AO3401A C15127为30V基础库，但Qg典型7nC@4.5V，原PJA3433约1.6nC@4.5V；Ciss645pF对125pF。原件提供-1.8V的Ron保证，AO3401A最低Ron保证条件为-2.5V；不能用阈值代替导通保证。C10487为20V，耐压降低不通过。原Q7商城/SMT均0。",
+      "lcsc": "C15127",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15801.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:47.923870+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E08; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "U1",
@@ -404,8 +455,8 @@
       },
       "fp": "Driver:Resistor_SMD__R_1206_3216Metric",
       "xy": [
-        24,
-        50
+        24.0,
+        50.0
       ],
       "group": "converters",
       "mpn": "WSL1206R2000FEA",
@@ -414,10 +465,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "0620a84e-9ac3-5228-a31f-2a5a02e77d46",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C2073442"
+      "lcsc": "C2073442",
+      "assembly": "SMT"
     },
     {
       "ref": "U2",
@@ -428,8 +480,8 @@
       },
       "fp": "Driver:Resistor_SMD__R_1206_3216Metric",
       "xy": [
-        44,
-        50
+        44.0,
+        50.0
       ],
       "group": "converters",
       "mpn": "WSL1206R2000FEA",
@@ -438,10 +490,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "9724dc3d-2e9e-52ee-8da8-7b059addc02d",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C2073442"
+      "lcsc": "C2073442",
+      "assembly": "SMT"
     },
     {
       "ref": "U3",
@@ -452,8 +505,8 @@
       },
       "fp": "Driver:Resistor_SMD__R_1206_3216Metric",
       "xy": [
-        64,
-        50
+        64.0,
+        50.0
       ],
       "group": "converters",
       "mpn": "WSL1206R2000FEA",
@@ -462,10 +515,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "d1fa0770-647e-5805-8275-5f475498fbd8",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C2073442"
+      "lcsc": "C2073442",
+      "assembly": "SMT"
     },
     {
       "ref": "R2",
@@ -476,8 +530,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        19,
-        48
+        19.0,
+        48.0
       ],
       "group": "converters",
       "mpn": "0805W8F1004T5E",
@@ -486,10 +540,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "2d4e6b6d-b01b-55cc-89e7-c9c3d56b944d",
       "lcsc": "C17514",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R3",
@@ -500,8 +555,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        39,
-        48
+        39.0,
+        48.0
       ],
       "group": "converters",
       "mpn": "0805W8F1004T5E",
@@ -510,10 +565,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "fc787361-4df4-5330-a1cc-f355b647c08c",
       "lcsc": "C17514",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R13",
@@ -524,8 +580,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        59,
-        48
+        59.0,
+        48.0
       ],
       "group": "converters",
       "mpn": "0805W8F1004T5E",
@@ -534,91 +590,107 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "478ce8ba-6cee-5b70-9648-57278e969cbf",
       "lcsc": "C17514",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "D1",
-      "value": "MBR230S1F-7",
+      "value": "SS34",
       "pins": {
         "1": "VDDP",
         "2": "LX"
       },
-      "fp": "Driver:Diode_SMD__D_SOD-123F",
+      "fp": "Driver:D_SMA_HandSolder",
       "xy": [
-        29,
-        44
+        31.5,
+        44.0
       ],
       "group": "converters",
-      "mpn": "MBR230S1F-7",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf",
+      "mpn": "SS34",
+      "vendor": "MDD(Microdiode Semiconductor)",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/dfa1ff67dea875d0135103ba9ada713a.pdf?productCode=C8678",
       "names": {
         "1": "K",
         "2": "A"
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "e901443e-d0d1-52f8-b543-0866ec5c1f4b",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C151335"
+      "selection_note": "SS34 C8678(40V/3A)、SS54 C22452(40V/5A)为基础库，封装改SMA，需要Vf/I、结电容、反向漏电和热评估。SS14 C2480仅1A，不作2A直替。RBR2MM30A仍为扩展库。",
+      "lcsc": "C8678",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/9178.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:12:14.414733+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E11; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "D2",
-      "value": "MBR230S1F-7",
+      "value": "SS34",
       "pins": {
         "1": "SW_N",
         "2": "VDDN"
       },
-      "fp": "Driver:Diode_SMD__D_SOD-123F",
+      "fp": "Driver:D_SMA_HandSolder",
       "xy": [
-        49,
-        43
+        49.5,
+        45.6
       ],
       "group": "converters",
-      "mpn": "MBR230S1F-7",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20171221/C151335_15138312677151195518.pdf",
+      "mpn": "SS34",
+      "vendor": "MDD(Microdiode Semiconductor)",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/dfa1ff67dea875d0135103ba9ada713a.pdf?productCode=C8678",
       "names": {
         "1": "K",
         "2": "A"
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 90.0,
       "uuid": "1d510d3a-c297-5b72-94d7-e1687a8d9f9c",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C151335"
+      "selection_note": "SS34 C8678(40V/3A)、SS54 C22452(40V/5A)为基础库，封装改SMA，需要Vf/I、结电容、反向漏电和热评估。SS14 C2480仅1A，不作2A直替。RBR2MM30A仍为扩展库。",
+      "lcsc": "C8678",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/9178.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:12:14.414733+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E11; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "D4",
-      "value": "B0530W-7-F",
+      "value": "B5819W SL",
       "pins": {
         "1": "SW_VCOM",
         "2": "VBB_3P5V"
       },
       "fp": "Driver:Diode_SMD__D_SOD-123",
       "xy": [
-        69,
-        43
+        69.0,
+        43.0
       ],
       "group": "converters",
-      "mpn": "B0530W-7-F",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20241225/E2605F86CBDD833A242C4ED6CC4B6ED3.pdf",
+      "mpn": "B5819W SL",
+      "vendor": "JSCJ",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/4ac2c059be7c462694ab0715ce987a85.pdf?productCode=C8598",
       "names": {
         "1": "K",
         "2": "A"
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "528f114c-6cc9-5b28-99b5-d66b752718fa",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C124188"
+      "selection_note": "C8598 B5819W SL为40V/1A/SOD123基础库；SS14 C2480为40V/1A/SMA基础库。额定值不降低，但需要实际电流下Vf、漏电、结电容及低压负电源效率对照。",
+      "lcsc": "C8598",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/9093.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:46.105804+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E17; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C12",
@@ -627,22 +699,27 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        14,
-        40
+        14.0,
+        40.0
       ],
       "group": "converters",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "009be3eb-717d-5568-a74c-8caac6368db7",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C13",
@@ -653,8 +730,8 @@
       },
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        30,
-        49
+        30.0,
+        49.0
       ],
       "group": "converters",
       "mpn": "GRM21BR61H106KE43L",
@@ -663,7 +740,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "1a9782cb-6164-58b8-9b46-0e7ba364f20c",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -680,22 +757,27 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        34,
-        40
+        34.0,
+        40.0
       ],
       "group": "converters",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "cb01cad4-46db-5266-a0bb-f7767a9c61bc",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C15",
@@ -706,8 +788,8 @@
       },
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        51,
-        49
+        51.0,
+        51.5
       ],
       "group": "converters",
       "mpn": "GRM21BR61H106KE43L",
@@ -716,7 +798,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f2a33430-1a98-5472-aa43-e841c91aa949",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -733,22 +815,27 @@
         "1": "EPD_3V3",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        54,
-        40
+        54.0,
+        40.0
       ],
       "group": "converters",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "ce9fa164-ab53-5bd4-bbf1-ce4782f9f7e0",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C20",
@@ -759,8 +846,8 @@
       },
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        71,
-        49
+        71.0,
+        49.0
       ],
       "group": "converters",
       "mpn": "GRM21BR61H106KE43L",
@@ -769,7 +856,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "09b5a33c-f282-5945-8ad6-8a4c2690d4f7",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -789,8 +876,8 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        20,
-        57
+        20.0,
+        57.0
       ],
       "group": "pumps",
       "mpn": "MMBT3906-7-F",
@@ -803,28 +890,29 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "19235eb6-471d-52ad-b3a7-257b41e60d36",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C82762"
+      "lcsc": "C82762",
+      "assembly": "SMT"
     },
     {
       "ref": "Q4",
-      "value": "DMN3065LW-7",
+      "value": "AO3400A",
       "pins": {
         "1": "DRVP",
         "2": "SOURCE_VGP",
         "3": "BASE_P"
       },
-      "fp": "Driver:SOT323_HandSolder",
+      "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        15,
-        57
+        15.0,
+        57.0
       ],
       "group": "pumps",
-      "mpn": "DMN3065LW-7",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20230810/E543A40CD6CD762FC818366CFAE7D2A0.pdf",
+      "mpn": "AO3400A",
+      "vendor": "AOS",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/130876b936da464599428c58fd8de8f6.pdf?productCode=C20917",
       "names": {
         "1": "G",
         "2": "S",
@@ -832,10 +920,15 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "986e66ac-d133-5f58-abcd-a6568bc015e4",
-      "selection_note": "保留DMN3065LW；SOT23候选Qg更高，改为同封装外伸焊盘。",
-      "lcsc": "C150506"
+      "selection_note": "AO3400A C20917国内基础库，SOT23需要替换SOT323焊盘，2.5V Ron≤48mΩ。Qg典型6nC@4.5V，对DMN3065约5.5nC@4.5V，条件并不完全相同；AO与原件栅源绝对限值均±12V，并未降低；Ciss典型630pF对原465pF，增约35%，需要分别核对Q1/Q4驱动负载与源极摆幅。-13包装候选SMT库存0且非免费。",
+      "lcsc": "C20917",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/21629.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:47.487158+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E09; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "R11",
@@ -846,8 +939,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        15,
-        61
+        15.0,
+        61.0
       ],
       "group": "pumps",
       "mpn": "0805W8F1003T5E",
@@ -856,10 +949,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "68056d04-8b96-50cb-b21b-8f367fbf0523",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R12",
@@ -870,8 +964,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        11,
-        61
+        11.0,
+        61.0
       ],
       "group": "pumps",
       "mpn": "0805W8F1501T5E",
@@ -880,10 +974,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "150be5a2-0693-5156-b0b3-2ee82434dd97",
       "lcsc": "C4310",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "D3",
@@ -895,8 +990,8 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        24,
-        56
+        24.0,
+        56.0
       ],
       "group": "pumps",
       "mpn": "BAT54SLT1G",
@@ -909,10 +1004,11 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "0a6ea35b-d247-5b8c-9c0a-55f4105c90c6",
       "selection_note": "v0.8 qualified domestic cost replacement: 30V/200mA series dual, pin1=A/pin2=K/pin3=mid; Vf max 0.24/0.32/0.4/0.5/0.8V at same currents, CT<=10pF, trr<=5ns,225mW; same SOT-23",
-      "lcsc": "C19726"
+      "lcsc": "C19726",
+      "assembly": "SMT"
     },
     {
       "ref": "C16",
@@ -921,22 +1017,27 @@
         "1": "VGH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        29,
-        55
+        29.0,
+        55.0
       ],
       "group": "pumps",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "022cedcf-e7a2-5e85-8d5b-f3551e92cafd",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C17",
@@ -945,46 +1046,56 @@
         "1": "PUMP_P_MID",
         "2": "PUMP_P_AC"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        29,
-        59
+        29.0,
+        59.0
       ],
       "group": "pumps",
-      "mpn": "GRM21BR71H474KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B474KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "da0cfb27-709c-50f3-9407-739a3fb2436f",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86043"
+      "selection_note": "C13967 CL21B474KBFNNNE为0805基础库、50V/X7R/±10%，无XY尺寸缩小；仍需高压偏压容量/ESR对照。C1623为25V，明确不通过。",
+      "lcsc": "C13967",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/14623.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:21.232417+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E13; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C18",
-      "value": "220nF/50V",
+      "value": "100nF/100V",
       "pins": {
         "1": "PUMP_P_LOW",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        20,
-        61
+        20.0,
+        61.0
       ],
       "group": "pumps",
-      "mpn": "GRM21BR71H224KA01L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "30b67500-2214-584c-9fcf-d6cbbd05bb7a",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86042"
+      "selection_note": "基础库C21120仅25V，不通过。2×C28233(100nF/100V)＋C1729(22nF/50V)为222nF，标称增加0.91%；总公差仍±10%，但多2件，偏压后容量、ESR和布局需要复核。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E18; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "R7",
@@ -995,8 +1106,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        34,
-        55
+        34.0,
+        55.0
       ],
       "group": "pumps",
       "mpn": "0805W8F4301T5E",
@@ -1005,7 +1116,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "25f69a1c-b2e9-5e40-8b40-1735ec6d0860",
       "lcsc": "C17667",
       "selection_note": "v0.9 three resistor groups only: 4.3kΩ 0805 1% 125mW 150V 100ppm/℃; same pad and ratings; SMT preferred fee waiver explicitly verified",
@@ -1017,27 +1128,32 @@
     },
     {
       "ref": "R8",
-      "value": "110k ohm",
+      "value": "100k ohm",
       "pins": {
         "1": "FBP",
-        "2": "VGH"
+        "2": "R8_FB_MID"
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        34,
-        58
+        34.0,
+        58.0
       ],
       "group": "pumps",
-      "mpn": "SCR0805F110K",
-      "vendor": "VO",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/04ce3139d67e70b6b0ee7061f06aa3e9.pdf?productCode=C5140228",
+      "mpn": "0805W8F1003T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C149504",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "76017b1c-c9a9-59da-9828-cd422a4e58dd",
-      "lcsc": "C5140228",
-      "selection_note": "v0.8 qualified domestic cost replacement: 110kΩ ±1%,125mW,150V,±100ppm/°C; same 0805 hand-solder pads"
+      "lcsc": "C149504",
+      "selection_note": "C17422(0805)与C25805(0603)国内均为扩展库标签，不用海外Basic代替国内结论。C149504基础库100k＋C17414基础库10k串联保持110k±1%、TCR界限±100ppm/℃；两只150V/125mW，在上臂端差50V保守条件下100k约20.66mW、10k约2.07mW，多1件。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/160838.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:45.969921+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E22; parametric review PASS, CAD validation pending"
     },
     {
       "ref": "R10",
@@ -1048,8 +1164,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        34,
-        61
+        34.0,
+        61.0
       ],
       "group": "pumps",
       "mpn": "0805W8F220KT5E",
@@ -1058,7 +1174,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "3aa9ce7a-d21f-553d-8f19-bf2419483e8d",
       "lcsc": "C17521",
       "selection_note": "v0.9 three resistor groups only: 2.2Ω 0805 125mW 150V 200ppm/℃; tolerance restored 0.5% to reference 1%; pulse bench test pending",
@@ -1070,7 +1186,7 @@
     },
     {
       "ref": "Q6",
-      "value": "MMBT3904-7-F",
+      "value": "MMBT3904",
       "pins": {
         "1": "DRVN",
         "2": "GND",
@@ -1078,13 +1194,13 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        81,
-        37
+        81.0,
+        37.0
       ],
       "group": "pumps",
-      "mpn": "MMBT3904-7-F",
-      "vendor": "Diodes",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20230810/4AD110B3C3E81E2CEF5971F860B34099.pdf",
+      "mpn": "MMBT3904(RANGE:100-300)",
+      "vendor": "JSCJ",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/9335632bcfa83df8351353eab379720e.pdf?productCode=C20526",
       "names": {
         "1": "B",
         "2": "E",
@@ -1092,10 +1208,15 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "ab994df7-7668-5e52-8e30-c2d5f9266f34",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C94514"
+      "selection_note": "C20526 CJ MMBT3904为基础库，40V/200mA同脚序，hFE=100~300@10mA；额定200mW/625℃每W，原Diodes表列310/350mW(两种试验PCB)，需要脉冲电流与实际散热。CJ储存时间表给200ns，不能只按名字视为动态一致。C8512 2222A及C2145 5551为不同器件，不自动批准。",
+      "lcsc": "C20526",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/21237.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:38.028013+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E15; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "D5",
@@ -1107,8 +1228,8 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        86,
-        29
+        86.0,
+        29.0
       ],
       "group": "pumps",
       "mpn": "BAT54SLT1G",
@@ -1121,10 +1242,11 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "7e74736a-3aa4-53fc-9186-066eed8a87e9",
       "selection_note": "v0.8 qualified domestic cost replacement: 30V/200mA series dual, pin1=A/pin2=K/pin3=mid; Vf max 0.24/0.32/0.4/0.5/0.8V at same currents, CT<=10pF, trr<=5ns,225mW; same SOT-23",
-      "lcsc": "C19726"
+      "lcsc": "C19726",
+      "assembly": "SMT"
     },
     {
       "ref": "D6",
@@ -1136,8 +1258,8 @@
       },
       "fp": "Driver:Package_TO_SOT_SMD__SOT-23",
       "xy": [
-        86,
-        37
+        86.0,
+        37.0
       ],
       "group": "pumps",
       "mpn": "BAT54SLT1G",
@@ -1150,10 +1272,11 @@
       },
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "84af8084-7fab-5819-bd3a-2d1c575b92d8",
       "selection_note": "v0.8 qualified domestic cost replacement: 30V/200mA series dual, pin1=A/pin2=K/pin3=mid; Vf max 0.24/0.32/0.4/0.5/0.8V at same currents, CT<=10pF, trr<=5ns,225mW; same SOT-23",
-      "lcsc": "C19726"
+      "lcsc": "C19726",
+      "assembly": "SMT"
     },
     {
       "ref": "C21",
@@ -1162,22 +1285,27 @@
         "1": "VGL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        92,
-        25
+        92.0,
+        25.0
       ],
       "group": "pumps",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "c30117e3-3a57-5944-b8bd-b56204891830",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C22",
@@ -1186,22 +1314,27 @@
         "1": "PUMP_N_MID",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        81,
-        29
+        81.0,
+        29.0
       ],
       "group": "pumps",
-      "mpn": "GRM21BR71H105KA12L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "42e9ad10-a18f-5735-b79d-83b2d82ff6c4",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77083"
+      "selection_note": "C28323 CL21B105KBFNNNE为0805/50V/X7R/±10%国内基础库，有SMT库存。C15849虽免费但0603/X5R，温度及偏压属性变化更大，不优先。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E19; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C23",
@@ -1210,22 +1343,27 @@
         "1": "PUMP_N_UP",
         "2": "PUMP_N_AC"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        92,
-        29
+        92.0,
+        29.0
       ],
       "group": "pumps",
-      "mpn": "GRM21BR71H474KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B474KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "ea463842-5eee-5805-a3f4-d69525249974",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86043"
+      "selection_note": "C13967 CL21B474KBFNNNE为0805基础库、50V/X7R/±10%，无XY尺寸缩小；仍需高压偏压容量/ESR对照。C1623为25V，明确不通过。",
+      "lcsc": "C13967",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/14623.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:21.232417+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E13; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C24",
@@ -1234,22 +1372,27 @@
         "1": "PUMP_N_DOWN",
         "2": "PUMP_N_AC"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        92,
-        37
+        92.0,
+        37.0
       ],
       "group": "pumps",
-      "mpn": "GRM21BR71H474KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B474KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f3608122-3fcd-5886-b3df-465d9232a483",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86043"
+      "selection_note": "C13967 CL21B474KBFNNNE为0805基础库、50V/X7R/±10%，无XY尺寸缩小；仍需高压偏压容量/ESR对照。C1623为25V，明确不通过。",
+      "lcsc": "C13967",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/14623.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:21.232417+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E13; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C25",
@@ -1258,22 +1401,27 @@
         "1": "REG_VGN",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        87,
-        45
+        87.0,
+        45.0
       ],
       "group": "pumps",
-      "mpn": "GRM21BR71H105KA12L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f2812e87-417a-5b59-9ff4-319dc8c38f2a",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77083"
+      "selection_note": "C28323 CL21B105KBFNNNE为0805/50V/X7R/±10%国内基础库，有SMT库存。C15849虽免费但0603/X5R，温度及偏压属性变化更大，不优先。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E19; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C26",
@@ -1282,22 +1430,27 @@
         "1": "PUMP_N_LOW",
         "2": "GND"
       },
-      "fp": "Driver:C_0805_HandSolder",
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
       "xy": [
-        81,
-        41
+        81.0,
+        41.0
       ],
       "group": "pumps",
-      "mpn": "0805B473K500NT",
-      "vendor": "FH",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1745",
+      "mpn": "CL10B473KB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1622",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "72f9c5b2-42de-5011-8ab3-f175d1966773",
-      "lcsc": "C1745",
-      "selection_note": "47nF/50V X7R±10%；风华0805，保留耐压，动态波形待实测。"
+      "lcsc": "C1622",
+      "selection_note": "C1622 CL10B473KB8NNNC为0603基础库，有国内SMT库存；标称参数匹配，但0805→0603偏压容量及泵纹波未对照。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/1974.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:26.139847+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E12; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "R17",
@@ -1308,8 +1461,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        91,
-        41
+        91.0,
+        41.0
       ],
       "group": "pumps",
       "mpn": "0805W8F2003T5E",
@@ -1318,7 +1471,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "abc9f3a1-0416-5bf8-8b48-fbd23524b338",
       "lcsc": "C17539",
       "selection_note": "v0.9 three resistor groups only: 200kΩ 0805 1% 125mW 150V; TCR restored 50 to 100ppm/℃; total400k unchanged; drift tradeoff documented",
@@ -1330,27 +1483,32 @@
     },
     {
       "ref": "R18",
-      "value": "16k ohm",
+      "value": "15k ohm",
       "pins": {
         "1": "FBN",
-        "2": "REG_VGN"
+        "2": "R18_FB_MID"
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        91,
-        45
+        91.0,
+        45.0
       ],
       "group": "pumps",
-      "mpn": "HP05W3F1602T5E",
+      "mpn": "0805W8F1502T5E",
       "vendor": "UNI-ROYAL",
-      "url": "https://www.uni-royal.cn/images/userfile/file/1723267015d7bab4914ae1a4d5.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17475",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "2802c2cd-9d4f-5487-a8b2-da6dfe515974",
-      "lcsc": "C2774511",
-      "selection_note": "v0.8 qualified domestic cost replacement: 16kΩ ±1%,333mW,150V,±100ppm/°C; same 0805, more rated power"
+      "lcsc": "C17475",
+      "selection_note": "C17490与C4210直接16k均为国内扩展库标签。基础库15k C17475＋1k C17513串联保持16k±1%、TCR界限±100ppm/℃；保守端点差100V、416k总链，电流约240µA，15k功耗约0.87mW，远低于125mW。两个0805、多1件、需新位号及反馈短线。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/18163.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:44.474570+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E20; parametric review PASS, CAD validation pending"
     },
     {
       "ref": "R19",
@@ -1361,8 +1519,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        92,
-        33
+        92.0,
+        33.0
       ],
       "group": "pumps",
       "mpn": "0805W8F220KT5E",
@@ -1371,7 +1529,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "7def7659-9517-5761-af4f-7bc4cfa0d686",
       "lcsc": "C17521",
       "selection_note": "v0.9 three resistor groups only: 2.2Ω 0805 125mW 150V 200ppm/℃; tolerance restored 0.5% to reference 1%; pulse bench test pending",
@@ -1396,8 +1554,8 @@
       },
       "fp": "Driver:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm",
       "xy": [
-        12,
-        27
+        12.0,
+        27.0
       ],
       "group": "panel",
       "mpn": "TCN75AVOA713",
@@ -1424,10 +1582,11 @@
         "8": "power_in"
       },
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "4669384d-7768-53a0-adc8-8890011d88f5",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C144313"
+      "lcsc": "C144313",
+      "assembly": "SMT"
     },
     {
       "ref": "R20",
@@ -1438,8 +1597,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        9,
-        20
+        9.0,
+        20.0
       ],
       "group": "panel",
       "mpn": "0805W8F4701T5E",
@@ -1448,10 +1607,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "eca7bcf7-266e-58d4-9f17-d7209908faee",
       "lcsc": "C17673",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R21",
@@ -1462,8 +1622,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        14,
-        20
+        14.0,
+        20.0
       ],
       "group": "panel",
       "mpn": "0805W8F4701T5E",
@@ -1472,34 +1632,40 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "aa7461c7-51ee-575d-8eb0-963f01992764",
       "lcsc": "C17673",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "C27",
-      "value": "100nF/50V",
+      "value": "100nF/100V",
       "pins": {
         "1": "EPD_3V3",
         "2": "GND"
       },
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        6,
-        24
+        6.0,
+        24.0
       ],
       "group": "panel",
-      "mpn": "CL21B104KBCNNNC",
-      "vendor": "Samsung",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1711",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "7b922b81-fb26-5d68-ac71-4f40b269d4cd",
-      "lcsc": "C1711",
-      "selection_note": "100nF/50V X7R±10%；0603增大为0805。"
+      "lcsc": "C28233",
+      "selection_note": "C28233 CL21B104KCFNNNE：100nF/100V/X7R/±10%0805基础库，有国内SMT库存；原/新同三星CL21B系列，耐压提升，温度特性保持。普通3.3V/100nF去耦不要求取得两份完全相同的高压偏压曲线才可推荐；保留旁边大电容。厚度代码C→F，名义0.85→1.25mm，实施时检查高度及courtyard。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E21; parametric review PASS, CAD validation pending"
     },
     {
       "ref": "R1",
@@ -1510,8 +1676,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        72,
-        12
+        72.0,
+        12.0
       ],
       "group": "panel",
       "mpn": "0805W8F2001T5E",
@@ -1520,10 +1686,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "61a5c413-2fa8-544e-9424-a8d34d7cee70",
       "lcsc": "C17604",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R35",
@@ -1544,10 +1711,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "faf432de-0485-51bc-ab4b-0a274d539931",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R36",
@@ -1568,10 +1736,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "8cea2c15-73e2-5169-8599-82c48b0d4b7c",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "C1",
@@ -1583,7 +1752,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         22.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1592,7 +1761,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "7c47a940-db15-5224-a93e-9eea0e6ad374",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1612,7 +1781,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         27.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1621,7 +1790,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "9a7e0e7f-65f7-55f6-993f-18af06f818ce",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1641,7 +1810,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         22.5,
-        23
+        23.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1650,7 +1819,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "51f9b468-5750-5f87-b0c1-97e79a74587e",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1662,27 +1831,32 @@
     },
     {
       "ref": "C105",
-      "value": "3.3uF/50V",
+      "value": "1uF/50V",
       "pins": {
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         27.5,
-        23
+        23.0
       ],
       "group": "panel",
-      "mpn": "GRM32DR71H335KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "bfeebab9-467d-5f43-8822-8f857843c0d2",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C397310"
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C2",
@@ -1694,7 +1868,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         31.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1703,7 +1877,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "b0716500-be0e-57c1-a013-e38145552966",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1723,7 +1897,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         36.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1732,7 +1906,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "175819c5-3359-51a4-8596-8d2e69e57025",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1752,7 +1926,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         31.5,
-        23
+        23.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1761,7 +1935,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "604029b3-0e14-5dbf-82df-34252fd16b83",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1773,27 +1947,32 @@
     },
     {
       "ref": "C108",
-      "value": "3.3uF/50V",
+      "value": "1uF/50V",
       "pins": {
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         36.5,
-        23
+        23.0
       ],
       "group": "panel",
-      "mpn": "GRM32DR71H335KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "f0419365-7771-5939-8a42-f36853513dfc",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C397310"
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C3",
@@ -1805,7 +1984,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         40.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1814,7 +1993,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "8a6fb4c3-6a82-5238-b4c5-cdb42aa411dd",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1834,7 +2013,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         45.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1843,7 +2022,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "b37f2285-9f0c-5436-97bf-942aba0815de",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1863,7 +2042,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         40.5,
-        23
+        23.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1872,7 +2051,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "541c2c77-d759-5cc2-8853-5f59e717a17f",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1884,27 +2063,32 @@
     },
     {
       "ref": "C111",
-      "value": "3.3uF/50V",
+      "value": "1uF/50V",
       "pins": {
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         45.5,
-        23
+        23.0
       ],
       "group": "panel",
-      "mpn": "GRM32DR71H335KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "9f8fd227-3da7-5a07-b77b-2fd893569fac",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C397310"
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C4",
@@ -1916,7 +2100,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         49.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1925,7 +2109,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "f18e56c2-edc3-5a5b-ae94-3804a4507e1f",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1945,7 +2129,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         54.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1954,7 +2138,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "dcb8df27-decf-5dcc-82e5-d5ec4e2a9067",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1974,7 +2158,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         49.5,
-        23
+        23.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -1983,7 +2167,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "1fadf000-af65-53f8-88ad-47a74b99a638",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -1995,27 +2179,32 @@
     },
     {
       "ref": "C114",
-      "value": "3.3uF/50V",
+      "value": "1uF/50V",
       "pins": {
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         54.5,
-        23
+        23.0
       ],
       "group": "panel",
-      "mpn": "GRM32DR71H335KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "d2cb0944-3c12-5839-9d9e-b9b33fc5729f",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C397310"
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C5",
@@ -2027,7 +2216,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         58.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2036,7 +2225,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "3d9c6218-b3f1-5c1c-84b1-c08a120e1e4f",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2056,7 +2245,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         63.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2065,7 +2254,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "7efeacad-21b8-5830-9e85-41c88935036c",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2085,7 +2274,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         58.5,
-        23
+        23.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2094,7 +2283,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "2fac4cc1-49bb-5ff7-b9bb-0c197753e801",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2106,27 +2295,32 @@
     },
     {
       "ref": "C117",
-      "value": "3.3uF/50V",
+      "value": "1uF/50V",
       "pins": {
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         63.5,
-        23
+        23.0
       ],
       "group": "panel",
-      "mpn": "GRM32DR71H335KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "9725c1de-4add-5dce-83d5-2accb4317982",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C397310"
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C6",
@@ -2138,7 +2332,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         67.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2147,7 +2341,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "8992f71f-d261-5c10-af76-78afcd18a9b6",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2167,7 +2361,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         72.5,
-        17
+        17.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2176,7 +2370,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "7a3d586c-bccc-5f75-abed-c533bc42fda7",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2196,7 +2390,7 @@
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
         67.5,
-        23
+        23.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2205,7 +2399,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "5f71b582-97da-58f5-937e-4c4690e4df5f",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2217,27 +2411,32 @@
     },
     {
       "ref": "C120",
-      "value": "3.3uF/50V",
+      "value": "1uF/50V",
       "pins": {
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         72.5,
-        23
+        23.0
       ],
       "group": "panel",
-      "mpn": "GRM32DR71H335KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20190712/C397310_8EB97581BD3F98F2177A74ABEE8CEC8B.pdf",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "080b793d-1c6b-5f70-b8ea-02cfa7b1dad7",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C397310"
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C7",
@@ -2248,8 +2447,8 @@
       },
       "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        78,
-        16
+        78.0,
+        16.0
       ],
       "group": "panel",
       "mpn": "GRM21BR61H106KE43L",
@@ -2258,7 +2457,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "fd86e631-e6e3-5786-9b43-b06f5bb1867c",
       "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
       "lcsc": "C440198",
@@ -2275,22 +2474,27 @@
         "1": "TFT_VCOM",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_1206_HandSolder",
       "xy": [
-        78,
-        22
+        78.0,
+        22.0
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H475KA88L",
-      "vendor": "Murata",
-      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71H475KA88-01A.pdf",
+      "mpn": "1206B475K500NT",
+      "vendor": "FH",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29823",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "7413fcef-807a-5c53-b23b-50f30462e34c",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C86052"
+      "selection_note": "C29823：4.7µF/50V/X7R/±10%/1206，国内基础库、SMT有货。需要1210→1206焊盘；低压六只优先审核，高压三只需实际偏压容量和ESR证据，不能整组套用低压结论。C338088虽在海外线索中出现，国内标签为扩展库，不计免费。",
+      "lcsc": "C29823",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/30577.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:16.690356+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E05; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C9",
@@ -2299,22 +2503,27 @@
         "1": "FPL_VCOM",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        85,
-        18
+        85.0,
+        18.0
       ],
       "group": "panel",
-      "mpn": "GRM21BR71H474KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B474KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "40e889b4-0104-556b-a1a5-7a6f304e6508",
-      "lcsc": "C86043",
-      "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
+      "lcsc": "C13967",
+      "selection_note": "C13967 CL21B474KBFNNNE为0805基础库、50V/X7R/±10%，无XY尺寸缩小；仍需高压偏压容量/ESR对照。C1623为25V，明确不通过。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/14623.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:21.232417+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E13; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C10",
@@ -2323,22 +2532,27 @@
         "1": "VCOMBD_M",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        91,
-        12
+        91.0,
+        12.0
       ],
       "group": "panel",
-      "mpn": "GRM21BR71H474KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B474KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f9e6e286-4320-5a61-b2b5-68517938f61e",
-      "lcsc": "C86043",
-      "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
+      "lcsc": "C13967",
+      "selection_note": "C13967 CL21B474KBFNNNE为0805基础库、50V/X7R/±10%，无XY尺寸缩小；仍需高压偏压容量/ESR对照。C1623为25V，明确不通过。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/14623.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:21.232417+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E13; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "C11",
@@ -2347,22 +2561,27 @@
         "1": "VCOMBD_S",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
-        91,
-        18
+        91.0,
+        18.0
       ],
       "group": "panel",
-      "mpn": "GRM21BR71H474KA88L",
-      "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "mpn": "CL21B474KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C13967",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f8e130f0-69c4-56f7-a813-84ac4d1aeb56",
-      "lcsc": "C86043",
-      "selection_note": "保留Murata470nF/50V：三星候选未取得工作偏压有效容量及纹波对照。"
+      "lcsc": "C13967",
+      "selection_note": "C13967 CL21B474KBFNNNE为0805基础库、50V/X7R/±10%，无XY尺寸缩小；仍需高压偏压容量/ESR对照。C1623为25V，明确不通过。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/14623.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:21.232417+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E13; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "R39",
@@ -2373,8 +2592,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        49,
-        77
+        49.0,
+        77.0
       ],
       "group": "interface",
       "mpn": "0805W8F330JT5E",
@@ -2383,10 +2602,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "434ef3e2-39e7-5068-b739-a39d9de19932",
       "lcsc": "C17634",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R40",
@@ -2397,8 +2617,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        54,
-        77
+        54.0,
+        77.0
       ],
       "group": "interface",
       "mpn": "0805W8F330JT5E",
@@ -2407,10 +2627,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "a3a7bbeb-f84a-5d1c-9f3c-0454f4650fbd",
       "lcsc": "C17634",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R41",
@@ -2421,8 +2642,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        59,
-        77
+        59.0,
+        77.0
       ],
       "group": "interface",
       "mpn": "0805W8F330JT5E",
@@ -2431,10 +2652,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "ae617ab7-ceaa-5aed-8b70-360583dda50e",
       "lcsc": "C17634",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R42",
@@ -2445,8 +2667,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        64,
-        77
+        64.0,
+        77.0
       ],
       "group": "interface",
       "mpn": "0805W8F330JT5E",
@@ -2455,10 +2677,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "63be70d1-f560-5e86-bacc-d8e27c24e8df",
       "lcsc": "C17634",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R43",
@@ -2469,8 +2692,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        68,
-        75
+        68.0,
+        75.0
       ],
       "group": "interface",
       "mpn": "0805W8F330JT5E",
@@ -2479,10 +2702,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "16e534aa-82a2-5a75-8994-31ada11195f4",
       "lcsc": "C17634",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R44",
@@ -2493,8 +2717,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        49,
-        58
+        49.0,
+        58.0
       ],
       "group": "interface",
       "mpn": "0805W8F1003T5E",
@@ -2503,10 +2727,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "242edfe7-23d4-5ed9-8229-c38123ebfaf1",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R45",
@@ -2517,8 +2742,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        54,
-        58
+        54.0,
+        58.0
       ],
       "group": "interface",
       "mpn": "0805W8F1003T5E",
@@ -2527,10 +2752,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "2498a894-e9f2-5c07-b0b3-69e207a00513",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R46",
@@ -2541,8 +2767,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        59,
-        58
+        59.0,
+        58.0
       ],
       "group": "interface",
       "mpn": "0805W8F1003T5E",
@@ -2551,10 +2777,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "80001428-51ad-5ef5-8afb-cc3373b88278",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R47",
@@ -2565,8 +2792,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        64,
-        58
+        64.0,
+        58.0
       ],
       "group": "interface",
       "mpn": "0805W8F1003T5E",
@@ -2575,10 +2802,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "c332d163-18ad-58eb-8549-19580526d324",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "R48",
@@ -2589,8 +2817,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        69,
-        58
+        69.0,
+        58.0
       ],
       "group": "interface",
       "mpn": "0805W8F1003T5E",
@@ -2599,10 +2827,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "4c10d0f4-ce03-54cd-a4f3-19124a18bd09",
       "lcsc": "C149504",
-      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。"
+      "selection_note": "同阻值±1%常用0805；手焊加长焊盘。",
+      "assembly": "SMT"
     },
     {
       "ref": "J2",
@@ -2627,8 +2856,8 @@
       },
       "fp": "Driver:Connector_PinHeader_2.54mm__PinHeader_2x08_P2.54mm_Vertical",
       "xy": [
-        72,
-        76
+        72.0,
+        76.0
       ],
       "group": "interface",
       "mpn": "SH-PZ254V-2x8P",
@@ -2637,10 +2866,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 90,
+      "angle": 90.0,
       "uuid": "db18f9de-2ac6-5931-b411-1ba17b47881c",
       "lcsc": "C55629829",
-      "selection_note": "首韩2×8直插排针；原厂图20.32×5.0mm、2.54mm双排、0.64mm方针、3A；孔径1.05mm。"
+      "selection_note": "首韩2×8直插排针；原厂图20.32×5.0mm、2.54mm双排、0.64mm方针、3A；孔径1.05mm。",
+      "assembly": "MANUAL"
     },
     {
       "ref": "FPC1",
@@ -2709,8 +2939,8 @@
       },
       "fp": "Driver:FPC_05FB_60PH20",
       "xy": [
-        50,
-        5
+        50.0,
+        5.0
       ],
       "group": "panel",
       "mpn": "FPC-05FB-60PH20",
@@ -2841,10 +3071,11 @@
         "60": "passive"
       },
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "421be796-a9a9-57bf-b192-48fb8b7626a2",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C2856839"
+      "lcsc": "C2856839",
+      "assembly": "SMT"
     },
     {
       "ref": "TP1",
@@ -2854,8 +3085,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        69
+        7.0,
+        69.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -2864,7 +3095,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "a9153cd1-43a4-5aa8-af1f-c59be6f739e5",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -2877,8 +3108,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        63
+        7.0,
+        63.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -2887,7 +3118,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "8603a3f2-f8e8-5af1-91a4-a42f47a9be5b",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -2900,8 +3131,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        57
+        7.0,
+        57.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -2910,7 +3141,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "748fa3bc-7d90-57a6-b36a-10ccce722fdf",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -2923,8 +3154,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        51
+        7.0,
+        51.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -2933,7 +3164,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "398c6ad1-cf1f-56c9-b5d6-19828e459aa7",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -2946,8 +3177,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        45
+        7.0,
+        45.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -2956,7 +3187,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "ffb45dfe-fb1e-54ef-bb46-1fe3b9eedf85",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -2969,8 +3200,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        39
+        7.0,
+        39.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -2979,7 +3210,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "640e2de5-3e16-5529-abb9-399507299aae",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -2992,8 +3223,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        54
+        96.0,
+        54.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3002,7 +3233,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "ff8ffbc4-c796-5416-bf74-ec19908a4914",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3015,8 +3246,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        48
+        96.0,
+        48.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3025,7 +3256,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "4060192f-e0e0-55a7-82b2-4525305f1282",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3038,8 +3269,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        42
+        96.0,
+        42.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3048,7 +3279,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "2eca7551-c178-521c-b760-b84eea4675f3",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3061,8 +3292,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        36
+        96.0,
+        36.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3071,7 +3302,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "e7d04ee6-311f-57b6-9b53-61f114a5b760",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3084,8 +3315,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        30
+        96.0,
+        30.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3094,7 +3325,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "96c57cf9-a06a-5368-8871-ac7af8b8fcb5",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3107,8 +3338,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        24
+        96.0,
+        24.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3117,7 +3348,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "bfbec1af-842d-503c-9963-ab5a22005ccd",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3130,8 +3361,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        75,
-        8
+        75.0,
+        8.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3140,7 +3371,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "8f7d292c-69cb-5ba5-9545-ed42a225b8eb",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3153,8 +3384,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        80,
-        8
+        80.0,
+        8.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3163,7 +3394,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "93cfb4bc-70ff-52d6-bc62-df5ad677f2a2",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3176,8 +3407,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        85,
-        8
+        85.0,
+        8.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3186,7 +3417,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "2d31e053-afe8-55b0-a0c8-1f2a391c2a68",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3199,8 +3430,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        10,
-        76
+        10.0,
+        76.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3209,7 +3440,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "d43ceecb-56f4-500d-8498-0220ade8c4cd",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3222,8 +3453,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        60
+        7.0,
+        60.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3232,7 +3463,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "14adeb44-2d92-5432-bd71-6fa62d481405",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3245,8 +3476,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        48
+        7.0,
+        48.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3255,7 +3486,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "129486d6-8210-5813-80ee-ceec9165135b",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3268,8 +3499,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        7,
-        36
+        7.0,
+        36.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3278,7 +3509,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "fb3f2ca5-b033-53db-a097-8ad335d30edf",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3291,8 +3522,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        57
+        96.0,
+        57.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3301,7 +3532,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "b1f25c74-9a75-52ef-9168-134720361853",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3314,8 +3545,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        45
+        96.0,
+        45.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3324,7 +3555,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "1597f8a1-cf77-507d-8e05-71f2093b2dbf",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3337,8 +3568,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        33
+        96.0,
+        33.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3347,7 +3578,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "1f97e26b-0d7d-5437-86bf-0062b56f2639",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3360,8 +3591,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        96,
-        21
+        96.0,
+        21.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3370,7 +3601,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "b64d0606-a7ed-58d0-b39f-9e7526a737b9",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3383,8 +3614,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        80,
-        12
+        80.0,
+        12.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3393,34 +3624,39 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "1f5b5b06-c237-592b-8054-d6452910ea76",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
     },
     {
       "ref": "C36",
-      "value": "1nF/50V C0G",
+      "value": "100pF/50V C0G",
       "pins": {
         "1": "BENCH_3V3",
         "2": "SW_CT"
       },
-      "fp": "Driver:Capacitor_SMD__C_0805_2012Metric",
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
       "xy": [
-        37,
-        75
+        37.0,
+        75.0
       ],
       "group": "entry",
-      "mpn": "0805CG102J500NT",
-      "vendor": "FH",
-      "url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C29925",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "da1c958d-2286-5c6f-9743-c49344031c99",
-      "selection_note": "v0.7 嘉立创国内现货替代；参数及实测边界见三组现货替代-v0.7.md",
-      "lcsc": "C29925"
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
     },
     {
       "ref": "R49",
@@ -3441,10 +3677,11 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "2d63a01d-eae5-4563-ab6c-700abc3ead2b",
       "selection_note": "v0.8 qualified domestic cost replacement: 0Ω jumper <50mΩ,2A rated/5A overload, same debug function",
-      "lcsc": "C17477"
+      "lcsc": "C17477",
+      "assembly": "SMT"
     },
     {
       "ref": "TP25",
@@ -3455,7 +3692,7 @@
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
         54.5,
-        44
+        44.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3464,7 +3701,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "4ffed17b-6d9d-4a2c-9315-77c3056d1b18",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3477,8 +3714,8 @@
       },
       "fp": "Driver:TestPoint__TestPoint_Pad_D1.5mm",
       "xy": [
-        55,
-        47
+        55.0,
+        47.0
       ],
       "group": "test",
       "mpn": "PCB test pad",
@@ -3487,7 +3724,7 @@
       "names": {},
       "types": {},
       "dnp": true,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "06bc1bf7-2b30-4949-a483-894403787910",
       "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
       "lcsc": ""
@@ -3501,8 +3738,8 @@
       },
       "fp": "Driver:R_0805_HandSolder",
       "xy": [
-        86,
-        41
+        86.0,
+        41.0
       ],
       "group": "pumps",
       "mpn": "0805W8F2003T5E",
@@ -3511,7 +3748,7 @@
       "names": {},
       "types": {},
       "dnp": false,
-      "angle": 0,
+      "angle": 0.0,
       "uuid": "f20457d6-8c8e-43b6-bd11-af99237b4887",
       "lcsc": "C17539",
       "selection_note": "v0.9 three resistor groups only: 200kΩ 0805 1% 125mW 150V; TCR restored 50 to 100ppm/℃; total400k unchanged; drift tradeoff documented",
@@ -3520,6 +3757,1253 @@
       "stock_queried_at": "2026-10-10T13:26:27.744Z",
       "assembly": "SMT",
       "exception_decision": "2026-10-10 user authorized three resistor groups only; all other assembly unchanged"
+    },
+    {
+      "ref": "C121",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSPH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        22.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "d32f4c81-1330-4d21-9b2b-31733b34c106",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C122",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSPH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        27.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "b735f81f-5d32-4556-b412-ee56541783e2",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C123",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        22.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "5c53baf9-b716-42e1-84a6-16ac1f4e80eb",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C124",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        27.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "adb4d1eb-a51b-4b2a-b35e-5e39db36f200",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C125",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        25.0,
+        28.2
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "f62e88d0-360e-4177-ae21-5b56cd629000",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C126",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSPL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        31.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "a730d9d3-b1e4-454a-bfc5-239d4cb47817",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C127",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSPL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        36.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "9ba30fe8-ac1e-4549-a4f0-46100ab5439e",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C128",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        31.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "60c485ab-f689-4588-8c6f-50f840df68f7",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C129",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        36.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "3ddafdf7-2b3c-4da1-aa0e-5b17e2b4afd2",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C130",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        34.0,
+        28.2
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "0a9783fa-1482-4a5e-8493-1b3a423f3d61",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C131",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSPL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        40.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "254ff7d7-1132-4216-9061-a9faea8343c8",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C132",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSPL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        45.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "94bed090-a1dd-41af-b429-685900d3d80d",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C133",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        40.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "33ad1a05-224d-4649-8136-b87d8725e978",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C134",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        45.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "bf9b48c3-18a2-4540-b08c-6c32095fd309",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C135",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSPL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        43.0,
+        28.2
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "c13bca13-b7a3-4d73-a7f9-353e2e58c51e",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C136",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSNH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        49.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "41578a92-ba88-4d0b-971b-ba6c86d80470",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C137",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSNH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        54.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "33d201b0-b6ea-4a3c-bdb8-6e0cb4250581",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C138",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        49.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "77d37511-f225-43af-ada1-71a7c30f17ae",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C139",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        54.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "d7a0a3e6-baaf-4465-bbe5-9141a31e5739",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C140",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNH",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        52.0,
+        28.2
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "d2d87157-02c6-4ecd-94b7-69d52decc97d",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C141",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSNL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        58.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "532a8f63-ab1f-4786-b4f7-9574704586d5",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C142",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSNL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        63.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "d1662960-c96b-4a31-aa4a-2aebf125332d",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C143",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        58.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "864f0736-2489-48c5-8a34-3b3d3e205cd5",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C144",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        63.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "0d596f81-121b-40f7-94fe-2ef5d147d4a2",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C145",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNL",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        61.0,
+        28.2
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "3a7e6e15-6e07-4908-b5be-fa4115e2c5bb",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C146",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSNL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        67.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "c9febc87-b6af-491e-846d-58544483e6a1",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C147",
+      "value": "1uF/50V",
+      "pins": {
+        "1": "VSNL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        72.5,
+        20.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B105KBFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28323",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "20920850-e698-486c-a2b5-d4bf34787138",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28323",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/29074.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.138241+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C148",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        67.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "419314ba-553e-40a4-a51f-8b855edb3a2a",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C149",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        72.5,
+        26.0
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "de23732a-9eb4-4244-8c26-a16a2ea17a31",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C150",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "VSNL2",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        70.0,
+        28.2
+      ],
+      "group": "panel",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "22d24e9f-c5bb-402c-a2d7-f3f177283f85",
+      "selection_note": "同值3.3µF/50V C1021610为扩展库。基础库可由每支路3×C28323(1µF)＋3×C28233(0.1µF)合成3.3µF，但总计新增30个电容，偏压有效容量/ESR仍需核算。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E03; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C151",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        40.0,
+        68.0
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "443106b4-5f0a-40e7-9a6c-8eb997f84437",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C152",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        43.0,
+        68.0
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "cedacce0-aa28-4735-b189-f6140a3911ce",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C153",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        46.0,
+        68.0
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "d05fee4a-024e-4bfe-ac7f-1571348a7c74",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C154",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        40.0,
+        70.5
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "56014e7b-d39e-45b8-a513-48cb6fae9763",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C155",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        43.0,
+        70.5
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "1a26f457-4c86-44b1-8a1f-228843e6f914",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C156",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        46.0,
+        70.5
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "80105117-e826-4474-bda5-b8c65c95f7b0",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C157",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        40.0,
+        73.0
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "3fddfb5e-6de5-41ab-bcac-e62915ffcbfd",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C158",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        43.0,
+        73.0
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "1f72d5e2-2f32-4af7-8448-c624a135a722",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C159",
+      "value": "100pF/50V C0G",
+      "pins": {
+        "1": "BENCH_3V3",
+        "2": "SW_CT"
+      },
+      "fp": "Driver:Capacitor_SMD__C_0603_1608Metric",
+      "xy": [
+        46.0,
+        73.0
+      ],
+      "group": "entry",
+      "mpn": "CL10C101JB8NNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14858",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "d45a7525-88cd-4cec-9f39-b588fe5623e0",
+      "selection_note": "C1636同参数0603为扩展库；C1588是X7R，不是C0G，网上表格错误，禁止直替。基础库C14858为100pF/50V/C0G/±5%，十只并联可得到1nF±5%，但多9件、多焊点和CT走线寄生。",
+      "lcsc": "C14858",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/15530.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:46.940464+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E14; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C160",
+      "value": "100nF/100V",
+      "pins": {
+        "1": "PUMP_P_LOW",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        18.5,
+        64.0
+      ],
+      "group": "pumps",
+      "mpn": "CL21B104KCFNNNE",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28233",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "26f881f3-c52c-4046-9a88-848ced0e15b7",
+      "selection_note": "基础库C21120仅25V，不通过。2×C28233(100nF/100V)＋C1729(22nF/50V)为222nF，标称增加0.91%；总公差仍±10%，但多2件，偏压后容量、ESR和布局需要复核。",
+      "lcsc": "C28233",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/28983.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:23.039107+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E18; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "C161",
+      "value": "22nF/50V",
+      "pins": {
+        "1": "PUMP_P_LOW",
+        "2": "GND"
+      },
+      "fp": "Driver:C_0805_HandSolder",
+      "xy": [
+        18.5,
+        66.5
+      ],
+      "group": "pumps",
+      "mpn": "CL21B223KBANNNC",
+      "vendor": "Samsung Electro-Mechanics",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1729",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "15282bc7-0733-4bb7-9fc8-8edd49469402",
+      "selection_note": "基础库C21120仅25V，不通过。2×C28233(100nF/100V)＋C1729(22nF/50V)为222nF，标称增加0.91%；总公差仍±10%，但多2件，偏压后容量、ESR和布局需要复核。",
+      "lcsc": "C1729",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/2081.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:08:31.424884+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E18; PROTOTYPE ONLY - electrical equivalence NOT VERIFIED"
+    },
+    {
+      "ref": "R51",
+      "value": "1k ohm",
+      "pins": {
+        "1": "R18_FB_MID",
+        "2": "REG_VGN"
+      },
+      "fp": "Driver:R_0805_HandSolder",
+      "xy": [
+        91.0,
+        48.0
+      ],
+      "group": "pumps",
+      "mpn": "0805W8F1001T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17513",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "12292847-3de7-4ecf-82ee-6cde15196388",
+      "lcsc": "C17513",
+      "selection_note": "C17490与C4210直接16k均为国内扩展库标签。基础库15k C17475＋1k C17513串联保持16k±1%、TCR界限±100ppm/℃；保守端点差100V、416k总链，电流约240µA，15k功耗约0.87mW，远低于125mW。两个0805、多1件、需新位号及反馈短线。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/18201.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:16:44.475728+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E20; parametric review PASS, CAD validation pending"
+    },
+    {
+      "ref": "R52",
+      "value": "10k ohm",
+      "pins": {
+        "1": "R8_FB_MID",
+        "2": "VGH"
+      },
+      "fp": "Driver:R_0805_HandSolder",
+      "xy": [
+        38.5,
+        55.0
+      ],
+      "group": "pumps",
+      "mpn": "0805W8F1002T5E",
+      "vendor": "UNI-ROYAL",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17414",
+      "names": {},
+      "types": {},
+      "dnp": false,
+      "angle": 0.0,
+      "uuid": "962ce303-0569-45e3-b412-7bf6dd790288",
+      "lcsc": "C17414",
+      "selection_note": "C17422(0805)与C25805(0603)国内均为扩展库标签，不用海外Basic代替国内结论。C149504基础库100k＋C17414基础库10k串联保持110k±1%、TCR界限±100ppm/℃；两只150V/125mW，在上臂端差50V保守条件下100k约20.66mW、10k约2.07mW，多1件。",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/18102.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T14:15:13.291848+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user selected 3+14 groups; E22; parametric review PASS, CAD validation pending"
     }
   ],
   "board_mm": [
@@ -3529,8 +5013,8 @@
   "fpc_footprint_verified": true,
   "fpc_mating_verified": false,
   "date": "2026-10-11",
-  "assembled_components": 104,
-  "smt_components": 102,
-  "release_version": "0.10",
-  "release_slug": "jlc-cn-review-v0.10-e01-2026-10-11"
+  "assembled_components": 147,
+  "smt_components": 145,
+  "release_version": "0.11",
+  "release_slug": "jlc-cn-review-v0.11-basic17-2026-10-11"
 }

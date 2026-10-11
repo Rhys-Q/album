@@ -1,7 +1,9 @@
-# GDEP133C02 驱动板 v0.10
+# GDEP133C02 驱动板 v0.11
 
-当前制造审阅包：[v0.10 E01](releases/jlc-cn-review-v0.10-e01-2026-10-11/README.md)。
+当前工程采用用户指定的17组基础库原型方案：147件、145个顶面SMT、2个手工插件，36组采购型号；100×80mm四层及接口位置保持。3组参数审核通过，14组电气等效未验证。
 
-本版仅E01 22只换为村田C440198、0805 X5R 10µF/50V；原型有效容量、ESR和纹波等效尚未验证；温度上限85℃。37组104件、102个顶面SMT及J1/J2插件保持；板框/接口/四层保持。详见[改版说明](docs/E01改版-v0.10.md)、[采购清单](docs/采购清单-v0.10.csv)。原生工程入口gdep133c02-driver.kicad_pro，KiCad10.0.6；ERC/DRC与GUI验收见release验证记录。Q7缺货及实板验收待完成。
+[改版及验证边界](docs/基础库17组改版-v0.11.md)、[采购清单](docs/采购清单-v0.11.csv)、[逐位号对照](docs/逐位号替换对照-v0.11.csv)、[剩余例外](docs/17组决定及剩余例外-v0.11.csv)。基础库组合补充页 basic-composites.kicad_sch 通过原工程入口加载；原有符号UUID保留。
 
-学习资料：[学习指南](docs/learning-guide.md)、[电源](docs/power-circuit-explained.md)、[接口](docs/interface-circuit-explained.md)、[屏幕](docs/panel-circuit-explained.md)。
+当前制造审阅包：[v0.11](releases/jlc-cn-review-v0.11-basic17-2026-10-11/README.md)，ERC、DRC、未连接、一致性均为0；KiCad实际更新/保存后无重复新增或待执行变更。实板显示、瞬态、温升、FPC配接及安全掉电尚未验收，C15008 SMT库存仍未知。KiCad10.0.6。
+
+学习资料：[学习指南](docs/learning-guide.md)、[电源](docs/power-circuit-explained.md)、[接口](docs/interface-circuit-explained.md)、[屏幕](docs/panel-circuit-explained.md)。旧v0.9/v0.10文档为历史快照。

@@ -1,9 +1,9 @@
 {
-  "revision": "0.10-e01",
-  "footprints": 134,
-  "pads": 331,
-  "tracks": 2124,
-  "vias": 206,
+  "revision": "0.11-basic17",
+  "footprints": 177,
+  "pads": 417,
+  "tracks": 2907,
+  "vias": 237,
   "minimum_track_mm": 0.2,
   "missing_3d_models": [
     "TP18",
