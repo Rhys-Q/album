@@ -60,8 +60,19 @@ for ref in ['D3','D5','D6']:
  assert parts[ref]['fp']=='Driver:Package_TO_SOT_SMD__SOT-23'
  assert parts[ref]['names']=={'1':'A1','2':'K2','3':'K1_A2'}
 for start in [103,106,109,112,115,118]:
- for idx in [start,start+1]:assert parts['C'+str(idx)]['value']=='10uF/50V'
+ for idx in [start,start+1]:assert parts['C'+str(idx)]['value']=='10uF/50V X5R'
  assert parts['C'+str(start+2)]['value']=='3.3uF/50V'
+# E01 user-selected prototype: retain 22 capacitors and native purchasing parity.
+e01=[z for z in parts.values()if z.get('lcsc')=='C440198']
+assert len(e01)==22
+for z in e01:
+ ref=z['ref']
+ assert z['mpn']=='GRM21BR61H106KE43L'and z['fp']=='Driver:C_0805_HandSolder'and z['value']=='10uF/50V X5R'
+ assert z['assembly']=='SMT'and z['library_category']=='基础库'
+ for key,prop in [('LibraryCategory','library_category'),('FeeEvidence','fee_evidence'),('StockQueriedAt','stock_queried_at'),('AssemblyMethod','assembly'),('ExceptionDecision','exception_decision')]:
+  assert footprint_properties[ref].get(key)==z[prop],('E01 PCB procurement mismatch',ref,key)
+  fields={f.attrib['name']:f.text or ''for f in xml.find('components').find(f"comp[@ref='{ref}']").findall('fields/field')}
+  assert fields.get(key)==z[prop],('E01 schematic procurement mismatch',ref,key)
 for ref in ['C8','C14']:
  assert parts[ref]['value']=='4.7uF/50V'
 for ref,mpn,code in [('R7','0805W8F4301T5E','C17667'),('R10','0805W8F220KT5E','C17521'),('R19','0805W8F220KT5E','C17521'),('R17','0805W8F2003T5E','C17539'),('R50','0805W8F2003T5E','C17539')]:
@@ -107,7 +118,7 @@ assert not any(v=='ignore' for v in pro['rule_severities'].values())
 proof=json.loads((ROOT/'reports/check-provenance.json').read_text())
 for name,digest in proof['source_sha256'].items():
  assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest, ('Stale check report',name)
-result={'date':data['date'],'kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'PARTIAL - see docs/三组电阻免换料费改版-v0.9.md and docs/采购清单-v0.9.csv; domestic payment and biased capacitance gaps remain','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
+result={'date':data['date'],'kicad_version':'10.0.6','schematic_connected_pins':len(want),'pcb_pad_parity':'PASS','fixed_pin_requirements':'PASS','project_local_libraries_and_available_models':'PASS','erc':'PASS - zero violations','drc':'PASS - zero violations/unconnected/parity; no ignored checks or exclusions','gui_open':'NOT VERIFIED for current sources','fpc_footprint':'LAND DIMENSIONS CHECKED - physical mating/pin orientation pending','routing':'CONNECTED - minimum 0.2mm; power core 0.5/0.8mm; 0.6/0.3mm vias','power_trace_and_loop_review':'WIDTH REPAIRED; transient/Kelvin/current/thermal acceptance pending','ground_plane':'IMPLEMENTED - In1.Cu GND and front/back pours','procurement_and_effective_capacitance':'PARTIAL - see docs/E01改版-v0.10.md and docs/采购清单-v0.10.csv; E01 user selected, bias/ESR/ripple equivalence UNVERIFIED; domestic payment and biased capacitance gaps remain','hardware_tests':'NOT PERFORMED','cad_checks_pass':True,'review_package_available':True,'release_allowed':False}
 result['date']=proof['date']
 result['revision']=data['revision']
 result['assembled_components']=data['assembled_components']

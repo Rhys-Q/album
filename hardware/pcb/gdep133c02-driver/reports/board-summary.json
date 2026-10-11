@@ -1,9 +1,9 @@
 {
-  "revision": "0.9-resistors",
+  "revision": "0.10-e01",
   "footprints": 134,
   "pads": 331,
-  "tracks": 2047,
-  "vias": 201,
+  "tracks": 2124,
+  "vias": 206,
   "minimum_track_mm": 0.2,
   "missing_3d_models": [
     "TP18",

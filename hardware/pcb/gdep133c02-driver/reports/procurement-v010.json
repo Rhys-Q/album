@@ -1,0 +1,64 @@
+{
+  "code": "C440198",
+  "mpn": "GRM21BR61H106KE43L",
+  "library": "SMT基础库",
+  "MOQ": 1,
+  "ratio": 5,
+  "retail_stock": 480520,
+  "smt_stock": 1371419,
+  "queried_at": "2026-10-11T11:28:17.670114+08:00",
+  "price_tiers": [
+    {
+      "pieces": 5,
+      "unit_cny": 1.2704
+    },
+    {
+      "pieces": 50,
+      "unit_cny": 1.0596
+    },
+    {
+      "pieces": 150,
+      "unit_cny": 0.9566
+    },
+    {
+      "pieces": 500,
+      "unit_cny": 0.8648
+    },
+    {
+      "pieces": 3000,
+      "unit_cny": 0.8152
+    },
+    {
+      "pieces": 6000,
+      "unit_cny": 0.8
+    }
+  ],
+  "retail_url": "https://item.szlcsc.com/439567.html",
+  "smt_url": "https://www.jlc-smt.com/lcsc/search?q=C440198",
+  "electrical_qualification": "USER SPECIFIED prototype substitution; biased capacitance/ESR/ripple equivalence NOT VERIFIED",
+  "smt_price": null,
+  "changed_refs": [
+    "C13",
+    "C15",
+    "C20",
+    "C1",
+    "C103",
+    "C104",
+    "C2",
+    "C106",
+    "C107",
+    "C3",
+    "C109",
+    "C110",
+    "C4",
+    "C112",
+    "C113",
+    "C5",
+    "C115",
+    "C116",
+    "C6",
+    "C118",
+    "C119",
+    "C7"
+  ]
+}

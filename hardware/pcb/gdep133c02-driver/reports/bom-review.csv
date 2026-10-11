@@ -24,11 +24,11 @@ D1,MBR230S1F-7,Driver:Diode_SMD__D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: pr
 D2,MBR230S1F-7,Driver:Diode_SMD__D_SOD-123F,Diodes,MBR230S1F-7,1,False,DRAFT: procurement/parameters not released
 D4,B0530W-7-F,Driver:Diode_SMD__D_SOD-123,Diodes,B0530W-7-F,1,False,DRAFT: procurement/parameters not released
 C12,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C13,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C13,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C14,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C15,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C15,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C19,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
-C20,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C20,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 Q3,MMBT3906-7-F,Driver:Package_TO_SOT_SMD__SOT-23,Diodes,MMBT3906-7-F,1,False,DRAFT: procurement/parameters not released
 Q4,DMN3065LW-7,Driver:SOT323_HandSolder,Diodes,DMN3065LW-7,1,False,DRAFT: procurement/parameters not released
 R11,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
@@ -59,31 +59,31 @@ C27,100nF/50V,Driver:C_0805_HandSolder,Samsung,CL21B104KBCNNNC,1,False,DRAFT: pr
 R1,2k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F2001T5E,1,False,DRAFT: procurement/parameters not released
 R35,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
 R36,100k ohm,Driver:R_0805_HandSolder,UNI-ROYAL,0805W8F1003T5E,1,False,DRAFT: procurement/parameters not released
-C1,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C103,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C104,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C1,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C103,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C104,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C105,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C2,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C106,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C107,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C2,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C106,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C107,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C108,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C3,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C109,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C110,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C3,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C109,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C110,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C111,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C4,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C112,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C113,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C4,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C112,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C113,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C114,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C5,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C115,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C116,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C5,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C115,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C116,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C117,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C6,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C118,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
-C119,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C6,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C118,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
+C119,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C120,3.3uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32DR71H335KA88L,1,False,DRAFT: procurement/parameters not released
-C7,10uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H106KA12L,1,False,DRAFT: procurement/parameters not released
+C7,10uF/50V X5R,Driver:C_0805_HandSolder,Murata,GRM21BR61H106KE43L,1,False,DRAFT: procurement/parameters not released
 C8,4.7uF/50V,Driver:Capacitor_SMD__C_1210_3225Metric,Murata,GRM32ER71H475KA88L,1,False,DRAFT: procurement/parameters not released
 C9,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released
 C10,470nF/50V,Driver:Capacitor_SMD__C_0805_2012Metric,Murata,GRM21BR71H474KA88L,1,False,DRAFT: procurement/parameters not released

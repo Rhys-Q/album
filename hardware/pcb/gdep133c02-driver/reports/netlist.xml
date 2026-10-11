@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>/Users/rhys/tw/26/09/album/hardware/pcb/gdep133c02-driver/gdep133c02-driver.kicad_sch</source>
-    <date>2026-10-10T21:56:56</date>
+    <date>2026-10-11T11:41:15</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>GDEP133C02 minimum driver - DRAFT</title>
         <company>album</company>
-        <rev>0.9-RESISTORS</rev>
+        <rev>0.10-E01</rev>
         <date>2026-10-09</date>
         <source>gdep133c02-driver.kicad_sch</source>
         <comment number="1" value=""/>
@@ -26,7 +26,7 @@
       <title_block>
         <title>Power - wired functional circuits</title>
         <company/>
-        <rev>0.9-RESISTORS</rev>
+        <rev>0.10-E01</rev>
         <date>2026-10-09</date>
         <source>power.kicad_sch</source>
         <comment number="1" value=""/>
@@ -44,7 +44,7 @@
       <title_block>
         <title>Panel - wired functional circuits</title>
         <company/>
-        <rev>0.9-RESISTORS</rev>
+        <rev>0.10-E01</rev>
         <date>2026-10-09</date>
         <source>panel.kicad_sch</source>
         <comment number="1" value=""/>
@@ -62,7 +62,7 @@
       <title_block>
         <title>Interface - wired functional circuits</title>
         <company/>
-        <rev>0.9-RESISTORS</rev>
+        <rev>0.10-E01</rev>
         <date>2026-10-09</date>
         <source>interface.kicad_sch</source>
         <comment number="1" value=""/>
@@ -110,23 +110,33 @@
       </units>
     </comp>
     <comp ref="C13">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C13" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -172,23 +182,33 @@
       </units>
     </comp>
     <comp ref="C15">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C15" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -327,23 +347,33 @@
       </units>
     </comp>
     <comp ref="C20">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C20" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Power converters"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power converters/" tstamps="/c7527f93-a72b-5185-b98e-9cd586f1d09d/"/>
@@ -1940,23 +1970,33 @@
       </units>
     </comp>
     <comp ref="C1">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C1" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -1971,23 +2011,33 @@
       </units>
     </comp>
     <comp ref="C2">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C2" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2002,23 +2052,33 @@
       </units>
     </comp>
     <comp ref="C3">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C3" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2033,23 +2093,33 @@
       </units>
     </comp>
     <comp ref="C4">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C4" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2064,23 +2134,33 @@
       </units>
     </comp>
     <comp ref="C5">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C5" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2095,23 +2175,33 @@
       </units>
     </comp>
     <comp ref="C6">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C6" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2126,23 +2216,33 @@
       </units>
     </comp>
     <comp ref="C7">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C7" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2312,23 +2412,33 @@
       </units>
     </comp>
     <comp ref="C103">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C103" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2343,23 +2453,33 @@
       </units>
     </comp>
     <comp ref="C104">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C104" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2405,23 +2525,33 @@
       </units>
     </comp>
     <comp ref="C106">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C106" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2436,23 +2566,33 @@
       </units>
     </comp>
     <comp ref="C107">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C107" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2498,23 +2638,33 @@
       </units>
     </comp>
     <comp ref="C109">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C109" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2529,23 +2679,33 @@
       </units>
     </comp>
     <comp ref="C110">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C110" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2591,23 +2751,33 @@
       </units>
     </comp>
     <comp ref="C112">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C112" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2622,23 +2792,33 @@
       </units>
     </comp>
     <comp ref="C113">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C113" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2684,23 +2864,33 @@
       </units>
     </comp>
     <comp ref="C115">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C115" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2715,23 +2905,33 @@
       </units>
     </comp>
     <comp ref="C116">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C116" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2777,23 +2977,33 @@
       </units>
     </comp>
     <comp ref="C118">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C118" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>
@@ -2808,23 +3018,33 @@
       </units>
     </comp>
     <comp ref="C119">
-      <value>10uF/50V</value>
-      <footprint>Driver:Capacitor_SMD__C_1210_3225Metric</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</datasheet>
+      <value>10uF/50V X5R</value>
+      <footprint>Driver:C_0805_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</datasheet>
       <fields>
-        <field name="MPN">GRM32ER71H106KA12L</field>
+        <field name="MPN">GRM21BR61H106KE43L</field>
         <field name="Manufacturer">Murata</field>
-        <field name="LCSC">C77102</field>
-        <field name="BOM Comments">保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。</field>
-        <field name="Footprint">Driver:Capacitor_SMD__C_1210_3225Metric</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf</field>
+        <field name="LCSC">C440198</field>
+        <field name="BOM Comments">v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md</field>
+        <field name="LibraryCategory">基础库</field>
+        <field name="FeeEvidence">https://item.szlcsc.com/439567.html | SMT基础库</field>
+        <field name="StockQueriedAt">2026-10-11T11:28:17.670114+08:00</field>
+        <field name="AssemblyMethod">SMT</field>
+        <field name="ExceptionDecision">2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified</field>
+        <field name="Footprint">Driver:C_0805_HandSolder</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Driver" part="P_C119" description=""/>
-      <property name="MPN" value="GRM32ER71H106KA12L"/>
+      <property name="MPN" value="GRM21BR61H106KE43L"/>
       <property name="Manufacturer" value="Murata"/>
-      <property name="LCSC" value="C77102"/>
-      <property name="BOM Comments" value="保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。"/>
+      <property name="LCSC" value="C440198"/>
+      <property name="BOM Comments" value="v0.10 E01指定C440198；X5R/0805；偏压容量与纹波等效未验证；详见E01改版-v0.10.md"/>
+      <property name="LibraryCategory" value="基础库"/>
+      <property name="FeeEvidence" value="https://item.szlcsc.com/439567.html | SMT基础库"/>
+      <property name="StockQueriedAt" value="2026-10-11T11:28:17.670114+08:00"/>
+      <property name="AssemblyMethod" value="SMT"/>
+      <property name="ExceptionDecision" value="2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"/>
       <property name="Sheetname" value="Panel and temperature"/>
       <property name="Sheetfile" value="panel.kicad_sch"/>
       <sheetpath names="/Panel and temperature/" tstamps="/ee47e7da-03bc-5561-aebd-8654f37cc363/"/>

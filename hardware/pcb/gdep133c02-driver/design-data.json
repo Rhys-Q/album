@@ -1,6 +1,6 @@
 {
   "name": "gdep133c02-driver",
-  "revision": "0.9-resistors",
+  "revision": "0.10-e01",
   "parts": [
     {
       "ref": "J1",
@@ -646,27 +646,32 @@
     },
     {
       "ref": "C13",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VDDP",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         30,
         49
       ],
       "group": "converters",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "1a9782cb-6164-58b8-9b46-0e7ba364f20c",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C14",
@@ -694,27 +699,32 @@
     },
     {
       "ref": "C15",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VDDN",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         51,
         49
       ],
       "group": "converters",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "f2a33430-1a98-5472-aa43-e841c91aa949",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C19",
@@ -742,27 +752,32 @@
     },
     {
       "ref": "C20",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VBB_3P5V",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         71,
         49
       ],
       "group": "converters",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "09b5a33c-f282-5945-8ad6-8a4c2690d4f7",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "Q3",
@@ -1560,75 +1575,90 @@
     },
     {
       "ref": "C1",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         22.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "7c47a940-db15-5224-a93e-9eea0e6ad374",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C103",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         27.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "9a7e0e7f-65f7-55f6-993f-18af06f818ce",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C104",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         22.5,
         23
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "51f9b468-5750-5f87-b0c1-97e79a74587e",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C105",
@@ -1656,75 +1686,90 @@
     },
     {
       "ref": "C2",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         31.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "b0716500-be0e-57c1-a013-e38145552966",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C106",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         36.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "175819c5-3359-51a4-8596-8d2e69e57025",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C107",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         31.5,
         23
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "604029b3-0e14-5dbf-82df-34252fd16b83",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C108",
@@ -1752,75 +1797,90 @@
     },
     {
       "ref": "C3",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         40.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "8a6fb4c3-6a82-5238-b4c5-cdb42aa411dd",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C109",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         45.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "b37f2285-9f0c-5436-97bf-942aba0815de",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C110",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSPL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         40.5,
         23
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "541c2c77-d759-5cc2-8853-5f59e717a17f",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C111",
@@ -1848,75 +1908,90 @@
     },
     {
       "ref": "C4",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         49.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "f18e56c2-edc3-5a5b-ae94-3804a4507e1f",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C112",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         54.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "dcb8df27-decf-5dcc-82e5-d5ec4e2a9067",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C113",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNH",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         49.5,
         23
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "1fadf000-af65-53f8-88ad-47a74b99a638",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C114",
@@ -1944,75 +2019,90 @@
     },
     {
       "ref": "C5",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         58.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "3d9c6218-b3f1-5c1c-84b1-c08a120e1e4f",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C115",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         63.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "7efeacad-21b8-5830-9e85-41c88935036c",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C116",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNL",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         58.5,
         23
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "2fac4cc1-49bb-5ff7-b9bb-0c197753e801",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C117",
@@ -2040,75 +2130,90 @@
     },
     {
       "ref": "C6",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         67.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "8992f71f-d261-5c10-af76-78afcd18a9b6",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C118",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         72.5,
         17
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "7a3d586c-bccc-5f75-abed-c533bc42fda7",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C119",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VSNL2",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         67.5,
         23
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 90,
       "uuid": "5f71b582-97da-58f5-937e-4c4690e4df5f",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C120",
@@ -2136,27 +2241,32 @@
     },
     {
       "ref": "C7",
-      "value": "10uF/50V",
+      "value": "10uF/50V X5R",
       "pins": {
         "1": "VCC",
         "2": "GND"
       },
-      "fp": "Driver:Capacitor_SMD__C_1210_3225Metric",
+      "fp": "Driver:C_0805_HandSolder",
       "xy": [
         78,
         16
       ],
       "group": "panel",
-      "mpn": "GRM32ER71H106KA12L",
+      "mpn": "GRM21BR61H106KE43L",
       "vendor": "Murata",
-      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/8cca754305bc7d881114d4ba10b82bf2.pdf?productCode=C440198",
       "names": {},
       "types": {},
       "dnp": false,
       "angle": 0,
       "uuid": "fd86e631-e6e3-5786-9b43-b06f5bb1867c",
-      "selection_note": "保留原型号/封装；本轮逐项复核，关键动态参数未有充分替代证据。",
-      "lcsc": "C77102"
+      "selection_note": "v0.10 E01 user-selected: 10µF/50V ±10% X5R 0805; -55..85℃; DC bias/ESR/ripple equivalence unverified; source bank count preserved",
+      "lcsc": "C440198",
+      "library_category": "基础库",
+      "fee_evidence": "https://item.szlcsc.com/439567.html | SMT基础库",
+      "stock_queried_at": "2026-10-11T11:28:17.670114+08:00",
+      "assembly": "SMT",
+      "exception_decision": "2026-10-11 user explicitly selected C440198 for E01; prototype, effective capacitance/ESR/ripple equivalence unverified"
     },
     {
       "ref": "C8",
@@ -3418,9 +3528,9 @@
   ],
   "fpc_footprint_verified": true,
   "fpc_mating_verified": false,
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "assembled_components": 104,
   "smt_components": 102,
-  "release_version": "0.9",
-  "release_slug": "jlc-cn-review-v0.9-resistors-2026-10-10"
+  "release_version": "0.10",
+  "release_slug": "jlc-cn-review-v0.10-e01-2026-10-11"
 }

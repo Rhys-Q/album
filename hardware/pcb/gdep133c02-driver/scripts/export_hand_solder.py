@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check and export v0.9 review artifacts; no hardware or production sign-off.
+"""Check and export v0.10 review artifacts; no hardware or production sign-off.
 Run with KiCad 10.0.6 bundled Python; native API zone fill avoids macOS CLI refill bug.
 Refuses to overwrite an existing versioned release.
 """
@@ -8,16 +8,16 @@ import subprocess,json,csv,hashlib,zipfile,argparse,shutil
 import wx
 app=wx.App(False)
 import pcbnew as p
-R=Path(__file__).resolve().parents[1];CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli';NAME='gdep133c02-driver';BOARD=R/(NAME+'.kicad_pcb');SCH=R/(NAME+'.kicad_sch');OUT=R/'releases/jlc-cn-review-v0.9-resistors-2026-10-10'
+R=Path(__file__).resolve().parents[1];CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli';NAME='gdep133c02-driver';BOARD=R/(NAME+'.kicad_pcb');SCH=R/(NAME+'.kicad_sch');OUT=R/'releases/jlc-cn-review-v0.10-e01-2026-10-11'
 args=argparse.ArgumentParser();args.add_argument('--draft',action='store_true',help='Export staging artifacts while GUI acceptance is pending');options=args.parse_args()
-if options.draft:OUT=R/'reports/staging-v0.9-resistors-2026-10-10'
+if options.draft:OUT=R/'reports/staging-v0.10-e01-2026-10-11'
 data=json.loads((R/'design-data.json').read_text())
 assert not OUT.exists(),'Existing review version must not be overwritten'
 def run(*args):subprocess.run([CLI,*map(str,args)],check=True)
 def digest(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 def write(f,cols,rows):
  with f.open('w',newline='') as out:
-  w=csv.DictWriter(out,fieldnames=cols);w.writeheader();w.writerows(rows)
+  w=csv.DictWriter(out,fieldnames=cols,lineterminator="\n");w.writeheader();w.writerows(rows)
 b=p.LoadBoard(str(BOARD));b.BuildConnectivity();assert p.ZONE_FILLER(b).Fill(b.Zones());p.SaveBoard(str(BOARD),b)
 gui=json.loads((R/'reports/gui-open.json').read_text())
 if not options.draft:
@@ -42,8 +42,8 @@ tracks=list(b.GetTracks())
 summary=dict(revision=data['revision'],footprints=len(list(b.GetFootprints())),pads=len(pads),tracks=sum(not isinstance(t,p.PCB_VIA) for t in tracks),vias=sum(isinstance(t,p.PCB_VIA) for t in tracks),minimum_track_mm=min(p.ToMM(t.GetWidth()) for t in tracks if not isinstance(t,p.PCB_VIA)),missing_3d_models=[f.GetReference() for f in b.GetFootprints() if not len(f.Models())])
 (R/'reports/board-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 
-source=[f for f in R.iterdir() if f.suffix in ['.kicad_sch','.kicad_pro','.kicad_pcb','.kicad_dru']]+[R/'design-data.json',R/'lib/Driver.kicad_sym']+list((R/'lib/Driver.pretty').glob('*.kicad_mod'))+list((R/'models').rglob('*.step'))+list((R/'scripts').glob('*.py'))+[R/'fp-lib-table',R/'sym-lib-table',R/'reports/procurement-v09.json',R/'reports/cost-change-geometry-v09.json',R/'reports/update-preview-first-v09.txt',R/'reports/update-preview-v09.txt',R/'reports/gui-open.json',R/'reports/update-preview.txt',R/'README.md']+list((R/'docs/sources').rglob('*.pdf'))+list((R/'docs').glob('*v0.9*'))+list((R/'docs').glob('*.md'))
-proof=dict(date=data['date'],kicad_version='10.0.6',gui_open=json.loads((R/'reports/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.9 three resistor groups only; native CAD, full ERC/DRC/parity, pad map, supply and direct signal fixed requirements',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
+source=[f for f in R.iterdir() if f.suffix in ['.kicad_sch','.kicad_pro','.kicad_pcb','.kicad_dru']]+[R/'design-data.json',R/'lib/Driver.kicad_sym']+list((R/'lib/Driver.pretty').glob('*.kicad_mod'))+list((R/'models').rglob('*.step'))+list((R/'scripts').glob('*.py'))+[R/'fp-lib-table',R/'sym-lib-table',R/'reports/procurement-v010.json',R/'reports/cost-change-geometry-v010.json',R/'reports/update-preview-first-v010.txt',R/'reports/update-preview-v010.txt',R/'reports/gui-open.json',R/'reports/update-preview.txt',R/'README.md']+list((R/'docs/sources').rglob('*.pdf'))+list((R/'docs').glob('*v0.10*'))+list((R/'docs').glob('*.md'))
+proof=dict(date=data['date'],kicad_version='10.0.6',gui_open=json.loads((R/'reports/gui-open.json').read_text())['status'],zone_refill='PASS - native pcbnew ZONE_FILLER.Fill returned true; saved source checked by unmodified CLI',scope='v0.10 E01 22 user-selected C440198 0805 capacitors; biased capacitance unverified; native CAD, full ERC/DRC/parity, pad map, supply and direct signal fixed requirements',source_sha256={str(f.relative_to(R)):digest(f) for f in source})
 (R/'reports/check-provenance.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n')
 subprocess.run(['python3',str(R/'scripts/check_design.py')],check=True)
 OUT.mkdir();(OUT/'gerber').mkdir();(OUT/'stencil-optional').mkdir();(R/'reports/preview').mkdir(exist_ok=True)
@@ -86,12 +86,12 @@ with zipfile.ZipFile(OUT/(NAME+'-gerber-rs274x.zip'),'w',zipfile.ZIP_DEFLATED) a
  for f in sorted(files):z.write(f,f.name)
 run('pcb','export','pdf',BOARD,'-l','F.Cu,F.Silkscreen,Edge.Cuts','-o',R/'reports/preview/board.pdf')
 run('pcb','export','pdf',BOARD,'-l','F.Fab,F.Silkscreen,Edge.Cuts','-o',OUT/'assembly-top.pdf')
-for name in ['gui-open.json','erc.json','drc.json','validation-status.json','cost-change-geometry-v09.json']:
+for name in ['gui-open.json','erc.json','drc.json','validation-status.json','cost-change-geometry-v010.json']:
  shutil.copy2(R/'reports'/name,OUT/name)
-shutil.copy2(R/'reports/schematic.pdf',OUT/'schematic-v0.9.pdf')
-shutil.copy2(R/'reports/preview/board.pdf',OUT/'pcb-v0.9.pdf')
-for filename in ['采购清单-v0.9.csv','逐位号替换对照-v0.9.csv','三组电阻免换料费改版-v0.9.md','手焊说明-v0.9.md','采购加工成本-v0.9.csv']:shutil.copy2(R/'docs'/filename,OUT/filename)
-(OUT/'README.md').write_text('# v0.9 三组电阻免换料费制造审阅包\n\n104个装配件，102个顶面SMT；BOM/CPL/制造文件来源见verification.json。'+('\n\n暂存包：工程模式GUI更新预览尚未验收；不得作为已验收新版release。' if options.draft else '\n\nCAD检查及GUI更新预览已通过；实板性能尚未验收。')+'\n\nGerber压缩包包含四层铜、双面阻焊/丝印、板框及PTH/NPTH钻孔。钢网仅在锡膏工艺时按需使用。采购费用缺口留空，Q7国内现货未闭环。仅三组电阻改为免换料费型号，经济型规则下减少60元/订单；102件SMT仍全部列入机器BOM/CPL，其余25组普通扩展保留，尚未实施混合装配。其他加工费及完整采购仍有缺口，详见三组改版说明及采购CSV。\n')
+shutil.copy2(R/'reports/schematic.pdf',OUT/'schematic-v0.10.pdf')
+shutil.copy2(R/'reports/preview/board.pdf',OUT/'pcb-v0.10.pdf')
+for filename in ['采购清单-v0.10.csv','逐位号替换对照-v0.10.csv','E01改版-v0.10.md','手焊说明-v0.10.md','E01成本对照-v0.10.csv']:shutil.copy2(R/'docs'/filename,OUT/filename)
+(OUT/'README.md').write_text('# v0.10 E01 C440198 原型制造审阅包\n\n104个装配件，102个顶面SMT；BOM/CPL/制造文件来源见verification.json。'+('\n\n暂存包：工程模式GUI更新预览尚未验收；不得作为已验收新版release。' if options.draft else '\n\nCAD检查及GUI更新预览已通过；实板性能尚未验收。')+'\n\nGerber压缩包包含四层铜、双面阻焊/丝印、板框及PTH/NPTH钻孔。钢网仅在锡膏工艺时按需使用。采购费用缺口留空，Q7国内现货未闭环。E01 22只改为C440198基础库0805 X5R，85℃上限；偏压容量/ESR/纹波等效未验证。较v0.9经济型规则再减少20元/订单；102件SMT仍全部列入机器BOM/CPL，其余24组普通扩展保留，尚未实施混合装配。其他加工费及完整采购仍有缺口，详见E01改版说明及采购CSV。\n')
 assert all(digest(R/name)==value for name,value in proof['source_sha256'].items()),'Source mutation during export'
 report=dict(date=data['date'],revision=data['revision'],kicad_version='10.0.6',production_released=False,source_sha256=proof['source_sha256'],assembled_components=data['assembled_components'],smt_components=data['smt_components'],smt_bom_groups=len(smt),cpl_components=data['smt_components'],manual_components=['J1','J2'],all_smt_on_top=True,erc_violations=0,drc_violations=0,unconnected_items=0,schematic_parity=0,gui_open=proof['gui_open'],zone_refill=proof['zone_refill'],jlc_part_numbers='COMPLETE codes; domestic supply PARTIAL: Q7 C6628419 stock=0; four current MOQ price gaps explicitly listed' ,hardware_tests='NOT PERFORMED',files_sha256={str(f.relative_to(OUT)):digest(f) for f in sorted(OUT.rglob('*')) if f.is_file()})
 (OUT/'verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
