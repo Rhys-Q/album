@@ -1,0 +1,10 @@
+menu "GDEP133C02 evaluation"
+config EPD_SPI_HZ
+    int "SPI frequency (Hz)"
+    range 100000 10000000
+    default 1000000
+config EPD_ROTATION
+    int "Logical-to-native rotation (90 or 270 only)"
+    range 90 270
+    default 90
+endmenu

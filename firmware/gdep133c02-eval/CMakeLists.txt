@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(gdep133c02_eval)
+if(NOT "$ENV{IDF_VERSION}" STREQUAL "6.1.0")
+    message(FATAL_ERROR "Use ESP-IDF v6.1.0")
+endif()

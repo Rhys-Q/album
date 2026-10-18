@@ -1,0 +1,10 @@
+{
+  "archive": "docs/raw/GDEP133C02-ESP32 code example.zip",
+  "sha256": "a683485a58c6159f7788ab4339c91d902bce8f21089203a9d877a5669afb1f96",
+  "files": {
+    "GDEP133C02-ESP32 code example/GDEP133C02-ESP32 code example (2026420)/GDEP133C02/main/comm.c": "d95e08d88b46ee60410fc9ea30ec46e30e2ad0bfe289991e54d4b451873b26b4",
+    "GDEP133C02-ESP32 code example/GDEP133C02-ESP32 code example (2026420)/GDEP133C02/main/GDEP133C02.c": "82fb648a5adedb086a1f67ec8eb47ff677edf3a627d78c4d16d1ebec92732c63",
+    "GDEP133C02-ESP32 code example/GDEP133C02-ESP32 code example (2026420)/GDEP133C02/main/GDEP133C02.h": "81e14ceb599b6883f26fbe4945a8ae0a56a5fb0298e33fad44aa9744ba4b8384",
+    "GDEP133C02-ESP32 code example/GDEP133C02-ESP32 code example (2026420)/GDEP133C02/main/pindefine.h": "7a8e049280f162fb66ef811b08c3401728238d9659a080034d88f4c374ee34e9"
+  }
+}
